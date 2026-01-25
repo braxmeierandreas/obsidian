@@ -1,0 +1,12 @@
+# Donnerstag: Krafttraining (Latissimus, Trizeps, Unterarm) + Joggen + Sauna
+- **Warm-up:** 10 Minuten Rudern
+- **Krafttraining (ca. 50 Minuten):** Fokus auf Latissimus, Trizeps und Unterarme.
+    - **Iso-Lateral Low Row:** 3 Sätze: 12 Wdh. (52.5 kg), 10 Wdh. (57.5 kg), 8 Wdh. (62.5 kg)
+    - **Triceps Pushdown:** 3 Sätze: 12 Wdh. (25 kg), 10 Wdh. (27.5 kg), 8 Wdh. (30 kg)
+    - **Seated Palms Up Wrist Curl:** 3 Sätze: 12 Wdh. (22.5 kg), 10 Wdh. (25 kg), 8 Wdh. (27.5 kg)
+    - **Iso-Lateral High Row (Machine):** 3 Sätze: 12 Wdh. (65 kg), 10 Wdh. (70 kg), 8 Wdh. (75 kg)
+    - **Triceps Extension (Dumbbell):** 3 Sätze: 12 Wdh. (20 kg), 10 Wdh. (25 kg), 8 Wdh. (27.5 kg)
+- **Cool-down:** 5 Minuten leichtes Dehnen
+- **Joggen:** 20-30 Minuten (Beginn mit moderatem Tempo, bei Bedarf Gehpausen einlegen, um die Ausdauer aufzubauen).
+- **Cool-down Joggen:** 5-10 Minuten leichtes Gehen und Dehnen der Beine.
+- **Sauna:** 30 Minuten (wie bisher)

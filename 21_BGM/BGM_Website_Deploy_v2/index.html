@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BGM Podcast | Betriebliches Gesundheitsmanagement</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-animation"></div>
+
+    <header>
+        <div class="container">
+            <h1 class="glitch" data-text="BGM PODCAST">BGM PODCAST</h1>
+            <p class="subtitle">Ein Projekt im Modul "Angewandte Gesundheitsförderung"</p>
+            <p class="author-date">Von Andreas Braxmeier | Januar 2026</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="player-card">
+            <div class="visualizer">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <div class="track-info">
+                <h2>Betriebliches Gesundheitsmanagement</h2>
+                <p>Semesterprojekt MP3</p>
+            </div>
+
+            <div class="controls">
+                <button id="play-pause-btn" class="play-btn" aria-label="Play">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                        <path id="play-icon" d="M8 5v14l11-7z" />
+                        <path id="pause-icon" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" style="display:none;" />
+                    </svg>
+                </button>
+
+                <div class="progress-container">
+                    <span id="current-time">0:00</span>
+                    <input type="range" id="seek-slider" max="100" value="0">
+                    <span id="duration">0:00</span>
+                </div>
+
+                <div class="volume-container">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path
+                            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" />
+                    </svg>
+                    <input type="range" id="volume-slider" max="100" value="100">
+                </div>
+            </div>
+            <audio id="audio-player" src="assets/BGM_Podcast_Audio.mp3"></audio>
+        </section>
+
+        <section class="info-content">
+            <div class="info-card">
+                <h3>Über das Projekt</h3>
+                <p>Dieser Podcast entstand im Rahmen des 1. Semesters "Angewandte Gesundheitsförderung". Er beleuchtet
+                    die Aspekte des Betrieblichen Gesundheitsmanagements (BGM) am Beispiel des E-Sports und zieht
+                    Parallelen zur klassischen Arbeitswelt.</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Show Notes</h3>
+                <ul>
+                    <li><strong>Diagnostik:</strong> Einsatz von biometrischem Monitoring (Wearables) zur Messung von
+                        HRV und Schlafqualität.</li>
+                    <li><strong>Intervention:</strong> Healthy Leadership und Führungskultur sowie Maßnahmen wie
+                        kontinuierliches Glukose-Monitoring und Breathwork.</li>
+                    <li><strong>Evaluation:</strong> Messung des „Return on Prevention Investment“ (ROPI) durch
+                        Performance-KPIs.</li>
+                </ul>
+            </div>
+
+            <div class="info-card full-width">
+                <h3>Quellen & Literatur</h3>
+                <ul class="sources-list">
+                    <li><a href="https://www.dshs-koeln.de/vis/forschung/projekte/esport/" target="_blank">Froböse, I.
+                            et al.: eSport Studie (2019 - 2023)</a> - DSHS Köln</li>
+                    <li><a href="https://www.barmer.de/gesundheit-verstehen/sport/e-sport" target="_blank">Barmer
+                            Krankenkasse: E-Sport und Gesundheit</a></li>
+                    <li><a href="https://doi.org/10.1136/bmjsem-2018-000467" target="_blank">DiFrancisco-Donoghue et al.
+                            (2019): Managing the health of the eSport athlete</a></li>
+                    <li><a href="https://doi.org/10.1186/s12891-022-05614-0" target="_blank">Tholl et al. (2022):
+                            Musculoskeletal disorders in video gamers</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Semesterprojekt BGM</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

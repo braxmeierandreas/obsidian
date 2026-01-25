@@ -1,0 +1,310 @@
+studie: Studie
+sex: Geschlecht
+gender: Geschlechtsidentität
+age5B: Alter (5-Jahres-Gruppen)
+age10B: Alter (10-Jahres-Gruppen)
+agegrp1: Altersgruppe 1
+agegrp2: Altersgruppe 2
+agegrp3: Altersgruppe 3
+agegrp4: Altersgruppe 4
+agegrp5: Altersgruppe 5
+agegrp6: Altersgruppe 6
+agegrp7: Altersgruppe 7
+agegrp8: Altersgruppe 8
+agegrp9: Altersgruppe 9
+agegrp10: Altersgruppe 10
+agegrp11: Altersgruppe 11
+agegrp12: Altersgruppe 12
+untm: Untersuchungsmonat
+untj: Untersuchungsjahr
+bulasa: Bundesland (Selbstangabe)
+gkpol: Politische Gemeindegrößenklasse (Stand: 13.12.2018)
+gkpol4: Politische Gemeindegrößenklasse (kateg. Stand: 13.12.2018)
+ktyp4: Siedlungsstruktureller Kreistyp (BBSR)
+ns3: Nord-Süd-Einteilung (3 Kategorien)
+reg4: Region in 4 Kategorien
+reg5: Region in 5 Kategorien
+reg5b: Region in 5 Kategorien (Version b)
+reg6: Region in 6 Kategorien
+reg7: Region in 7 Kategorien (Nielsen-Gebiete)
+wo1: West/Ost mit Berlin zu Ost
+wo2: West/Ost mit Berlin zu West
+wob: West/Ost/Berlin
+wQS: Gewichtung GEDA19 (ab 18 Jahre; normiert auf Stichprobenumfang)
+wQSpop: Gewichtung GEDA19 (ab 18 Jahre; normiert auf Bevölkerungsumfang)
+KHhyp12: Hypertonie: I.d.l.12 Mon.
+KHmyo12: Herzinfarkt: I.d.l. 12 Mon.
+KHkhk12: Koronare Herzerkrankung/Angina Pectoris: I.d.l.12 Mon.
+KHbbmyo12: Herzinfarkt/chron. Beschw.: I.d.l. 12 Mon.
+KHmyokhk12: Herzinfarkt, Chron. Beschw.oder Kor. Herzerkrankung/Angina Pectoris: I.d.l.12 Mon.
+KHsa12: Schlaganfall: I.d.l.12 Mon.
+KHbbsa12: Schlaganfall/ chron. Beschwerden infolge SA: I.d.l.12 Mon.
+KHdiabB12: Diabetes: I.d.l.12 Mon.
+KHab12: Asthma: I.d.l.12 Mon.
+KHlip12A: Erhöhte Blutfette/Chol.: I.d.l.12 Mon.
+KHcb12B: Chronische Bronchitis: I.d.l.12 Mon.
+KHlz12: Leberzirrhose: I.d.l.12 Mon.
+KHniB12: Chron. Nierenprobleme: I.d.l.12 Mon.
+KHdge12: Arthrose: I.d.l.12 Mon.
+KHalgi112: Allergien: I.d.l. 12 Mon.
+GZmehm1: Allg. Gesundheitszustand
+GZmehm3C: Chronische Krankheiten
+GZmehm2D: Einschränkung durch Krankheit seit mind. 6 Monaten
+GZmehm1_k: Allg. Gesundheitszustand (in 2 Kat.)
+GZmehm1_k3: Allg. Gesundheitszustand (in 2 Kat.)
+GZmehm2D_k: Einschränkung durch Krankheit seit mind. 6 Monaten  (in 2 Kat.)
+GZmehm2D_k2: Einschränkung durch Krankheit seit mind. 6 Monaten (in 2 Kat.)
+SHseh1: Brille oder Kontaktlinsen
+SHseh2C: Schwierigkeiten selbst mit Brille oder Kontaktlinsen
+SHhoer1: Hörgerät
+SHhoer5: Schwierigk. selbst mit Hörgerät: Ruhiger Raum
+SHhoer6: Schwierigk. selbst mit Hörgerät: Lauter Raum
+SHbblimit_k: Körperliche u. sensorische, funktionale Einschränkungen (kat.)
+SHsehlimit_k: Schwierigkeiten beim Sehen (kat.)
+SHbblimit2_k: Einschränkungen der grundlegenden Funktionen (kat.)
+SHhoerlimit_k: Schwierigkeiten beim Hören (kat.)
+SHsehkorr_k: Korrektur von Sehschwächen (kat.)
+SHseh1_k: Brille oder Kontaktlinsen (ohne sehbehindert oder blind)
+BBmyo12: Chronische Beschwerden nach Herzinfarkt: I.d.l.12 Mon.
+BBsa12: Chronische Beschw. infolge eines Schlaganfalls: I.d.l.12 Mon.
+BBdors112: Beschwerden unterer Rücken: I.d.l.12 Mon.
+BBdors212: Beschwerden Nacken, Halswirbelsäule: I.d.l.12 Mon.
+BBblas12B: Harninkontinenz: I.d.l.12 Mon.
+BBgehen: Schwierigk. beim Laufen ohne Gehhilfe auf 500m
+BBtreppe: Schwierigk. Treppe mit 12 Stufen
+BBkonz1: Schwierigk. sich zu erinnern/konzentrieren
+BBessen: Schwierigk. mit Kauen u. Beißen fester Nahrung
+BBschwierig1: Schwierigk. bei Ausführen o. Hilfe: Essen oder Trinken
+BBschwierig2: Schwierigk. bei Ausführen o. Hilfe: v. Bett/Stuhl erheben od. niederlassen
+BBschwierig3: Schwierigk. bei Ausführen o. Hilfe: An- und Ausziehen
+BBschwierig4: Schwierigk. bei Ausführen o. Hilfe: Toilettenbenutzung
+BBschwierig5: Schwierigk. bei Ausführen o. Hilfe: Baden oder Duschen
+BBhilfe1: Körperpflege etc.: Hilfe bei Tätigkeiten
+BBhilfe2: Körperpflege etc.: (Mehr) Hilfe benötigt
+BBhh1: Schwierigk. Ausführen o. Hilfe: Mahlzeiten zubereiten
+BBhh3: Schwierigk. Ausführen o. Hilfe: Einkäufe erledigen
+BBhh4: Schwierigk. Ausführen o. Hilfe: Medikamenteneinn. org.
+BBhh5: Schwierigk. Ausführen o. Hilfe: Leichte Hausarbeit erledig.
+BBhh6: Schwierigk. Ausführen o. Hilfe: Gelegentlich schwere Hausarbeit erled.
+BBhh7: Schwierigk. Ausführen o. Hilfe: Org. fin. und alltägl. Verwaltungsangeleg.
+BBhhhilfe1: Haushalt: Hilfe bei Tätigkeiten
+BBhhhilfe2: Haushalt: (Mehr) Hilfe benötigt
+BBgehlimit_k: Schwierigkeiten beim Laufen u. Treppensteigen (kat.)
+BBkonzlimit_k: Schwierigkeiten sich zu erinnern o. zu konzentrieren (kat.)
+BBesslimit_k: Schwierigkeiten beim Beißen und Kauen von harten Lebensmitteln (kat.)
+BBcarelimit_k: Schwierigkeiten bei der Körperpflege (kat.)
+BBlimitA_k: Schwierigkeiten bei der Nahrungsaufnahme (kat.)
+BBlimitB_k: Schwierigkeiten sich von Bett oder Stuhl zu erheben/niederlassen (kat.)
+BBlimitC_k: Schwierigkeiten beim An- und Ausziehen (kat.)
+BBlimitD_k: Schwierigkeiten bei der Toilettenbenutzung (kat.)
+BBlimitE_k: Schwierigkeiten beim Baden und Duschen (kat.)
+BBhilfe_k: Bedarf an Hilfe bei der Körperpflege (kat.)
+BBhhlimit_k: Schwierigkeiten bei der Erledigung des Haushalts (kat.)
+BBhhlimitA_k: Schwierigkeiten Mahlzeiten zu bereiten (kat.)
+BBhhlimitB_k: Schwierigkeiten das Telefon zu benutzen (kat.)
+BBhhlimitC_k: Schwierigkeiten Einkäufe zu erledigen (kat.)
+BBhhlimitD_k: Schwierigkeiten Medikamenteneinnahme zu organisieren (kat.)
+BBhhlimitE_k: Schwierigkeiten leichte Hausarbeit zu erledigen (kat.)
+BBhhlimitF_k: Schwierigkeiten gelegentlich schwere Hausarbeit zu erledigen (kat.)
+BBhhlimitG_k: Schwierigkeiten Verwaltungsangelegenheiten zu erledigen (kat.)
+BBhhhilfe_k: Bedarf an Hilfe beim Haushalt (kat.)
+BBtotallimit_k: Schwierigkeiten bei der Körperpflege u. im Haushalt (kat.)
+BBtotalhilfe_k: Bedarf an Hilfe bei der Körperpflege u. im Haushalt (kat.)
+UVartverkehr: Verletzung wg. Unfall i.d.l. 12 Monaten: Verkehrsunfall
+UVarthaus: Verletzung wg. Unfall i.d.l. 12 Monaten: Unfall zu Hause
+UVartfreiz: Verletzung wg. Unfall i.d.l. 12 Monaten: Unfall in der Freizeit
+UVarztF: Medizinische Versorgung nach Unfall
+UVarztF_k: Medizinische Versorgung nach Unfall i.d.l. 12 Mon. (3 Kat.)
+UVsturz12: Stürze i.d.l.12 Mon.
+UVsturz12z: Häufigkeit Stürze: I.d.l. 12 Mon.
+UVsturzang: Haben Sie Angst zu stürzen
+UVsturz12mf: Mehrfach gestürzt (2 mal und mehr) i.d.l. 12 Mon.
+PKdep12: Depression: I.d.l. 12 Mon.
+PKphqsum_k1: Derzeitige depressive Symptome (Beeintr. i.d.l. 2 Wo.): Summenscore JAFH indicator, kat.
+PKphqsum_k2: Schweregrad d. derzeitigen, depressiven Symptome (Beeintr. i.d.l. 2 Wo.): Summenscore JAFH indicator, kat.
+PKphq8sum: PHQ-8: Skalensummenwert Depressive Symptome (0-24)
+PKphq8_k1: PHQ-8: Skalensummenwert Depressive Symptome in 5 Kat.
+PKphq8_k2: PHQ-8: Skalensummenwert Depressive Symptome in 3 Kat.
+PKphq8_k3: PHQ-8: Depressive Symptomatik 2 Kat.
+PKphq8diag: PHQ-8: Diagnostische Kategorisierung
+PKphq8_k4: PHQ-8: Depressive Symptomatik in 3 Kat.
+PKphq8_k5: PHQ-8: Depressive Symptomatik 2 Kat. 15-24 versus 0-14
+PKphq8_k6: PHQ-8: Depressive Symptomatik 2 Kat. 10-24 versus 0-9
+SFoslo1C: Nahestehende Personen
+SFoslo2C: Anteilnahme anderer Personen
+SFoslo3A: Erhalt von Hilfe
+SFosloA: Soziale Unterstützung (Oslo-3 Social Support Scale)
+LQsf367C: Stärke der Schmerzen i.d.l. 4 Wochen
+LQsf368C: Behinderung in Alltagstätigkeiten durch Schmerzen i.d.l. 4 Wochen
+IAhypus: Letzte Blutdruckmessung
+IAcholus: Letzte Blutfettwertebestimmung
+IAdiabus: Letzte Blutzuckermessung
+IAtermin: Auf Untersuchungstermin gewartet i.d.l. 12 Mon.
+IAweg: Untersuchung verzögert wegen Entfernung i.d.l. 12 Mon.
+IAkosten1: Benötigte US/Behandlung n. bezahlbar i.d.l. 12 Mon.: Ärztl. US/Behandlung
+IAkosten2: Benötigte US/Behandlung n. bezahlbar i.d.l. 12 Mon.: Zahnärztl. US/Behandlung
+IAkosten3: Benötigte US/Behandlung n. bezahlbar i.d.l. 12 Mon.: Verordnete Med.
+IAkosten4: Benötigte US/Behandlung n. bezahlbar i.d.l. 12 Mon.: US/Behandlung psy. Prob.
+IAkosten: Benötigte US/Behandlung n. bezahlbar i.d.l. 12 Mon.
+IAzugang: Benötigter Bedarf US/Behandlung/Termin n. gedeckt i.d.l. 12 Mon.
+IAarzt14B_k: Zahnmedizinische Untersuchung < 12 Mon.
+IAarzt14B: Zahnmedizinische Untersuchung
+IAarzt1B: Besuch Allgemeinarzt oder Hausarzt
+IAarzt1B_k: Besuch Allgemeinarzt oder Hausarzt < 12 Mon.
+IAfa: Besuch Facharzt
+IAfa_k: Besuch Facharzt < 12 Mon.
+IAfa4w_k: Besuch Facharzt i.d.l. 4 Wochen: Anzahl (kateg.)
+IAarztfa_k: Besuch Allgemeinarzt/Hausarzt oder Facharzt < 12 Mon.
+IAarztfa: Besuch Allgemeinarzt/Hausarzt oder Facharzt
+IAarzt1B4w_k: Besuch Allgemeinarzt oder Hausarzt i.d.l. 4 Wochen: Anzahl (kateg.)
+IAarztfa4w_k: Besuch Allgemeinarzt/Hausarzt oder Facharzt i.d.l. 4 Wochen: Anzahl (kateg.)
+IAarzt8C: Besuch Psychologen i.d.l. 12 Mon.
+IAkhs: Stationär im Krankenhaus i.d.l. 12 Mon.
+IAkhsz_k: Anzahl Krankenhausnächte i.d.l. 12 Mon. (kateg.)
+IAambC: Tagespatient im Krankenhaus i.d.l. 12 Mon.
+IAambCz_k: Tagespatient im Khs i.d.l. 12 Mon.: Anzahl Aufnahmen (kateg.)
+IAnotkhs: Inanspruchn. Rettungsstelle Krankenhaus i.d.l. 12 Mon.
+IAnotkhs_k: Kontakte i.d.l. 12 Mon.:Klinik als Notfall (top coding 5 oder mehr)
+IAambstatz_k: Kontakte i.d.l. 12 Mon.: Ambulanzen: Anzahl stationärer Aufnahme (top coding 4 oder mehr)
+IAther2B: Besuch Physiotherapeuten i.d.l. 12 Mon.
+IApflege: Inanspruchnahme häuslicher Pflegedienst: I.d.l. 12 Mon.
+IAkfutyp2B_lz: Letzter Stuhltest
+IAkfutyp2B_lz_k2: Letzter Stuhltest i.d.l. 12 Mon (Alter >=50 bis <55 J.)
+IAkfutyp2B_lz_k: Letzter Stuhltest .d.l. zwei Jahren (Alter >= 55)
+IAkfutyp4B_lz: Letzte Darmspiegelung
+IAkfutyp4B_lz_k: Letzte Darmspiegelung i.d.l. 10 Jahren (Alter >= 55)
+IAkfutyp4B_lz_k2: Letzte Darmspiegelung i.d.l. 10 J. (Frauen >=55 J., Männer >= 50 J.)
+IAkfutyp7B_lz: Letzte Mammografie
+IAkfutyp7B_lz_k: Letzte Mammografie i.d.l. zwei Jahren, (Frauen: 50>= Jahre <70)
+IAkfutyp7E_lz: Letzte Mammografie (gender)
+IAkfutyp7Bgr_m1: Grund für die letzte Mammografie: Einladung
+IAkfutyp7Bgr_m2: Grund für die letzte Mammografie: Andere Gründe
+IAkfutyp5B_lz: Letzter Gebärmutterhalsabstrich
+IAkfutyp5B_lz_k: Letzter Gebärmutterhalsabstrich i.d.l. 12 Mon. (Alter >= 20)
+IAkfutyp5B_lz_k2: Letzter Gebärmutterhalsabstrich i.d.l. 12 Mon. (20>=Alter <35)
+IAkfutyp5B_lz_k3: Letzter Gebärmutterhalsabstrich i.d.l. 12 Mon. (Alter > 35)
+IAkfutyp7Bgr_k: Letzte Mammographie: Nat. Screeningprogr. (Frauen: 50>= Alter < 70)
+IAkv1G: Krankenversicherung in 3 Kat.
+IPinfl4: Letzte Grippeimpfung
+IPinfl4_jj: Letzte Grippeimpfung: Jahr
+AMarztB: Einnahme Medikamente v. Arzt verschrieben i.d.l. 2 Wo
+AMfrei: Einnahme Medikamente nicht v. Arzt verschrieben i.d.l. 2 Wo
+AUarbC: Krankheitsbedingt nicht zur Arbeit: I.d.l. 12 Mon.
+AUarbzC_k: Krankheitsbedingt nicht zur Arbeit: Tage (EHIS) kat.
+KAehispaq1: Tätigkeiten (Anstrengung)
+KAehispaq2: Bewegung zu Fuß: Tage pro Woche
+KAehispaq3: Bewegung zu Fuß: Dauer
+KAehispaq4: Bewegung mit Fahrrad: Tage pro Woche
+KAehispaq5: Bewegung mit Fahrrad: Dauer
+KAehispaq6: Sport: Tage pro Woche
+KAehispaq8: Aufbau/Kräftigung: Tage pro Woche
+KAruh: Sitzen/Ruhen
+KAehispaq2_k: Bewegung zu Fuß: Laufen um von Ort zu Ort zu gelangen
+KAehispaq4_k: Bewegung mit Fahrrad: Fahrrad fahren um von Ort zu Ort zu gelangen
+KAehispaq6_k: Sport: (ohne körperliche Aktivität bei der Arbeit und um von Ort zu Ort zu gelangen)
+KAehispaq8_k: Aufbau oder die Kräftigung der Muskulatur
+KAwalkmin_k: Zu Fußgehzeit [Minuten/Woche]
+KAcyclemin_k: Radfahrzeit [Minuten/Woche]
+KAtbka_k: Transportbez. körp. Aktivität in MET(Energieverbrauch in MET = Metabolisches Äquivalent), (top coding ab 100h) kat. [Stunden/Woche]
+KAspodauC_k: Sport pro Woche insgesamt (in 30 min kategorisiert)
+KAaerob_k: Aerobe körp. Aktivität (mit Gehen und Fahrrad fahren) [Min]
+KAgfka: Einhalt. aerobe WHO-Bew.empf. (mit Gehen >= 150 Min. aerobe körp. Aktiv./Wo)
+KAaerob1_k: Gesundheitsfördernde (Freizeit-) körperliche Aktivität (ohne Gehen) kat.
+KAgfkaB: Einhalt. aerobe WHO-Bew.empf. (o. Gehen >= 150 Min. aerobe körp. Aktiv./Wo)
+KAgfmk: WHO-Empf. zur Muskelkräft. (>= 2x/Wo. Aktivit. zur Muskelkräftigung)
+KAgfa: >= 150 min Ausdaueraktiv.und 2 x/ Woche Aktiv. zur Muskelkräft.(Einhalt. beider WHO-Empf.)
+KAabka: Mäßig bis sehr anstrengende arbeitsbez. körp. Aktivität
+KAsabka: Sehr anstrengende arbeitsbezogene körperliche Aktivität
+KAgka_k: Gesamtaktivität (kategorisiert)
+KAgka: Ausreichend körp. aktiv während Arbeit oder Freizeit
+ENobstDtgl: Täglicher Obstverzehr
+ENobstD: Verzehr von Obst
+ENobstDz1: Verzehr von Obst: pro Tag
+ENgemDtgl: Täglicher Gemüseverzehr
+ENgemD: Verzehr von Gemüse
+ENgemDz1: Verzehr von Gemüse: pro Tag
+ENsaftBtgl: Täglicher Obst- und Gemüsesaftverzehr
+ENsaftB: Obst- und Gemüsesaftverzehr
+ENcolaB: Erfrischungsgetränkeverzehr
+ENcolaBtgl: Täglicher Erfrischungsgetränkeverzehr
+ENpor_k: Täglich verzehrte Obst- und/oder Gemüseportionen (kat.)
+ENobgemtgl: Täglicher Verzehr von Obst und Gemüse
+AKoft12: Alkohol i.d.l. 12 Mon.
+AKwerk1: Alkohol von Mo bis Do
+AKwerk2: Alkohol von Mo bis Do: Getränke pro Tag
+AKwe1: Alkohol von Fr bis So
+AKwe2: Alkohol von Fr bis So: Getränke pro Tag
+AKrausch: Rauschtrinken mind. 1 mal pro Monat
+AKbingeC: Binge-Drinking (>= 6 alk. Getr. bei einer Gelegenheit)
+AKoft12_k: Alkohol i.d.l. 12 Mon. in 6 Kat.
+AKoft12_k2: Alkohol i.d.l. 12 Mon. in 2 Kat.
+AKgramm: Alkoholmenge pro Tag [Gramm]
+AKechi47: Gefährlicher Alkoholkonsum (ECHI 47; > 20/40 g/Tag)
+AKbingeC_k4: Heavy episodic drinking, Rauschtrinken (>= 6 alk. Getr. bei einer Gelegenheit)
+AKbingeC_k: Binge-Drinking (>= 6 alk. Getr. bei einer Gelegenheit) in 4 Kat.
+AKbingeC_k2: Binge-Drinking (>= 6 alk. Getr. bei einer Gelegenheit) in 2 Kat.
+AKbingeC_k3: Mind. 1 Mal pro Monat Rauschtrinken
+AKrisiko_k: Riskanter Alkoholkonsum (>10/20 g/Tag) 2 Kat.
+AKrisiko: Riskanter Alkoholkonsum (>10/20 g/Tag) 3 Kat.
+AKrisiko2: Riskanter Alkoholkonsum (>10/20 g/Tag) 4 Kat.
+AKrisk: Kein riskanter Alkoholkonsum
+RCstatE: Rauchen
+RCstatE_k2: Rauchstatus in 3 Kat.
+RCstatE_k3: Aktuell Raucher
+RCaktuell: Kein aktuelles Rauchen
+RCtgl1: Tgl. Rauchen v. fabrikfertigen/selbstgedrehten Zigaretten
+RCzE_ttk: Tgl. Raucher: Tgl. Anzahl Zigaretten (kat.)
+RCzE_ttk2: Täglicher Zigarttenraucher (kat.)
+RCtgl2: Tgl. Rauchen für mind. ein Jahr
+RCtgl2_jjk: Dauer des täglichen Tabakkonsums (kat.)
+RCpass4B_k2: Rauchen in geschl. Räumen in 2 Kat. (nur NR)
+RCpass4B_k: Rauchen in geschlossenen Räumen in 2 Kat.
+RCpass4B: Rauchen in geschlossenen Räumen
+RCezig2: Rauchen v. elektr. Zigarette o. ähnlichen Produkten
+GVindexsum: Anzahl Verhaltensweisen mit erreichter Empfehlung (BMI, EN, KA, AK, RC)
+GVzahnsa: Zustand der Zähne und des Zahnfleischs (Selbstangabe)
+BLpflege2C: Unterstützung/Pflege anderer Personen
+BLpers: Unterstützung/Pflege anderer Personen: Personenkreis
+BLpflegedauB: Unterstützung/Pflege: Stunden pro Woche
+BLpflegepers: Bereitstellung Unterstützung/Pflege Personenkreis
+PAmarstalegal: Familienstand, kat.
+PApartners: Zusammenleben mit Partner/in
+PAhh_k: Anzahl Personen im Haushalt (kat.)
+PAhhtypeB: Haushaltstyp, kat.
+PAhhnbpersk_0_4: Anzahl Personen im Haushalt: 0 bis 4 Jahre (top coding 3 oder mehr)
+PAhhnbpersk_5_13: Anzahl Personen im Haushalt: 5 bis 13 Jahre (top coding 3 oder mehr)
+PAhhnbpersk_14_15: Anzahl Personen im Haushalt: 14 bis 15 Jahre (top coding 3 oder mehr)
+PAhhnbpersk_16_24: Anzahl Personen im Haushalt: 16 bis 24 Jahre (top coding 3 oder mehr)
+PAhhnbpersk_25_64: Anzahl Personen im Haushalt: 25 bis 64 Jahre (top coding 3 oder mehr)
+PAhhnbpersk_65PLUS: Anzahl Personen im Haushalt: 65 Jahre und älter (top coding 3 oder mehr)
+PAbmiB_k: BMI-Gruppierung (aus Selbstangabe Gewicht u. Größe), in 4 Kategorien
+PAbmiB_k2: BMI-Gruppierung (aus Selbstangabe Gewicht u. Größe), in 6 Kategorien
+PAadiposB: Adipositas nach WHO (BMI>=30; aus Selbstangabe Gewicht u. Größe)
+PAueberB: Übergewicht nach WHO (BMI>=25; aus Selbstangabe Gewicht u. Größe)
+PAnormalB: Normalgewicht (18,5 <= BMI < 25; aus Selbstangabe Gewicht u. Größe)
+SDhhincome: Monatl. HH-Nettoeinkommen in Quintilen
+SDbild1H: Höchster allg. bildener Schulabschluss
+SDbild4F: Höchster berufl. Ausbildungs- oder Hochschul/Fachhochschulabschluss
+SDhba3D: Bezeichung höchster Hochschulabschluss
+SDisced11zB: ISCED (2011) - Klassifikation, 2stellig
+SDisced11z: ISCED (2011) - Klassifikation, 1stellig
+SDisced11: ISCED (2011) - Bildungsgruppen
+SDcasminz: CASMIN - Klassifikation
+SDcasmin: CASMIN - Bildungsgruppen
+SDbestD_lz: Berufliche Stellung in letzter Haupterwerbstätigkeit
+SDfuehr: Letzte Tätigkeit überwiegend als Führungs- Aufsichtskraft
+SDetoed: Haupterwerbstätigkeit im öffentl. Dienst
+SDbestD_k: Berufliche Stellung in Haupterwerbstätigkeit (kat.)
+SDfuehr2: Tätigkeit überwiegend als Führungs- Aufsichtskraft
+SDhvtypD: Hauptverdiener im Haushalt
+SDbesthvC_k: Berufliche Stellung des Hauptverdieners (kat.)
+SDbesthv2: Hauptverdiener Tätigkeit überw. Führungs- und Aufsichtskraft
+SDjobstatB: Stellung im Beruf
+SDft_ptB: Voll- oder Teilzeit erwerbstätig
+SDmainstatB: Erwerbstätigkeit (EHIS)
+MIdeutsch: Deutsche Staatsangehörigkeit
+MIbirthplace: Geburtsland (EHIS)
+MIbirthplacemoth_k: Geburtsland Mutter (EHIS), gruppiert
+MIbirthplacefath_k: Geburtsland Vater (EHIS), gruppiert
+MIcitizen: Staatsangehörigkeit
+MImigrant: Migrantenstatus

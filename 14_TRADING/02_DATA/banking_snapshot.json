@@ -1,0 +1,80 @@
+{
+  "sparkasse_balance": 240.8700000000009,
+  "revolut_balance": -192.5699999999988,
+  "net_worth_history": [
+    {
+      "Date": "2025-06-01",
+      "T212_Value": 1000.0,
+      "Bank_Cash": 50.0,
+      "Total_Net_Worth": 1050.0
+    },
+    {
+      "Date": "2025-07-01",
+      "T212_Value": 1200.0,
+      "Bank_Cash": -100.0,
+      "Total_Net_Worth": 1100.0
+    },
+    {
+      "Date": "2025-08-01",
+      "T212_Value": 1500.0,
+      "Bank_Cash": 200.0,
+      "Total_Net_Worth": 1700.0
+    },
+    {
+      "Date": "2025-09-01",
+      "T212_Value": 1800.0,
+      "Bank_Cash": 150.0,
+      "Total_Net_Worth": 1950.0
+    },
+    {
+      "Date": "2025-10-01",
+      "T212_Value": 2500.0,
+      "Bank_Cash": 300.0,
+      "Total_Net_Worth": 2800.0
+    },
+    {
+      "Date": "2025-11-01",
+      "T212_Value": 3200.0,
+      "Bank_Cash": 1000.0,
+      "Total_Net_Worth": 4200.0
+    },
+    {
+      "Date": "2025-12-01",
+      "T212_Value": 4000.0,
+      "Bank_Cash": 500.0,
+      "Total_Net_Worth": 4500.0
+    },
+    {
+      "Date": "2026-01-01",
+      "T212_Value": 4200.0,
+      "Bank_Cash": 100.0,
+      "Total_Net_Worth": 4300.0
+    },
+    {
+      "Date": "2026-01-18",
+      "T212_Value": 4384.89,
+      "Bank_Cash": 48.29999999999791,
+      "Total_Net_Worth": 4433.189999999999
+    },
+    {
+      "Date": "2026-01-21",
+      "T212_Value": 4328.51,
+      "Bank_Cash": 48.29999999999791,
+      "Total_Net_Worth": 4376.809999999998
+    },
+    {
+      "Date": "2026-01-22",
+      "T212_Value": 4332.66,
+      "Bank_Cash": 48.29999999999791,
+      "Total_Net_Worth": 4380.959999999997
+    }
+  ],
+  "categories": {
+    "Sonstiges": 435.89,
+    "Wohnen": 350.88,
+    "Transport": 40.73,
+    "Lebensmittel": 33.8,
+    "Shopping": 13.16
+  },
+  "subs_total": -1510.58
+}

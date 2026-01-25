@@ -1,0 +1,16 @@
+{
+    "routines": [
+        {
+            "summary": "Morning Routine",
+            "start_time": "07:00",
+            "end_time": "08:00",
+            "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+        },
+        {
+            "summary": "Lunch",
+            "start_time": "12:00",
+            "end_time": "13:00",
+            "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+        }
+    ]
+}

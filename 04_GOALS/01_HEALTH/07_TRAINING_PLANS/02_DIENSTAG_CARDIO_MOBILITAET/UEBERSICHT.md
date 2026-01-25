@@ -1,0 +1,18 @@
+# Dienstag: Radfahren + Stretching (Mobilität)
+- **Radfahren:** 30 Minuten (Indoor oder Outdoor, moderate Intensität)
+- **Stretching & Mobilität (ca. 20 Minuten):** Fokus auf Ganzkörper-Mobilität und spezifische Dehnungen für Beine und Hüften.
+    - **Aufwärmen (Dynamisch):**
+        - Beinpendel (vorwärts/rückwärts und seitlich) - 2 Sätze à 10-12 Wiederholungen pro Bein
+        - Armkreisen (vorwärts/rückwärts) - 2 Sätze à 10-12 Wiederholungen
+    - **Hüftmobilität:**
+        - 90/90 Hüftdehnung - 30 Sekunden pro Seite
+        - Taube (Pigeon Pose) - 30 Sekunden pro Seite
+    - **Oberschenkelrückseite & Gesäßmobilität:**
+        - Stehende Oberschenkelrückseiten-Dehnung - 30 Sekunden pro Bein
+        - "Figure Four" Dehnung - 30 Sekunden pro Seite
+    - **Wadenmobilität:**
+        - Waden-Dehnung an der Wand - 30 Sekunden pro Bein
+    - **Wirbelsäulenmobilität:**
+        - Katze-Kuh - 10-12 Wiederholungen
+        - Thorax-Rotationen (sitzend oder kniend) - 10-12 Wiederholungen pro Seite
+- **Cool-down:** 5 Minuten sanftes statisches Dehnen

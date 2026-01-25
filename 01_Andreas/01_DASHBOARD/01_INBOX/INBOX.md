@@ -1,0 +1,1 @@
+- [2026-01-18 17:21] Testnotiz vom Gemini CLI - Alles funktioniert!

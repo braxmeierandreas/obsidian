@@ -1,0 +1,65 @@
+import spoonacular as sp
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), '..', '.env'))
+API_KEY = os.getenv('SPOONACULAR_API_KEY')
+
+def finde_mittagessen_advanced(zutaten):
+    if not API_KEY:
+        print("Fehler: SPOONACULAR_API_KEY nicht gefunden. Bitte in der .env-Datei im 00_SCRIPTS Ordner setzen.")
+        return
+
+    # Initialize the Spoonacular API client
+    api = sp.API(API_KEY)
+
+    try:
+        # Find recipes by ingredients
+        # This method directly returns a JSON response, not a client object
+        response = api.get_recipes_by_ingredients(ingredients=zutaten, number=3, ranking=1, ignorePantry=False)
+        recipes = response.json() # Parse the JSON response
+        
+        if not recipes:
+            print("Keine Rezepte mit diesen Zutaten gefunden.")
+            return
+
+        print("\n--- Rezeptvorschläge (mit Nährwerten) ---")
+        for recipe in recipes:
+            print(f"### 🍲 {recipe['title']}")
+            print(f"Fehlende Zutaten: {recipe['missedIngredientCount']}")
+            
+            # To get nutrition, we need to make another API call to get recipe information by ID
+            # Use api.get_recipe_information for this (which includes nutrition by default)
+            try:
+                # The documentation for spoonacular-3.0's get_recipe_information states it includes nutrition
+                # but let's check its behavior and structure
+                detailed_recipe_info_response = api.get_recipe_information(recipe['id'])
+                detailed_recipe_info = detailed_recipe_info_response.json()
+                
+                calories = "N/A"
+                if detailed_recipe_info and 'nutrition' in detailed_recipe_info and 'nutrients' in detailed_recipe_info['nutrition']:
+                    for nutrient in detailed_recipe_info['nutrition']['nutrients']:
+                        if nutrient['name'] == "Calories":
+                            calories = f"{nutrient['amount']} {nutrient['unit']}"
+                            break
+                print(f"Kalorien: {calories}")
+
+            except Exception as e:
+                print(f"Fehler beim Abrufen der Nährwertinformationen für Rezept {recipe['id']}: {e}")
+                print("Kalorien: N/A")
+            
+            # Constructing a more robust link, handling special characters in title for URL
+            safe_title = recipe['title'].replace(' ', '-').replace('/', '-').replace('&', 'and').replace(',', '').replace('(', '').replace(')', '')
+            print(f"Link: https://spoonacular.com/recipes/{safe_title}-{recipe['id']}\n")
+
+    except Exception as e:
+        print(f"Ein unerwarteter Fehler ist aufgetreten: {e}")
+        # API Error handling for spoonacular-3.0 might be different.
+        # It's a general exception for now.
+
+if __name__ == "__main__":
+    # Beispiel für deinen WG-Einkauf
+    finde_mittagessen_advanced("chicken,rice,broccoli")
+    print("\n--- Weiteres Beispiel ---")
+    finde_mittagessen_advanced("tomatoes,pasta,garlic")

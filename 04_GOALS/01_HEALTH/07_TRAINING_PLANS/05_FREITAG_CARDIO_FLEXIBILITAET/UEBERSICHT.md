@@ -1,0 +1,14 @@
+# Freitag: Radfahren + Stretching (Flexibilität)
+- **Radfahren:** 30 Minuten (moderate Intensität)
+- **Stretching & Flexibilität (ca. 20 Minuten):** Fokus auf Flexibilität des Oberkörpers und der Wirbelsäule.
+    - **Aufwärmen:** Leichtes Cardio oder dynamisches Dehnen - 5 Minuten
+    - **Oberkörper-Flexibilität:**
+        - Türrahmen-Brustdehnung - 30 Sekunden
+        - Überkopf-Trizepsdehnung - 30 Sekunden pro Arm
+        - Schulterdehnung über Kreuz - 30 Sekunden pro Arm
+        - Kindeshaltung (Arme ausgestreckt) - 60 Sekunden
+    - **Wirbelsäulen-Flexibilität:**
+        - Sitzende Wirbelsäulen-Drehung - 30 Sekunden pro Seite
+        - Katze-Kuh - 10-12 Wiederholungen
+        - "Nadel einfädeln"-Dehnung - 30 Sekunden pro Seite
+- **Cool-down:** 5 Minuten sanftes statisches Dehnen

@@ -1,0 +1,14 @@
+# Sonntag: Aktive Erholung / Optionales Kardio + Langes Stretching
+- **Option 1 (Aktive Erholung):** 30-45 Minuten leichter Spaziergang oder gemütliches Radfahren.
+- **Option 2 (Optionales Kardio):** Wenn du dich fit fühlst, kannst du eine weitere Jogging- oder Radfahreinheit von 30 Minuten einlegen.
+- **Langes Stretching (ca. 30-40 Minuten):** Eine ausgedehnte Stretching-Einheit für den gesamten Körper mit Fokus auf statische Dehnungen zur Förderung der Regeneration und Verbesserung der Flexibilität.
+    - **Aufwärmen:** Sanfte Bewegungen, Gelenkrotationen - 5 Minuten
+    - **Ganzkörper-Statische Dehnungen (Haltezeit 30-60 Sekunden pro Seite/Dehnung):**
+        - **Nacken & Schultern:** Nackenneigung, Schulterkreisen, Brustdehnung (z.B. an der Wand)
+        - **Rücken:** Katze-Kuh (dynamisch), Kindeshaltung, sitzende Vorbeuge, Wirbelsäulen-Drehung
+        - **Hüften & Gesäß:** "Figure Four" Dehnung, Taube (Pigeon Pose), Schmetterlingsdehnung
+        - **Oberschenkelrückseite:** Stehende oder sitzende Hamstring-Dehnung, Pike-Stretch
+        - **Oberschenkelvorderseite:** Kniende Quadrizeps-Dehnung, Reclined Hero Pose (falls angenehm)
+        - **Waden:** Waden-Dehnung an der Wand, Herabschauender Hund
+        - **Arme & Handgelenke:** Handgelenkskreisen, Arm-über-Kreuz-Dehnung, Trizepsdehnung
+    - **Tiefenatmung & Entspannung:** Die letzten 5 Minuten mit langsamer, tiefer Atmung zur Unterstützung der Entspannung.

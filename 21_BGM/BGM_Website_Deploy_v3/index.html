@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BGM Podcast | Betriebliches Gesundheitsmanagement</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-animation"></div>
+
+    <header>
+        <div class="container">
+            <h1 class="glitch" data-text="BGM PODCAST">BGM PODCAST</h1>
+            <p class="subtitle">Ein Projekt im Modul "Angewandte Gesundheitsförderung"</p>
+            <p class="author-date">Von Andreas Braxmeier | Januar 2026</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="player-card">
+            <div class="visualizer">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <div class="track-info">
+                <h2>Betriebliches Gesundheitsmanagement</h2>
+                <p>Semesterprojekt MP3</p>
+            </div>
+
+            <div class="controls">
+                <button id="play-pause-btn" class="play-btn" aria-label="Play">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                        <path id="play-icon" d="M8 5v14l11-7z" />
+                        <path id="pause-icon" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" style="display:none;" />
+                    </svg>
+                </button>
+
+                <div class="progress-container">
+                    <span id="current-time">0:00</span>
+                    <input type="range" id="seek-slider" max="100" value="0">
+                    <span id="duration">0:00</span>
+                </div>
+
+                <div class="volume-container">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path
+                            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" />
+                    </svg>
+                    <input type="range" id="volume-slider" max="100" value="100">
+                </div>
+            </div>
+            <audio id="audio-player" src="assets/BGM_Podcast_Audio.mp3"></audio>
+        </section>
+
+        <section class="info-content">
+            <div class="info-card full-width">
+                <h3>Das BGM Konzept</h3>
+                <img src="assets/bgm-schematic.png" alt="BGM Zyklus Schematic" class="schematic-img">
+                <p>Der Podcast orientiert sich am PDCA-Zyklus (Plan-Do-Check-Act) und wendet diesen auf den E-Sport an.
+                </p>
+            </div>
+
+            <div class="info-card full-width">
+                <h3>Über das Projekt</h3>
+                <p>Dieser Podcast entstand im Rahmen des 1. Semesters "Angewandte Gesundheitsförderung". Er beleuchtet
+                    die Aspekte des Betrieblichen Gesundheitsmanagements (BGM) am Beispiel des E-Sports und zieht
+                    Parallelen zur klassischen Arbeitswelt.</p>
+            </div>
+
+            <section class="script-section">
+                <h3>Podcast Skript</h3>
+
+                <details>
+                    <summary>Teil 1: PLAN (Analyse & Diagnose)</summary>
+                    <p>
+                        <strong>Sprecher (Andreas):</strong> Willkommen zu "Gesundheit im digitalen Wettkampf". Wir
+                        betrachten E-Sport heute als knallharten Business Case.<br><br>
+                        <strong>Die Diagnose (Cyber-Athletics):</strong><br>
+                        1. <em>Physisch:</em> 70% leiden unter Nackenbeschwerden. RSI-Syndrom gefährdet Karrieren.<br>
+                        2. <em>Psychisch:</em> Kaum Melatonin durch Blaulicht, HRV im Keller, Cortisol-Spikes. Der
+                        "Reboot" fehlt.<br>
+                        3. <em>Ernährung:</em> Abhängigkeit von Energy Drinks führt zu Insulin-Spikes und kognitiven
+                        Abstürzen.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Teil 2: DO (Intervention & Bio-Hacking)</summary>
+                    <p>
+                        <strong>Sprecher (Andreas):</strong> Wir setzen auf Verhältnis- und
+                        Verhaltensprävention.<br><br>
+                        <strong>Verhältnisprävention (Hardware-Umgebung):</strong><br>
+                        - <em>Micro-Resets:</em> Software sperrt Bildschirm alle 45 Min für Zwangs-Stretching.<br>
+                        - <em>Lichtarchitektur:</em> Biodynamisches Licht reduziert Blaulicht ab 20 Uhr.<br>
+                        - <em>Analog-Room:</em> WLAN-freie Zone für echte Erholung.<br><br>
+                        <strong>Verhaltensprävention (E-Sport-Führerschein):</strong><br>
+                        - <em>Ernährung:</em> Continuous Glucose Monitoring (CGM) für stabile Konzentration.<br>
+                        - <em>Stress:</em> Box-Breathing (4-4-4-4) gegen "Tilt".<br>
+                        - <em>Leadership:</em> Regeneration wird zur Arbeitszeit erklärt.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Teil 3: CHECK (Evaluation & KPIs)</summary>
+                    <p>
+                        <strong>Sprecher (Andreas):</strong> Nach sechs Monaten:<br><br>
+                        <strong>Harte KPIs:</strong><br>
+                        - HRV um 15% gestiegen.<br>
+                        - Reaktionszeit-Stabilität bleibt auch abends hoch.<br><br>
+                        <strong>Weiche KPIs:</strong><br>
+                        - Audio-Toxizität im Voice-Chat um 30% gesunken.<br><br>
+                        <strong>Fail:</strong> Der Analog-Room scheiterte am "Dopamin-Entzug" und FOMO.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Teil 4: ACT (Transfer & Abschluss)</summary>
+                    <p>
+                        <strong>Sprecher (Andreas):</strong> Wir justieren nach. Gesundheit wird vertragliche
+                        Performance-Metrik.<br><br>
+                        <strong>Transfer auf die Arbeitswelt:</strong><br>
+                        Wir alle werden zu "Büro-Athleten".<br>
+                        1. Regeneration ist Leistungsvoraussetzung.<br>
+                        2. Daten lügen nicht (objektives Messen).<br>
+                        3. Führung muss gesund machen.<br><br>
+                        Cyber-Athletics zeigt: Digitales BGM ist möglich. Bleiben Sie gesund.
+                    </p>
+                </details>
+            </section>
+
+            <div class="info-card">
+                <h3>Show Notes</h3>
+                <ul>
+                    <li><strong>Diagnostik:</strong> Einsatz von biometrischem Monitoring (Wearables) zur Messung von
+                        HRV und Schlafqualität.</li>
+                    <li><strong>Intervention:</strong> Healthy Leadership und Führungskultur sowie Maßnahmen wie
+                        kontinuierliches Glukose-Monitoring und Breathwork.</li>
+                    <li><strong>Evaluation:</strong> Messung des „Return on Prevention Investment“ (ROPI) durch
+                        Performance-KPIs.</li>
+                </ul>
+            </div>
+
+            <div class="info-card full-width">
+                <h3>Quellen & Literatur</h3>
+                <ul class="sources-list">
+                    <li><a href="https://esportwissen.de" target="_blank">Froböse, I. et al.: eSport Studie (2019 -
+                            2023)</a> - DSHS Köln</li>
+                    <li><a href="https://www.barmer.de/gesundheit-verstehen/sport/e-sport" target="_blank">Barmer
+                            Krankenkasse: E-Sport und Gesundheit</a></li>
+                    <li><a href="https://doi.org/10.1136/bmjsem-2018-000467" target="_blank">DiFrancisco-Donoghue et al.
+                            (2019): Managing the health of the eSport athlete</a></li>
+                    <li><a href="https://doi.org/10.1186/s12891-022-05614-0" target="_blank">Tholl et al. (2022):
+                            Musculoskeletal disorders in video gamers</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Semesterprojekt BGM | Andreas Braxmeier</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

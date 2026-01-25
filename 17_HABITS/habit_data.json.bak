@@ -1,0 +1,31 @@
+{
+    "history": {
+        "2026-01-21": {
+            "bible": true,
+            "spanish": true,
+            "calories": true,
+            "sleep": true,
+            "training": true,
+            "corn": true,
+            "social": true
+        }
+    },
+    "streaks": {
+        "bible": 1,
+        "spanish": 1,
+        "calories": 1,
+        "sleep": 1,
+        "training": 1,
+        "corn": 1,
+        "social": 1
+    },
+    "best_streaks": {
+        "corn": 1,
+        "social": 1,
+        "bible": 1,
+        "spanish": 1,
+        "calories": 1,
+        "sleep": 1,
+        "training": 1
+    }
+}

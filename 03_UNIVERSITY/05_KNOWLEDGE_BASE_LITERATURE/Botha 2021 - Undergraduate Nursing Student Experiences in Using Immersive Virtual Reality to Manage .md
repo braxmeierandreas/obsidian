@@ -1,0 +1,32 @@
+
+--- 
+type: literature
+itemType: journalArticle
+author: [Botha, de Wet, Botma]
+year: 2021
+publication: "Clinical Simulation in Nursing" 
+zotero_link: https://www.zotero.org/braxmeierandreas/items/3ARHAFVU
+date_added: 2025-09-18T15:56:39Z
+tags: [literature, journalarticle]
+---
+
+# Undergraduate Nursing Student Experiences in Using Immersive Virtual Reality to Manage a Patient With a Foreign Object in the Right Lung.
+
+> [!abstract] Abstract
+> Within the ever-expanding world of virtual reality for education, numerous strides have been made towards providing students with quality teaching and learning opportunities. One such application area that has not been exhaustively investigated is within nursing education. To help the research community to understand nursing students' perceptions towards the use of virtual reality as a possible alternative to high-fidelity simulation and to determine whether students would enjoy virtual clinical simulation, undergraduate nursing students for a South African higher education institution were asked to partake in a virtual clinical simulation where they could manage a patient with a foreign object in the airway. The virtual environment (VE) already existed and was previously tested for the purpose of training third and fourth year undergraduate nurses during previous research endeavours. For the project discussed in this article, the participants consisted of third year undergraduate nur
+
+## ⌕ Metadaten
+- **Vollstndige Autoren:** Botha, de Wet, Botma
+- **Erschienen in:** Clinical Simulation in Nursing
+- **Jahr:** 2021
+- **Typ:** journalArticle
+- **Zotero Link:** [In Zotero ffnen](https://www.zotero.org/braxmeierandreas/items/3ARHAFVU)
+
+## ✅ Notizen & Gedanken
+- 
+
+## ⌕ Tags
+#Education #Foreign_Bodies #Human #Learning_Methods #Lung #Nonexperimental_Studies #Nurse_Attitudes #Nursing #Questionnaires #Simulations #Student_Experiences #Student_Knowledge #Students #Undergraduate #Virtual_Reality_Exposure_Therapy_Utilization #literature #journalarticle
+
+---
+*Importiert am 2021 via Gemini-Zotero-Sync.*

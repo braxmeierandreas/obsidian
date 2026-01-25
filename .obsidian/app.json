@@ -1,0 +1,7 @@
+{
+  "promptDelete": true,
+  "alwaysUpdateLinks": true,
+  "trashOption": "local",
+  "newLinkFormat": "shortest",
+  "showUnsupportedFiles": true
+}
