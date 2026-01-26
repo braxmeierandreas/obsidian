@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "test123.md",
+                "file": "hallo finaler test.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "test123"
+              "title": "hallo finaler test"
             }
           }
         ],
@@ -215,6 +215,7 @@
   "active": "a4285a920f3ca8d6",
   "lastOpenFiles": [
     "test123.md",
+    "hallo finaler test.md",
     "07_CAR/WARTUNGSPLAN.md",
     "07_CAR/UEBERSICHT_AUTO.md",
     "07_CAR/FORD_FOCUS_SPEZIFIKATIONEN.md",
@@ -242,7 +243,6 @@
     "05_BUSINESS/11_11_ANHANG/01_CHECKLISTE_BUSINESSPLAN.md",
     "05_BUSINESS/10_10_IMPLEMENTIERUNGSPLAN/UEBERSICHT_10_IMPLEMENTIERUNGSPLAN.md",
     "05_BUSINESS/10_10_IMPLEMENTIERUNGSPLAN/IMPLEMENTIERUNGSPLAN_MEILENSTEINE_UND_ROADMAP.md",
-    "05_BUSINESS/09_09_RISIKOANALYSE/UEBERSICHT_09_RISIKOANALYSE.md",
     "05_BUSINESS/11_11_ANHANG",
     "05_BUSINESS/10_10_IMPLEMENTIERUNGSPLAN",
     "05_BUSINESS/09_09_RISIKOANALYSE",
