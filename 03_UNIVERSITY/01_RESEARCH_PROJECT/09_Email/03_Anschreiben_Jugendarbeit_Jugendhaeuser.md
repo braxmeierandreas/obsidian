@@ -20,11 +20,11 @@ Gerne könnt ihr das Gespräch auch an eine Kollegin oder einen Kollegen aus eur
 
 Ziel unseres Projekts ist es, praxisnahe und umsetzbare Handlungsempfehlungen für das Gesundheitsamt zu entwickeln. Dabei geht es nicht um personelle oder finanzielle Engpässe, sondern vor allem um Ideen, Ansätze und Möglichkeiten, wie Angebote, Projekte oder Vernetzung auf Landkreisebene weiterentwickelt werden können. So kann das Gesundheitsamt besser verstehen, was für euch und eure Arbeit wichtig ist, welche Unterstützung hilfreich wäre und wie Angebote für Kinder und Jugendliche weiter verbessert werden können.
 
-Wir laden euch herzlich zu einem ca. 30-minütigen Interview ein. Da wir als studentisches Projekt mit begrenzten zeitlichen und finanziellen Ressourcen arbeiten und keine Fahrtkostenbudgetierung für die Vielzahl der Gespräche vorliegt, führen wir die Interviews **ausschließlich online (per Videokonferenz) oder telefonisch** durch.
+Wir laden euch herzlich zu einem ca. 30-minütigen Interview ein. Da wir als studentisches Projekt eine Vielzahl an Gesprächen im gesamten Landkreis führen und unsere zeitlichen sowie finanziellen Ressourcen (z.B. Fahrtkostenbudgetierung) begrenzt sind, ist es in unserem besonderen Interesse, so viele Interviews wie möglich **online (per Videokonferenz) oder telefonisch** durchzuführen.
 
-**Keine Sorge wegen der Technik:** Wir stellen euch einen geschützten virtuellen Besprechungsraum zur Verfügung und kümmern uns um die gesamte Organisation. Ihr erhaltet von uns vorab einen Link, den ihr einfach nur anklicken müsst. Wir erklären euch den Zugang gerne ganz in Ruhe und unterstützen euch bei Bedarf – es ist wirklich ganz unkompliziert und erfordert keine Installation.
+**Keine Sorge wegen der Technik:** Wir stellen euch einen geschützten virtuellen Besprechungsraum zur Verfügung und kümmern uns um alles. Ihr erhaltet von uns vorab einen Link, den ihr einfach nur anklicken müsst. Wir erklären euch den Zugang gerne ganz in Ruhe und unterstützen euch bei Bedarf – es ist unkompliziert und erfordert keine Installation.
 
-Hättet ihr in den kommenden Wochen Zeit für einen digitalen Austausch? Gerne könnt ihr uns einfach passende Termine zusenden.
+Sollte euch ein digitaler Austausch nicht möglich sein, finden wir selbstverständlich eine andere Lösung. Gerne könnt ihr uns einfach passende Termine zusenden.
 
 Es wird kein richtig oder falsch geben. Wir möchten eure Erfahrungen, Eindrücke und Ideen hören. Das Gespräch wird aufgezeichnet, die Daten werden anonymisiert und ausschließlich für die wissenschaftliche Auswertung verwendet.
 

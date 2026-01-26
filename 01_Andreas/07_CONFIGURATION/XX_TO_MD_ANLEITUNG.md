@@ -107,3 +107,9 @@ for f in pathlib.Path('.').rglob('*.pptx'):
         print(f'Error converting {f}: {e}')
 "
 ```
+
+
+
+foreach ($file in Get-ChildItem -Filter *.md) {
+    pandoc $file.FullName -o ($file.BaseName + ".docx")
+}

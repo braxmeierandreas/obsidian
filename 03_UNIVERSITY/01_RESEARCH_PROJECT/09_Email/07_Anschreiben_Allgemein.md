@@ -7,7 +7,7 @@
 **Anrede:**
 Sehr geehrte(r) Frau/Herr [Name] / Sehr geehrte Damen und Herren,
 
-wir sind ein Team aus fünf Studierenden des Masterstudiengangs Angewandte Gesundheitsförnerung an der Hochschule Furtwangen (Andreas Braxmeier, Nadine Beha, Sophie Scheffler, Ragavi Anusujantha und Nina Ludwig). Im Rahmen unseres Studiums beschäftigen wir uns intensiv mit kommunaler Gesundheitsförderung. Zurzeit führen wir gemeinsam mit dem Gesundheitsamt Schwarzwald-Baar, Abteilung Gesundheitsförderung und Prävention, ein Forschungsprojekt zur psychischen Gesundheit von Kindern und Jugendlichen im Landkreis durch.
+wir sind ein Team aus fünf Studierenden des Masterstudiengangs Angewandte Gesundheitsförderung an der Hochschule Furtwangen (Andreas Braxmeier, Nadine Beha, Sophie Scheffler, Ragavi Anusujantha und Nina Ludwig). Im Rahmen unseres Studiums beschäftigen wir uns intensiv mit kommunaler Gesundheitsförderung. Zurzeit führen wir gemeinsam mit dem Gesundheitsamt Schwarzwald-Baar, Abteilung Gesundheitsförderung und Prävention, ein Forschungsprojekt zur psychischen Gesundheit von Kindern und Jugendlichen im Landkreis durch.
 
 Wir möchten herausfinden, wie die psychische Gesundheit von Kindern und Jugendlichen im Landkreis noch besser unterstützt werden kann.
 
@@ -19,11 +19,11 @@ Dabei ist es selbstverständlich auch möglich, dass das Gespräch, falls für S
 
 Ziel unseres Projekts ist es, praxisnahe und umsetzbare Handlungsempfehlungen für das Gesundheitsamt zu entwickeln. Dabei geht es nicht um personelle oder finanzielle Engpässe, sondern vor allem um Ideen, Ansätze und Möglichkeiten, wie Angebote, Projekte oder Vernetzung auf Landkreisebene weiterentwickelt werden können. So kann das Gesundheitsamt besser verstehen, was für Sie und Ihre Arbeit wichtig ist, welche Unterstützung hilfreich wäre und wie Angebote für Kinder und Jugendliche weiter verbessert werden können.
 
-Wir laden Sie herzlich zu einem ca. 30-minütigen Interview ein. Da wir als studentisches Projekt mit begrenzten zeitlichen und finanziellen Ressourcen arbeiten und keine Fahrtkostenbudgetierung für die Vielzahl der Gespräche vorliegt, führen wir die Interviews **ausschließlich online (per Videokonferenz) oder telefonisch** durch.
+Wir laden Sie herzlich zu einem ca. 30-minütigen Interview ein. Da wir als studentisches Projekt eine Vielzahl an Gesprächen im gesamten Landkreis führen und unsere zeitlichen sowie finanziellen Ressourcen (z.B. Fahrtkostenbudgetierung) begrenzt sind, ist es in unserem besonderen Interesse, so viele Interviews wie möglich **online (per Videokonferenz) oder telefonisch** durchzuführen.
 
-**Keine Sorge wegen der Technik:** Wir stellen Ihnen einen geschützten virtuellen Besprechungsraum zur Verfügung und kümmern uns um die gesamte Organisation. Sie erhalten von uns vorab einen Link, den Sie einfach nur anklicken müssen. Wir erklären Ihnen den Zugang gerne ganz in Ruhe und unterstützen Sie bei Bedarf – es ist wirklich ganz unkompliziert und erfordert keine Installation.
+**Keine Sorge wegen der Technik:** Wir stellen Ihnen einen geschützten virtuellen Besprechungsraum zur Verfügung und kümmern uns um alles. Sie erhalten von uns vorab einen Link, den Sie einfach nur anklicken müssen. Wir erklären Ihnen den Zugang gerne ganz in Ruhe und unterstützen Sie bei Bedarf – es ist unkompliziert und erfordert keine Installation.
 
-Hätten Sie in den kommenden Wochen Zeit für einen digitalen Austausch? Gerne können Sie uns einfach passende Termine zusenden.
+Sollte Ihnen ein digitaler Austausch nicht möglich sein, finden wir selbstverständlich eine andere Lösung. Gerne können Sie uns einfach passende Termine zusenden.
 
 Es wird kein richtig oder falsch geben. Wir möchten Ihre Erfahrungen, Eindrücke und Ideen hören. Das Gespräch wird aufgezeichnet, die Daten werden anonymisiert und ausschließlich für die wissenschaftliche Auswertung verwendet.
 
