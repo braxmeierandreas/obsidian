@@ -19,8 +19,8 @@
                   "iconI18nKey": "asset:generic.documentations.readme-icon"
                 }
               },
-              "icon": "file-question",
-              "title": "Readme"
+              "icon": "lucide-ghost",
+              "title": "terminal:documentation"
             }
           },
           {
@@ -57,15 +57,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_UNIVERSITY/01_RESEARCH_PROJECT/PROJEKTBESCHREIBUNG.md",
+                "file": "01_Andreas/07_CONFIGURATION/XX_TO_MD_ANLEITUNG.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PROJEKTBESCHREIBUNG"
+              "title": "XX_TO_MD_ANLEITUNG"
+            }
+          },
+          {
+            "id": "0d73f2b5348bb4ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02_JOURNAL/01_2026/01_JANUARY/27_012026.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "27_012026"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -88,7 +103,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Dateiexplorer"
+              "title": "Files"
             }
           },
           {
@@ -212,8 +227,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           }
         ]
@@ -225,58 +240,58 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Schnellauswahl öffnen": false,
-      "graph:Graph-Ansicht öffnen": false,
-      "canvas:Neuen Canvas erstellen": false,
-      "daily-notes:Heutige Notiz öffnen": false,
-      "templates:Vorlage einfügen": false,
-      "command-palette:Befehlspalette öffnen": false,
-      "bases:Neue Base erstellen": false,
-      "obsidian-git:Open Git source control": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-shellcommands:Shell commands: Custom variables": false,
-      "terminal:Open terminal": false
+      "terminal:Open terminal": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b57fe770d20e8763",
+  "active": "0d73f2b5348bb4ad",
   "lastOpenFiles": [
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORIISIERT/04_KLEINE_REICHWEITE_GELEGENTLICH.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORIISIERT/03_KLEINE_REICHWEITE_REGELMAESSIG.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORIISIERT/02_GROSSE_REICHWEITE_GELEGENTLICH.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORIISIERT/01_GROSSE_REICHWEITE_REGELMAESSIG.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORIISIERT",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/parse_actors.py",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/~$uanschreiben_Akteure.docx",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORISIERT/04_KLEINE_REICHWEITE_GELEGENTLICH.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORISIERT/03_KLEINE_REICHWEITE_REGELMAESSIG.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORISIERT/04_KLEINE_REICHWEITE_GELEGENTLICH.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORISIERT/02_GROSSE_REICHWEITE_GELEGENTLICH.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORISIERT/01_GROSSE_REICHWEITE_REGELMAESSIG.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORISIERT",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/neu",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/Neuer Ordner",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/09_Email/05_Anschreiben_Beratung_Praevention_Soziales.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/PROJEKTBESCHREIBUNG.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/~$uanschreiben_Akteure.docx",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORIISIERT/03_KLEINE_REICHWEITE_REGELMAESSIG.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORIISIERT/04_KLEINE_REICHWEITE_GELEGENTLICH.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORIISIERT/02_GROSSE_REICHWEITE_GELEGENTLICH.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORIISIERT/01_GROSSE_REICHWEITE_REGELMAESSIG.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORIISIERT",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/PROJEKTBESCHREIBUNG.pandoc.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/PROJEKT_EMAIL_VORSCHLAEGE.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/PROJEKTBESCHREIBUNG.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Neuanschreiben_Akteure.docx",
-    "01_Andreas/07_CONFIGURATION/XX_TO_MD_ANLEITUNG.md",
-    "tralalalalla.md",
-    "23_MARKET_RESEARCH/01_MEDITATION/STRATEGY_IDEAS.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/10_QUALITATIVE_ANALYSE/03_CODESYSTEM/00_MASTER_CODEBUCH.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/10_QUALITATIVE_ANALYSE/05_METHODIK_LEITFADEN/INTERVIEWLEITFADEN_PSYGESUNDHEIT.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/10_QUALITATIVE_ANALYSE/05_METHODIK_LEITFADEN/ZWEITER_INTERVIEWLEITFADEN_PSYGESUNDHEIT.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/10_QUALITATIVE_ANALYSE/05_METHODIK_LEITFADEN/KOMMENTARE_ZWEITER_INTERVIEWLEITFADEN_PSYGESUNDHEIT.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/10_QUALITATIVE_ANALYSE/02_TRANSKRIPTE/00_TEMPLATE_TRANSKRIPT.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/10_QUALITATIVE_ANALYSE/03_CODESYSTEM",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/10_QUALITATIVE_ANALYSE/05_METHODIK_LEITFADEN",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/10_QUALITATIVE_ANALYSE/02_TRANSKRIPTE",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/10_QUALITATIVE_ANALYSE",
+    "02_JOURNAL/01_2026/01_JANUARY/26_012026.md",
     "23_MARKET_RESEARCH/01_MEDITATION/MARKET_ANALYSIS.md",
     "23_MARKET_RESEARCH/01_MEDITATION/MARKETING_FRAMEWORK.md",
+    "23_MARKET_RESEARCH/01_MEDITATION/STRATEGY_IDEAS.md",
+    "tralalalalla.md",
+    "23_MARKET_RESEARCH/MEDITATION_MARKET_ANALYSIS.md",
     "23_MARKET_RESEARCH/01_MEDITATION",
     "23_MARKET_RESEARCH",
+    "desktop.ini",
+    "01_Andreas/07_CONFIGURATION/XX_TO_MD_ANLEITUNG.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/09_Email/01_Anschreiben_Schulen_Schulsozialarbeit.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/09_Email/07_Anschreiben_Allgemein.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/09_Email/06_Anschreiben_Kirchen_Religioese_Gruppen.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/09_Email/04_Anschreiben_Kultur_Musik_Vereine.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/09_Email/03_Anschreiben_Jugendarbeit_Jugendhaeuser.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/09_Email/02_Anschreiben_Sportvereine.md",
-    "lalalala.md",
-    "test123.md",
-    "07_CAR/WARTUNGSPLAN.md",
     "03_UNIVERSITY/03_AGF2/02_BGM/FINAL_ABGABE/Folder.jpg",
     "03_UNIVERSITY/03_AGF2/02_BGM/FINAL_ABGABE/AlbumArtSmall.jpg",
     "Obsidian/22_GEDA/GEDA_Analysis_Results/05_Cost_Income.png",
