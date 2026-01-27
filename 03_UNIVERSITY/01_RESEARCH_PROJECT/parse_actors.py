@@ -3,38 +3,31 @@ import os
 
 def clean_text(text):
     if not text: return ""
-    # Remove markdown marks like [text]{.mark}
     text = re.sub(r'\[(.*?)\]\{.*?\}', r'\1', text)
     return text.strip()
 
 def parse_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
-
-    # Split by category headers
+    
     parts = re.split(r'Kategorie (\d+):', content)
     
     all_actors = []
-    
-    # parts[0] is intro
-    # then parts[1] is '1', parts[2] is content of cat 1
-    # parts[3] is '2', parts[4] is content of cat 2, etc.
     
     for i in range(1, len(parts), 2):
         orig_cat = int(parts[i])
         text = parts[i+1]
         
-        # Extract rows from tables
-        # Looking for lines with | or lines in the pandoc table format
         lines = text.split('\n')
         current_entry = None
         
         for line in lines:
-            if "Vorgeschlagener Akteur" in line or "-------" in line or line.strip() == "":
+            line = line.strip()
+            if not line: continue
+            if "Vorgeschlagener Akteur" in line or "-------" in line:
                 continue
             
-            # Detect table columns (wide spacing)
-            cols = re.split(r'\s{2,}', line.strip())
+            cols = re.split(r'\s{2,}', line)
             
             if len(cols) >= 2:
                 if current_entry:
@@ -50,8 +43,10 @@ def parse_file(file_path):
                     "Stadt": city,
                     "Orig_Cat": orig_cat
                 }
-            elif len(cols) == 1 and line.strip() and current_entry:
-                current_entry["Akteur"] += " " + clean_text(cols[0])
+            elif len(cols) == 1 and current_entry:
+                val = clean_text(cols[0])
+                if val:
+                    current_entry["Akteur"] += " " + val
         
         if current_entry:
             all_actors.append(current_entry)
@@ -62,41 +57,27 @@ def categorize_actor(actor):
     name = actor["Akteur"].lower()
     type_ = actor["Angebotstyp"].lower()
     
-    # Logic for Category 1: Large reach, Regular contact
-    cat1_keywords = ["schule", "gymnasium", "realschule", "grundschule", "gemeinschaftsschule", "sbbz", "kindergarten", "kita", "jugendhaus", "zentrum", "wirkstatt"]
+    cat1_keywords = ["schule", "gymnasium", "realschule", "grundschule", "gemeinschaftsschule", "sbbz", "kindergarten", "kita", "jugendhaus", "zentrum", "wirkstatt", "krippe"]
     if any(kw in name for kw in cat1_keywords):
         return 1
     
-    # Specific ones from the list that are regular and large
     if "jugendtanzgruppen" in name or "royal ranger" in name or "pfadfinder" in name:
         return 1
         
-    # Logic for Category 2: Large reach, Occasional contact
-    cat2_keywords = ["freibad", "bad", "museum", "ferienprogramm", "polizei", "stiftung", "nachsorge", "bibliothek", "pass", "referat", "beratungsstelle", "aok", "bund", "naturfreunde"]
+    cat2_keywords = ["freibad", "bad", "museum", "ferienprogramm", "polizei", "stiftung", "nachsorge", "bibliothek", "pass", "referat", "beratungsstelle", "aok", "bund", "naturfreunde", "caritas", "drk", "rotes kreuz", "feuerwehr"]
     if any(kw in name for kw in cat2_keywords):
         return 2
     
-    # Logic for Category 3: Small reach, Regular contact
-    # Mostly clubs/vereine
-    cat3_keywords = ["verein", "club", "gruppe", "sport", "musik", "jungschar", "feuerwehr", "rotkreuz", "tennis", "tischtennis", "badminton"]
+    cat3_keywords = ["verein", "club", "gruppe", "sport", "musik", "jungschar", "turnen", "tischtennis", "badminton", "kirche", "gemeinde", "pfarrei"]
     if any(kw in name for kw in cat3_keywords) or any(kw in type_ for kw in ["sport", "musik", "religion"]):
-         # Check if it was already in Cat 3 in source
-         if actor["Orig_Cat"] == 3:
-             return 3
-         # Default for regular clubs
          return 3
-         
-    # Category 4: Small reach, Occasional contact
-    if actor["Orig_Cat"] == 4:
-        return 4
-        
-    # Fallback to original category if provided, otherwise 4
-    return actor["Orig_Cat"] if actor["Orig_Cat"] != 0 else 4
+    
+    return 4
 
 def generate_md_files(actors, output_dir):
     os.makedirs(output_dir, exist_ok=True)
-    
     cat_data = {1: [], 2: [], 3: [], 4: []}
+    
     for a in actors:
         new_cat = categorize_actor(a)
         cat_data[new_cat].append(a)
@@ -122,8 +103,9 @@ def generate_md_files(actors, output_dir):
         with open(full_path, 'w', encoding='utf-8') as f:
             f.write(f"# {cat_names[cat_id]}\n\n")
             f.write("| Kategorie | Akteur | Angebotstyp | Stadt/Gemeinde | URL | Telefonnummer | Email | Ansprechpartner |\n")
-            f.write("|---|---|---|---|---|---|---|---|
-")
+            # Dynamic separator
+            sep = "| " + " | ".join(["---"] * 8) + " |\n"
+            f.write(sep)
             
             for item in items:
                 row = [
@@ -134,9 +116,9 @@ def generate_md_files(actors, output_dir):
                     "", "", "", ""
                 ]
                 f.write("| " + " | ".join(row) + " |\n")
-        print(f"Generated {full_path}")
+        print(f"Generated {full_path} with {len(items)} items")
 
 input_file = "neue akteure/Neuanschreiben_Akteure.md"
-output_dir = "neue akteure/01_KATEGORIERT"
+output_dir = "neue akteure/01_KATEGORIISIERT"
 actors = parse_file(input_file)
 generate_md_files(actors, output_dir)

@@ -2,4 +2,3 @@
 
 | Kategorie | Akteur | Angebotstyp | Stadt/Gemeinde | URL | Telefonnummer | Email | Ansprechpartner |
 |---|---|---|---|---|---|---|---|
-|  |  |  |  |  |  |  |  |
