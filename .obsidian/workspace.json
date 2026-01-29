@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "24_CLIPPING/PortalGesellschaft – Wikipedia.md",
+                "file": "03_UNIVERSITY/01_RESEARCH_PROJECT/PROJEKTBESCHREIBUNG.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PortalGesellschaft – Wikipedia"
+              "title": "PROJEKTBESCHREIBUNG"
             }
           },
           {
@@ -55,15 +55,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_UNIVERSITY/01_RESEARCH_PROJECT/PROJEKTBESCHREIBUNG.md",
+                "file": "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/interview 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PROJEKTBESCHREIBUNG"
+              "title": "interview 1"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -237,10 +238,22 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "f8d8a07a782704c4",
+  "active": "e93cd8d5c68bf487",
   "lastOpenFiles": [
-    "24_CLIPPING/Wikipedia – Die freie Enzyklopädie 1.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/~$terview 12.docx",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/~$uanschreiben_Akteure.docx",
+    "01_Andreas/07_CONFIGURATION/XX_TO_MD_ANLEITUNG.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/interview 1.gdoc",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/interview 12.docx",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Audiofiles",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/interview 1.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/PROJEKTBESCHREIBUNG.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/interview 1.pdf",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/PROJEKTBESCHREIBUNG.pandoc.md",
     "24_CLIPPING/PortalGesellschaft – Wikipedia.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Neuer Ordner",
+    "24_CLIPPING/Wikipedia – Die freie Enzyklopädie 1.md",
     "24_CLIPPING/Wikipedia – Die freie Enzyklopädie.md",
     "24_CLIPPING",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORIISIERT/04_KLEINE_REICHWEITE_GELEGENTLICH.md",
@@ -249,32 +262,20 @@
     "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORIISIERT/01_GROSSE_REICHWEITE_REGELMAESSIG.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORIISIERT",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/parse_actors.py",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/~$uanschreiben_Akteure.docx",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORISIERT/04_KLEINE_REICHWEITE_GELEGENTLICH.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORISIERT/03_KLEINE_REICHWEITE_REGELMAESSIG.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORISIERT/02_GROSSE_REICHWEITE_GELEGENTLICH.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORISIERT/01_GROSSE_REICHWEITE_REGELMAESSIG.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/neue akteure/01_KATEGORISIERT",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/neu",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/Neuer Ordner",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/09_Email/05_Anschreiben_Beratung_Praevention_Soziales.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/PROJEKTBESCHREIBUNG.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/~$uanschreiben_Akteure.docx",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/PROJEKTBESCHREIBUNG.pandoc.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/PROJEKT_EMAIL_VORSCHLAEGE.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/Neuanschreiben_Akteure.docx",
-    "01_Andreas/07_CONFIGURATION/XX_TO_MD_ANLEITUNG.md",
     "tralalalalla.md",
     "23_MARKET_RESEARCH/01_MEDITATION/STRATEGY_IDEAS.md",
     "23_MARKET_RESEARCH/01_MEDITATION/MARKET_ANALYSIS.md",
     "23_MARKET_RESEARCH/01_MEDITATION/MARKETING_FRAMEWORK.md",
-    "23_MARKET_RESEARCH/01_MEDITATION",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/09_Email/01_Anschreiben_Schulen_Schulsozialarbeit.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/09_Email/07_Anschreiben_Allgemein.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/09_Email/06_Anschreiben_Kirchen_Religioese_Gruppen.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/09_Email/04_Anschreiben_Kultur_Musik_Vereine.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/09_Email/03_Anschreiben_Jugendarbeit_Jugendhaeuser.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/09_Email/02_Anschreiben_Sportvereine.md",
     "03_UNIVERSITY/03_AGF2/02_BGM/FINAL_ABGABE/Folder.jpg",
     "03_UNIVERSITY/03_AGF2/02_BGM/FINAL_ABGABE/AlbumArtSmall.jpg",
     "Obsidian/22_GEDA/GEDA_Analysis_Results/05_Cost_Income.png",
