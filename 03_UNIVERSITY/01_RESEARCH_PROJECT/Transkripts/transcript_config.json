@@ -13,6 +13,20 @@
     "Speaker 4": "Sophie Scheffler",
     "Speaker 5": "Noise/Artifacts"
   },
+  "interviews": [
+    {
+      "date": "2026-01-29",
+      "interviewee": "Herr Mengesdorf",
+      "location": "St. Georgen",
+      "file": "Interview_Mengesdorf_TV_St_Georgen.md"
+    },
+    {
+      "date": "2026-01-27",
+      "interviewee": "Frau Engesser",
+      "location": "Bräunlingen",
+      "file": "Interview_Engesser_Braeunlingen_Familienpass.md"
+    }
+  ],
   "paths": {
     "audio_dir": "Audiofiles",
     "transcript_dir": "Transkripts"
