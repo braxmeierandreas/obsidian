@@ -1,0 +1,20 @@
+{
+  "project": "Psychische Gesundheit Kinder/Jugendliche",
+  "location": "St. Georgen",
+  "interviewee": "Herr Mengesdorf",
+  "interviewers": [
+    "Nadine Beha",
+    "Sophie Scheffler"
+  ],
+  "speaker_mapping": {
+    "Speaker 1": "Nadine Beha",
+    "Speaker 2": "Herr Mengesdorf",
+    "Speaker 3": "Herr Mengesdorf",
+    "Speaker 4": "Sophie Scheffler",
+    "Speaker 5": "Noise/Artifacts"
+  },
+  "paths": {
+    "audio_dir": "Audiofiles",
+    "transcript_dir": "Transkripts"
+  }
+}
