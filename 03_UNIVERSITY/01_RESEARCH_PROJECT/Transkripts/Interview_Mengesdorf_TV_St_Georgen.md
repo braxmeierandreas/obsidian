@@ -1,32 +1,32 @@
-## Nadine Beha:
+## I:
 
 Ja, also wir beide studieren Angewandte Gesundheitsförderung an der Hochschule Furtwangen, jetzt im Master. Und wir haben jetzt ein einjähriges Projekt mit dem Landratsamt Schwarzwald-Baar zusammen, wo es darum geht, die psychische Gesundheit von Kindern und Jugendlichen zu fördern. Also es geht darum, dass die Kinder direkt in ihren Lebenswelten erreicht werden: von Schulen, Kitas, Vereinen, aber auch alle möglichen Angebote, die Kinder betreffen, damit das Landratsamt quasi die Menschen, die darin arbeiten, am besten unterstützen kann.
 
-## Herr Mengesdorf:
+## B:
 
 Ah ja, also das Personal unterstützt.
 
-## Nadine Beha:
+## I:
 
 Genau, und da sollen erstmal die Bedarfe herausgefunden werden, was überhaupt benötigt wird. Von diesem Betreuungspersonal oder pädagogischem Personal. Genau. Und dann im Endeffekt in einem halben Jahr wollen wir dem Landratsamt dann quasi einen Leitfaden oder Handlungsempfehlungen geben.
 
-## Herr Mengesdorf:
+## B:
 
 Was das Landratsamt dann umsetzen kann. Was sie dann machen können. Genau. Welchen Ansprechpartner im Landratsamt habt ihr?
 
-## Sophie Scheffler:
+## I:
 
 Die Regina Lecher.
 
-## Herr Mengesdorf:
+## B:
 
 Ja, ich hatte mal vor Jahren mit dem Landratsamt zu tun. Wie nennt sich das im Landkreis, so ein Gesundheitsnetzwerk? Da hatte ich mit denen auch mal zu tun, weil wir mal ein Projekt mit denen gemacht haben, aber das war eine andere Person dann.
 
-## Nadine Beha:
+## I:
 
 Vom Turnverein?
 
-## Herr Mengesdorf:
+## B:
 
 Ja, wir haben so ein Projekt gehabt. "Pro Balance" hat sich das genannt und diente der Sturzprophylaxe. Und da haben wir uns auch eingebracht und haben dieses Konzept mal bei uns im Verein eine Zeit lang umgesetzt.
 
@@ -40,19 +40,19 @@ Was ich damit sagen will: Man muss vorsichtig sein in gewisser Weise, damit nich
 
 Habt ihr jetzt einen kleinen Leitfaden? Dann können wir den jetzt einfach mal durchgehen oder ihr könnt euch anhand von diesem orientieren.
 
-## Nadine Beha:
+## I:
 
 Ja, sehr gern. Also erstmal nochmal danke, dass du dir die Zeit genommen hast. Erstmal vorab, das Gespräch werden wir aufzeichnen, damit wir die Inhalte auswerten können. Aber am Ende wird niemand zuweisen können, wer was gesagt hat. Es geht nur um die größeren Akteure, Vereine, Schulen, aber keine Person zu ordnen. Also es wird anonymisiert. Ich würde dann direkt beginnen. Kannst du kurz den Verein und die Aufgaben, die du darin hast, beschreiben?
 
-## Herr Mengesdorf:
+## B:
 
 Also unter dem Gesichtspunkt, der die Jugendarbeit betrifft oder überhaupt?
 
-## Nadine Beha:
+## I:
 
 Generell erstmal und vielleicht die Kinder- und Jugendarbeit?
 
-## Herr Mengesdorf:
+## B:
 
 Wir sind ein normaler Turnverein. Du bist ja ein Teil davon mit der Handballabteilung. Und es gibt mehrere Abteilungen. Es sind im Moment sechs aktive Abteilungen. Turnen ist die größte mit rund 1000 Mitgliedern. Und dann Handball, Tischtennis. Wir bieten halt verschiedene Sportarten an. Und das im Bereich des Wettkampfsports. Da gehört Handball dazu, da gehört Tischtennis dazu. Auch Faustball ist dabei. Ja, also das ist so an der Grenze. Also wenn ich jetzt zum Beispiel an den Show-Tanz-Wettbewerb denke, das ist auch ein Weg. Aber es ist nicht dieses Wettkampfsystem, wie jetzt im Handball oder im Tischtennis.
 
@@ -60,27 +60,27 @@ Wir bieten also die Sportmöglichkeiten oder die Sportarten an, die uns im Verei
 
 Die allgemeine Beweglichkeit... Das heißt ja heute, dass die Kinder mehr vor dem Fernseher oder der Glotze hängen oder wie auch immer. Da hat sich auch was umgekehrt. Früher war man auf der Straße. Da ist auch was gekippt, gewissermaßen. Das heißt also, heute... Kann ein Kind einen Purzelbaum schlagen? Können Sie überhaupt, wenn Sie dann mit sechs Jahren in die Schule gehen, einen Purzelbaum? Manche können es nicht, manche können nicht mehr rückwärts laufen.
 
-## Nadine Beha:
+## I:
 
 Zugehörigkeit auch. Kann ich bestätigen. Also werden eigentlich so ziemlich alle Altersgruppen irgendwo abgeholt.
 
-## Herr Mengesdorf:
+## B:
 
 Ja, also das betrifft in erster Linie ältere Leute. Teilweise auch natürlich Leute, die ihren Partner verloren haben. Aber das betrifft auch die Jugendlichen. Und gerade bei den Kindern ist es jetzt zum Beispiel bei einer Nikolausfeier irgendeine Vorbereitung. Das heißt, sich einzuordnen in irgendeine Struktur. Das hat auf der einen Seite den Effekt, dass das Kind teamfähig wird. "Ich gehöre dazu."
 
-## Nadine Beha:
+## I:
 
 Aber dieses Zugehörigkeitsgefühl ist das Gleiche. Ja, das entsteht ja auch durch die Regelmäßigkeit, dass man sich ein-, zweimal die Woche sieht.
 
-## Herr Mengesdorf:
+## B:
 
 Ja, genau.
 
-## Nadine Beha:
+## I:
 
 Kannst du dann jetzt vielleicht konkrete Entwicklungen benennen, was generell die Gesundheit von Kindern betrifft? Du hast ja schon mal gesagt, dass sie vielleicht motorisch ein bisschen beeinflusst sind...
 
-## Herr Mengesdorf:
+## B:
 
 Ja gut, also... Zunächst nochmal zum Motorischen. Ich war ja auch von der Kinderturnstiftung Baden-Württemberg dabei. Wir bauen jedes Jahr ein Fitnessbarometer auf. Und dieses Fitnessbarometer beruht darauf, dass man in den Vereinen den Kinderturn-Test durchführt. Wir haben das hier bei uns auch schon mal gemacht, zweimal sogar. Und dieses Fitnessbarometer vom Sportinstitut, Professor Bös und Professor Woll, die untersuchen praktisch über 30 Jahre bundesweit und stellen fest, dass die Fitness in der Breite zurückgeht. Wir haben... Wie weit kommt das? Ja, das ist ein bisschen schlechter gelaufen. Und da kamen sie halt zu dem Schluss. Und da gibt es wissenschaftlich exakte Ergebnisse. Aber es bezieht sich halt alles auf die Motorik und auf die Kondition, auf die Fitness.
 
@@ -92,11 +92,11 @@ Also ich glaube, das zeichnet sich ja in der Schule auch ab. Warum brauchen wir 
 
 Hast du Erfahrungen als Trainer? Ich habe ja früher auch Volleyballtraining gemacht. Ich war ja lange Jahre Volleyball-Trainer. Und da war es auch immer so. Ja, ich sag mal so: Ich habe zwei dabei gehabt, die waren einfach schwer zu integrieren. Aber dann kommt es eher zum Vorschein. Das heißt nicht, dass es dort weniger ist, sondern da kommt es eher zum Vorschein.
 
-## Sophie Scheffler:
+## I:
 
 Hast du da vielleicht auch jetzt gerade, als Corona war, da war das ja auch sehr eingeschränkt mit dem Angebot... Vielleicht auch was seitdem vielleicht doller wurde oder?
 
-## Herr Mengesdorf:
+## B:
 
 Also da müsste man tatsächlich die Betroffenen fragen. Aber was ich so höre, ist es schon so, dass manche angerichtet haben. Man muss auch tatsächlich sehen, Corona war eine Weltseuche. Auf der ganzen Welt. Das war nicht nur in Deutschland, sondern das war ganz Europa. Alle Gesellschaften mussten sich mit dem Problem auseinandersetzen. Manche waren dabei etwas großzügiger, wie die Skandinavier, da gab es wenige Einschränkungen. Andere hatten eine Phase, wo Jugendliche unter 16 Jahren nicht alleine auf die Straße durften. Und wenn sie rausgehen, eine Stunde in Begleitung eines Erwachsenen. So was hatten wir nicht. Das muss man einfach sehen. Die Kinder konnten täglich raus und konnten im Grunde im Wald oder so sich austoben, in Anführungszeichen, mit Kindern rausgehen. Dann insoweit es möglich war.
 
@@ -104,11 +104,11 @@ Das heißt also, Corona hat schon etwas ausgelöst, auch bei dem einen oder ande
 
 Also wir haben einen Enkel, der war in der Corona-Krise in der ersten Klasse. Er musste zu Hause bleiben. Aber da war er erst eingeschult. Und er hat nach vier Wochen gesagt: "Ich weiß eigentlich gar nicht noch, wofür ich lebe." Das heißt also, wenn man nicht in die Sozietät hinein darf, sondern zu Hause bleiben muss... so eine Frage zu stellen! Da muss man als Eltern erst einmal darüber nachdenken, wie man darauf reagiert, wie man den wieder zurückholt aus der Situation. Naja, aber was ich damit sagen will: In Einzelfällen tatsächlich gibt es Folgen, die vielleicht bis zum heutigen Jahr noch erkennbar sind.
 
-## Nadine Beha:
+## I:
 
 Man darf nicht alles auf Corona schieben, die Probleme, die wir haben. Die Ursachen sind viel wichtiger. Das heißt, hier geht es grundsätzlich im Verein mit den Förderungen von dem Wohlbefinden, um Gruppen, Strukturen, sich zugehörig fühlen. Also dass das die psychische Gesundheit fördert oder den Kopf freibekommt.
 
-## Herr Mengesdorf:
+## B:
 
 Dass sie dieses Gefühl dann auch bekommen können. Also da stellt sich überall die Personalfrage, die personellen Ressourcen, die man hat, die schwierig sind in einem Verein, der doch überwiegend ehrenamtlich geführt wird – also jetzt gerade bei Vereinen unserer Art und unserer Größe.
 
@@ -116,21 +116,21 @@ Und da setze ich jetzt zum Beispiel sehr viel auf eine Zusammenarbeit: Verein, K
 
 Aber das ließe sich noch deutlich ausbauen, wenn man das Personal dazu hat. Also dass zum Beispiel dann auch Leute aus dem Verein, Übungsleiter, in die Schule gehen und dort Arbeitsgemeinschaften (AGs) anbieten.
 
-## Nadine Beha:
+## I:
 
 Zum Beispiel AGs anbieten. Ich glaube es gab doch mal die Handball-AG früher, als ich noch in der Schule war.
 
-## Herr Mengesdorf:
+## B:
 
 Ich weiß nicht, ob es die noch gibt. Das hing sehr stark an den beiden, Hans-Jörg Steiger, sagt dir das was? Ja. Der hat zwei Söhne, den Torben und den Sören. Die sind zwischenzeitlich auch schon Eltern, aber die haben eine Handball-AG gemacht. Die wurde dann auch ein Stück weit weitergeführt, aber dann ist es wie soll ich sagen... Also wenn du jetzt zum Beispiel hier in St. Georgen einen Sportlehrer hättest, der in den Kindergärten, in den AGs, in den Schulen, in den Vereinen usw. tätig ist... Aber wenn man so einen Sportlehrer hätte, der von verschiedenen Seiten her finanziert wird – von den Vereinen, über die Stadt, vielleicht auch über die Schule (die Schule hat ja auch Ressourcen, so ist es ja nicht), dann ließe sich diese Verknüpfung, diese Vernetzung von Sportvereinen und Schule noch weiter verstärken.
 
 Ja, also in der Stadt die Ressourcen, und zwar in erster Linie die personellen, so zu verstärken, dass diese damit zusammenhängenden Bildungen von sozialen Beziehungen verstärkt werden. Genau, also da sehe ich eine Maßnahme. Und das bedingt natürlich auch auf der anderen Seite Fortbildungsmaßnahmen, die man mit Übungsleitern macht. Also wenn es jetzt gerade um Prävention geht. Ich weiß nicht, habt ihr noch das Thema Gewalt in irgendeiner Hinsicht?
 
-## Nadine Beha:
+## I:
 
 Also wenn du es ansprichst, dann würden wir es behandeln. Ja, vielleicht auch Mobbing, also Bezugspersonen, wo die Kinder dann hingehen können. Aber ja auch Gewalt wahrscheinlich auf Präventionskonzepten, wie bist du da aufgestellt? Ja, also man hat ja sehr viel von diesen Fragen der Beziehung...
 
-## Herr Mengesdorf:
+## B:
 
 Oder sagen wir mal, ja, der Gewaltanwendung in verschiedenster Form. Es gibt ja, man muss ja da ein bisschen differenzieren: die physische Gewalt ist klar, da geht es um Körpergewalt. Dann die sexualisierte Gewalt, das ist auch klar, was darunter fällt. Und dann gibt es die psychische Gewalt. Das merkt man ja in der Schule. Da ist man dem ausgeliefert, nicht aus anderen Gründen, sondern weil er halt mit den Schülern nicht umgehen kann.
 
@@ -148,19 +148,19 @@ Aber viel wichtiger ist: Man muss beobachten. Das heißt, die Prävention, gerad
 
 Und da wird man sehen, ob er darauf reagiert, ob er sich das sozusagen zu Herzen nimmt. Und wenn nicht, wenn er dann sagt "Das interessiert mich nicht, die sollen sich nicht so anstellen", dann sollte derjenige, der das beobachtet hat, Meldung machen und dann entweder am besten zu einer verantwortlichen Person vom Verein gehen.
 
-## Sophie Scheffler:
+## I:
 
 Grauzone. Das hab ich schon mal gehört. Ja, ja.
 
-## Herr Mengesdorf:
+## B:
 
 Da kann man sich vertrauensvoll hinwenden. Fazit: Versuchen, ein entsprechendes offenes Klima zu schaffen, sodass man Dinge, die man beobachtet oder die falsch laufen, thematisieren kann. Auf irgendwelchen Wegen man findet immer jemand, mit dem man sprechen kann. Also dann irgendwann muss es eine offizielle Stelle geben, die vertraulich arbeitet.
 
-## Nadine Beha:
+## I:
 
 Das heißt, die Vernetzung ist in der Hinsicht schon eigentlich gut gemacht. Es gibt halt ein Netzwerk an Menschen, an die man sich wenden kann, wahrscheinlich erst die Vertrauensperson im Verein.
 
-## Herr Mengesdorf:
+## B:
 
 So ist es. Vielleicht kleine Kinder und Jüngere werden sich erstmal an ihre Eltern wenden. Jetzt die Pubertierenden werden sich erstmal an ihre Freundinnen wenden. Und dann gibt es eigentlich normalerweise in jedem Verein oder in so einer Organisation dann auch wieder Leute, wo man glauben kann: "Dem kann ich das erzählen." Eine Spielerin in einer anderen Mannschaft oder so. Oder eine erwachsene Trainerin. "Der kann ich das mal erzählen, was mir aufgefallen ist." Und dann muss natürlich die damit auch umgehen und einfach den Weg finden.
 
@@ -168,72 +168,72 @@ Also ich halte auch wieder nichts davon, das Ganze zu formalisieren. Das ist ja 
 
 Aber irgendwann muss dann natürlich, ich sag mal, wenn es gravierend ist oder fortlaufend wäre, auch der Schritt auf so eine Ebene gehoben werden, wo man dann auch initiativ werden kann. Also von Seiten von Vereinen, vom Arzt, wo man dann auch das Problem versucht zu beheben, wie auch immer, bis hin zur Strafanzeige. Das kann ja auch dann das Ergebnis sein, dass sich die Polizei drum kümmern muss.
 
-## Nadine Beha:
+## I:
 
 Fand ich aber auch einen guten Schritt. Stefan hat das auch mal in einer Sitzung gesagt, aber das war mit allen Aktiven, meine ich. Erwähnt, dass es das gibt. Finde ich auch gut zu wissen.
 
-## Herr Mengesdorf:
+## B:
 
 Also auf unserer Homepage kann man es auch nachlesen. Als wir es vor einem halben Jahr im Vereinsrat hatten, da habe ich so Verhaltensempfehlungen erstellt. Also: "Wie könnte man sich verhalten?" Vor allem für diejenigen, die dann vom Opfer informiert werden. Ich habe da mal was aufgestellt. Habt ihr meine E-Mail?
 
-## Nadine Beha:
+## I:
 
 Das ist nadine.beha... at t-online.de.
 
-## Herr Mengesdorf:
+## B:
 
 Weißt du eigentlich, Karin Halser... Ja, ja. Wohnt in Brigach.
 
-## Herr Mengesdorf:
+## B:
 
 Witzig. War meine Schülerin. Ah ja? Ja, war eine gute Schülerin, war ordentlich. Okay, also soviel dazu. Verhaltensempfehlungen.
 
-## Nadine Beha:
+## I:
 
 Genau. Das heißt, dass jetzt von deiner Seite aus, was jetzt vom Landratsamt vielleicht als Unterstützung gewünscht wäre... Fortbildungsveranstaltungen für das Personal?
 
-## Herr Mengesdorf:
+## B:
 
 Genau. Fortbildungsveranstaltungen: Wie gehe ich mit Konflikten um? Wie gehe ich mit Fällen von Mobbing um? Wie gehe ich mit verhaltensauffälligen Kindern um? Also im Grunde auch das, was vielleicht an einer pädagogischen Hochschule gelehrt wird oder wo man Sonderpädagogik studiert. Aber solche kleinen Bausteine, wo sich ein Übungsleiter dann auch mal informieren kann. Wie gehe ich um mit solchen Situationen? Weil die Übungsleiter sind ja Laien in dem Bereich. Die Trainer sind guten Willens, aber Laien im Umgang mit Konfliktsituationen.
 
 Sie da durch Schulungen zu befähigen, das richtig zu händeln... Das fände ich also auch etwas, was man machen könnte. Und das wäre also vom Landratsamt her auch gut. Ich habe das auch beobachtet. Es gibt jetzt auch vom Landratsamt so eine Bildungsserie für Eltern. Ich lese es abends im Schwarzwälder Boten. Da muss es im Landratsamt auch so eine Dame geben, die solche Fortbildungen auch anbietet. Und das auch für Übungsleiter, für Trainer, die also mit solchen Konfliktsituationen zu tun haben, sowas anzubieten. Das halte ich an und für sich auch für sinnvoll. Ich glaube, da sind doch viele dankbar.
 
-## Nadine Beha:
+## I:
 
 Da war jetzt richtig viel dabei. Ich habe den Zeitplan schon durchgesprochen. Ja, also das sind sehr wertvolle Sachen, die wir da jetzt mitnehmen. Wen würdest du empfehlen als weiteren Übungsleiter? Einfach vom Handball irgendwen oder wie?
 
-## Herr Mengesdorf:
+## B:
 
 Also ich würde auch... Die Maike Steiger würde ich empfehlen. Ja, die hat Erfahrung, auf jeden Fall.
 
-## Sophie Scheffler:
+## I:
 
 Ja. Was für Institutionen habt ihr da noch? Also es ist über den gesamten Schwarzwald-Baar-Kreis. Also wir befragen Schulen, Musikvereine, Sportvereine, Beratungsstellen, Kindertagesstätten, Kinderbetreuung. Also alles so ein bisschen flächendeckend.
 
-## Herr Mengesdorf:
+## B:
 
 Macht ihr das jetzt nur zu zweit? Ist das der Jahrgang, der das Projekt macht?
 
-## Sophie Scheffler:
+## I:
 
 Wir sind eine Gruppe aus fünf Personen, die das zusammen machen. Wir führen die Interviews aber immer zu zweit durch, dass einer eben das Gespräch führt und der andere wichtige Informationen noch mitschreibt oder Notizen macht.
 
-## Herr Mengesdorf:
+## B:
 
 Oder wenn man hinterher dann, ich sage mal, die Sache dann zusammentragen muss, zu sagen: "Wie hast du das aufgefasst?"
 
-## Sophie Scheffler:
+## I:
 
 Richtig. Und wo kommst du her? Ich komme ursprünglich aus dem Landkreis Tuttlingen und wohne jetzt aber in Furtwangen fürs Studium.
 
-## Herr Mengesdorf:
+## B:
 
 Ah ja. Kürzlich war das Thema Wohnraum für Studierende ein großes Thema bei einer Diskussion. Dass man in Furtwangen noch ein Stück mehr Zimmer findet.
 
-## Sophie Scheffler:
+## I:
 
 Ja, also für die Mietpreise, da kann ich mich überhaupt nicht beschweren.
 
-## Herr Mengesdorf:
+## B:
 
 Da kann man sich nicht beschweren. Ja, ja. Es gibt Studienorte, wo das anders aussieht.
