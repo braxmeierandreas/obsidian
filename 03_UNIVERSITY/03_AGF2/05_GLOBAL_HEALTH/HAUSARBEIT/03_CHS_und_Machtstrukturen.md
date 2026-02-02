@@ -1,0 +1,7 @@
+# 3. Machtasymmetrien in CHS
+
+## 3.1 Agents of Care vs. Agents of the State
+Ein zentrales Spannungsfeld in CHS ist die Rollenambivalenz der Akteure. Perron et al. (2005) beschreiben, dass professionelle Gesundheitsakteure (wie CHWs) oft als „Agents of the State“ wahrgenommen werden, anstatt als die intendierten „Agents of Care“. In Regionen, in denen der Staat ansonsten durch Abwesenheit von Infrastruktur und Sicherheit glänzt, wird die Gesundheitsmaßnahme als Disziplinierungsinstrument wahrgenommen. Der Zugriff auf den privaten Raum und den Körper durch Datenerfassung (z.B. mittels Tablets) verstärkt das Gefühl der Überwachung und führt zu einer „mortification“ des Selbst (Goffman nach Perron 2005, S. 541).
+
+## 3.2 Epistemische Ungerechtigkeit und Wissenshierarchien
+Bestnoten-relevant ist die Einbeziehung der „epistemischen Ungerechtigkeit“. Hierbei wird lokales Wissen und die subjektive Erfahrung der Bevölkerung gegenüber der westlich-biomedizinischen Epistemologie abgewertet. Wenn Interventionen ohne Berücksichtigung lokaler Deutungsmuster implementiert werden, ist Widerstand ein Akt der intellektuellen Selbstbehauptung. Kane et al. (2016) zeigen auf, dass CHWs selbst oft frustriert sind, wenn sie nur als „Sprachrohr“ des Systems fungieren, ohne echten Einfluss auf die Gestaltung der Programme zu haben.
