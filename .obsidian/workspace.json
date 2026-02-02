@@ -57,12 +57,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_JOURNAL/01_2026/02_FEBRUARY/03_022026.md",
+                "file": "02_JOURNAL/01_2026/02_FEBRUARY/02_022026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03_022026"
+              "title": "02_022026"
             }
           }
         ],
@@ -240,9 +240,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b57fe770d20e8763",
+  "active": "e93cd8d5c68bf487",
   "lastOpenFiles": [
     "02_JOURNAL/01_2026/DAILY_TEMPLATE.md",
+    "02_JOURNAL/01_2026/02_FEBRUARY/03_022026.md",
     "02_JOURNAL/03_TEMPLATES/DAILY_V2.md",
     "02_JOURNAL/03_TEMPLATES/DAILY_V1.md",
     "02_JOURNAL/03_TEMPLATES/TAGESPLAN_WOCHENENDE.md",
@@ -253,7 +254,6 @@
     "02_JOURNAL/01_2026/02_FEBRUARY/23_022026.md",
     "02_JOURNAL/01_2026/02_FEBRUARY/16_022026.md",
     "02_JOURNAL/01_2026/02_FEBRUARY/02_022026.md",
-    "02_JOURNAL/01_2026/02_FEBRUARY/03_022026.md",
     "02_JOURNAL/01_2026/02_FEBRUARY/17_022026.md",
     "02_JOURNAL/01_2026/02_FEBRUARY/19_022026.md",
     "02_JOURNAL/01_2026/02_FEBRUARY/18_022026.md",
