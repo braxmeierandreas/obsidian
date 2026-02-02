@@ -1,0 +1,104 @@
+---
+tags:
+  - daily
+  - focus_day_os
+  - daily_template
+date: "{{date:DD.MM.YYYY}}"
+aliases:
+  - Daily {{date:DD.MM.YYYY}}
+---
+
+# 📅 Tages-Log: {{date:DD.MM.YYYY}}
+
+## ☀️ Vormittag: Start & Studium (08:00 - 13:00)
+
+### [08:00 - 09:00] Morgenroutine
+- **Schlaf & Träume:**
+    - Aufwachzeit:       | Qualität (1-5): 
+    - **🌙 Traum-Erinnerung:** 
+- **Checklist:**
+    - [ ] **08:00 Aufstehen:** Kein Snooze.
+    - [ ] **Wasser & Licht:** Großes Glas Wasser + Tageslicht.
+    - [ ] **Bett machen:** Ordnung schaffen.
+    - [ ] **Waage:** Gewicht notieren ( kg).
+    - [ ] **Hygiene:** Zähne, Pflege.
+    - [ ] **Katzen:** Füttern & Klo reinigen.
+    - [ ] **Supplements:** Einnahme laut Plan.
+- [ ] **08:30 Frühstück & Kaffee**
+
+### [09:00 - 09:30] Haushalt & Glaube
+- [ ] **Haushalt:** Kurzes Aufräumen.
+- [ ] **🙏 Bibel lesen:** 15 Min. Neues Testament.
+
+### [09:30 - 13:00] Studium Block 1 (Deep Work)
+- **Fokus:** 
+- [ ] Session 1 (90 Min)
+- [ ] Session 2 (90 Min)
+
+---
+
+## 🕛 Mittag: Pause & Arbeit (13:00 - 17:30)
+
+### [13:00 - 14:00] Mittagessen
+- [ ] **Essen in Stille:** Kein Handy, kein Podcast.
+- [ ] **Spaziergang:** 20-30 Min. nach dem Essen.
+
+### [13:00 - 19:00] Arbeiten (Parallel-Slot)
+- [ ] Hiwi / Projekte: 
+
+### [14:00 - 17:30] Studium Block 2
+- **Fokus:** 
+- [ ] Session 3
+- [ ] Hydration (Ziel 3-4L): 
+
+---
+
+## 🌙 Abend: Fokus, Sport & Abschluss (17:30 - 00:00)
+
+### [17:30 - 18:30] 🇪🇸 Spanisch lernen
+- [ ] 60 Min Fokus (Duolingo + Vokabeln)
+
+### [18:30 - 19:00] Vesper
+- [ ] Letzte Kalorien-Aufnahme vor dem Fasten.
+
+### [19:00 - 21:00] 💪 Sport
+- [ ] Training (Kraft/Cardio/Dehnen)
+- [ ] ❤️ Beziehungen: Hannah/Familie/Freunde (Check-in)
+
+### [21:00 - 22:00] 📚 Lesen
+- [ ] 60 Min. Buch lesen.
+- *Takeaway:* 
+
+### [22:00 - 22:30] Abendroutine
+- [ ] **Tagebuch schreiben:** (Heutiges Log vervollständigen)
+- [ ] **Zimmer aufräumen:** Kurzes tidying up für morgen.
+- [ ] **Katzen:** Abendessen geben & Klo-Check.
+- [ ] **Hygiene:** Waschen/Zähneputzen.
+- [ ] **Vorbereitung:** Tasche & Kleidung für morgen bereitstellen.
+- [ ] **Blaulicht-Filter:** Screens dimmen / Brille auf.
+- [ ] **Lüften:** Schlafzimmer auf ~18°C kühlen.
+- [ ] **Digital Detox:** Handy Flugmodus & aus dem Schlafzimmer.
+
+### [22:30 - 23:00] Abendessen
+- [ ] Post-Workout Meal / Late Snack.
+
+### [23:00 - 00:00] Spaziergang
+- [ ] Geist leeren / Luft schnappen.
+- [ ] **00:00 Licht aus:** Schlaf.
+
+---
+
+## 📊 Tägliches Tracking
+- [ ] **Ernährung:** ~3200 kcal getrackt?
+- [ ] **Protein:** 200g erreicht?
+- [ ] **Schritte:** 10.000 voll?
+- [ ] **Finanzen:** Ausgaben notiert (€: )
+- **No-Gos:**
+    - [ ] Kein Alkohol | [ ] Kein Rauchen | [ ] Kein Porno | [ ] Kein Social Media
+
+---
+
+## 📓 Notizen & Reflexion
+- **Freie Notizen:** 
+- **1% Besser:** 
+- **Dankbarkeit:** 
