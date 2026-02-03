@@ -25,36 +25,48 @@ ROOT_DASHBOARD = os.path.join(CURRENT_DIR, "DASHBOARD_HABITS.md")
 
 # TRACKERS with AUTO-CHECK Rules
 TRACKERS = [
-    # MORNING ROUTINE (05:00 - 08:00)
-    {"id": "rise_5am", "name": "WAKE UP 5 AM", "type": "habit", "goal": "Daily", "auto": None, "time": "05:00"},
-    {"id": "make_bed", "name": "MAKE BED", "type": "habit", "goal": "Daily", "auto": None, "time": "05:05"},
-    {"id": "electrolytes", "name": "DRINK ELECTROLYTES", "type": "habit", "goal": "Daily", "auto": None, "time": "05:10"},
-    {"id": "vitamins", "name": "TAKE VITAMINS", "type": "habit", "goal": "Daily", "auto": None, "time": "05:15"},
-    {"id": "cold_shower", "name": "COLD SHOWER", "type": "habit", "goal": "Daily", "auto": None, "time": "05:20"},
-    {"id": "beard", "name": "GROOM BEARD", "type": "habit", "goal": "Daily", "auto": None, "time": "05:30"},
-    {"id": "bible", "name": "READ BIBLE", "type": "habit", "goal": "Daily", "auto": None, "time": "06:00"},
-    {"id": "meditate", "name": "MEDITATION", "type": "habit", "goal": "Daily", "auto": None, "time": "06:15"},
-    {"id": "journal", "name": "JOURNALING", "type": "habit", "goal": "Daily", "auto": None, "time": "06:30"},
-    {"id": "planning", "name": "DAILY PLANNING", "type": "habit", "goal": "Daily", "auto": None, "time": "06:45"},
-    {"id": "dream_journal", "name": "DREAM JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "07:00"},
-    {"id": "spanish", "name": "LEARN SPANISH", "type": "habit", "goal": "Daily", "auto": None, "time": "07:30"},
+    # MORNING ROUTINE
+    {"id": "rise_5am", "name": "WAKE UP 5 AM", "type": "habit", "goal": "Daily", "auto": None, "time": "05:00", "duration": 5},
+    {"id": "make_bed", "name": "MAKE BED", "type": "habit", "goal": "Daily", "auto": None, "time": "05:05", "duration": 5},
+    {"id": "dream_journal", "name": "DREAM JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "05:10", "duration": 10},
+    {"id": "electrolytes", "name": "DRINK ELECTROLYTES", "type": "habit", "goal": "Daily", "auto": None, "time": "05:20", "duration": 5},
+    {"id": "vitamins", "name": "TAKE VITAMINS", "type": "habit", "goal": "Daily", "auto": None, "time": "05:25", "duration": 5},
+    {"id": "jogging", "name": "JOGGING", "type": "habit", "goal": "2x/Week", "auto": None, "time": "05:30", "duration": 45},
+    {"id": "cold_shower", "name": "COLD SHOWER", "type": "habit", "goal": "Daily", "auto": None, "time": "06:15", "duration": 5},
+    {"id": "hygiene_m", "name": "MORNING HYGIENE", "type": "habit", "goal": "Daily", "auto": None, "time": "06:20", "duration": 25},
+    {"id": "cat_feed_am", "name": "CAT FEEDING (AM)", "type": "habit", "goal": "Daily", "auto": None, "time": "06:45", "duration": 5},
+    {"id": "cat_litter", "name": "CAT LITTER", "type": "habit", "goal": "Daily", "auto": None, "time": "06:50", "duration": 10},
+    {"id": "bible", "name": "READ BIBLE", "type": "habit", "goal": "Daily", "auto": None, "time": "07:00", "duration": 15},
+    {"id": "meditate", "name": "MEDITATION", "type": "habit", "goal": "Daily", "auto": None, "time": "07:15", "duration": 15},
+    {"id": "journal_m", "name": "MORNING JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "07:30", "duration": 15},
+    {"id": "planning", "name": "DAILY PLANNING", "type": "habit", "goal": "Daily", "auto": None, "time": "07:45", "duration": 15},
+    {"id": "spanish", "name": "LEARN SPANISH", "type": "habit", "goal": "Daily", "auto": None, "time": "08:00", "duration": 60},
 
-    # DAY / EVENING (12:00 - 22:00)
-    {"id": "fasting", "name": "INTERMITTENT FASTING", "type": "habit", "goal": "Daily", "auto": None, "time": "12:00"},
-    {"id": "training", "name": "GYM WORKOUT", "type": "habit", "goal": "3x/Week", "auto": "heart_minutes", "threshold": 40, "time": "17:00"},
-    {"id": "jogging", "name": "JOGGING", "type": "habit", "goal": "2x/Week", "auto": None, "time": "17:30"},
-    {"id": "tea", "name": "DRINK TEA", "type": "habit", "goal": "Daily", "auto": None, "time": "20:00"},
-    {"id": "reading", "name": "READING", "type": "habit", "goal": "Daily", "auto": None, "time": "21:00"},
-    {"id": "stretching", "name": "STRETCHING", "type": "habit", "goal": "Daily", "auto": None, "time": "21:30"},
-    {"id": "steps", "name": "10K STEPS", "type": "habit", "goal": "Daily", "auto": "steps", "threshold": 10000, "time": "22:00"},
+    # DAY / EVENING
+    {"id": "grocery", "name": "GROCERY", "type": "habit", "goal": "Daily", "auto": None, "time": "12:30", "duration": 15},
+    {"id": "cooking", "name": "COOKING", "type": "habit", "goal": "Daily", "auto": None, "time": "13:00", "duration": 60},
+    {"id": "fasting", "name": "FASTING 19-13", "type": "habit", "goal": "Daily", "auto": None, "time": "13:00", "duration": 0},
+    {"id": "training", "name": "WORKOUT", "type": "habit", "goal": "3x/Week", "auto": "heart_minutes", "threshold": 40, "time": "17:00", "duration": 60},
+    {"id": "cat_feed_pm", "name": "CAT FEEDING (PM)", "type": "habit", "goal": "Daily", "auto": None, "time": "18:00", "duration": 5},
+    {"id": "tea", "name": "DRINK TEA", "type": "habit", "goal": "Daily", "auto": None, "time": "19:45", "duration": 15},
+    {"id": "reading", "name": "READING", "type": "habit", "goal": "Daily", "auto": None, "time": "20:00", "duration": 60},
+    {"id": "call", "name": "CALL GF", "type": "habit", "goal": "Daily", "auto": None, "time": "21:00", "duration": 15},
+    {"id": "journal_e", "name": "EVENING JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "21:15", "duration": 15},
+    {"id": "hygiene_e", "name": "EVENING HYGIENE", "type": "habit", "goal": "Daily", "auto": None, "time": "21:30", "duration": 15},
+    {"id": "stretching", "name": "STRETCHING", "type": "habit", "goal": "Daily", "auto": None, "time": "21:45", "duration": 15},
+    {"id": "steps", "name": "10K STEPS", "type": "habit", "goal": "Daily", "auto": "steps", "threshold": 10000, "time": "22:00", "duration": 0},
 
     # DETOX / 24H (Sorted at End)
-    {"id": "corn", "name": "NO PORN/MASTURBATION", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H"},
-    {"id": "coffee", "name": "NO COFFEE", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H"},
-    {"id": "weed", "name": "NO WEED", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H"},
-    {"id": "games", "name": "NO VIDEO GAMES", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H"},
-    {"id": "melatonin", "name": "NO MELATONIN", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H"},
-    {"id": "youtube", "name": "NO YOUTUBE", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H"}
+    {"id": "corn", "name": "NO PORN/MASTURBATION", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0},
+    {"id": "coffee", "name": "NO COFFEE", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0},
+    {"id": "weed", "name": "NO WEED", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0},
+    {"id": "alcohol", "name": "NO ALCOHOL", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0},
+    {"id": "smoking", "name": "NO SMOKING", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0},
+    {"id": "games", "name": "NO VIDEO GAMES", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0},
+    {"id": "tv", "name": "NO TV/SERIES", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0},
+    {"id": "melatonin", "name": "NO MELATONIN", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0},
+    {"id": "youtube", "name": "NO YOUTUBE", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0},
+    {"id": "lies", "name": "NO LIES", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0}
 ]
 
 def load_data():
@@ -227,6 +239,16 @@ def generate_dashboard(data):
     prev_perf = get_monthly_perf(prev_date.year, prev_date.month)
     month_diff = current_perf - prev_perf
 
+    # --- TIME CALCULATION HELPERS ---
+    def calculate_end_time(start_str, duration_min):
+        if start_str == "24H": return "24H"
+        try:
+            t = datetime.datetime.strptime(start_str, "%H:%M")
+            end = t + datetime.timedelta(minutes=duration_min)
+            return end.strftime("%H:%M")
+        except:
+            return "?"
+
     # --- BUILD CONTENT ---
     content = f"# 📊 PERFORMANCE DASHBOARD - {month_name} {year}\n\n"
     
@@ -237,7 +259,7 @@ def generate_dashboard(data):
     content += f"- **Daily Score:** {today_score}/{len(TRACKERS)} Missions completed\n\n"
     
     content += "## 🔥 CURRENT STREAKS\n\n"
-    content += "| MISSION | TIME | STREAK | BEST | STATUS |\n|:---|:---:|:---:|:---:|:---:|\n"
+    content += "| MISSION | START | END | DUR | STREAK | BEST | STATUS |\n|:---|:---:|:---:|:---:|:---:|:---:|:---:|\n"
     
     # SORT TRACKERS FOR DASHBOARD
     sorted_trackers = sorted(TRACKERS, key=lambda x: x["time"])
@@ -246,13 +268,14 @@ def generate_dashboard(data):
         streak = data["streaks"].get(t["id"], 0)
         best = data["best_streaks"].get(t["id"], 0)
         status = "💀 FAIL" if streak == 0 else "🔥 ON FIRE" if streak > 7 else "🟢 ACTIVE"
-        content += f"| **{t['name']}** | {t['time']} | **{streak} Days** | **{best} Days** | {status} |\n"
+        
+        start = t['time']
+        dur = f"{t['duration']}m" if t['duration'] > 0 else "-"
+        end = calculate_end_time(start, t['duration']) if t['duration'] > 0 else "-"
+        
+        content += f"| **{t['name']}** | {start} | {end} | {dur} | **{streak} Days** | **{best} Days** | {status} |\n"
     
     content += f"\n## 📅 CALENDAR: {month_name}\n\n"
-    # Use abbreviation or short name for calendar columns to save space? 
-    # User wanted longer names, but calendar table might break.
-    # Let's use the full name but maybe truncated if needed, or just full name. 
-    # For now, full name as requested.
     headers = ["DATE"] + [t["name"] for t in sorted_trackers]
     content += "| " + " | ".join(headers) + " |\n"
     content += "| :--- " + "| :---: " * len(sorted_trackers) + "|\n"
