@@ -44,6 +44,8 @@ TRACKERS = [
     {"id": "journal_m", "name": "MORNING JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "07:30", "duration": 15, "check_days": None},
     {"id": "planning", "name": "DAILY PLANNING", "type": "habit", "goal": "Daily", "auto": None, "time": "07:45", "duration": 15, "check_days": None},
     {"id": "spanish", "name": "LEARN SPANISH", "type": "habit", "goal": "Daily", "auto": None, "time": "08:00", "duration": 60, "check_days": None},
+    {"id": "deep_work_1", "name": "DEEP WORK 1", "type": "habit", "goal": "Daily", "auto": None, "time": "09:00", "duration": 120, "check_days": None},
+    {"id": "deep_work_2", "name": "DEEP WORK 2", "type": "habit", "goal": "Daily", "auto": None, "time": "11:00", "duration": 120, "check_days": None},
 
     # DAY / EVENING
     {"id": "church", "name": "CHURCH SERVICE", "type": "habit", "goal": "Weekly", "auto": None, "time": "10:30", "duration": 60, "check_days": [6]}, # Sunday only
@@ -53,7 +55,8 @@ TRACKERS = [
     {"id": "grocery", "name": "GROCERY", "type": "habit", "goal": "Daily", "auto": None, "time": "13:00", "duration": 15, "check_days": None},
     {"id": "cooking", "name": "COOKING", "type": "habit", "goal": "Daily", "auto": None, "time": "13:15", "duration": 45, "check_days": None},
     {"id": "laundry", "name": "LAUNDRY & LINENS", "type": "habit", "goal": "Weekly", "auto": None, "time": "14:00", "duration": 60, "check_days": [6]}, # Sunday only
-    {"id": "chores", "name": "DAILY CHORES", "type": "habit", "goal": "Daily", "auto": None, "time": "14:00", "duration": 10, "check_days": None},
+    {"id": "deep_work_3", "name": "DEEP WORK 3", "type": "habit", "goal": "Daily", "auto": None, "time": "14:00", "duration": 90, "check_days": None},
+    {"id": "deep_work_4", "name": "DEEP WORK 4", "type": "habit", "goal": "Daily", "auto": None, "time": "15:30", "duration": 90, "check_days": None},
     {"id": "backup_system", "name": "SYSTEM BACKUP", "type": "habit", "goal": "Weekly", "auto": None, "time": "14:30", "duration": 15, "check_days": [6]}, # Sunday only
     {"id": "call_parents", "name": "CALL PARENTS", "type": "habit", "goal": "Weekly", "auto": None, "time": "15:00", "duration": 30, "check_days": [6]}, # Sunday only
     {"id": "training", "name": "WORKOUT", "type": "habit", "goal": "Daily", "auto": "heart_minutes", "threshold": 40, "time": "17:00", "duration": 45, "check_days": None},
