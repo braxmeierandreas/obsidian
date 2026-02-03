@@ -24,64 +24,68 @@ BACKUP_FILE = os.path.join(CURRENT_DIR, "habit_data.json.bak")
 ROOT_DASHBOARD = os.path.join(CURRENT_DIR, "DASHBOARD_HABITS.md")
 
 # TRACKERS with AUTO-CHECK Rules
+# check_days: None=Daily, [0]=Mon...[6]=Sun, "month"=1st of month
 TRACKERS = [
     # MORNING ROUTINE
-    {"id": "rise_5am", "name": "WAKE UP 5 AM", "type": "habit", "goal": "Daily", "auto": None, "time": "05:00", "duration": 5},
-    {"id": "make_bed", "name": "MAKE BED", "type": "habit", "goal": "Daily", "auto": None, "time": "05:05", "duration": 5},
-    {"id": "dream_journal", "name": "DREAM JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "05:10", "duration": 10},
-    {"id": "electrolytes", "name": "DRINK ELECTROLYTES", "type": "habit", "goal": "Daily", "auto": None, "time": "05:20", "duration": 5},
-    {"id": "vitamins", "name": "TAKE VITAMINS", "type": "habit", "goal": "Daily", "auto": None, "time": "05:25", "duration": 5},
-    {"id": "jogging", "name": "JOGGING", "type": "habit", "goal": "2x/Week", "auto": None, "time": "05:30", "duration": 45},
-    {"id": "cold_shower", "name": "COLD SHOWER", "type": "habit", "goal": "Daily", "auto": None, "time": "06:15", "duration": 5},
-    {"id": "hygiene_m", "name": "MORNING HYGIENE", "type": "habit", "goal": "Daily", "auto": None, "time": "06:20", "duration": 25},
-    {"id": "cat_feed_am", "name": "CAT FEEDING (AM)", "type": "habit", "goal": "Daily", "auto": None, "time": "06:45", "duration": 5},
-    {"id": "cat_litter", "name": "CAT LITTER", "type": "habit", "goal": "Daily", "auto": None, "time": "06:50", "duration": 10},
-    {"id": "bible", "name": "READ BIBLE", "type": "habit", "goal": "Daily", "auto": None, "time": "07:00", "duration": 15},
-    {"id": "meditate", "name": "MEDITATION", "type": "habit", "goal": "Daily", "auto": None, "time": "07:15", "duration": 15},
-    {"id": "journal_m", "name": "MORNING JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "07:30", "duration": 15},
-    {"id": "planning", "name": "DAILY PLANNING", "type": "habit", "goal": "Daily", "auto": None, "time": "07:45", "duration": 15},
-    {"id": "spanish", "name": "LEARN SPANISH", "type": "habit", "goal": "Daily", "auto": None, "time": "08:00", "duration": 60},
+    {"id": "rise_5am", "name": "WAKE UP 5 AM", "type": "habit", "goal": "Daily", "auto": None, "time": "05:00", "duration": 5, "check_days": None},
+    {"id": "make_bed", "name": "MAKE BED", "type": "habit", "goal": "Daily", "auto": None, "time": "05:05", "duration": 5, "check_days": None},
+    {"id": "dream_journal", "name": "DREAM JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "05:10", "duration": 10, "check_days": None},
+    {"id": "electrolytes", "name": "DRINK ELECTROLYTES", "type": "habit", "goal": "Daily", "auto": None, "time": "05:20", "duration": 5, "check_days": None},
+    {"id": "vitamins", "name": "TAKE VITAMINS", "type": "habit", "goal": "Daily", "auto": None, "time": "05:25", "duration": 5, "check_days": None},
+    {"id": "jogging", "name": "JOGGING", "type": "habit", "goal": "2x/Week", "auto": None, "time": "05:30", "duration": 45, "check_days": None},
+    {"id": "cold_shower", "name": "COLD SHOWER", "type": "habit", "goal": "Daily", "auto": None, "time": "06:15", "duration": 5, "check_days": None},
+    {"id": "hygiene_m", "name": "MORNING HYGIENE", "type": "habit", "goal": "Daily", "auto": None, "time": "06:20", "duration": 25, "check_days": None},
+    {"id": "cat_feed_am", "name": "CAT FEEDING (AM)", "type": "habit", "goal": "Daily", "auto": None, "time": "06:45", "duration": 5, "check_days": None},
+    {"id": "cat_litter", "name": "CAT LITTER", "type": "habit", "goal": "Daily", "auto": None, "time": "06:50", "duration": 10, "check_days": None},
+    {"id": "bible", "name": "READ BIBLE", "type": "habit", "goal": "Daily", "auto": None, "time": "07:00", "duration": 15, "check_days": None},
+    {"id": "meditate", "name": "MEDITATION", "type": "habit", "goal": "Daily", "auto": None, "time": "07:15", "duration": 15, "check_days": None},
+    {"id": "journal_m", "name": "MORNING JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "07:30", "duration": 15, "check_days": None},
+    {"id": "planning", "name": "DAILY PLANNING", "type": "habit", "goal": "Daily", "auto": None, "time": "07:45", "duration": 15, "check_days": None},
+    {"id": "spanish", "name": "LEARN SPANISH", "type": "habit", "goal": "Daily", "auto": None, "time": "08:00", "duration": 60, "check_days": None},
 
     # DAY / EVENING
-    {"id": "grocery", "name": "GROCERY", "type": "habit", "goal": "Daily", "auto": None, "time": "12:30", "duration": 15},
-    {"id": "cooking", "name": "COOKING", "type": "habit", "goal": "Daily", "auto": None, "time": "13:00", "duration": 60},
-    {"id": "fasting", "name": "FASTING 19-13", "type": "habit", "goal": "Daily", "auto": None, "time": "13:00", "duration": 0},
-    {"id": "training", "name": "WORKOUT", "type": "habit", "goal": "3x/Week", "auto": "heart_minutes", "threshold": 40, "time": "17:00", "duration": 60},
-    {"id": "cat_feed_pm", "name": "CAT FEEDING (PM)", "type": "habit", "goal": "Daily", "auto": None, "time": "18:00", "duration": 5},
-    {"id": "tea", "name": "DRINK TEA", "type": "habit", "goal": "Daily", "auto": None, "time": "19:45", "duration": 15},
-    {"id": "reading", "name": "READING", "type": "habit", "goal": "Daily", "auto": None, "time": "20:00", "duration": 60},
-    {"id": "call", "name": "CALL GF", "type": "habit", "goal": "Daily", "auto": None, "time": "21:00", "duration": 15},
-    {"id": "journal_e", "name": "EVENING JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "21:15", "duration": 15},
-    {"id": "hygiene_e", "name": "EVENING HYGIENE", "type": "habit", "goal": "Daily", "auto": None, "time": "21:30", "duration": 15},
-    {"id": "stretching", "name": "STRETCHING", "type": "habit", "goal": "Daily", "auto": None, "time": "21:45", "duration": 15},
-    {"id": "steps", "name": "10K STEPS", "type": "habit", "goal": "Daily", "auto": "steps", "threshold": 10000, "time": "22:00", "duration": 0},
+    {"id": "monthly_review", "name": "MONTHLY REVIEW & BUDGET", "type": "habit", "goal": "Monthly", "auto": None, "time": "12:00", "duration": 30, "check_days": "month"},
+    {"id": "grocery", "name": "GROCERY", "type": "habit", "goal": "Daily", "auto": None, "time": "12:30", "duration": 15, "check_days": None},
+    {"id": "cooking", "name": "COOKING", "type": "habit", "goal": "Daily", "auto": None, "time": "13:00", "duration": 60, "check_days": None},
+    {"id": "fasting", "name": "FASTING 19-13", "type": "habit", "goal": "Daily", "auto": None, "time": "13:00", "duration": 0, "check_days": None},
+    {"id": "chore_weekly", "name": "WEEKLY CHORE (PUTZPLAN)", "type": "habit", "goal": "Weekly", "auto": None, "time": "14:00", "duration": 15, "check_days": [6]}, # Sunday only
+    {"id": "training", "name": "WORKOUT", "type": "habit", "goal": "3x/Week", "auto": "heart_minutes", "threshold": 40, "time": "17:00", "duration": 60, "check_days": None},
+    {"id": "cat_feed_pm", "name": "CAT FEEDING (PM)", "type": "habit", "goal": "Daily", "auto": None, "time": "18:00", "duration": 5, "check_days": None},
+    {"id": "tea", "name": "DRINK TEA", "type": "habit", "goal": "Daily", "auto": None, "time": "19:45", "duration": 15, "check_days": None},
+    {"id": "reading", "name": "READING", "type": "habit", "goal": "Daily", "auto": None, "time": "20:00", "duration": 60, "check_days": None},
+    {"id": "call", "name": "CALL GF", "type": "habit", "goal": "Daily", "auto": None, "time": "21:00", "duration": 15, "check_days": None},
+    {"id": "journal_e", "name": "EVENING JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "21:15", "duration": 15, "check_days": None},
+    {"id": "vacuum", "name": "VACUUMING", "type": "habit", "goal": "Daily", "auto": None, "time": "21:25", "duration": 5, "check_days": None},
+    {"id": "hygiene_e", "name": "EVENING HYGIENE", "type": "habit", "goal": "Daily", "auto": None, "time": "21:30", "duration": 15, "check_days": None},
+    {"id": "stretching", "name": "STRETCHING", "type": "habit", "goal": "Daily", "auto": None, "time": "21:45", "duration": 15, "check_days": None},
+    {"id": "steps", "name": "10K STEPS", "type": "habit", "goal": "Daily", "auto": "steps", "threshold": 10000, "time": "22:00", "duration": 0, "check_days": None},
 
     # DETOX / 24H (Sorted at End)
-    {"id": "corn", "name": "NO PORN/MASTURBATION", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0},
-    {"id": "coffee", "name": "NO COFFEE", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0},
-    {"id": "weed", "name": "NO WEED", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0},
-    {"id": "alcohol", "name": "NO ALCOHOL", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0},
-    {"id": "smoking", "name": "NO SMOKING", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0},
-    {"id": "games", "name": "NO VIDEO GAMES", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0},
-    {"id": "tv", "name": "NO TV/SERIES", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0},
-    {"id": "melatonin", "name": "NO MELATONIN", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0},
-    {"id": "youtube", "name": "NO YOUTUBE", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0},
-    {"id": "lies", "name": "NO LIES", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0}
+    {"id": "corn", "name": "NO PORN/MASTURBATION", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0, "check_days": None},
+    {"id": "coffee", "name": "NO COFFEE", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0, "check_days": None},
+    {"id": "weed", "name": "NO WEED", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0, "check_days": None},
+    {"id": "alcohol", "name": "NO ALCOHOL", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0, "check_days": None},
+    {"id": "smoking", "name": "NO SMOKING", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0, "check_days": None},
+    {"id": "games", "name": "NO VIDEO GAMES", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0, "check_days": None},
+    {"id": "tv", "name": "NO TV/SERIES", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0, "check_days": None},
+    {"id": "melatonin", "name": "NO MELATONIN", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0, "check_days": None},
+    {"id": "youtube", "name": "NO YOUTUBE", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0, "check_days": None},
+    {"id": "lies", "name": "NO LIES", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0, "check_days": None}
 ]
 
 def load_data():
     if not os.path.exists(DATA_FILE):
-        return {"history": {}, "streaks": {}, "best_streaks": {}}
+        return {"history": {}, "streaks": {}, "best_streaks": {}, "legacy_streaks": {}}
     try:
         with open(DATA_FILE, 'r', encoding='utf-8') as f:
             data = json.load(f)
             if "best_streaks" not in data: data["best_streaks"] = {}
+            if "legacy_streaks" not in data: data["legacy_streaks"] = {}
             return data
     except:
-        return {"history": {}, "streaks": {}, "best_streaks": {}}
+        return {"history": {}, "streaks": {}, "best_streaks": {}, "legacy_streaks": {}}
 
 def save_data(data):
-    # Create Backup before saving
     if os.path.exists(DATA_FILE):
         try:
             shutil.copyfile(DATA_FILE, BACKUP_FILE)
@@ -99,7 +103,7 @@ def ask_user(prompt):
         choice = input(f"{prompt} [y/n/l/s]: ").lower().strip()
         if choice in ['y', 'yes', 'j', 'ja', '1']: return True
         if choice in ['n', 'no', 'nein', '0']: return False
-        if choice in ['l', 'later', 's', 'skip', 'ny', 'not yet', '']: return None  # Skip/Pending/Later
+        if choice in ['l', 'later', 's', 'skip', 'ny', 'not yet', '']: return None
 
 def fetch_google_fit_data(target_date_str):
     if not GOOGLE_AVAILABLE: return {}
@@ -142,90 +146,103 @@ def fetch_google_fit_data(target_date_str):
         return {"calories_burned": calories, "heart_minutes": heart_minutes, "steps": steps, "sleep_hours": sleep_hours}
     except: return {}
 
-def calculate_streaks(history, best_streaks_data):
+def calculate_streaks(data, best_streaks_data):
+    history = data.get("history", {})
+    legacy = data.get("legacy_streaks", {})
     current_streaks = {t["id"]: 0 for t in TRACKERS}
     today = datetime.date.today()
     for t in TRACKERS:
         tid = t["id"]
         current = 0
+        offset = legacy.get(tid, 0)
         for i in range(365):
             d = today - datetime.timedelta(days=i)
             d_str = d.strftime("%Y-%m-%d")
             if d_str not in history:
                 if i == 0: continue
                 else: break
-            
             val = history[d_str].get(tid)
             if val is True: current += 1
             elif val is False: break
-            # If val is None (Pending), we treat it as break for streak calc unless strictly handled otherwise.
-            # But usually streak = consecutive TRUE days.
             else: break 
-        current_streaks[tid] = current
-        if current > best_streaks_data.get(tid, 0): best_streaks_data[tid] = current
+        final_streak = current + offset
+        current_streaks[tid] = final_streak
+        if final_streak > best_streaks_data.get(tid, 0): best_streaks_data[tid] = final_streak
     return current_streaks, best_streaks_data
 
 def run_tracker():
-    # --- COLOR SETUP ---
-    os.system('color') # Enable ANSI in Windows CMD
+    os.system('color')
     try:
         import colorama
         colorama.init()
         CYAN = colorama.Fore.CYAN
         RESET = colorama.Style.RESET_ALL
     except ImportError:
-        # Fallback to ANSI codes (works in Win10/11 with os.system('color'))
         CYAN = "\033[96m"
         RESET = "\033[0m"
 
     data = load_data()
-    
-    # ALWAYS Track TODAY (Incremental Mode)
-    target_date_str = get_date_str(0)
-    
-    print(f"\n⚡ PERFORMANCE CHECK: {target_date_str} (Today) ⚡")
+    current_hour = datetime.datetime.now().hour
+    default_date_str = get_date_str(0)
+    if 0 <= current_hour < 4:
+        print(f"\n🌙 It is late ({current_hour}:00).")
+        if ask_user("Do you want to track for YESTERDAY as default?"):
+            default_date_str = get_date_str(1)
+    print(f"\n📅 Target Date: {default_date_str}")
+    date_input = input("Enter specific date (YYYY-MM-DD), offset (e.g. -1), or Enter to confirm: ").strip()
+    target_date_str = default_date_str
+    if date_input:
+        try:
+            if date_input.startswith("-") and date_input[1:].isdigit():
+                offset = int(date_input[1:])
+                target_date_str = get_date_str(offset)
+            else:
+                datetime.datetime.strptime(date_input, "%Y-%m-%d")
+                target_date_str = date_input
+        except ValueError:
+            print(f"⚠️ Invalid format. Using default: {target_date_str}")
+
+    print(f"🚀 Tracking for: {target_date_str}")
     print("---------------------------------------")
     auto_data = fetch_google_fit_data(target_date_str)
-
-    # Load existing entries for today or create new
     day_entry = data["history"].get(target_date_str, {})
-    
+    target_date_obj = datetime.datetime.strptime(target_date_str, "%Y-%m-%d")
+    dow = target_date_obj.weekday()
+    dom = target_date_obj.day
     print("\n--- 🔨 EXECUTION (l/s = Later/Skip) ---")
-    
-    # Sort trackers by time for the execution flow
     sorted_trackers = sorted(TRACKERS, key=lambda x: x["time"])
-    
     changes_made = False
 
     for t in sorted_trackers:
+        check_days = t.get("check_days")
+        should_ask = True
+        if check_days is not None:
+            if check_days == "month":
+                if dom != 1: should_ask = False
+            elif isinstance(check_days, list):
+                if dow not in check_days: should_ask = False
+        if not should_ask and day_entry.get(t["id"]) is None:
+            continue
         existing_val = day_entry.get(t["id"])
-        
-        # AUTO CHECK
         if t["auto"] and t["auto"] in auto_data:
             val = auto_data[t["auto"]]
-            if val >= t["threshold"]: 
+            if val >= t["threshold"]:
                 day_entry[t["id"]] = True
                 changes_made = True
                 print(f"✅ {CYAN}{t['name']}{RESET}: Auto-Completed ({val})")
                 continue
-        
-        # MANUAL CHECK
-        # If already decided (True/False), skip asking
         if existing_val is not None:
             continue
-
-        # Ask if pending (None)
         q = f"Did you execute: {CYAN}{t['name']}{RESET}?" if t["type"] == "habit" else f"Did you stay CLEAN from: {CYAN}{t['name']}{RESET}?"
         success = ask_user(q)
-        
         if success is not None:
             day_entry[t["id"]] = success
             changes_made = True
+
     data["history"][target_date_str] = day_entry
-    curr, best = calculate_streaks(data["history"], data.get("best_streaks", {}))
+    curr, best = calculate_streaks(data, data.get("best_streaks", {}))
     data["streaks"] = curr
     data["best_streaks"] = best
-    
     if changes_made or target_date_str not in data["history"]:
         save_data(data)
         generate_dashboard(data)
@@ -237,13 +254,11 @@ def generate_dashboard(data):
     year = today.year
     month = today.month
     month_name = today.strftime('%B').upper()
-    
     month_folder_name = f"{year}_{month:02d}_{month_name}"
     month_folder_path = os.path.join(CURRENT_DIR, month_folder_name)
     if not os.path.exists(month_folder_path): os.makedirs(month_folder_path)
     monthly_dashboard_path = os.path.join(month_folder_path, f"DASHBOARD_{month_name}_{year}.md")
 
-    # --- PERFORMANCE CALCULATIONS ---
     def get_day_score(d_str):
         entry = data["history"].get(d_str, {})
         if not entry: return 0
@@ -251,10 +266,8 @@ def generate_dashboard(data):
 
     today_str = get_date_str(0)
     yesterday_str = get_date_str(1)
-    
     today_score = get_day_score(today_str)
     yesterday_score = get_day_score(yesterday_str)
-    
     daily_diff = ((today_score - yesterday_score) / len(TRACKERS) * 100) if len(TRACKERS) > 0 else 0
     daily_status = "🚀 IMPROVING" if daily_diff > 0 else "📉 DECLINING" if daily_diff < 0 else "⚖️ STABLE"
 
@@ -273,40 +286,30 @@ def generate_dashboard(data):
     prev_perf = get_monthly_perf(prev_date.year, prev_date.month)
     month_diff = current_perf - prev_perf
 
-    # --- TIME CALCULATION HELPERS ---
     def calculate_end_time(start_str, duration_min):
         if start_str == "24H": return "24H"
         try:
             t = datetime.datetime.strptime(start_str, "%H:%M")
             end = t + datetime.timedelta(minutes=duration_min)
             return end.strftime("%H:%M")
-        except:
-            return "?"
+        except: return "?"
 
-    # --- BUILD CONTENT ---
     content = f"# 📊 PERFORMANCE DASHBOARD - {month_name} {year}\n\n"
-    
-    # KPI Section
     content += "## 📈 KEY PERFORMANCE INDICATORS\n"
     content += f"- **Monthly Performance:** {current_perf:.1f}% (Month-to-Month: {month_diff:+.1f}%)\n"
     content += f"- **Daily Trend:** {daily_status} ({daily_diff:+.1f}% vs Yesterday)\n"
     content += f"- **Daily Score:** {today_score}/{len(TRACKERS)} Missions completed\n\n"
-    
     content += "## 🔥 CURRENT STREAKS\n\n"
-    content += "| MISSION | START | END | DUR | STREAK | BEST | STATUS |\n|:---|:---:|:---:|:---:|:---:|:---:|:---:|\n" 
+    content += "| MISSION | START | END | DUR | STREAK | BEST | STATUS |\n|:---|:---:|:---:|:---:|:---:|:---:|:---:|"
     
-    # SORT TRACKERS FOR DASHBOARD
     sorted_trackers = sorted(TRACKERS, key=lambda x: x["time"])
-    
     for t in sorted_trackers:
         streak = data["streaks"].get(t["id"], 0)
         best = data["best_streaks"].get(t["id"], 0)
         status = "💀 FAIL" if streak == 0 else "🔥 ON FIRE" if streak > 7 else "🟢 ACTIVE"
-        
         start = t['time']
         dur = f"{t['duration']}m" if t['duration'] > 0 else "-"
         end = calculate_end_time(start, t['duration']) if t['duration'] > 0 else "-"
-        
         content += f"| **{t['name']}** | {start} | {end} | {dur} | **{streak} Days** | **{best} Days** | {status} |\n"
     
     content += f"\n## 📅 CALENDAR: {month_name}\n\n"
@@ -320,7 +323,7 @@ def generate_dashboard(data):
         d_str = d_obj.strftime("%Y-%m-%d")
         row = f"| **{d_obj.strftime('%d.%m.')}** | "
         if d_str in data["history"]:
-            entries = data["history"][d_str]
+            entries = data["history"].get(d_str)
             for t in sorted_trackers:
                 val = entries.get(t["id"])
                 if val is True: icon = "✅"
@@ -334,7 +337,6 @@ def generate_dashboard(data):
     for path in [monthly_dashboard_path, ROOT_DASHBOARD]:
         with open(path, 'w', encoding='utf-8') as f:
             f.write(content)
-            
     print(f"📊 Dashboard updated: {monthly_dashboard_path}")
 
 if __name__ == "__main__":
