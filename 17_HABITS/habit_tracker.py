@@ -34,11 +34,11 @@ TRACKERS = [
     {"id": "dream_journal", "name": "DREAM JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "05:10", "duration": 10, "check_days": None},
     {"id": "electrolytes", "name": "DRINK ELECTROLYTES", "type": "habit", "goal": "Daily", "auto": None, "time": "05:20", "duration": 5, "check_days": None},
     {"id": "vitamins", "name": "TAKE VITAMINS", "type": "habit", "goal": "Daily", "auto": None, "time": "05:25", "duration": 5, "check_days": None},
-    {"id": "jogging", "name": "JOGGING", "type": "habit", "goal": "2x/Week", "auto": None, "time": "05:30", "duration": 45, "check_days": None},
+    {"id": "jogging", "name": "JOGGING", "type": "habit", "goal": "Daily", "auto": None, "time": "05:30", "duration": 45, "check_days": None},
     {"id": "cold_shower", "name": "COLD SHOWER", "type": "habit", "goal": "Daily", "auto": None, "time": "06:15", "duration": 5, "check_days": None},
     {"id": "hygiene_m", "name": "MORNING HYGIENE", "type": "habit", "goal": "Daily", "auto": None, "time": "06:20", "duration": 25, "check_days": None},
     {"id": "cat_feed_am", "name": "CAT FEEDING (AM)", "type": "habit", "goal": "Daily", "auto": None, "time": "06:45", "duration": 5, "check_days": None},
-    {"id": "cat_litter", "name": "CAT LITTER", "type": "habit", "goal": "Daily", "auto": None, "time": "06:50", "duration": 10, "check_days": None},
+    {"id": "cat_litter", "name": "CAT LITTER", "type": "habit", "goal": "Daily", "auto": None, "time": "06:50", "duration": 5, "check_days": None},
     {"id": "bible", "name": "READ BIBLE", "type": "habit", "goal": "Daily", "auto": None, "time": "07:00", "duration": 15, "check_days": None},
     {"id": "meditate", "name": "MEDITATION", "type": "habit", "goal": "Daily", "auto": None, "time": "07:15", "duration": 15, "check_days": None},
     {"id": "journal_m", "name": "MORNING JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "07:30", "duration": 15, "check_days": None},
@@ -49,26 +49,28 @@ TRACKERS = [
     {"id": "church", "name": "CHURCH SERVICE", "type": "habit", "goal": "Weekly", "auto": None, "time": "10:30", "duration": 60, "check_days": [6]}, # Sunday only
     {"id": "visit_parents", "name": "VISIT PARENTS", "type": "habit", "goal": "Monthly", "auto": None, "time": "10:00", "duration": 240, "check_days": "month"},
     {"id": "monthly_review", "name": "MONTHLY REVIEW & BUDGET", "type": "habit", "goal": "Monthly", "auto": None, "time": "12:00", "duration": 30, "check_days": "month"},
-    {"id": "grocery", "name": "GROCERY", "type": "habit", "goal": "Daily", "auto": None, "time": "12:30", "duration": 15, "check_days": None},
-    {"id": "cooking", "name": "COOKING", "type": "habit", "goal": "Daily", "auto": None, "time": "13:00", "duration": 60, "check_days": None},
     {"id": "fasting", "name": "FASTING 19-13", "type": "habit", "goal": "Daily", "auto": None, "time": "13:00", "duration": 0, "check_days": None},
-    {"id": "laundry", "name": "LAUNDRY & LINENS", "type": "habit", "goal": "Weekly", "auto": None, "time": "13:30", "duration": 60, "check_days": [6]}, # Sunday only
-    {"id": "chore_weekly", "name": "WEEKLY CHORE (PUTZPLAN)", "type": "habit", "goal": "Weekly", "auto": None, "time": "14:00", "duration": 15, "check_days": [6]}, # Sunday only
+    {"id": "grocery", "name": "GROCERY", "type": "habit", "goal": "Daily", "auto": None, "time": "13:00", "duration": 15, "check_days": None},
+    {"id": "cooking", "name": "COOKING", "type": "habit", "goal": "Daily", "auto": None, "time": "13:15", "duration": 45, "check_days": None},
+    {"id": "laundry", "name": "LAUNDRY & LINENS", "type": "habit", "goal": "Weekly", "auto": None, "time": "14:00", "duration": 60, "check_days": [6]}, # Sunday only
+    {"id": "chores", "name": "DAILY CHORES", "type": "habit", "goal": "Daily", "auto": None, "time": "14:00", "duration": 10, "check_days": None},
     {"id": "backup_system", "name": "SYSTEM BACKUP", "type": "habit", "goal": "Weekly", "auto": None, "time": "14:30", "duration": 15, "check_days": [6]}, # Sunday only
     {"id": "call_parents", "name": "CALL PARENTS", "type": "habit", "goal": "Weekly", "auto": None, "time": "15:00", "duration": 30, "check_days": [6]}, # Sunday only
-    {"id": "training", "name": "WORKOUT", "type": "habit", "goal": "3x/Week", "auto": "heart_minutes", "threshold": 40, "time": "17:00", "duration": 60, "check_days": None},
+    {"id": "training", "name": "WORKOUT", "type": "habit", "goal": "Daily", "auto": "heart_minutes", "threshold": 40, "time": "17:00", "duration": 60, "check_days": None},
     {"id": "cat_feed_pm", "name": "CAT FEEDING (PM)", "type": "habit", "goal": "Daily", "auto": None, "time": "18:00", "duration": 5, "check_days": None},
+    {"id": "stretching", "name": "STRETCHING", "type": "habit", "goal": "Daily", "auto": None, "time": "18:05", "duration": 15, "check_days": None},
+    {"id": "vacuum", "name": "VACUUMING", "type": "habit", "goal": "Daily", "auto": None, "time": "19:15", "duration": 5, "check_days": None},
     {"id": "dishes", "name": "DO DISHES", "type": "habit", "goal": "Daily", "auto": None, "time": "19:30", "duration": 15, "check_days": None},
     {"id": "tea", "name": "DRINK TEA", "type": "habit", "goal": "Daily", "auto": None, "time": "19:45", "duration": 15, "check_days": None},
     {"id": "reading", "name": "READING", "type": "habit", "goal": "Daily", "auto": None, "time": "20:00", "duration": 60, "check_days": None},
     {"id": "call", "name": "CALL GF", "type": "habit", "goal": "Daily", "auto": None, "time": "21:00", "duration": 15, "check_days": None},
-    {"id": "journal_e", "name": "EVENING JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "21:15", "duration": 15, "check_days": None},
-    {"id": "vacuum", "name": "VACUUMING", "type": "habit", "goal": "Daily", "auto": None, "time": "21:25", "duration": 5, "check_days": None},
-    {"id": "hygiene_e", "name": "EVENING HYGIENE", "type": "habit", "goal": "Daily", "auto": None, "time": "21:30", "duration": 15, "check_days": None},
-    {"id": "stretching", "name": "STRETCHING", "type": "habit", "goal": "Daily", "auto": None, "time": "21:45", "duration": 15, "check_days": None},
+    {"id": "meditate_pm", "name": "MEDITATION (PM)", "type": "habit", "goal": "Daily", "auto": None, "time": "21:05", "duration": 15, "check_days": None},
+    {"id": "journal_e", "name": "EVENING JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "21:20", "duration": 15, "check_days": None},
+    {"id": "hygiene_e", "name": "EVENING HYGIENE", "type": "habit", "goal": "Daily", "auto": None, "time": "21:40", "duration": 15, "check_days": None},
     {"id": "steps", "name": "10K STEPS", "type": "habit", "goal": "Daily", "auto": "steps", "threshold": 10000, "time": "22:00", "duration": 0, "check_days": None},
 
     # DETOX / 24H (Sorted at End)
+    {"id": "sugar", "name": "NO SUGAR", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0, "check_days": None},
     {"id": "corn", "name": "NO PORN/MASTURBATION", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0, "check_days": None},
     {"id": "coffee", "name": "NO COFFEE", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0, "check_days": None},
     {"id": "weed", "name": "NO WEED", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0, "check_days": None},
@@ -365,7 +367,7 @@ def generate_dashboard(data):
         return table + "\n"
 
     content += build_table("🌞 DAILY MISSIONS", lambda t: t['type'] == 'habit' and t['goal'] == 'Daily')
-    content += build_table("📅 WEEKLY MISSIONS", lambda t: t['type'] == 'habit' and t['goal'] == 'Weekly')
+    content += build_table("📅 WEEKLY & FITNESS MISSIONS", lambda t: t['type'] == 'habit' and t['goal'] in ['Weekly', '2x/Week', '3x/Week'])
     content += build_table("🗓️ MONTHLY MISSIONS", lambda t: t['type'] == 'habit' and t['goal'] == 'Monthly')
     content += build_table("🚫 DETOX PROTOCOL", lambda t: t['type'] == 'avoid')
     
