@@ -96,9 +96,10 @@ def get_date_str(days_offset=0):
 
 def ask_user(prompt):
     while True:
-        choice = input(f"{prompt} (y/n): ").lower().strip()
+        choice = input(f"{prompt} [y/n/l/s]: ").lower().strip()
         if choice in ['y', 'yes', 'j', 'ja', '1']: return True
         if choice in ['n', 'no', 'nein', '0']: return False
+        if choice in ['l', 'later', 's', 'skip', 'ny', 'not yet', '']: return None  # Skip/Pending/Later
 
 def fetch_google_fit_data(target_date_str):
     if not GOOGLE_AVAILABLE: return {}
@@ -153,13 +154,22 @@ def calculate_streaks(history, best_streaks_data):
             if d_str not in history:
                 if i == 0: continue
                 else: break
-            if history[d_str].get(tid) is True: current += 1
-            else: break
+            
+            val = history[d_str].get(tid)
+            if val is True: current += 1
+            elif val is False: break
+            # If val is None (Pending), we treat it as break for streak calc unless strictly handled otherwise.
+            # But usually streak = consecutive TRUE days.
+            else: break 
         current_streaks[tid] = current
         if current > best_streaks_data.get(tid, 0): best_streaks_data[tid] = current
     return current_streaks, best_streaks_data
 
 def run_tracker():
+    os.system('color') # Enable ANSI colors in Windows CMD
+    CYAN = "\033[96m"
+    RESET = "\033[0m"
+    
     data = load_data()
     is_evening = datetime.datetime.now().hour >= 20
     target_date_str = get_date_str(0) if is_evening else get_date_str(1)
@@ -168,34 +178,51 @@ def run_tracker():
     print("---------------------------------------")
     auto_data = fetch_google_fit_data(target_date_str)
 
-    if target_date_str in data["history"]:
-        print("✅ Data for this date already exists.")
-        if not ask_user("Overwrite?"):
-            generate_dashboard(data)
-            return
-
-    day_entry = {}
-    print("\n--- 🔨 EXECUTION ---")
+    # Load existing entries for today or create new
+    day_entry = data["history"].get(target_date_str, {})
     
-    # Sort trackers by time for the execution flow as well
+    print("\n--- 🔨 EXECUTION (l/s = Later/Skip) ---")
+    
+    # Sort trackers by time for the execution flow
     sorted_trackers = sorted(TRACKERS, key=lambda x: x["time"])
     
+    changes_made = False
+
     for t in sorted_trackers:
-        success = None
+        existing_val = day_entry.get(t["id"])
+        
+        # AUTO CHECK
         if t["auto"] and t["auto"] in auto_data:
             val = auto_data[t["auto"]]
-            if val >= t["threshold"]: success = True
-        if success is None:
-            q = f"Did you execute: {t['name']}?" if t["type"] == "habit" else f"Did you stay CLEAN from: {t['name']}?"
-            success = ask_user(q)
-        day_entry[t["id"]] = success
+            if val >= t["threshold"]:
+                day_entry[t["id"]] = True
+                changes_made = True
+                print(f"✅ {CYAN}{t['name']}{RESET}: Auto-Completed ({val})")
+                continue
+        
+        # MANUAL CHECK
+        # If already decided (True/False), skip asking
+        if existing_val is not None:
+            continue
+
+        # Ask if pending (None)
+        q = f"Did you execute: {CYAN}{t['name']}{RESET}?" if t["type"] == "habit" else f"Did you stay CLEAN from: {CYAN}{t['name']}{RESET}?"
+        success = ask_user(q)
+        
+        if success is not None:
+            day_entry[t["id"]] = success
+            changes_made = True
 
     data["history"][target_date_str] = day_entry
     curr, best = calculate_streaks(data["history"], data.get("best_streaks", {}))
     data["streaks"] = curr
     data["best_streaks"] = best
-    save_data(data)
-    generate_dashboard(data)
+    
+    if changes_made or target_date_str not in data["history"]:
+        save_data(data)
+        generate_dashboard(data)
+    else:
+        print("\nNo changes made.")
 
 def generate_dashboard(data):
     today = datetime.date.today()
@@ -220,7 +247,6 @@ def generate_dashboard(data):
     today_score = get_day_score(today_str)
     yesterday_score = get_day_score(yesterday_str)
     
-    # 1% Better logic: Success rate today vs yesterday
     daily_diff = ((today_score - yesterday_score) / len(TRACKERS) * 100) if len(TRACKERS) > 0 else 0
     daily_status = "🚀 IMPROVING" if daily_diff > 0 else "📉 DECLINING" if daily_diff < 0 else "⚖️ STABLE"
 
@@ -230,7 +256,7 @@ def generate_dashboard(data):
         for d_str, entries in data["history"].items():
             if d_str.startswith(f"{y}-{m:02d}"):
                 for t in TRACKERS:
-                    if entries.get(t["id"]): success += 1
+                    if entries.get(t["id"]) is True: success += 1
                     total += 1
         return (success / total * 100) if total > 0 else 0.0
 
@@ -259,7 +285,7 @@ def generate_dashboard(data):
     content += f"- **Daily Score:** {today_score}/{len(TRACKERS)} Missions completed\n\n"
     
     content += "## 🔥 CURRENT STREAKS\n\n"
-    content += "| MISSION | START | END | DUR | STREAK | BEST | STATUS |\n|:---|:---:|:---:|:---:|:---:|:---:|:---:|\n"
+    content += "| MISSION | START | END | DUR | STREAK | BEST | STATUS |\n|:---|:---:|:---:|:---:|:---:|:---:|:---:|\n" 
     
     # SORT TRACKERS FOR DASHBOARD
     sorted_trackers = sorted(TRACKERS, key=lambda x: x["time"])
@@ -288,7 +314,10 @@ def generate_dashboard(data):
         if d_str in data["history"]:
             entries = data["history"][d_str]
             for t in sorted_trackers:
-                icon = "✅" if entries.get(t["id"]) is True else "❌"
+                val = entries.get(t["id"])
+                if val is True: icon = "✅"
+                elif val is False: icon = "❌"
+                else: icon = "➖"
                 row += f"{icon} | "
         elif d_obj > today: row += "➖ | " * len(sorted_trackers)
         else: row += "❌ | " * len(sorted_trackers)
