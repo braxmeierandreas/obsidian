@@ -55,26 +55,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Engesser_Braeunlingen_Familienpass.md",
+                "file": "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Piseddu_Pro_Familia_VS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Interview_Engesser_Braeunlingen_Familienpass"
+              "title": "Interview_Piseddu_Pro_Familia_VS"
             }
           },
           {
-            "id": "4514608abdc288fd",
+            "id": "edb2da88e1cc0d7c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_JOURNAL/01_2026/02_FEBRUARY/02_022026.md",
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02_022026"
+              "title": "conflict-files-obsidian-git"
             }
           }
         ],
@@ -135,7 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 511.5
   },
   "right": {
     "id": "a5a1951f00145a2f",
@@ -252,10 +252,22 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "4514608abdc288fd",
+  "active": "edb2da88e1cc0d7c",
   "lastOpenFiles": [
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Piseddu_Pro_Familia_VS.md",
     "conflict-files-obsidian-git.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Piseddu_Pro_Familia_VS.docx",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Rau_Kreisjugendamt_VS.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Rau_Kreisjugendamt_VS.docx",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Mengesdorf_TV_St_Georgen.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/~$terview_Mengesdorf_TV_St_Georgen.docx",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/~$terview_Engesser_Braeunlingen_Familienpass.docx",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Knoebel_Pro_Familia_VS.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Engesser_Braeunlingen_Familienpass.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/B4.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/B3.md",
     "02_JOURNAL/01_2026/02_FEBRUARY/02_022026.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/B4.docx",
     "02_JOURNAL/01_2026/DAILY_TEMPLATE.md",
     "02_JOURNAL/01_2026/02_FEBRUARY/03_022026.md",
     "02_JOURNAL/01_2026/02_FEBRUARY/07_022026.md",
@@ -276,20 +288,7 @@
     "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/00_Titelblatt.md",
     "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/00_Inhaltsverzeichnis.md",
     "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/Braxmeier.Andreas_AGF_WiSe25_26_Global_Health_Ausarbeitung_Widerstand_in_CHS.docx",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/Archiv/UEBERSICHT_GLOBAL_HEALTH.md",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/Archiv/PROF_DR_NICOLE_WEYDMANN.md",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/Archiv/PROF_DR_CHRISTIAN_WEIDMANN.md",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/Archiv/PRAESENTATION_COMMUNITY_HEALTH_SYSTEMS_WIDERSTAND/SKRIPTE/README.md",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/Archiv/PRAESENTATION_COMMUNITY_HEALTH_SYSTEMS_WIDERSTAND/LITERATUR_ROHDATEN/PHCFM_16_4573.md",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/Archiv/PRAESENTATION_COMMUNITY_HEALTH_SYSTEMS_WIDERSTAND/LITERATUR_ROHDATEN/S11673_016_9763_8.md",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/Archiv/PRAESENTATION_COMMUNITY_HEALTH_SYSTEMS_WIDERSTAND/LITERATUR_ROHDATEN/JOURNAL_OF_ADVANCED_NURSING_2005_PERRON_AGENTS_OF_CARE_AND_AGENTS_OF_THE_STATE_BIOPOWER_AND_NURSING_PRACTICE.md",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/Archiv/PRAESENTATION_COMMUNITY_HEALTH_SYSTEMS_WIDERSTAND/LITERATUR_ROHDATEN/ICMCRJ_3_1360.md",
     "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/Archiv/PRAESENTATION_COMMUNITY_HEALTH_SYSTEMS_WIDERSTAND/SKRIPTE",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/Archiv/PRAESENTATION_COMMUNITY_HEALTH_SYSTEMS_WIDERSTAND/LITERATUR_ROHDATEN",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/Archiv/PRAESENTATION_COMMUNITY_HEALTH_SYSTEMS_WIDERSTAND/LITERATUR",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/Archiv/PRAESENTATION_COMMUNITY_HEALTH_SYSTEMS_WIDERSTAND/EIGENE_NOTIZEN",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/Archiv/PRAESENTATION_COMMUNITY_HEALTH_SYSTEMS_WIDERSTAND/ABGABEN",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/Archiv/PRAESENTATION_COMMUNITY_HEALTH_SYSTEMS_WIDERSTAND",
     "03_UNIVERSITY/03_AGF2/02_BGM/FINAL_ABGABE/Folder.jpg",
     "03_UNIVERSITY/03_AGF2/02_BGM/FINAL_ABGABE/AlbumArtSmall.jpg",
     "Obsidian/22_GEDA/GEDA_Analysis_Results/05_Cost_Income.png",
