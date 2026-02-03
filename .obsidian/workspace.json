@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_UNIVERSITY/01_RESEARCH_PROJECT/09_Email/01_Anschreiben_Schulen_Schulsozialarbeit.md",
+                "file": "17_HABITS/DASHBOARD_HABITS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_Anschreiben_Schulen_Schulsozialarbeit"
+              "title": "DASHBOARD_HABITS"
             }
           },
           {
@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Piseddu_Pro_Familia_VS.md",
+                "file": "17_HABITS/2026_02_FEBRUARY/DASHBOARD_FEBRUARY_2026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Interview_Piseddu_Pro_Familia_VS"
+              "title": "DASHBOARD_FEBRUARY_2026"
             }
           }
         ],
@@ -240,8 +240,18 @@
   },
   "active": "e93cd8d5c68bf487",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "17_HABITS/init_feb.py",
+    "02_JOURNAL/01_2026/02_FEBRUARY/03_022026.md",
+    "17_HABITS/2026_02_FEBRUARY/DASHBOARD_FEBRUARY_2026.md",
+    "17_HABITS/2026_02_FEBRUARY",
+    "17_HABITS/__pycache__/habit_tracker.cpython-310.pyc",
+    "17_HABITS/__pycache__",
+    "17_HABITS/GOALS_2026.md",
+    "17_HABITS/DASHBOARD_HABITS.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/09_Email/05_Anschreiben_Beratung_Praevention_Soziales.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/09_Email/01_Anschreiben_Schulen_Schulsozialarbeit.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Piseddu_Pro_Familia_VS.md",
+    "conflict-files-obsidian-git.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Piseddu_Pro_Familia_VS.docx",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Rau_Kreisjugendamt_VS.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Rau_Kreisjugendamt_VS.docx",
@@ -255,26 +265,16 @@
     "02_JOURNAL/01_2026/02_FEBRUARY/02_022026.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/B4.docx",
     "02_JOURNAL/01_2026/DAILY_TEMPLATE.md",
-    "02_JOURNAL/01_2026/02_FEBRUARY/03_022026.md",
     "02_JOURNAL/01_2026/02_FEBRUARY/07_022026.md",
     "Unbenannt.md",
     "Hausarbeit Vorlage.docx",
-    "03_UNIVERSITY/03_AGF2/Hausarbeit Vorlage.docx",
     "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/HAUSARBEIT_GESAMT_BRAXMEIER_FINAL.md",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/HAUSARBEIT_GESAMT_BRAXMEIER_FINAL.docx",
     "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/09_Eigenstaendigkeitserklaerung.md",
     "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/08_Literaturverzeichnis.md",
     "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/07_Fazit.md",
     "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/06_Diskussion_und_Handlungsempfehlungen.md",
     "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/05_Fallstudie_Uganda.md",
     "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/04_Widerstand_als_Feedback.md",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/03_CHS_und_Machtstrukturen.md",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/02_Theoretischer_Rahmen.md",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/01_Einleitung.md",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/00_Titelblatt.md",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/00_Inhaltsverzeichnis.md",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/Braxmeier.Andreas_AGF_WiSe25_26_Global_Health_Ausarbeitung_Widerstand_in_CHS.docx",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/Archiv/PRAESENTATION_COMMUNITY_HEALTH_SYSTEMS_WIDERSTAND/SKRIPTE",
     "03_UNIVERSITY/03_AGF2/02_BGM/FINAL_ABGABE/Folder.jpg",
     "03_UNIVERSITY/03_AGF2/02_BGM/FINAL_ABGABE/AlbumArtSmall.jpg",
     "Obsidian/22_GEDA/GEDA_Analysis_Results/05_Cost_Income.png",

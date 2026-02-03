@@ -25,13 +25,36 @@ ROOT_DASHBOARD = os.path.join(CURRENT_DIR, "DASHBOARD_HABITS.md")
 
 # TRACKERS with AUTO-CHECK Rules
 TRACKERS = [
-    {"id": "bible", "name": "BIBLE", "type": "habit", "goal": "Daily", "auto": None},
-    {"id": "spanish", "name": "SPANISH", "type": "habit", "goal": "Daily", "auto": None},
-    {"id": "calories", "name": "3000 KCAL", "type": "habit", "goal": "Daily", "auto": "calories_burned", "threshold": 3000},
-    {"id": "sleep", "name": "SLEEP >7H", "type": "habit", "goal": "Daily", "auto": "sleep_hours", "threshold": 7.0},
-    {"id": "training", "name": "TRAINING", "type": "habit", "goal": "5x/Week", "auto": "heart_minutes", "threshold": 40}, 
-    {"id": "corn", "name": "NO PORN", "type": "avoid", "goal": "Clean Streak", "auto": None},
-    {"id": "social", "name": "NO SOCIAL", "type": "avoid", "goal": "Clean Streak", "auto": None}
+    # MORNING ROUTINE (05:00 - 08:00)
+    {"id": "rise_5am", "name": "WAKE UP 5 AM", "type": "habit", "goal": "Daily", "auto": None, "time": "05:00"},
+    {"id": "make_bed", "name": "MAKE BED", "type": "habit", "goal": "Daily", "auto": None, "time": "05:05"},
+    {"id": "electrolytes", "name": "DRINK ELECTROLYTES", "type": "habit", "goal": "Daily", "auto": None, "time": "05:10"},
+    {"id": "vitamins", "name": "TAKE VITAMINS", "type": "habit", "goal": "Daily", "auto": None, "time": "05:15"},
+    {"id": "cold_shower", "name": "COLD SHOWER", "type": "habit", "goal": "Daily", "auto": None, "time": "05:20"},
+    {"id": "beard", "name": "GROOM BEARD", "type": "habit", "goal": "Daily", "auto": None, "time": "05:30"},
+    {"id": "bible", "name": "READ BIBLE", "type": "habit", "goal": "Daily", "auto": None, "time": "06:00"},
+    {"id": "meditate", "name": "MEDITATION", "type": "habit", "goal": "Daily", "auto": None, "time": "06:15"},
+    {"id": "journal", "name": "JOURNALING", "type": "habit", "goal": "Daily", "auto": None, "time": "06:30"},
+    {"id": "planning", "name": "DAILY PLANNING", "type": "habit", "goal": "Daily", "auto": None, "time": "06:45"},
+    {"id": "dream_journal", "name": "DREAM JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "07:00"},
+    {"id": "spanish", "name": "LEARN SPANISH", "type": "habit", "goal": "Daily", "auto": None, "time": "07:30"},
+
+    # DAY / EVENING (12:00 - 22:00)
+    {"id": "fasting", "name": "INTERMITTENT FASTING", "type": "habit", "goal": "Daily", "auto": None, "time": "12:00"},
+    {"id": "training", "name": "GYM WORKOUT", "type": "habit", "goal": "3x/Week", "auto": "heart_minutes", "threshold": 40, "time": "17:00"},
+    {"id": "jogging", "name": "JOGGING", "type": "habit", "goal": "2x/Week", "auto": None, "time": "17:30"},
+    {"id": "tea", "name": "DRINK TEA", "type": "habit", "goal": "Daily", "auto": None, "time": "20:00"},
+    {"id": "reading", "name": "READING", "type": "habit", "goal": "Daily", "auto": None, "time": "21:00"},
+    {"id": "stretching", "name": "STRETCHING", "type": "habit", "goal": "Daily", "auto": None, "time": "21:30"},
+    {"id": "steps", "name": "10K STEPS", "type": "habit", "goal": "Daily", "auto": "steps", "threshold": 10000, "time": "22:00"},
+
+    # DETOX / 24H (Sorted at End)
+    {"id": "corn", "name": "NO PORN/MASTURBATION", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H"},
+    {"id": "coffee", "name": "NO COFFEE", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H"},
+    {"id": "weed", "name": "NO WEED", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H"},
+    {"id": "games", "name": "NO VIDEO GAMES", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H"},
+    {"id": "melatonin", "name": "NO MELATONIN", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H"},
+    {"id": "youtube", "name": "NO YOUTUBE", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H"}
 ]
 
 def load_data():
@@ -72,10 +95,20 @@ def fetch_google_fit_data(target_date_str):
         target_date = datetime.datetime.strptime(target_date_str, "%Y-%m-%d")
         start_ts = int(target_date.replace(hour=0, minute=0, second=0).timestamp() * 1000)
         end_ts = int(target_date.replace(hour=23, minute=59, second=59).timestamp() * 1000)
-        body = {"aggregateBy": [{"dataTypeName": "com.google.calories.expended"},{"dataTypeName": "com.google.heart_minutes"}],"bucketByTime": {"durationMillis": 86400000},"startTimeMillis": start_ts,"endTimeMillis": end_ts}
+        body = {
+            "aggregateBy": [
+                {"dataTypeName": "com.google.calories.expended"},
+                {"dataTypeName": "com.google.heart_minutes"},
+                {"dataTypeName": "com.google.step_count.delta"}
+            ],
+            "bucketByTime": {"durationMillis": 86400000},
+            "startTimeMillis": start_ts,
+            "endTimeMillis": end_ts
+        }
         dataset_res = service.users().dataset().aggregate(userId="me", body=body).execute()
         calories = 0
         heart_minutes = 0
+        steps = 0
         for bucket in dataset_res.get('bucket', []):
             for ds in bucket.get('dataset', []):
                 dtype = ds.get('dataSourceId', '')
@@ -84,6 +117,7 @@ def fetch_google_fit_data(target_date_str):
                         val = v.get('intVal') if v.get('intVal') is not None else v.get('fpVal', 0)
                         if "calories" in dtype: calories += val
                         if "heart_minutes" in dtype: heart_minutes += val
+                        if "step_count" in dtype: steps += val
         prev_noon = (target_date - datetime.timedelta(days=1)).replace(hour=12)
         target_noon = target_date.replace(hour=12)
         sleep_res = service.users().sessions().list(userId="me", startTime=prev_noon.isoformat() + "Z", endTime=target_noon.isoformat() + "Z", activityType=[72]).execute()
@@ -92,7 +126,7 @@ def fetch_google_fit_data(target_date_str):
             s = int(sess['startTimeMillis'])
             e = int(sess['endTimeMillis'])
             sleep_hours += (e - s) / 1000 / 3600
-        return {"calories_burned": calories, "heart_minutes": heart_minutes, "sleep_hours": sleep_hours}
+        return {"calories_burned": calories, "heart_minutes": heart_minutes, "steps": steps, "sleep_hours": sleep_hours}
     except: return {}
 
 def calculate_streaks(history, best_streaks_data):
@@ -130,7 +164,11 @@ def run_tracker():
 
     day_entry = {}
     print("\n--- 🔨 EXECUTION ---")
-    for t in TRACKERS:
+    
+    # Sort trackers by time for the execution flow as well
+    sorted_trackers = sorted(TRACKERS, key=lambda x: x["time"])
+    
+    for t in sorted_trackers:
         success = None
         if t["auto"] and t["auto"] in auto_data:
             val = auto_data[t["auto"]]
@@ -199,17 +237,25 @@ def generate_dashboard(data):
     content += f"- **Daily Score:** {today_score}/{len(TRACKERS)} Missions completed\n\n"
     
     content += "## 🔥 CURRENT STREAKS\n\n"
-    content += "| MISSION | STREAK | BEST | STATUS |\n|:---|:---:|:---:|:---:|\n" 
-    for t in TRACKERS:
+    content += "| MISSION | TIME | STREAK | BEST | STATUS |\n|:---|:---:|:---:|:---:|:---:|\n"
+    
+    # SORT TRACKERS FOR DASHBOARD
+    sorted_trackers = sorted(TRACKERS, key=lambda x: x["time"])
+    
+    for t in sorted_trackers:
         streak = data["streaks"].get(t["id"], 0)
         best = data["best_streaks"].get(t["id"], 0)
         status = "💀 FAIL" if streak == 0 else "🔥 ON FIRE" if streak > 7 else "🟢 ACTIVE"
-        content += f"| **{t['name']}** | **{streak} Days** | **{best} Days** | {status} |\n"
+        content += f"| **{t['name']}** | {t['time']} | **{streak} Days** | **{best} Days** | {status} |\n"
     
     content += f"\n## 📅 CALENDAR: {month_name}\n\n"
-    headers = ["DATE"] + [t["name"] for t in TRACKERS]
+    # Use abbreviation or short name for calendar columns to save space? 
+    # User wanted longer names, but calendar table might break.
+    # Let's use the full name but maybe truncated if needed, or just full name. 
+    # For now, full name as requested.
+    headers = ["DATE"] + [t["name"] for t in sorted_trackers]
     content += "| " + " | ".join(headers) + " |\n"
-    content += "| :--- " + "| :---: " * len(TRACKERS) + "|\n"
+    content += "| :--- " + "| :---: " * len(sorted_trackers) + "|\n"
     
     num_days = calendar.monthrange(year, month)[1]
     for day in range(1, num_days + 1):
@@ -218,11 +264,11 @@ def generate_dashboard(data):
         row = f"| **{d_obj.strftime('%d.%m.')}** | "
         if d_str in data["history"]:
             entries = data["history"][d_str]
-            for t in TRACKERS:
+            for t in sorted_trackers:
                 icon = "✅" if entries.get(t["id"]) is True else "❌"
                 row += f"{icon} | "
-        elif d_obj > today: row += "➖ | " * len(TRACKERS)
-        else: row += "❌ | " * len(TRACKERS)
+        elif d_obj > today: row += "➖ | " * len(sorted_trackers)
+        else: row += "❌ | " * len(sorted_trackers)
         content += row + "\n"
 
     for path in [monthly_dashboard_path, ROOT_DASHBOARD]:
