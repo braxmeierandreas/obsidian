@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "17_HABITS/2026_02_FEBRUARY/DASHBOARD_FEBRUARY_2026.md",
+                "file": "02_JOURNAL/01_2026/02_FEBRUARY/03_022026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DASHBOARD_FEBRUARY_2026"
+              "title": "03_022026"
             }
           }
         ],
@@ -240,11 +240,11 @@
   },
   "active": "e93cd8d5c68bf487",
   "lastOpenFiles": [
+    "17_HABITS/2026_02_FEBRUARY/DASHBOARD_FEBRUARY_2026.md",
     "17_HABITS/SETUP_STREAKS.bat",
     "17_HABITS/setup_streaks.py",
     "17_HABITS/init_feb.py",
     "02_JOURNAL/01_2026/02_FEBRUARY/03_022026.md",
-    "17_HABITS/2026_02_FEBRUARY/DASHBOARD_FEBRUARY_2026.md",
     "17_HABITS/2026_02_FEBRUARY",
     "17_HABITS/__pycache__/habit_tracker.cpython-310.pyc",
     "17_HABITS/__pycache__",
@@ -265,7 +265,6 @@
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/B4.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/B3.md",
     "02_JOURNAL/01_2026/02_FEBRUARY/02_022026.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/B4.docx",
     "02_JOURNAL/01_2026/DAILY_TEMPLATE.md",
     "02_JOURNAL/01_2026/02_FEBRUARY/07_022026.md",
     "Unbenannt.md",
