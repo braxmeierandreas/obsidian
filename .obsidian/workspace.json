@@ -71,12 +71,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_JOURNAL/01_2026/02_FEBRUARY/02_022026.md",
+                "file": "02_JOURNAL/01_2026/02_FEBRUARY/03_022026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02_022026"
+              "title": "03_022026"
             }
           }
         ],
@@ -256,8 +256,8 @@
   },
   "active": "bc72e55454142233",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "02_JOURNAL/01_2026/02_FEBRUARY/02_022026.md",
+    "conflict-files-obsidian-git.md",
     "02_JOURNAL/01_2026/DAILY_TEMPLATE.md",
     "02_JOURNAL/01_2026/02_FEBRUARY/03_022026.md",
     "02_JOURNAL/03_TEMPLATES/DAILY_V2.md",
