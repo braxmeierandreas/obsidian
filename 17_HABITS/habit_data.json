@@ -44,7 +44,9 @@
             "vitamins": true,
             "cold_shower": true,
             "hygiene_m": true,
-            "call_parents": true
+            "call_parents": true,
+            "cooking": false,
+            "cat_feed_pm": true
         }
     },
     "streaks": {
@@ -73,7 +75,7 @@
         "backup_system": 0,
         "call_parents": 1,
         "training": 0,
-        "cat_feed_pm": 0,
+        "cat_feed_pm": 1,
         "tea": 1,
         "reading": 1,
         "call": 0,
@@ -123,7 +125,8 @@
         "vitamins": 1,
         "cold_shower": 1,
         "hygiene_m": 1,
-        "call_parents": 1
+        "call_parents": 1,
+        "cat_feed_pm": 1
     },
     "legacy_streaks": {
         "rise_5am": 0,
