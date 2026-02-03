@@ -166,15 +166,24 @@ def calculate_streaks(history, best_streaks_data):
     return current_streaks, best_streaks_data
 
 def run_tracker():
-    os.system('color') # Enable ANSI colors in Windows CMD
-    CYAN = "\033[96m"
-    RESET = "\033[0m"
-    
+    # --- COLOR SETUP ---
+    os.system('color') # Enable ANSI in Windows CMD
+    try:
+        import colorama
+        colorama.init()
+        CYAN = colorama.Fore.CYAN
+        RESET = colorama.Style.RESET_ALL
+    except ImportError:
+        # Fallback to ANSI codes (works in Win10/11 with os.system('color'))
+        CYAN = "\033[96m"
+        RESET = "\033[0m"
+
     data = load_data()
-    is_evening = datetime.datetime.now().hour >= 20
-    target_date_str = get_date_str(0) if is_evening else get_date_str(1)
     
-    print(f"\n⚡ PERFORMANCE CHECK: {target_date_str} ⚡")
+    # ALWAYS Track TODAY (Incremental Mode)
+    target_date_str = get_date_str(0)
+    
+    print(f"\n⚡ PERFORMANCE CHECK: {target_date_str} (Today) ⚡")
     print("---------------------------------------")
     auto_data = fetch_google_fit_data(target_date_str)
 
@@ -194,7 +203,7 @@ def run_tracker():
         # AUTO CHECK
         if t["auto"] and t["auto"] in auto_data:
             val = auto_data[t["auto"]]
-            if val >= t["threshold"]:
+            if val >= t["threshold"]: 
                 day_entry[t["id"]] = True
                 changes_made = True
                 print(f"✅ {CYAN}{t['name']}{RESET}: Auto-Completed ({val})")
@@ -212,7 +221,6 @@ def run_tracker():
         if success is not None:
             day_entry[t["id"]] = success
             changes_made = True
-
     data["history"][target_date_str] = day_entry
     curr, best = calculate_streaks(data["history"], data.get("best_streaks", {}))
     data["streaks"] = curr

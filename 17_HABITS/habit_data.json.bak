@@ -8,16 +8,51 @@
             "training": true,
             "corn": true,
             "social": true
+        },
+        "2026-02-02": {
+            "make_bed": true,
+            "rise_5am": false,
+            "dream_journal": true
         }
     },
     "streaks": {
-        "bible": 1,
-        "spanish": 1,
-        "calories": 1,
-        "sleep": 1,
-        "training": 1,
-        "corn": 1,
-        "social": 1
+        "rise_5am": 0,
+        "make_bed": 1,
+        "dream_journal": 1,
+        "electrolytes": 0,
+        "vitamins": 0,
+        "jogging": 0,
+        "cold_shower": 0,
+        "hygiene_m": 0,
+        "cat_feed_am": 0,
+        "cat_litter": 0,
+        "bible": 0,
+        "meditate": 0,
+        "journal_m": 0,
+        "planning": 0,
+        "spanish": 0,
+        "grocery": 0,
+        "cooking": 0,
+        "fasting": 0,
+        "training": 0,
+        "cat_feed_pm": 0,
+        "tea": 0,
+        "reading": 0,
+        "call": 0,
+        "journal_e": 0,
+        "hygiene_e": 0,
+        "stretching": 0,
+        "steps": 0,
+        "corn": 0,
+        "coffee": 0,
+        "weed": 0,
+        "alcohol": 0,
+        "smoking": 0,
+        "games": 0,
+        "tv": 0,
+        "melatonin": 0,
+        "youtube": 0,
+        "lies": 0
     },
     "best_streaks": {
         "corn": 1,
@@ -26,6 +61,8 @@
         "spanish": 1,
         "calories": 1,
         "sleep": 1,
-        "training": 1
+        "training": 1,
+        "make_bed": 1,
+        "dream_journal": 1
     }
 }
