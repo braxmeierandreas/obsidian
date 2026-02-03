@@ -44,11 +44,15 @@ TRACKERS = [
     {"id": "spanish", "name": "LEARN SPANISH", "type": "habit", "goal": "Daily", "auto": None, "time": "08:00", "duration": 60, "check_days": None},
 
     # DAY / EVENING
+    {"id": "church", "name": "CHURCH SERVICE", "type": "habit", "goal": "Weekly", "auto": None, "time": "10:30", "duration": 60, "check_days": [6]}, # Sunday only
+    {"id": "visit_parents", "name": "VISIT PARENTS", "type": "habit", "goal": "Monthly", "auto": None, "time": "10:00", "duration": 240, "check_days": "month"},
     {"id": "monthly_review", "name": "MONTHLY REVIEW & BUDGET", "type": "habit", "goal": "Monthly", "auto": None, "time": "12:00", "duration": 30, "check_days": "month"},
     {"id": "grocery", "name": "GROCERY", "type": "habit", "goal": "Daily", "auto": None, "time": "12:30", "duration": 15, "check_days": None},
     {"id": "cooking", "name": "COOKING", "type": "habit", "goal": "Daily", "auto": None, "time": "13:00", "duration": 60, "check_days": None},
     {"id": "fasting", "name": "FASTING 19-13", "type": "habit", "goal": "Daily", "auto": None, "time": "13:00", "duration": 0, "check_days": None},
     {"id": "chore_weekly", "name": "WEEKLY CHORE (PUTZPLAN)", "type": "habit", "goal": "Weekly", "auto": None, "time": "14:00", "duration": 15, "check_days": [6]}, # Sunday only
+    {"id": "backup_system", "name": "SYSTEM BACKUP", "type": "habit", "goal": "Weekly", "auto": None, "time": "14:30", "duration": 15, "check_days": [6]}, # Sunday only
+    {"id": "call_parents", "name": "CALL PARENTS", "type": "habit", "goal": "Weekly", "auto": None, "time": "15:00", "duration": 30, "check_days": [6]}, # Sunday only
     {"id": "training", "name": "WORKOUT", "type": "habit", "goal": "3x/Week", "auto": "heart_minutes", "threshold": 40, "time": "17:00", "duration": 60, "check_days": None},
     {"id": "cat_feed_pm", "name": "CAT FEEDING (PM)", "type": "habit", "goal": "Daily", "auto": None, "time": "18:00", "duration": 5, "check_days": None},
     {"id": "tea", "name": "DRINK TEA", "type": "habit", "goal": "Daily", "auto": None, "time": "19:45", "duration": 15, "check_days": None},
@@ -205,15 +209,29 @@ def run_tracker():
     print(f"🚀 Tracking for: {target_date_str}")
     print("---------------------------------------")
     auto_data = fetch_google_fit_data(target_date_str)
+
+    # Load existing entries
     day_entry = data["history"].get(target_date_str, {})
+    
     target_date_obj = datetime.datetime.strptime(target_date_str, "%Y-%m-%d")
     dow = target_date_obj.weekday()
     dom = target_date_obj.day
+
+    # --- CORRECTION MODE CHECK ---
+    correction_mode = False
+    if day_entry: # Only ask if there is data to correct
+        print("\n📝 Existing data found.")
+        if ask_user("Do you want to CORRECT/EDIT existing entries?"):
+            correction_mode = True
+            print("✏️  CORRECTION MODE ACTIVE. Press Enter to keep current value.")
+
     print("\n--- 🔨 EXECUTION (l/s = Later/Skip) ---")
+    
     sorted_trackers = sorted(TRACKERS, key=lambda x: x["time"])
     changes_made = False
 
     for t in sorted_trackers:
+        # FREQUENCY CHECK
         check_days = t.get("check_days")
         should_ask = True
         if check_days is not None:
@@ -221,9 +239,14 @@ def run_tracker():
                 if dom != 1: should_ask = False
             elif isinstance(check_days, list):
                 if dow not in check_days: should_ask = False
-        if not should_ask and day_entry.get(t["id"]) is None:
+        
+        # In correction mode, allow editing even if not strictly 'due' today, if data exists
+        has_data = day_entry.get(t["id"]) is not None
+        if not should_ask and not has_data:
             continue
+
         existing_val = day_entry.get(t["id"])
+        
         if t["auto"] and t["auto"] in auto_data:
             val = auto_data[t["auto"]]
             if val >= t["threshold"]:
@@ -231,13 +254,33 @@ def run_tracker():
                 changes_made = True
                 print(f"✅ {CYAN}{t['name']}{RESET}: Auto-Completed ({val})")
                 continue
-        if existing_val is not None:
+        
+        # Skip logic: Skip if already done AND NOT in correction mode
+        if existing_val is not None and not correction_mode:
             continue
-        q = f"Did you execute: {CYAN}{t['name']}{RESET}?" if t["type"] == "habit" else f"Did you stay CLEAN from: {CYAN}{t['name']}{RESET}?"
+
+        # Construct Prompt
+        status_str = ""
+        if existing_val is True: status_str = f" ({colorama.Fore.GREEN}DONE{RESET})"
+        elif existing_val is False: status_str = f" ({colorama.Fore.RED}FAILED{RESET})"
+        
+        action_verb = "execute" if t["type"] == "habit" else "stay CLEAN from"
+        q = f"Did you {action_verb}: {CYAN}{t['name']}{RESET}{status_str}?"
+        
         success = ask_user(q)
-        if success is not None:
-            day_entry[t["id"]] = success
-            changes_made = True
+        
+        # If user entered a value (True/False/None via 'l'), update.
+        # If user just pressed Enter (None) IN CORRECTION MODE, keep existing value!
+        if correction_mode:
+            if success is not None:
+                day_entry[t["id"]] = success
+                changes_made = True
+            # If success is None (Skip), we do nothing, preserving the existing value.
+        else:
+            # Normal mode: Update only if valid input
+            if success is not None:
+                day_entry[t["id"]] = success
+                changes_made = True
 
     data["history"][target_date_str] = day_entry
     curr, best = calculate_streaks(data, data.get("best_streaks", {}))
@@ -298,19 +341,29 @@ def generate_dashboard(data):
     content += "## 📈 KEY PERFORMANCE INDICATORS\n"
     content += f"- **Monthly Performance:** {current_perf:.1f}% (Month-to-Month: {month_diff:+.1f}%)\n"
     content += f"- **Daily Trend:** {daily_status} ({daily_diff:+.1f}% vs Yesterday)\n"
-    content += f"- **Daily Score:** {today_score}/{len(TRACKERS)} Missions completed\n\n"
-    content += "## 🔥 CURRENT STREAKS\n\n"
-    content += "| MISSION | START | END | DUR | STREAK | BEST | STATUS |\n|:---|:---:|:---:|:---:|:---:|:---:|:---:|"
+    content += f"- **Daily Score:** {today_score}/{len([t for t in TRACKERS if t['goal'] == 'Daily'])} Daily Missions completed\n\n"
     
     sorted_trackers = sorted(TRACKERS, key=lambda x: x["time"])
-    for t in sorted_trackers:
-        streak = data["streaks"].get(t["id"], 0)
-        best = data["best_streaks"].get(t["id"], 0)
-        status = "💀 FAIL" if streak == 0 else "🔥 ON FIRE" if streak > 7 else "🟢 ACTIVE"
-        start = t['time']
-        dur = f"{t['duration']}m" if t['duration'] > 0 else "-"
-        end = calculate_end_time(start, t['duration']) if t['duration'] > 0 else "-"
-        content += f"| **{t['name']}** | {start} | {end} | {dur} | **{streak} Days** | **{best} Days** | {status} |\n"
+
+    def build_table(title, filter_func):
+        table = f"## {title}\n\n"
+        table += "| MISSION | START | END | DUR | STREAK | BEST | STATUS |\n|:---|:---:|:---:|:---:|:---:|:---:|:---:|" + "\n"
+        filtered = [t for t in sorted_trackers if filter_func(t)]
+        if not filtered: return ""
+        for t in filtered:
+            streak = data["streaks"].get(t["id"], 0)
+            best = data["best_streaks"].get(t["id"], 0)
+            status = "💀 FAIL" if streak == 0 else "🔥 ON FIRE" if streak > 7 else "🟢 ACTIVE"
+            start = t['time']
+            dur = f"{t['duration']}m" if t['duration'] > 0 else "-"
+            end = calculate_end_time(start, t['duration']) if t['duration'] > 0 else "-"
+            table += f"| **{t['name']}** | {start} | {end} | {dur} | **{streak} Days** | **{best} Days** | {status} |\n"
+        return table + "\n"
+
+    content += build_table("🌞 DAILY MISSIONS", lambda t: t['type'] == 'habit' and t['goal'] == 'Daily')
+    content += build_table("📅 WEEKLY MISSIONS", lambda t: t['type'] == 'habit' and t['goal'] == 'Weekly')
+    content += build_table("🗓️ MONTHLY MISSIONS", lambda t: t['type'] == 'habit' and t['goal'] == 'Monthly')
+    content += build_table("🚫 DETOX PROTOCOL", lambda t: t['type'] == 'avoid')
     
     content += f"\n## 📅 CALENDAR: {month_name}\n\n"
     headers = ["DATE"] + [t["name"] for t in sorted_trackers]
