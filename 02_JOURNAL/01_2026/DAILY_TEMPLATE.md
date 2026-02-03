@@ -15,7 +15,7 @@ aliases:
 ### [08:00 - 09:00] Morgenroutine
 - **Schlaf & Träume:**
     - Aufwachzeit:       | Qualität (1-5): 
-    - **🌙 Traum-Erinnerung:** Ich habe leider nicht mehr die genausten Erinnerungen daran, aber ich weiß sehr genau, dass es mit Peter zu tun hat. Ich glaube wir haben uns besprochen bzgl. nächsten Semesters und ich weiß auch dass ich in einem uni gebäude war und dass es danach auch zu einem Basketballplatz ging wo ich mich mit anderen getroffen habe diese aber auch nicht lange bleiben konnten weil sie irgendwas machen mussten, dass ich nicht verstanden habe also irgendwie so wie immer... 
+    - **🌙 Traum-Erinnerung:** 
 - **Checklist:**
     - [ ] **08:00 Aufstehen:** Kein Snooze.
     - [ ] **Wasser & Licht:** Großes Glas Wasser + Tageslicht.
@@ -99,47 +99,6 @@ aliases:
 ---
 
 ## 📓 Notizen & Reflexion
-- **Freie Notizen:** Okay ich muss mal eben meine Liste anfertigen, damit ich diese abhacken kann. Ich habe auch gerade richtig lust einfach aus langeweile heraus zu masturbieren, was aber nicht in frage kommt, da ich besseres zu tun habe und es nicht erlaubt ist... 
-
-Januar: Neue Habits
-- Bart pflegen und Haare lang werden lassen
-- Tee trinken
-- Bibel lesen
-- Spanisch lernen
-- Lesen
-- 10k Schritte
-
-Januar: Süchte weg
-- Masturbieren
-- Kaffee
-- Gras
-- Videospiele
-- Melatonin
-- 
-
-Feburar: Neue Habits
-- 5 AM aufstehen
-- Fasten
-- Meditieren
-- Bett machen
-- Kalt duschen
-- Tagebuch schreiben
-- Traumtagebuch
-- Tagesplanung
-- Krafttraining
-- Dehnen
-- Joggen
-- Elektrolyte trinken
-- Vitamine einnehmen
-- 
-
-Februar: Süchte weg
-- YouTube
-
-März: Neue Gewohnheiten
-- Täglich telefonieren
-- 
-
-
+- **Freie Notizen:** 
 - **1% Besser:** 
 - **Dankbarkeit:** 
