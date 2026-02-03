@@ -58,7 +58,12 @@
             "chores": true,
             "sugar": true,
             "dinner": true,
-            "walk": true
+            "walk": true,
+            "deep_work_1": true,
+            "deep_work_2": true,
+            "deep_work_3": false,
+            "deep_work_4": false,
+            "call": true
         }
     },
     "streaks": {
@@ -79,6 +84,8 @@
         "journal_m": 1,
         "planning": 0,
         "spanish": 1,
+        "deep_work_1": 1,
+        "deep_work_2": 1,
         "church": 0,
         "visit_parents": 0,
         "monthly_review": 0,
@@ -86,18 +93,19 @@
         "grocery": 1,
         "cooking": 0,
         "laundry": 0,
-        "chores": 1,
+        "deep_work_3": 0,
+        "deep_work_4": 0,
         "backup_system": 0,
         "call_parents": 1,
         "training": 1,
-        "stretching": 1,
         "cat_feed_pm": 1,
         "dinner": 1,
         "walk": 1,
         "vacuum": 1,
         "dishes": 1,
+        "chores": 1,
         "reading": 1,
-        "call": 0,
+        "call": 1,
         "meditate_pm": 0,
         "journal_e": 0,
         "hygiene_e": 0,
@@ -155,7 +163,10 @@
         "chores": 1,
         "sugar": 1,
         "dinner": 1,
-        "walk": 1
+        "walk": 1,
+        "deep_work_1": 1,
+        "deep_work_2": 1,
+        "call": 1
     },
     "legacy_streaks": {
         "rise_5am": 0,

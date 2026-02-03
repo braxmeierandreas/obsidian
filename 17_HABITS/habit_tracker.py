@@ -70,7 +70,8 @@ TRACKERS = [
     {"id": "call", "name": "CALL GF", "type": "habit", "goal": "Daily", "auto": None, "time": "21:00", "duration": 15, "check_days": None},
     {"id": "meditate_pm", "name": "MEDITATION (PM)", "type": "habit", "goal": "Daily", "auto": None, "time": "21:15", "duration": 15, "check_days": None},
     {"id": "journal_e", "name": "EVENING JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "21:30", "duration": 15, "check_days": None},
-    {"id": "hygiene_e", "name": "EVENING HYGIENE", "type": "habit", "goal": "Daily", "auto": None, "time": "21:45", "duration": 15, "check_days": None},
+    {"id": "hygiene_e", "name": "EVENING HYGIENE", "type": "habit", "goal": "Daily", "auto": None, "time": "21:45", "duration": 10, "check_days": None},
+    {"id": "clothes_prep", "name": "CLOTHES PREP", "type": "habit", "goal": "Daily", "auto": None, "time": "21:55", "duration": 5, "check_days": None},
     {"id": "steps", "name": "10K STEPS", "type": "habit", "goal": "Daily", "auto": "steps", "threshold": 10000, "time": "22:00", "duration": 0, "check_days": None},
 
     # DETOX / 24H (Sorted at End)
@@ -357,7 +358,7 @@ def generate_dashboard(data):
 
     def build_table(title, filter_func):
         table = f"## {title}\n\n"
-        table += "| MISSION | START | END | DUR | STREAK | BEST | STATUS |\n|:---|:---:|:---:|:---:|:---:|:---:|:---:|" + "\n"
+        table += "| MISSION | START | END | DUR | STREAK | BEST | STATUS |\n|:---|:---:|:---:|:---:|:---:|:---:|:---:|\n"
         filtered = [t for t in sorted_trackers if filter_func(t)]
         if not filtered: return ""
         for t in filtered:

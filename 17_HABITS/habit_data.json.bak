@@ -57,7 +57,8 @@
             "dishes": true,
             "chores": true,
             "sugar": true,
-            "dinner": true
+            "dinner": true,
+            "walk": true
         }
     },
     "streaks": {
@@ -92,9 +93,9 @@
         "stretching": 1,
         "cat_feed_pm": 1,
         "dinner": 1,
+        "walk": 1,
         "vacuum": 1,
         "dishes": 1,
-        "tea": 1,
         "reading": 1,
         "call": 0,
         "meditate_pm": 0,
@@ -153,7 +154,8 @@
         "dishes": 1,
         "chores": 1,
         "sugar": 1,
-        "dinner": 1
+        "dinner": 1,
+        "walk": 1
     },
     "legacy_streaks": {
         "rise_5am": 0,
