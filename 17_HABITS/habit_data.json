@@ -50,7 +50,10 @@
             "cat_litter": true,
             "vacuum": true,
             "weight_measure": true,
-            "temp_measure": true
+            "temp_measure": true,
+            "planning": false,
+            "training": true,
+            "stretching": true
         }
     },
     "streaks": {
@@ -77,18 +80,20 @@
         "grocery": 1,
         "cooking": 0,
         "fasting": 1,
+        "laundry": 0,
         "chore_weekly": 0,
         "backup_system": 0,
         "call_parents": 1,
-        "training": 0,
+        "training": 1,
         "cat_feed_pm": 1,
+        "dishes": 0,
         "tea": 1,
         "reading": 1,
         "call": 0,
         "journal_e": 0,
         "vacuum": 1,
         "hygiene_e": 0,
-        "stretching": 0,
+        "stretching": 1,
         "steps": 1,
         "corn": 0,
         "coffee": 11,
@@ -136,7 +141,8 @@
         "cat_litter": 1,
         "vacuum": 1,
         "weight_measure": 1,
-        "temp_measure": 1
+        "temp_measure": 1,
+        "stretching": 1
     },
     "legacy_streaks": {
         "rise_5am": 0,

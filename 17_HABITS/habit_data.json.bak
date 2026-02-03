@@ -48,12 +48,16 @@
             "cooking": false,
             "cat_feed_pm": true,
             "cat_litter": true,
-            "vacuum": true
+            "vacuum": true,
+            "weight_measure": true,
+            "temp_measure": true
         }
     },
     "streaks": {
         "rise_5am": 0,
         "make_bed": 2,
+        "weight_measure": 1,
+        "temp_measure": 1,
         "dream_journal": 2,
         "electrolytes": 2,
         "vitamins": 1,
@@ -130,7 +134,9 @@
         "call_parents": 1,
         "cat_feed_pm": 1,
         "cat_litter": 1,
-        "vacuum": 1
+        "vacuum": 1,
+        "weight_measure": 1,
+        "temp_measure": 1
     },
     "legacy_streaks": {
         "rise_5am": 0,
