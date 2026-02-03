@@ -46,7 +46,9 @@
             "hygiene_m": true,
             "call_parents": true,
             "cooking": false,
-            "cat_feed_pm": true
+            "cat_feed_pm": true,
+            "cat_litter": true,
+            "vacuum": true
         }
     },
     "streaks": {
@@ -59,7 +61,7 @@
         "cold_shower": 1,
         "hygiene_m": 1,
         "cat_feed_am": 1,
-        "cat_litter": 0,
+        "cat_litter": 1,
         "bible": 1,
         "meditate": 1,
         "journal_m": 1,
@@ -80,7 +82,7 @@
         "reading": 1,
         "call": 0,
         "journal_e": 0,
-        "vacuum": 0,
+        "vacuum": 1,
         "hygiene_e": 0,
         "stretching": 0,
         "steps": 1,
@@ -126,7 +128,9 @@
         "cold_shower": 1,
         "hygiene_m": 1,
         "call_parents": 1,
-        "cat_feed_pm": 1
+        "cat_feed_pm": 1,
+        "cat_litter": 1,
+        "vacuum": 1
     },
     "legacy_streaks": {
         "rise_5am": 0,

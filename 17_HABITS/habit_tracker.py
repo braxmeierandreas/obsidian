@@ -28,7 +28,9 @@ ROOT_DASHBOARD = os.path.join(CURRENT_DIR, "DASHBOARD_HABITS.md")
 TRACKERS = [
     # MORNING ROUTINE
     {"id": "rise_5am", "name": "WAKE UP 5 AM", "type": "habit", "goal": "Daily", "auto": None, "time": "05:00", "duration": 5, "check_days": None},
-    {"id": "make_bed", "name": "MAKE BED", "type": "habit", "goal": "Daily", "auto": None, "time": "05:05", "duration": 5, "check_days": None},
+    {"id": "make_bed", "name": "MAKE BED", "type": "habit", "goal": "Daily", "auto": None, "time": "05:05", "duration": 2, "check_days": None},
+    {"id": "weight_measure", "name": "MEASURE WEIGHT & FAT", "type": "habit", "goal": "Daily", "auto": None, "time": "05:07", "duration": 1, "check_days": None},
+    {"id": "temp_measure", "name": "MEASURE TEMPERATURE", "type": "habit", "goal": "Daily", "auto": None, "time": "05:08", "duration": 2, "check_days": None},
     {"id": "dream_journal", "name": "DREAM JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "05:10", "duration": 10, "check_days": None},
     {"id": "electrolytes", "name": "DRINK ELECTROLYTES", "type": "habit", "goal": "Daily", "auto": None, "time": "05:20", "duration": 5, "check_days": None},
     {"id": "vitamins", "name": "TAKE VITAMINS", "type": "habit", "goal": "Daily", "auto": None, "time": "05:25", "duration": 5, "check_days": None},
@@ -50,11 +52,13 @@ TRACKERS = [
     {"id": "grocery", "name": "GROCERY", "type": "habit", "goal": "Daily", "auto": None, "time": "12:30", "duration": 15, "check_days": None},
     {"id": "cooking", "name": "COOKING", "type": "habit", "goal": "Daily", "auto": None, "time": "13:00", "duration": 60, "check_days": None},
     {"id": "fasting", "name": "FASTING 19-13", "type": "habit", "goal": "Daily", "auto": None, "time": "13:00", "duration": 0, "check_days": None},
+    {"id": "laundry", "name": "LAUNDRY & LINENS", "type": "habit", "goal": "Weekly", "auto": None, "time": "13:30", "duration": 60, "check_days": [6]}, # Sunday only
     {"id": "chore_weekly", "name": "WEEKLY CHORE (PUTZPLAN)", "type": "habit", "goal": "Weekly", "auto": None, "time": "14:00", "duration": 15, "check_days": [6]}, # Sunday only
     {"id": "backup_system", "name": "SYSTEM BACKUP", "type": "habit", "goal": "Weekly", "auto": None, "time": "14:30", "duration": 15, "check_days": [6]}, # Sunday only
     {"id": "call_parents", "name": "CALL PARENTS", "type": "habit", "goal": "Weekly", "auto": None, "time": "15:00", "duration": 30, "check_days": [6]}, # Sunday only
     {"id": "training", "name": "WORKOUT", "type": "habit", "goal": "3x/Week", "auto": "heart_minutes", "threshold": 40, "time": "17:00", "duration": 60, "check_days": None},
     {"id": "cat_feed_pm", "name": "CAT FEEDING (PM)", "type": "habit", "goal": "Daily", "auto": None, "time": "18:00", "duration": 5, "check_days": None},
+    {"id": "dishes", "name": "DO DISHES", "type": "habit", "goal": "Daily", "auto": None, "time": "19:30", "duration": 15, "check_days": None},
     {"id": "tea", "name": "DRINK TEA", "type": "habit", "goal": "Daily", "auto": None, "time": "19:45", "duration": 15, "check_days": None},
     {"id": "reading", "name": "READING", "type": "habit", "goal": "Daily", "auto": None, "time": "20:00", "duration": 60, "check_days": None},
     {"id": "call", "name": "CALL GF", "type": "habit", "goal": "Daily", "auto": None, "time": "21:00", "duration": 15, "check_days": None},
