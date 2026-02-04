@@ -99,7 +99,8 @@
             "tv": true,
             "melatonin": true,
             "youtube": false,
-            "lies": true
+            "lies": true,
+            "fasting": true
         }
     },
     "streaks": {
@@ -126,7 +127,7 @@
         "church": 0,
         "visit_parents": 0,
         "monthly_review": 0,
-        "fasting": 0,
+        "fasting": 2,
         "grocery": 2,
         "cooking": 0,
         "laundry": 0,
@@ -176,7 +177,7 @@
         "meditate": 2,
         "journal_m": 2,
         "grocery": 2,
-        "fasting": 1,
+        "fasting": 2,
         "tea": 1,
         "reading": 2,
         "steps": 2,

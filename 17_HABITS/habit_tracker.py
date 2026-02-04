@@ -49,17 +49,17 @@ TRACKERS = [
     {"id": "deep_work_2", "name": "DEEP WORK 2", "type": "habit", "goal": "Daily", "auto": None, "time": "11:00", "duration": 120, "check_days": None},
 
     # DAY / EVENING
-    {"id": "church", "name": "CHURCH SERVICE", "type": "habit", "goal": "Weekly", "auto": None, "time": "10:30", "duration": 60, "check_days": [6]}, # Sunday only
-    {"id": "visit_parents", "name": "VISIT PARENTS", "type": "habit", "goal": "Monthly", "auto": None, "time": "10:00", "duration": 240, "check_days": "month"},
-    {"id": "monthly_review", "name": "MONTHLY REVIEW & BUDGET", "type": "habit", "goal": "Monthly", "auto": None, "time": "12:00", "duration": 30, "check_days": "month"},
+    {"id": "church", "name": "CHURCH SERVICE", "type": "habit", "goal": "Weekly", "auto": None, "time": "10:30", "duration": 60, "check_days": None},
+    {"id": "visit_parents", "name": "VISIT PARENTS", "type": "habit", "goal": "Monthly", "auto": None, "time": "10:00", "duration": 240, "check_days": None},
+    {"id": "monthly_review", "name": "MONTHLY REVIEW & BUDGET", "type": "habit", "goal": "Monthly", "auto": None, "time": "12:00", "duration": 30, "check_days": None},
     {"id": "fasting", "name": "FASTING 19-13", "type": "habit", "goal": "Daily", "auto": None, "time": "13:00", "duration": 0, "check_days": None},
     {"id": "grocery", "name": "GROCERY", "type": "habit", "goal": "Daily", "auto": None, "time": "13:00", "duration": 15, "check_days": None},
     {"id": "cooking", "name": "COOKING", "type": "habit", "goal": "Daily", "auto": None, "time": "13:15", "duration": 45, "check_days": None},
-    {"id": "laundry", "name": "LAUNDRY & LINENS", "type": "habit", "goal": "Weekly", "auto": None, "time": "14:00", "duration": 60, "check_days": [6]}, # Sunday only
+    {"id": "laundry", "name": "LAUNDRY & LINENS", "type": "habit", "goal": "Weekly", "auto": None, "time": "14:00", "duration": 60, "check_days": None},
     {"id": "deep_work_3", "name": "DEEP WORK 3", "type": "habit", "goal": "Daily", "auto": None, "time": "14:00", "duration": 90, "check_days": None},
     {"id": "deep_work_4", "name": "DEEP WORK 4", "type": "habit", "goal": "Daily", "auto": None, "time": "15:30", "duration": 90, "check_days": None},
-    {"id": "backup_system", "name": "SYSTEM BACKUP", "type": "habit", "goal": "Weekly", "auto": None, "time": "14:30", "duration": 15, "check_days": [6]}, # Sunday only
-    {"id": "call_parents", "name": "CALL PARENTS", "type": "habit", "goal": "Weekly", "auto": None, "time": "15:00", "duration": 30, "check_days": [6]}, # Sunday only
+    {"id": "backup_system", "name": "SYSTEM BACKUP", "type": "habit", "goal": "Weekly", "auto": None, "time": "14:30", "duration": 15, "check_days": None},
+    {"id": "call_parents", "name": "CALL PARENTS", "type": "habit", "goal": "Weekly", "auto": None, "time": "15:00", "duration": 30, "check_days": None},
     {"id": "training", "name": "WORKOUT", "type": "habit", "goal": "Daily", "auto": "heart_minutes", "threshold": 40, "time": "17:00", "duration": 45, "check_days": None},
     {"id": "stretching", "name": "STRETCHING", "type": "habit", "goal": "Daily", "auto": None, "time": "17:45", "duration": 15, "check_days": None},
     {"id": "cat_feed_pm", "name": "CAT FEEDING (PM)", "type": "habit", "goal": "Daily", "auto": None, "time": "18:00", "duration": 5, "check_days": None},
@@ -244,19 +244,48 @@ def run_tracker():
     changes_made = False
 
     for t in sorted_trackers:
-        # FREQUENCY CHECK
-        check_days = t.get("check_days")
+        # FREQUENCY CHECK / PERIODIC COMPLETION LOGIC
         should_ask = True
-        if check_days is not None:
-            if check_days == "month":
-                if dom != 1: should_ask = False
-            elif isinstance(check_days, list):
-                if dow not in check_days: should_ask = False
         
-        # In correction mode, allow editing even if not strictly 'due' today, if data exists
-        has_data = day_entry.get(t["id"]) is not None
-        if not should_ask and not has_data:
+        # Check if already done in current period (Week/Month)
+        if t["goal"] == "Weekly":
+            # Check ISO Week (Mon-Sun)
+            start_of_week = target_date_obj - datetime.timedelta(days=target_date_obj.weekday())
+            for i in range(7):
+                d = start_of_week + datetime.timedelta(days=i)
+                if d > target_date_obj: break # Don't check future
+                if data["history"].get(d.strftime("%Y-%m-%d"), {}).get(t["id"]) is True:
+                    should_ask = False # Already done this week
+                    break
+        elif t["goal"] == "Monthly":
+            # Check Current Month
+            for i in range(1, 32):
+                try:
+                    d = datetime.date(target_date_obj.year, target_date_obj.month, i)
+                except ValueError: break
+                if d > target_date_obj: break
+                if data["history"].get(d.strftime("%Y-%m-%d"), {}).get(t["id"]) is True:
+                    should_ask = False # Already done this month
+                    break
+        
+        # Correction mode overrides "should_ask = False" ONLY IF there is data for *today* to correct.
+        # But if we just want to force check, we need to be careful.
+        # Actually, "should_ask = False" means "It's done, don't bother user".
+        # If user wants to correct TODAY's entry, they can.
+        
+        has_data_today = day_entry.get(t["id"]) is not None
+        
+        # If not strictly due (already done in period) AND no data for today, skip.
+        # Unless we are in correction mode AND there is data for today we might want to change?
+        # No, if it's done previously, we usually don't want to add it again today.
+        
+        if not should_ask and not correction_mode:
             continue
+            
+        # Legacy check_days support (if any left)
+        if t.get("check_days") is not None:
+             if isinstance(t["check_days"], list) and dow not in t["check_days"]: continue
+             if t["check_days"] == "month" and dom != 1: continue
 
         existing_val = day_entry.get(t["id"])
         
