@@ -1,20 +1,20 @@
 # Körpermaße & Konfektionsgrößen
 
-| Kategorie                 | Maß        |
-|:--------------------------|:-----------|
-| Körpergröße               | 192 cm     |
-| Halsumfang                | 40 cm      |
-| Brustumfang               | 103 cm     |
-| Taillenumfang             | 94 cm      |
-| Hüftumfang                | 95 cm      |
-| Schrittlänge              | 76 cm      |
-| Armlänge                  | 68 cm      |
-| Schulterbreite            | 128 cm     |
-| Oberarmumfang             | 39 cm      |
-| Oberschenkelumfang        | 54 cm      |
-| Wadenumfang               | 43.5 cm    |
-| Handgelenksumfang         | 27 cm      |
-| Fußlänge                  | 29.5 cm    |
+| Kategorie          | Maß     |
+| :----------------- | :------ |
+| Körpergröße        | 192 cm  |
+| Halsumfang         | 40 cm   |
+| Brustumfang        | 103 cm  |
+| Taillenumfang      | 94 cm   |
+| Hüftumfang         | 95 cm   |
+| Schrittlänge       | 76 cm   |
+| Armlänge           | 68 cm   |
+| Schulterbreite     | 128 cm  |
+| Oberarmumfang      | 39 cm   |
+| Oberschenkelumfang | 54 cm   |
+| Wadenumfang        | 43.5 cm |
+| Handgelenksumfang  | 27 cm   |
+| Fußlänge           | 29.5 cm |
 
 ---
 

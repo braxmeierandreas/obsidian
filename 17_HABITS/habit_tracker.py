@@ -28,39 +28,56 @@ ROOT_DASHBOARD = os.path.join(CURRENT_DIR, "DASHBOARD_HABITS.md")
 TRACKERS = [
     # MORNING ROUTINE
     {"id": "rise_5am", "name": "WAKE UP 5 AM", "type": "habit", "goal": "Daily", "auto": None, "time": "05:00", "duration": 5, "check_days": None},
-    {"id": "make_bed", "name": "MAKE BED", "type": "habit", "goal": "Daily", "auto": None, "time": "05:05", "duration": 5, "check_days": None},
+    {"id": "make_bed", "name": "MAKE BED", "type": "habit", "goal": "Daily", "auto": None, "time": "05:05", "duration": 2, "check_days": None},
+    {"id": "weight_measure", "name": "MEASURE WEIGHT & FAT", "type": "habit", "goal": "Daily", "auto": None, "time": "05:07", "duration": 1, "check_days": None},
+    {"id": "temp_measure", "name": "MEASURE TEMPERATURE", "type": "habit", "goal": "Daily", "auto": None, "time": "05:08", "duration": 2, "check_days": None},
     {"id": "dream_journal", "name": "DREAM JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "05:10", "duration": 10, "check_days": None},
     {"id": "electrolytes", "name": "DRINK ELECTROLYTES", "type": "habit", "goal": "Daily", "auto": None, "time": "05:20", "duration": 5, "check_days": None},
-    {"id": "vitamins", "name": "TAKE VITAMINS", "type": "habit", "goal": "Daily", "auto": None, "time": "05:25", "duration": 5, "check_days": None},
-    {"id": "jogging", "name": "JOGGING", "type": "habit", "goal": "2x/Week", "auto": None, "time": "05:30", "duration": 45, "check_days": None},
-    {"id": "cold_shower", "name": "COLD SHOWER", "type": "habit", "goal": "Daily", "auto": None, "time": "06:15", "duration": 5, "check_days": None},
-    {"id": "hygiene_m", "name": "MORNING HYGIENE", "type": "habit", "goal": "Daily", "auto": None, "time": "06:20", "duration": 25, "check_days": None},
+    {"id": "vitamins", "name": "TAKE VITAMINS", "type": "habit", "goal": "Daily", "auto": None, "time": "05:25", "duration": 3, "check_days": None},
+    {"id": "photo", "name": "DAILY PHOTO", "type": "habit", "goal": "Daily", "auto": None, "time": "05:28", "duration": 2, "check_days": None},
+    {"id": "jogging", "name": "JOGGING", "type": "habit", "goal": "Daily", "auto": None, "time": "05:30", "duration": 45, "check_days": None},
+    {"id": "hygiene_m", "name": "MORNING HYGIENE", "type": "habit", "goal": "Daily", "auto": None, "time": "06:15", "duration": 25, "check_days": None},
+    {"id": "cold_shower", "name": "COLD SHOWER", "type": "habit", "goal": "Daily", "auto": None, "time": "06:40", "duration": 5, "check_days": None},
     {"id": "cat_feed_am", "name": "CAT FEEDING (AM)", "type": "habit", "goal": "Daily", "auto": None, "time": "06:45", "duration": 5, "check_days": None},
-    {"id": "cat_litter", "name": "CAT LITTER", "type": "habit", "goal": "Daily", "auto": None, "time": "06:50", "duration": 10, "check_days": None},
+    {"id": "cat_litter", "name": "CAT LITTER", "type": "habit", "goal": "Daily", "auto": None, "time": "06:50", "duration": 5, "check_days": None},
     {"id": "bible", "name": "READ BIBLE", "type": "habit", "goal": "Daily", "auto": None, "time": "07:00", "duration": 15, "check_days": None},
     {"id": "meditate", "name": "MEDITATION", "type": "habit", "goal": "Daily", "auto": None, "time": "07:15", "duration": 15, "check_days": None},
     {"id": "journal_m", "name": "MORNING JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "07:30", "duration": 15, "check_days": None},
     {"id": "planning", "name": "DAILY PLANNING", "type": "habit", "goal": "Daily", "auto": None, "time": "07:45", "duration": 15, "check_days": None},
     {"id": "spanish", "name": "LEARN SPANISH", "type": "habit", "goal": "Daily", "auto": None, "time": "08:00", "duration": 60, "check_days": None},
+    {"id": "deep_work_1", "name": "DEEP WORK 1", "type": "habit", "goal": "Daily", "auto": None, "time": "09:00", "duration": 120, "check_days": None},
+    {"id": "deep_work_2", "name": "DEEP WORK 2", "type": "habit", "goal": "Daily", "auto": None, "time": "11:00", "duration": 120, "check_days": None},
 
     # DAY / EVENING
-    {"id": "monthly_review", "name": "MONTHLY REVIEW & BUDGET", "type": "habit", "goal": "Monthly", "auto": None, "time": "12:00", "duration": 30, "check_days": "month"},
-    {"id": "grocery", "name": "GROCERY", "type": "habit", "goal": "Daily", "auto": None, "time": "12:30", "duration": 15, "check_days": None},
-    {"id": "cooking", "name": "COOKING", "type": "habit", "goal": "Daily", "auto": None, "time": "13:00", "duration": 60, "check_days": None},
+    {"id": "church", "name": "CHURCH SERVICE", "type": "habit", "goal": "Weekly", "auto": None, "time": "10:30", "duration": 60, "check_days": None},
+    {"id": "visit_parents", "name": "VISIT PARENTS", "type": "habit", "goal": "Monthly", "auto": None, "time": "10:00", "duration": 240, "check_days": None},
+    {"id": "monthly_review", "name": "MONTHLY REVIEW & BUDGET", "type": "habit", "goal": "Monthly", "auto": None, "time": "12:00", "duration": 30, "check_days": None},
     {"id": "fasting", "name": "FASTING 19-13", "type": "habit", "goal": "Daily", "auto": None, "time": "13:00", "duration": 0, "check_days": None},
-    {"id": "chore_weekly", "name": "WEEKLY CHORE (PUTZPLAN)", "type": "habit", "goal": "Weekly", "auto": None, "time": "14:00", "duration": 15, "check_days": [6]}, # Sunday only
-    {"id": "training", "name": "WORKOUT", "type": "habit", "goal": "3x/Week", "auto": "heart_minutes", "threshold": 40, "time": "17:00", "duration": 60, "check_days": None},
+    {"id": "grocery", "name": "GROCERY", "type": "habit", "goal": "Daily", "auto": None, "time": "13:00", "duration": 15, "check_days": None},
+    {"id": "cooking", "name": "COOKING", "type": "habit", "goal": "Daily", "auto": None, "time": "13:15", "duration": 45, "check_days": None},
+    {"id": "laundry", "name": "LAUNDRY & LINENS", "type": "habit", "goal": "Weekly", "auto": None, "time": "14:00", "duration": 60, "check_days": None},
+    {"id": "deep_work_3", "name": "DEEP WORK 3", "type": "habit", "goal": "Daily", "auto": None, "time": "14:00", "duration": 90, "check_days": None},
+    {"id": "deep_work_4", "name": "DEEP WORK 4", "type": "habit", "goal": "Daily", "auto": None, "time": "15:30", "duration": 90, "check_days": None},
+    {"id": "backup_system", "name": "SYSTEM BACKUP", "type": "habit", "goal": "Weekly", "auto": None, "time": "14:30", "duration": 15, "check_days": None},
+    {"id": "call_parents", "name": "CALL PARENTS", "type": "habit", "goal": "Weekly", "auto": None, "time": "15:00", "duration": 30, "check_days": None},
+    {"id": "training", "name": "WORKOUT", "type": "habit", "goal": "Daily", "auto": "heart_minutes", "threshold": 40, "time": "17:00", "duration": 45, "check_days": None},
+    {"id": "stretching", "name": "STRETCHING", "type": "habit", "goal": "Daily", "auto": None, "time": "17:45", "duration": 15, "check_days": None},
     {"id": "cat_feed_pm", "name": "CAT FEEDING (PM)", "type": "habit", "goal": "Daily", "auto": None, "time": "18:00", "duration": 5, "check_days": None},
-    {"id": "tea", "name": "DRINK TEA", "type": "habit", "goal": "Daily", "auto": None, "time": "19:45", "duration": 15, "check_days": None},
+    {"id": "dinner", "name": "DINNER", "type": "habit", "goal": "Daily", "auto": None, "time": "18:15", "duration": 30, "check_days": None},
+    {"id": "walk", "name": "DAILY WALK", "type": "habit", "goal": "Daily", "auto": None, "time": "18:45", "duration": 60, "check_days": None},
+    {"id": "vacuum", "name": "VACUUMING", "type": "habit", "goal": "Daily", "auto": None, "time": "19:45", "duration": 5, "check_days": None},
+    {"id": "dishes", "name": "DO DISHES", "type": "habit", "goal": "Daily", "auto": None, "time": "19:50", "duration": 5, "check_days": None},
+    {"id": "chores", "name": "DAILY CHORES", "type": "habit", "goal": "Daily", "auto": None, "time": "19:55", "duration": 5, "check_days": None},
     {"id": "reading", "name": "READING", "type": "habit", "goal": "Daily", "auto": None, "time": "20:00", "duration": 60, "check_days": None},
     {"id": "call", "name": "CALL GF", "type": "habit", "goal": "Daily", "auto": None, "time": "21:00", "duration": 15, "check_days": None},
-    {"id": "journal_e", "name": "EVENING JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "21:15", "duration": 15, "check_days": None},
-    {"id": "vacuum", "name": "VACUUMING", "type": "habit", "goal": "Daily", "auto": None, "time": "21:25", "duration": 5, "check_days": None},
-    {"id": "hygiene_e", "name": "EVENING HYGIENE", "type": "habit", "goal": "Daily", "auto": None, "time": "21:30", "duration": 15, "check_days": None},
-    {"id": "stretching", "name": "STRETCHING", "type": "habit", "goal": "Daily", "auto": None, "time": "21:45", "duration": 15, "check_days": None},
+    {"id": "meditate_pm", "name": "MEDITATION (PM)", "type": "habit", "goal": "Daily", "auto": None, "time": "21:15", "duration": 15, "check_days": None},
+    {"id": "journal_e", "name": "EVENING JOURNAL", "type": "habit", "goal": "Daily", "auto": None, "time": "21:30", "duration": 15, "check_days": None},
+    {"id": "hygiene_e", "name": "EVENING HYGIENE", "type": "habit", "goal": "Daily", "auto": None, "time": "21:45", "duration": 10, "check_days": None},
+    {"id": "clothes_prep", "name": "CLOTHES PREP", "type": "habit", "goal": "Daily", "auto": None, "time": "21:55", "duration": 5, "check_days": None},
     {"id": "steps", "name": "10K STEPS", "type": "habit", "goal": "Daily", "auto": "steps", "threshold": 10000, "time": "22:00", "duration": 0, "check_days": None},
 
     # DETOX / 24H (Sorted at End)
+    {"id": "sugar", "name": "NO SUGAR", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0, "check_days": None},
     {"id": "corn", "name": "NO PORN/MASTURBATION", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0, "check_days": None},
     {"id": "coffee", "name": "NO COFFEE", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0, "check_days": None},
     {"id": "weed", "name": "NO WEED", "type": "avoid", "goal": "Clean Streak", "auto": None, "time": "24H", "duration": 0, "check_days": None},
@@ -205,25 +222,73 @@ def run_tracker():
     print(f"🚀 Tracking for: {target_date_str}")
     print("---------------------------------------")
     auto_data = fetch_google_fit_data(target_date_str)
+
+    # Load existing entries
     day_entry = data["history"].get(target_date_str, {})
+    
     target_date_obj = datetime.datetime.strptime(target_date_str, "%Y-%m-%d")
     dow = target_date_obj.weekday()
     dom = target_date_obj.day
+
+    # --- CORRECTION MODE CHECK ---
+    correction_mode = False
+    if day_entry: # Only ask if there is data to correct
+        print("\n📝 Existing data found.")
+        if ask_user("Do you want to CORRECT/EDIT existing entries?"):
+            correction_mode = True
+            print("✏️  CORRECTION MODE ACTIVE. Press Enter to keep current value.")
+
     print("\n--- 🔨 EXECUTION (l/s = Later/Skip) ---")
+    
     sorted_trackers = sorted(TRACKERS, key=lambda x: x["time"])
     changes_made = False
 
     for t in sorted_trackers:
-        check_days = t.get("check_days")
+        # FREQUENCY CHECK / PERIODIC COMPLETION LOGIC
         should_ask = True
-        if check_days is not None:
-            if check_days == "month":
-                if dom != 1: should_ask = False
-            elif isinstance(check_days, list):
-                if dow not in check_days: should_ask = False
-        if not should_ask and day_entry.get(t["id"]) is None:
+        
+        # Check if already done in current period (Week/Month)
+        if t["goal"] == "Weekly":
+            # Check ISO Week (Mon-Sun)
+            start_of_week = target_date_obj.date() - datetime.timedelta(days=target_date_obj.weekday())
+            for i in range(7):
+                d = start_of_week + datetime.timedelta(days=i)
+                if d > target_date_obj.date(): break # Don't check future
+                if data["history"].get(d.strftime("%Y-%m-%d"), {}).get(t["id"]) is True:
+                    should_ask = False # Already done this week
+                    break
+        elif t["goal"] == "Monthly":
+            # Check Current Month
+            for i in range(1, 32):
+                try:
+                    d = datetime.date(target_date_obj.year, target_date_obj.month, i)
+                except ValueError: break
+                if d > target_date_obj.date(): break
+                if data["history"].get(d.strftime("%Y-%m-%d"), {}).get(t["id"]) is True:
+                    should_ask = False # Already done this month
+                    break
+        
+        # Correction mode overrides "should_ask = False" ONLY IF there is data for *today* to correct.
+        # But if we just want to force check, we need to be careful.
+        # Actually, "should_ask = False" means "It's done, don't bother user".
+        # If user wants to correct TODAY's entry, they can.
+        
+        has_data_today = day_entry.get(t["id"]) is not None
+        
+        # If not strictly due (already done in period) AND no data for today, skip.
+        # Unless we are in correction mode AND there is data for today we might want to change?
+        # No, if it's done previously, we usually don't want to add it again today.
+        
+        if not should_ask and not correction_mode:
             continue
+            
+        # Legacy check_days support (if any left)
+        if t.get("check_days") is not None:
+             if isinstance(t["check_days"], list) and dow not in t["check_days"]: continue
+             if t["check_days"] == "month" and dom != 1: continue
+
         existing_val = day_entry.get(t["id"])
+        
         if t["auto"] and t["auto"] in auto_data:
             val = auto_data[t["auto"]]
             if val >= t["threshold"]:
@@ -231,13 +296,33 @@ def run_tracker():
                 changes_made = True
                 print(f"✅ {CYAN}{t['name']}{RESET}: Auto-Completed ({val})")
                 continue
-        if existing_val is not None:
+        
+        # Skip logic: Skip if already done AND NOT in correction mode
+        if existing_val is not None and not correction_mode:
             continue
-        q = f"Did you execute: {CYAN}{t['name']}{RESET}?" if t["type"] == "habit" else f"Did you stay CLEAN from: {CYAN}{t['name']}{RESET}?"
+
+        # Construct Prompt
+        status_str = ""
+        if existing_val is True: status_str = f" ({colorama.Fore.GREEN}DONE{RESET})"
+        elif existing_val is False: status_str = f" ({colorama.Fore.RED}FAILED{RESET})"
+        
+        action_verb = "execute" if t["type"] == "habit" else "stay CLEAN from"
+        q = f"Did you {action_verb}: {CYAN}{t['name']}{RESET}{status_str}?"
+        
         success = ask_user(q)
-        if success is not None:
-            day_entry[t["id"]] = success
-            changes_made = True
+        
+        # If user entered a value (True/False/None via 'l'), update.
+        # If user just pressed Enter (None) IN CORRECTION MODE, keep existing value!
+        if correction_mode:
+            if success is not None:
+                day_entry[t["id"]] = success
+                changes_made = True
+            # If success is None (Skip), we do nothing, preserving the existing value.
+        else:
+            # Normal mode: Update only if valid input
+            if success is not None:
+                day_entry[t["id"]] = success
+                changes_made = True
 
     data["history"][target_date_str] = day_entry
     curr, best = calculate_streaks(data, data.get("best_streaks", {}))
@@ -298,19 +383,29 @@ def generate_dashboard(data):
     content += "## 📈 KEY PERFORMANCE INDICATORS\n"
     content += f"- **Monthly Performance:** {current_perf:.1f}% (Month-to-Month: {month_diff:+.1f}%)\n"
     content += f"- **Daily Trend:** {daily_status} ({daily_diff:+.1f}% vs Yesterday)\n"
-    content += f"- **Daily Score:** {today_score}/{len(TRACKERS)} Missions completed\n\n"
-    content += "## 🔥 CURRENT STREAKS\n\n"
-    content += "| MISSION | START | END | DUR | STREAK | BEST | STATUS |\n|:---|:---:|:---:|:---:|:---:|:---:|:---:|"
+    content += f"- **Daily Score:** {today_score}/{len([t for t in TRACKERS if t['goal'] == 'Daily'])} Daily Missions completed\n\n"
     
     sorted_trackers = sorted(TRACKERS, key=lambda x: x["time"])
-    for t in sorted_trackers:
-        streak = data["streaks"].get(t["id"], 0)
-        best = data["best_streaks"].get(t["id"], 0)
-        status = "💀 FAIL" if streak == 0 else "🔥 ON FIRE" if streak > 7 else "🟢 ACTIVE"
-        start = t['time']
-        dur = f"{t['duration']}m" if t['duration'] > 0 else "-"
-        end = calculate_end_time(start, t['duration']) if t['duration'] > 0 else "-"
-        content += f"| **{t['name']}** | {start} | {end} | {dur} | **{streak} Days** | **{best} Days** | {status} |\n"
+
+    def build_table(title, filter_func):
+        table = f"## {title}\n\n"
+        table += "| MISSION | START | END | DUR | STREAK | BEST | STATUS |\n|:---|:---:|:---:|:---:|:---:|:---:|:---:|\n"
+        filtered = [t for t in sorted_trackers if filter_func(t)]
+        if not filtered: return ""
+        for t in filtered:
+            streak = data["streaks"].get(t["id"], 0)
+            best = data["best_streaks"].get(t["id"], 0)
+            status = "💀 FAIL" if streak == 0 else "🔥 ON FIRE" if streak > 7 else "🟢 ACTIVE"
+            start = t['time']
+            dur = f"{t['duration']}m" if t['duration'] > 0 else "-"
+            end = calculate_end_time(start, t['duration']) if t['duration'] > 0 else "-"
+            table += f"| **{t['name']}** | {start} | {end} | {dur} | **{streak} Days** | **{best} Days** | {status} |\n"
+        return table + "\n"
+
+    content += build_table("🌞 DAILY MISSIONS", lambda t: t['type'] == 'habit' and t['goal'] == 'Daily')
+    content += build_table("📅 WEEKLY & FITNESS MISSIONS", lambda t: t['type'] == 'habit' and t['goal'] in ['Weekly', '2x/Week', '3x/Week'])
+    content += build_table("🗓️ MONTHLY MISSIONS", lambda t: t['type'] == 'habit' and t['goal'] == 'Monthly')
+    content += build_table("🚫 DETOX PROTOCOL", lambda t: t['type'] == 'avoid')
     
     content += f"\n## 📅 CALENDAR: {month_name}\n\n"
     headers = ["DATE"] + [t["name"] for t in sorted_trackers]
