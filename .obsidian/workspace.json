@@ -104,7 +104,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "88cm",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -125,7 +125,8 @@
               "title": "Lesezeichen"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -246,10 +247,10 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "e93cd8d5c68bf487",
+  "active": "8efc59c2595c68aa",
   "lastOpenFiles": [
-    "17_HABITS/DASHBOARD_HABITS.md",
     "02_JOURNAL/01_2026/02_FEBRUARY/04_022026.md",
+    "17_HABITS/DASHBOARD_HABITS.md",
     "17_HABITS/2026_02_FEBRUARY/DASHBOARD_FEBRUARY_2026.md",
     "02_JOURNAL/01_2026/02_FEBRUARY/03_022026.md",
     "17_HABITS/SETUP_STREAKS.bat",

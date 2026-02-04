@@ -7,45 +7,45 @@
 
 ## 🌞 DAILY MISSIONS
 
-| MISSION | START | END | DUR | STREAK | BEST | STATUS |
-|:---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **WAKE UP 5 AM** | 05:00 | 05:05 | 5m | **0 Days** | **0 Days** | 💀 FAIL |
-| **MAKE BED** | 05:05 | 05:07 | 2m | **2 Days** | **2 Days** | 🟢 ACTIVE |
-| **MEASURE WEIGHT & FAT** | 05:07 | 05:08 | 1m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **MEASURE TEMPERATURE** | 05:08 | 05:10 | 2m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **DREAM JOURNAL** | 05:10 | 05:20 | 10m | **2 Days** | **2 Days** | 🟢 ACTIVE |
-| **DRINK ELECTROLYTES** | 05:20 | 05:25 | 5m | **2 Days** | **2 Days** | 🟢 ACTIVE |
-| **TAKE VITAMINS** | 05:25 | 05:30 | 5m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **JOGGING** | 05:30 | 06:15 | 45m | **0 Days** | **0 Days** | 💀 FAIL |
-| **MORNING HYGIENE** | 06:15 | 06:40 | 25m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **COLD SHOWER** | 06:40 | 06:45 | 5m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **CAT FEEDING (AM)** | 06:45 | 06:50 | 5m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **CAT LITTER** | 06:50 | 06:55 | 5m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **READ BIBLE** | 07:00 | 07:15 | 15m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **MEDITATION** | 07:15 | 07:30 | 15m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **MORNING JOURNAL** | 07:30 | 07:45 | 15m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **DAILY PLANNING** | 07:45 | 08:00 | 15m | **0 Days** | **0 Days** | 💀 FAIL |
-| **LEARN SPANISH** | 08:00 | 09:00 | 60m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **DEEP WORK 1** | 09:00 | 11:00 | 120m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **DEEP WORK 2** | 11:00 | 13:00 | 120m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **FASTING 19-13** | 13:00 | - | - | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **GROCERY** | 13:00 | 13:15 | 15m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **COOKING** | 13:15 | 14:00 | 45m | **0 Days** | **0 Days** | 💀 FAIL |
-| **DEEP WORK 3** | 14:00 | 15:30 | 90m | **0 Days** | **0 Days** | 💀 FAIL |
-| **DEEP WORK 4** | 15:30 | 17:00 | 90m | **0 Days** | **0 Days** | 💀 FAIL |
-| **WORKOUT** | 17:00 | 17:45 | 45m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **CAT FEEDING (PM)** | 18:00 | 18:05 | 5m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **DINNER** | 18:15 | 18:45 | 30m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **DAILY WALK** | 18:45 | 19:45 | 60m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **VACUUMING** | 19:45 | 19:50 | 5m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **DO DISHES** | 19:50 | 19:55 | 5m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **DAILY CHORES** | 19:55 | 20:00 | 5m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **READING** | 20:00 | 21:00 | 60m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **CALL GF** | 21:00 | 21:15 | 15m | **1 Days** | **1 Days** | 🟢 ACTIVE |
-| **MEDITATION (PM)** | 21:15 | 21:30 | 15m | **0 Days** | **0 Days** | 💀 FAIL |
-| **EVENING JOURNAL** | 21:30 | 21:45 | 15m | **0 Days** | **0 Days** | 💀 FAIL |
-| **EVENING HYGIENE** | 21:45 | 22:00 | 15m | **0 Days** | **0 Days** | 💀 FAIL |
-| **10K STEPS** | 22:00 | - | - | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| MISSION                  | START |  END  | DUR  |   STREAK   |    BEST    |  STATUS   |
+| :----------------------- | :---: | :---: | :--: | :--------: | :--------: | :-------: |
+| **WAKE UP 5 AM**         | 05:00 | 05:05 |  5m  | **0 Days** | **0 Days** |  💀 FAIL  |
+| **MAKE BED**             | 05:05 | 05:07 |  2m  | **2 Days** | **2 Days** | 🟢 ACTIVE |
+| **MEASURE WEIGHT & FAT** | 05:07 | 05:08 |  1m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **MEASURE TEMPERATURE**  | 05:08 | 05:10 |  2m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **DREAM JOURNAL**        | 05:10 | 05:20 | 10m  | **2 Days** | **2 Days** | 🟢 ACTIVE |
+| **DRINK ELECTROLYTES**   | 05:20 | 05:25 |  5m  | **2 Days** | **2 Days** | 🟢 ACTIVE |
+| **TAKE VITAMINS**        | 05:25 | 05:30 |  5m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **JOGGING**              | 05:30 | 06:15 | 45m  | **0 Days** | **0 Days** |  💀 FAIL  |
+| **MORNING HYGIENE**      | 06:15 | 06:40 | 25m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **COLD SHOWER**          | 06:40 | 06:45 |  5m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **CAT FEEDING (AM)**     | 06:45 | 06:50 |  5m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **CAT LITTER**           | 06:50 | 06:55 |  5m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **READ BIBLE**           | 07:00 | 07:15 | 15m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **MEDITATION**           | 07:15 | 07:30 | 15m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **MORNING JOURNAL**      | 07:30 | 07:45 | 15m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **DAILY PLANNING**       | 07:45 | 08:00 | 15m  | **0 Days** | **0 Days** |  💀 FAIL  |
+| **LEARN SPANISH**        | 08:00 | 09:00 | 60m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **DEEP WORK 1**          | 09:00 | 11:00 | 120m | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **DEEP WORK 2**          | 11:00 | 13:00 | 120m | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **FASTING 19-13**        | 13:00 |   -   |  -   | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **GROCERY**              | 13:00 | 13:15 | 15m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **COOKING**              | 13:15 | 14:00 | 45m  | **0 Days** | **0 Days** |  💀 FAIL  |
+| **DEEP WORK 3**          | 14:00 | 15:30 | 90m  | **0 Days** | **0 Days** |  💀 FAIL  |
+| **DEEP WORK 4**          | 15:30 | 17:00 | 90m  | **0 Days** | **0 Days** |  💀 FAIL  |
+| **WORKOUT**              | 17:00 | 17:45 | 45m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **CAT FEEDING (PM)**     | 18:00 | 18:05 |  5m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **DINNER**               | 18:15 | 18:45 | 30m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **DAILY WALK**           | 18:45 | 19:45 | 60m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **VACUUMING**            | 19:45 | 19:50 |  5m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **DO DISHES**            | 19:50 | 19:55 |  5m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **DAILY CHORES**         | 19:55 | 20:00 |  5m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **READING**              | 20:00 | 21:00 | 60m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **CALL GF**              | 21:00 | 21:15 | 15m  | **1 Days** | **1 Days** | 🟢 ACTIVE |
+| **MEDITATION (PM)**      | 21:15 | 21:30 | 15m  | **0 Days** | **0 Days** |  💀 FAIL  |
+| **EVENING JOURNAL**      | 21:30 | 21:45 | 15m  | **0 Days** | **0 Days** |  💀 FAIL  |
+| **EVENING HYGIENE**      | 21:45 | 22:00 | 15m  | **0 Days** | **0 Days** |  💀 FAIL  |
+| **10K STEPS**            | 22:00 |   -   |  -   | **1 Days** | **1 Days** | 🟢 ACTIVE |
 
 ## 📅 WEEKLY & FITNESS MISSIONS
 
