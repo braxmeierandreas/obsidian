@@ -250,10 +250,10 @@ def run_tracker():
         # Check if already done in current period (Week/Month)
         if t["goal"] == "Weekly":
             # Check ISO Week (Mon-Sun)
-            start_of_week = target_date_obj - datetime.timedelta(days=target_date_obj.weekday())
+            start_of_week = target_date_obj.date() - datetime.timedelta(days=target_date_obj.weekday())
             for i in range(7):
                 d = start_of_week + datetime.timedelta(days=i)
-                if d > target_date_obj: break # Don't check future
+                if d > target_date_obj.date(): break # Don't check future
                 if data["history"].get(d.strftime("%Y-%m-%d"), {}).get(t["id"]) is True:
                     should_ask = False # Already done this week
                     break
@@ -263,7 +263,7 @@ def run_tracker():
                 try:
                     d = datetime.date(target_date_obj.year, target_date_obj.month, i)
                 except ValueError: break
-                if d > target_date_obj: break
+                if d > target_date_obj.date(): break
                 if data["history"].get(d.strftime("%Y-%m-%d"), {}).get(t["id"]) is True:
                     should_ask = False # Already done this month
                     break

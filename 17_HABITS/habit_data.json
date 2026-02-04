@@ -103,7 +103,14 @@
             "fasting": true,
             "training": true,
             "stretching": true,
-            "vacuum": true
+            "vacuum": true,
+            "visit_parents": false,
+            "church": false,
+            "monthly_review": false,
+            "cooking": true,
+            "laundry": false,
+            "deep_work_3": false,
+            "backup_system": false
         }
     },
     "streaks": {
@@ -132,7 +139,7 @@
         "monthly_review": 0,
         "fasting": 2,
         "grocery": 2,
-        "cooking": 0,
+        "cooking": 1,
         "laundry": 0,
         "deep_work_3": 0,
         "deep_work_4": 0,
@@ -213,7 +220,8 @@
         "rise_5am": 1,
         "photo": 1,
         "planning": 1,
-        "jogging": 1
+        "jogging": 1,
+        "cooking": 1
     },
     "legacy_streaks": {
         "rise_5am": 0,
