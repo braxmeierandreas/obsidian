@@ -1,0 +1,42 @@
+ID,Vorgang,Anfang,Ende,Dauer,Fortschritt,Kosten,Priorität,Verantwortlich,Vorgänger,GliederungsNr.,Ressourcen,Assignments,Vorgangsfarbe,Notizen,WWW-Link
+2,Phase A: Projektstart & Vorbereitung,14.10.25,10.12.25,58,0,0.0,1,,,1,,,"#000000",,
+7,"  Projektstart & Aufgabenklärung",14.10.25,28.10.25,15,0,0.0,1,,,1.1,"Andreas Braxmeier;Ragavi Anusujanthan;Nina Ludwig;Sophie Scheffler  ",0:100.00;1:100.00;3:100.00;4:100.00,,,
+13,"  Vorsichtung der Akteure (Phase 1)",20.10.25,03.11.25,15,0,0,1,,,1.2,,,,,
+11,"  Erstkontakt mit Frau Lechmann",27.10.25,28.10.25,2,0,0,1,,,1.3,,,,,
+40,"  Zeitplanerstellung",01.11.25,10.12.25,40,0,0,1,,,1.4,,,,,
+39,"  Expose schreiben",01.11.25,10.12.25,40,0,0.0,1,,,1.5,"Nina Ludwig;Sophie Scheffler  ",3:100.00;4:100.00,,,
+12,"  Hauptsichtung der Akteure (Phase 2)",03.11.25,10.12.25,38,0,0,1,,,1.6,,,,,
+10,"  Exposé eingereicht",10.12.25,10.12.25,0,0,0,1,,,1.7,,,,,
+3,Phase B: Kontakt & Leitfäden,11.12.25,30.01.26,51,0,0.0,1,,,2,,,"#000000",,
+38,"  Interviewleitfaden ausarbeitung",11.12.25,30.12.25,20,0,0.0,1,Nina Ludwig,,2.1,"Nina Ludwig;Sophie Scheffler  ",3:100.00;4:100.00,,,
+17,"  Auswahl geeigneter Akteure",11.12.25,21.12.25,11,0,0.0,1,,,2.2,Andreas Braxmeier;Nadine Beha,0:100.00;2:100.00,,,
+16,"  Kontaktierung der Akteure (ggf. nach Weihnachten!?)",22.12.25,22.12.25,1,0,0,1,,,2.3,,,,,
+15,"  Interviewleitfaden fertiggestellt (Meilenstein)",31.12.25,31.12.25,0,0,0,1,,,2.4,,,,,
+22,"  Rekrutierung & Terminabsprachen",01.01.26,30.01.26,30,0,0,1,,,2.5,,,,,
+45,"  Feedbackrunde bzgl. Interviewleitfaden",13.01.26,13.01.26,1,0,0,1,,,2.6,,,,,
+33,"  Tag der Gesundheit - Zwischenstand",20.01.26,20.01.26,0,0,0,1,,,2.7,,,,,
+4,Phase C: Datenerhebung,01.02.26,01.05.26,90,0,0,1,,,3,,,"#000000",,
+44,"  Ordnerstruktur/ Datensicherung/ Datenschutz!?",01.02.26,05.02.26,5,0,0,1,,,3.1,,,,,
+21,"  Interviews durchführen",01.02.26,01.05.26,90,0,0,1,,,3.2,,,,,
+20,"  Transkription",01.02.26,01.05.26,90,0,0,1,,,3.3,,,,,
+41,"  Vorstellung der Ergebnisse/ des Zwischenstands beim Kongress",11.03.26,11.03.26,1,0,0,1,,,3.4,,,,,
+46,"  Hier ggf. noch weiteres Planen bspw. Good-Practice finden usw.!?",02.04.26,01.05.26,30,0,0,1,,,3.5,,,,,
+19,"  Interviews + Transkriptionen abgeschlossen",01.05.26,01.05.26,0,0,0,1,,,3.6,,,,,
+5,Phase D: Analyse,16.05.26,29.06.26,45,0,0,1,,,4,,,"#000000",,
+27,"  Thematische Codierung & Sortierung",16.05.26,14.06.26,30,0,0,1,,,4.1,,,,,
+43,"  Kopie_Thematische Codierung & Sortierung",16.05.26,14.06.26,30,0,0,1,,,4.2,,,,,
+26,"  Analyse abgeschlossen",30.06.26,30.06.26,0,0,0,1,,,4.3,,,,,
+6,Phase E: Ergebnis & Output,01.07.26,31.08.26,62,0,0,1,,,5,,,"#000000",,
+32,"  Handlungsempfehlungen formulieren",01.07.26,30.07.26,30,0,0,1,,,5.1,,,,,
+42,"  Schreiben der Abschlussarbeit",01.07.26,31.08.26,62,0,0,1,,,5.2,,,,,
+35,"  Tag der Gesundheit Präsentation",07.07.26,07.07.26,0,0,0,1,,,5.3,,,,,
+36,"  Integration Good-Practice-Beispiele",25.07.26,31.08.26,38,0,0,1,,,5.4,,,,,
+37,"  Abgabe der Studienarbeit & Archivierung",31.08.26,31.08.26,0,0,0,1,,,5.5,,,,,
+
+
+ID,Ressource,Rolle,E-Mail,Telefon,Standardpreis,Summe Kosten,Summe Tage
+0,Andreas Braxmeier,Default:1,,,0,0,26.0
+1,Ragavi Anusujanthan,Default:1,,,0,0,15.0
+2,Nadine Beha,Default:1,,,0,0,11.0
+3,Nina Ludwig,Default:1,,,0,0,75.0
+4,"Sophie Scheffler  ",Default:1,,,0,0,75.0

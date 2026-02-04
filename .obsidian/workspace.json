@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "17_HABITS/DASHBOARD_HABITS.md",
+                "file": "03_UNIVERSITY/01_RESEARCH_PROJECT/01_PROJECT_ORGANIZATION/PROJEKTPLANUNG/MEILENSTEINPLANUNG.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DASHBOARD_HABITS"
+              "title": "MEILENSTEINPLANUNG"
             }
           }
         ],
@@ -265,8 +265,12 @@
   },
   "active": "cee3df96fc3f1003",
   "lastOpenFiles": [
-    "02_JOURNAL/01_2026/02_FEBRUARY/04_022026.md",
     "17_HABITS/DASHBOARD_HABITS.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Meilensteine/Meilenstein",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Meilensteine/neu",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Meilensteine",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Neuer Ordner",
+    "02_JOURNAL/01_2026/02_FEBRUARY/04_022026.md",
     "01_Andreas/06_REFERENCE/KOERPERMASSE_UND_GROESSEN.md",
     "17_HABITS/2026_02_FEBRUARY/DASHBOARD_FEBRUARY_2026.md",
     "02_JOURNAL/01_2026/02_FEBRUARY/03_022026.md",
@@ -281,12 +285,8 @@
     "03_UNIVERSITY/01_RESEARCH_PROJECT/09_Email/01_Anschreiben_Schulen_Schulsozialarbeit.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Piseddu_Pro_Familia_VS.md",
     "conflict-files-obsidian-git.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Piseddu_Pro_Familia_VS.docx",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Rau_Kreisjugendamt_VS.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Rau_Kreisjugendamt_VS.docx",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Mengesdorf_TV_St_Georgen.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/~$terview_Mengesdorf_TV_St_Georgen.docx",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/~$terview_Engesser_Braeunlingen_Familienpass.docx",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Knoebel_Pro_Familia_VS.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/Interview_Engesser_Braeunlingen_Familienpass.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Transkripts/B4.md",
@@ -300,7 +300,6 @@
     "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/08_Literaturverzeichnis.md",
     "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/07_Fazit.md",
     "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/06_Diskussion_und_Handlungsempfehlungen.md",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/05_Fallstudie_Uganda.md",
     "03_UNIVERSITY/03_AGF2/02_BGM/FINAL_ABGABE/Folder.jpg",
     "03_UNIVERSITY/03_AGF2/02_BGM/FINAL_ABGABE/AlbumArtSmall.jpg",
     "Obsidian/22_GEDA/GEDA_Analysis_Results/05_Cost_Income.png",
