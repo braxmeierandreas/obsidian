@@ -61,6 +61,7 @@ TRACKERS = [
     {"id": "backup_system", "name": "SYSTEM BACKUP", "type": "habit", "goal": "Weekly", "auto": None, "time": "14:30", "duration": 15, "check_days": [6]}, # Sunday only
     {"id": "call_parents", "name": "CALL PARENTS", "type": "habit", "goal": "Weekly", "auto": None, "time": "15:00", "duration": 30, "check_days": [6]}, # Sunday only
     {"id": "training", "name": "WORKOUT", "type": "habit", "goal": "Daily", "auto": "heart_minutes", "threshold": 40, "time": "17:00", "duration": 45, "check_days": None},
+    {"id": "stretching", "name": "STRETCHING", "type": "habit", "goal": "Daily", "auto": None, "time": "17:45", "duration": 15, "check_days": None},
     {"id": "cat_feed_pm", "name": "CAT FEEDING (PM)", "type": "habit", "goal": "Daily", "auto": None, "time": "18:00", "duration": 5, "check_days": None},
     {"id": "dinner", "name": "DINNER", "type": "habit", "goal": "Daily", "auto": None, "time": "18:15", "duration": 30, "check_days": None},
     {"id": "walk", "name": "DAILY WALK", "type": "habit", "goal": "Daily", "auto": None, "time": "18:45", "duration": 60, "check_days": None},
