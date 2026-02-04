@@ -125,8 +125,7 @@
               "title": "Lesezeichen"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -247,11 +246,11 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "e93cd8d5c68bf487",
+  "active": "b57fe770d20e8763",
   "lastOpenFiles": [
+    "02_JOURNAL/01_2026/02_FEBRUARY/04_022026.md",
     "17_HABITS/DASHBOARD_HABITS.md",
     "01_Andreas/06_REFERENCE/KOERPERMASSE_UND_GROESSEN.md",
-    "02_JOURNAL/01_2026/02_FEBRUARY/04_022026.md",
     "17_HABITS/2026_02_FEBRUARY/DASHBOARD_FEBRUARY_2026.md",
     "02_JOURNAL/01_2026/02_FEBRUARY/03_022026.md",
     "17_HABITS/SETUP_STREAKS.bat",
