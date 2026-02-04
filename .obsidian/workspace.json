@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MEDIA_CHAOS_CONVERTER.md",
+                "file": "BATCH_CONVERTER_LEITFADEN.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MEDIA_CHAOS_CONVERTER"
+              "title": "BATCH_CONVERTER_LEITFADEN"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "batch_con",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Lesezeichen"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -197,9 +198,9 @@
   },
   "active": "f8d8a07a782704c4",
   "lastOpenFiles": [
+    "MEDIA_CHAOS_CONVERTER.md",
     "BATCH_CONVERTER_LEITFADEN.md",
     "25_GEMINI_CLI/03_DESIGN_IMAGES/fotorealistisches_portrt_eines_m.png",
-    "MEDIA_CHAOS_CONVERTER.md",
     "25_GEMINI_CLI/03_DESIGN_IMAGES/eine_se_katze_fotorealistisch_8k.png",
     "nanobanana-output/eine_se_katze_fotorealistisch_8k.png",
     "25_GEMINI_CLI/03_DESIGN_IMAGES/commands/generate-and-save.toml",
