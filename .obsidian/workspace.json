@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_UNIVERSITY/01_RESEARCH_PROJECT/6. Results/01_Coding/00_MASTER_CODEBUCH.md",
+                "file": "03_UNIVERSITY/01_RESEARCH_PROJECT/6. Results/01_Coding/CODING_B1_Braeunlingen.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_MASTER_CODEBUCH"
+              "title": "CODING_B1_Braeunlingen"
             }
           }
         ]
@@ -195,14 +195,16 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "f8d8a07a782704c4",
+  "active": "b57fe770d20e8763",
   "lastOpenFiles": [
+    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/~$axmeier.Andreas_AGF_WiSe25_26_Global_Health_Ausarbeitung_Widerstand_in_CHS.docx",
+    "CODE_NEW_03_Vereinsbindung_als_Schutzfaktor.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/6. Results/01_Coding/CODING_B1_Braeunlingen.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/6. Results/01_Coding/00_MASTER_CODEBUCH.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/6. Results/01_Coding/CODING_B4_Jugendamt.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/6. Results/01_Coding/CODING_B3_ProFamilia.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/6. Results/01_Coding/CODING_B2_TV_StGeorgen.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/6. Results/01_Coding/CODING_B1_Braeunlingen.md",
     "CODE_NEW_01_Erweiterte_ICD-Diagnostik.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/6. Results/01_Coding/00_MASTER_CODEBUCH.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/0. Projektorganisation/03_Meetings/2026-02-05_Gruppensitzung_Agenda.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/7. Thesis/01_Methodology/METHODIK_BEITRAG_ANDREAS.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/6. Results/03_Summaries/MEETING_SUMMARY_ANALYSE.md",
@@ -231,8 +233,6 @@
     "03_UNIVERSITY/01_RESEARCH_PROJECT/1. Database/03_Analysis/ANDREAS_ANALYSE/ANALYSE_ERGEBNISSE/01_ALTERNATIVE/02_ERSETZUNG_UNERREICHBARE_PARTNER.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/1. Database/03_Analysis/ANDREAS_ANALYSE/ANALYSE_ERGEBNISSE/01_ALTERNATIVE/01_ALTERNATIVE_PARTNER_LISTE.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/1. Database/03_Analysis/ANDREAS_ANALYSE/ZUSAMMENFASSUNG/ZUSAMMENFASSUNG_UND_EMPFEHLUNGEN.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/1. Database/03_Analysis/ANDREAS_ANALYSE/ZUSAMMENFASSUNG/METHODISCHE_ERKLAERUNG_FALLAUSWAHL.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/1. Database/03_Analysis/ANDREAS_ANALYSE/DATEN/GESAMTDATENSATZ_AKTEURE.md",
     "03_UNIVERSITY/03_AGF2/02_BGM/FINAL_ABGABE/Folder.jpg",
     "03_UNIVERSITY/03_AGF2/02_BGM/FINAL_ABGABE/AlbumArtSmall.jpg",
     "Obsidian/22_GEDA/GEDA_Analysis_Results/05_Cost_Income.png",
