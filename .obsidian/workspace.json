@@ -11,12 +11,14 @@
             "id": "f8d8a07a782704c4",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "25_GEMINI_CLI/03_DESIGN_IMAGES/eine_se_katze_fotorealistisch_8k.png"
+                "file": "MEDIA_CHAOS_CONVERTER.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "eine_se_katze_fotorealistisch_8k"
+              "icon": "lucide-file",
+              "title": "MEDIA_CHAOS_CONVERTER"
             }
           }
         ]
@@ -195,7 +197,9 @@
   },
   "active": "f8d8a07a782704c4",
   "lastOpenFiles": [
+    "BATCH_CONVERTER_LEITFADEN.md",
     "25_GEMINI_CLI/03_DESIGN_IMAGES/fotorealistisches_portrt_eines_m.png",
+    "MEDIA_CHAOS_CONVERTER.md",
     "25_GEMINI_CLI/03_DESIGN_IMAGES/eine_se_katze_fotorealistisch_8k.png",
     "nanobanana-output/eine_se_katze_fotorealistisch_8k.png",
     "25_GEMINI_CLI/03_DESIGN_IMAGES/commands/generate-and-save.toml",
@@ -232,14 +236,12 @@
     "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/HAUSARBEIT_GESAMT_BRAXMEIER_LEKTORAT.md",
     "CODE_NEW_03_Vereinsbindung_als_Schutzfaktor.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/6. Results/01_Coding/00_MASTER_CODEBUCH.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/6. Results/01_Coding/CODING_B4_Jugendamt.md",
     "03_UNIVERSITY/03_AGF2/02_BGM/FINAL_ABGABE/Folder.jpg",
     "03_UNIVERSITY/03_AGF2/02_BGM/FINAL_ABGABE/AlbumArtSmall.jpg",
     "Obsidian/22_GEDA/GEDA_Analysis_Results/05_Cost_Income.png",
     "Obsidian/22_GEDA/GEDA_Analysis_Results/04_Activity_Chronic.png",
     "Obsidian/22_GEDA/GEDA_Analysis_Results/03_Smoking_Depression.png",
     "Obsidian/22_GEDA/GEDA_Analysis_Results/02_BMI_Education_Bar.png",
-    "Obsidian/22_GEDA/GEDA_Analysis_Results/01_Health_Age_Heatmap.png",
-    "Obsidian/21_BGM/BGM_Website_Deploy_v3/assets/favicon.png"
+    "Obsidian/22_GEDA/GEDA_Analysis_Results/01_Health_Age_Heatmap.png"
   ]
 }
