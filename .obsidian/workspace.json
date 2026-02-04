@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/B5.md",
+                "file": "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/Interview_B5_Villingen_Schwenningen_Beratungsstelle.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "B5"
+              "title": "Interview_B5_Villingen_Schwenningen_Beratungsstelle"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/\" ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Lesezeichen"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -196,11 +195,22 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "8efc59c2595c68aa",
+  "active": "b57fe770d20e8763",
   "lastOpenFiles": [
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/~$terview_B5_Villingen_Schwenningen_Beratungsstelle.docx",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/0. Projektorganisation/02_Communication/07_Anschreiben_Allgemein.docx",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/0. Projektorganisation/02_Communication/05_Anschreiben_Beratung_Praevention_Soziales.docx",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/0. Projektorganisation/02_Communication/06_Anschreiben_Kirchen_Religioese_Gruppen.docx",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/0. Projektorganisation/02_Communication/06_Anschreiben_Kirchen_Religioese_Gruppen.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/0. Projektorganisation/02_Communication/05_Anschreiben_Beratung_Praevention_Soziales.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/Interview_B5_Villingen_Schwenningen_Beratungsstelle.docx",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/Interview_Engesser_Braeunlingen_Familienpass.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/~$terview_Engesser_Braeunlingen_Familienpass.docx",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/Interview_B5_Villingen_Schwenningen_Beratungsstelle.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/B5.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/B5 - Backup.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/6. Results/01_Coding/CODING_B5_Beratungsstelle.md",
     "BATCH_CONVERTER_LEITFADEN.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/B5.md",
     "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/~WRL0003.tmp",
     "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/~WRD0002.tmp",
     "MEDIA_CHAOS_CONVERTER.md",
@@ -212,13 +222,8 @@
     "25_GEMINI_CLI/03_DESIGN_IMAGES/skills/greeter/SKILL.md",
     "nanobanana-output",
     "25_GEMINI_CLI/06_SKILLS_LEARNING/skills/greeter/SKILL.md",
-    "25_GEMINI_CLI/06_SKILLS_LEARNING/skills/greeter",
-    "25_GEMINI_CLI/06_SKILLS_LEARNING/skills",
-    "25_GEMINI_CLI/06_SKILLS_LEARNING/gemini-extension.json",
-    "25_GEMINI_CLI/06_SKILLS_LEARNING",
     "25_GEMINI_CLI/02_CODING/skills/greeter/SKILL.md",
     "25_GEMINI_CLI/06_SKILLS_LEARNING_OLD/README_LEARNING.md",
-    "25_GEMINI_CLI/06_SKILLS_LEARNING_OLD",
     "25_GEMINI_CLI/06_SKILLS_LEARNING/README_LEARNING.md",
     "25_GEMINI_CLI/05_BUSINESS/skills/greeter/SKILL.md",
     "25_GEMINI_CLI/05_BUSINESS_OLD/README_BUSINESS.md",
@@ -231,12 +236,6 @@
     "25_GEMINI_CLI/05_BUSINESS/README_BUSINESS.md",
     "25_GEMINI_CLI/01_RESEARCH/README_RESEARCH.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/6. Results/01_Coding/CODING_B1_Braeunlingen.md",
-    "25_GEMINI_CLI/04_WRITING/README_WRITING.md",
-    "25_GEMINI_CLI/03_DESIGN_IMAGES/README_DESIGN.md",
-    "25_GEMINI_CLI/02_CODING/README_CODING.md",
-    "25_GEMINI_CLI/00_DASHBOARD.md",
-    "25_GEMINI_CLI/00_DASHBOARD_GEMINI.md",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/HAUSARBEIT_GESAMT_BRAXMEIER_LEKTORAT.md",
     "03_UNIVERSITY/03_AGF2/02_BGM/FINAL_ABGABE/Folder.jpg",
     "03_UNIVERSITY/03_AGF2/02_BGM/FINAL_ABGABE/AlbumArtSmall.jpg",
     "Obsidian/22_GEDA/GEDA_Analysis_Results/05_Cost_Income.png",
