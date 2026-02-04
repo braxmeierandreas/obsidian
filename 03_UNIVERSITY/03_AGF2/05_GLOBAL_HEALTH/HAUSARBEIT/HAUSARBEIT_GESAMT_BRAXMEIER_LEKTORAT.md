@@ -37,12 +37,10 @@ Habermas’ Dichotomie von „System“ und „Lebenswelt“ schärft den Blick 
 
 **Tabelle 1: Divergierende Rationalitäten (adaptiert nach Habermas)**
 
-| Kategorie | System-Logik (Top-Down) | Lebenswelt-Logik (Bottom-Up) |
-| :--- | :--- | :--- |
-| **Primäres Ziel** | Statistische Risikoreduktion (Malaria) | Akute Existenzsicherung (Hunger) |
-| **Zeithorizont** | Zukunft (Prävention) | Gegenwart (Überleben heute) |
-| **Wissenstyp** | Biomedizinisch, quantitativ | Pragmatisch, kontextuell |
-| **Wahrnehmung** | Mensch als Datenträger/Fall | Mensch als handelndes Subjekt |
+| Kategorie                    | **Primäres Ziel**                      | **Zeithorizont**            | **Wissenstyp**              | **Wahrnehmung**               |
+| ---------------------------- | -------------------------------------- | --------------------------- | --------------------------- | ----------------------------- |
+| System-Logik (Top-Down)      | Statistische Risikoreduktion (Malaria) | Zukunft (Prävention)        | Biomedizinisch, quantitativ | Mensch als Datenträger/Fall   |
+| Lebenswelt-Logik (Bottom-Up) | Akute Existenzsicherung (Hunger)       | Gegenwart (Überleben heute) | Pragmatisch, kontextuell    | Mensch als handelndes Subjekt |
 
 Ein „Lack of Fit“ entsteht, wenn Systemimperative die Lebenswelt kolonialisieren. Psychologische Reaktanz ist die Folge: Die Verteidigung der Handlungsautonomie gegen eine Intervention, die lokale Komplexität (z.B. Nahrungsknappheit) ignoriert.
 
@@ -90,11 +88,11 @@ Die ITN-Kampagnen in den Fischergemeinden am Victoriasee illustrieren den Zusamm
 
 **Tabelle 3: Divergierende Kosten-Nutzen-Kalküle**
 
-| Faktor | Perspektive Global Health (Geber) | Perspektive Fischer (Uganda) |
-| :--- | :--- | :--- |
-| **Ressource** | Moskitonetz (Prävention) | Moskitonetz (Produktionsmittel) |
-| **Bedrohung** | Malaria (abstrakt/zukünftig) | **Hunger** (konkret/unmittelbar) |
-| **Handlungslogik** | Biomedizinische Rationalität | Ökonomische Überlebensrationalität |
+| Faktor             | Perspektive Global Health (Geber) | Perspektive Fischer (Uganda)       |
+| :----------------- | :-------------------------------- | :--------------------------------- |
+| **Ressource**      | Moskitonetz (Prävention)          | Moskitonetz (Produktionsmittel)    |
+| **Bedrohung**      | Malaria (abstrakt/zukünftig)      | **Hunger** (konkret/unmittelbar)   |
+| **Handlungslogik** | Biomedizinische Rationalität      | Ökonomische Überlebensrationalität |
 
 ### 5.2 Taktische Repolitisierung von Ressourcen
 Die Verwendung der Netze zum Fischfang ist kein „Missbrauch“, sondern eine *taktische Repolitisierung* der Ressource. Der Fischer entzieht das Objekt der biopolitischen Codierung (Gesundheitsschutz) und führt es einer ökonomischen Verwertung zu.
