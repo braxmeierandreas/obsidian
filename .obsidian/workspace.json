@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "batch_con",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Lesezeichen"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -196,8 +195,10 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "f8d8a07a782704c4",
+  "active": "b57fe770d20e8763",
   "lastOpenFiles": [
+    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/~WRL0003.tmp",
+    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/~WRD0002.tmp",
     "MEDIA_CHAOS_CONVERTER.md",
     "BATCH_CONVERTER_LEITFADEN.md",
     "25_GEMINI_CLI/03_DESIGN_IMAGES/fotorealistisches_portrt_eines_m.png",
@@ -218,7 +219,6 @@
     "25_GEMINI_CLI/06_SKILLS_LEARNING/README_LEARNING.md",
     "25_GEMINI_CLI/05_BUSINESS/skills/greeter/SKILL.md",
     "25_GEMINI_CLI/05_BUSINESS/skills/greeter",
-    "25_GEMINI_CLI/05_BUSINESS/skills",
     "25_GEMINI_CLI/05_BUSINESS_OLD/README_BUSINESS.md",
     "25_GEMINI_CLI/04_WRITING/skills/greeter/SKILL.md",
     "25_GEMINI_CLI/04_WRITING_OLD/README_WRITING.md",
@@ -236,7 +236,6 @@
     "25_GEMINI_CLI/00_DASHBOARD_GEMINI.md",
     "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/HAUSARBEIT_GESAMT_BRAXMEIER_LEKTORAT.md",
     "CODE_NEW_03_Vereinsbindung_als_Schutzfaktor.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/6. Results/01_Coding/00_MASTER_CODEBUCH.md",
     "03_UNIVERSITY/03_AGF2/02_BGM/FINAL_ABGABE/Folder.jpg",
     "03_UNIVERSITY/03_AGF2/02_BGM/FINAL_ABGABE/AlbumArtSmall.jpg",
     "Obsidian/22_GEDA/GEDA_Analysis_Results/05_Cost_Income.png",
