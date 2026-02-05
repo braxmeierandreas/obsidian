@@ -8,11 +8,11 @@ Dieses System nutzt die analytische Kraft von Gemini, um eine hochgradig persona
 
 | Datei | Zweck | Status |
 | :--- | :--- | :--- |
-| [00_THERAPY_INTRO.md](./00_THERAPY_INTRO.md) | **Regelwerk & Persona:** Definition von Dr. Gemini und dem Ablauf. | ✅ Aktiv |
-| [01_TEMPLATE_SESSION.md](./01_TEMPLATE_SESSION.md) | **Wochen-Vorlage:** Struktur für deine wöchentlichen Einträge. | ✅ Aktiv |
-| [02_PSYCHO_PROFILE.md](./02_PSYCHO_PROFILE.md) | **Patientenakte:** Dein psychologischer Kern (Traumata, Muster). | ⚠️ Initialisieren |
-| [03_COPING_TOOLBOX.md](./03_COPING_TOOLBOX.md) | **Werkzeugkasten:** Akut-Hilfe bei Stress und Gedankenkreisen. | ✅ Aktiv |
-| [04_INITIAL_INTAKE.md](./04_INITIAL_INTAKE.md) | **Erstgespräch:** Der Fragebogen für den Start. | 🆕 **Zuerst ausfüllen!** |
+| [00_THERAPY_INTRO.md](00_THERAPY_INTRO.md) | **Regelwerk & Persona:** Definition von Dr. Gemini und dem Ablauf. | ✅ Aktiv |
+| [01_TEMPLATE_SESSION.md](01_TEMPLATE_SESSION.md) | **Wochen-Vorlage:** Struktur für deine wöchentlichen Einträge. | ✅ Aktiv |
+| [02_PSYCHO_PROFILE.md](02_PSYCHO_PROFILE.md) | **Patientenakte:** Dein psychologischer Kern (Traumata, Muster). | ⚠️ Initialisieren |
+| [03_COPING_TOOLBOX.md](03_COPING_TOOLBOX.md) | **Werkzeugkasten:** Akut-Hilfe bei Stress und Gedankenkreisen. | ✅ Aktiv |
+| [04_INITIAL_INTAKE.md](04_INITIAL_INTAKE.md) | **Erstgespräch:** Der Fragebogen für den Start. | 🆕 **Zuerst ausfüllen!** |
 
 ## 🚀 Schnellstart-Anleitung
 
