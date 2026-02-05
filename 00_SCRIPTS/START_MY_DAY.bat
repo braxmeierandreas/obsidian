@@ -4,7 +4,7 @@ setlocal
 
 set "SCRIPTS_DIR=%~dp0"
 set "VAULT_ROOT=%~dp0.."
-set "PYTHON_EXE=%VAULT_ROOT%\15_GOOGLE\.venv\Scripts\python.exe"
+set "PYTHON_EXE=%VAULT_ROOT%\30_TECH_GOOGLE\.venv\Scripts\python.exe"
 set "VAULT_NAME=Obsidian"
 
 echo ========================================================
@@ -41,7 +41,7 @@ echo.
 echo Opening Obsidian Vault...
 for /f %%I in ('powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd'"') do set TODAY=%%I
 
-set "URI=obsidian://open?vault=%VAULT_NAME%&file=02_JOURNAL%%2F08_BRIEFING%%2FBRIEFING_%TODAY%"
+set "URI=obsidian://open?vault=%VAULT_NAME%&file=90_JOURNAL%%2F08_BRIEFING%%2FBRIEFING_%TODAY%"
 start "" "%URI%"
 
 echo.

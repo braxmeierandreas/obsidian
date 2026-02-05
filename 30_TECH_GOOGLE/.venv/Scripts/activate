@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\braxm\obsidian\15_GOOGLE\.venv"
+VIRTUAL_ENV="C:\Users\braxm\obsidian\30_TECH_GOOGLE\.venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
