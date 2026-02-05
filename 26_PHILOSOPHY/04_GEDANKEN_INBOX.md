@@ -1,3 +1,5 @@
+[[DASHBOARD_PHILOSOPHIE|⬅️ Dashboard]]
+
 # 📥 Gedanken-Inbox
 
 *Ein flüchtiger Speicher für philosophische Blitze, Zitate oder Fragen, die noch ausgearbeitet werden müssen.*

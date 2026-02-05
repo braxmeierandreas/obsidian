@@ -1,3 +1,5 @@
+[[DASHBOARD_PHILOSOPHIE|⬅️ Dashboard]]
+
 # ⚖️ Ethik & Moral
 
 > "Handle nur nach derjenigen Maxime, durch die du zugleich wollen kannst, dass sie ein allgemeines Gesetz werde." – Immanuel Kant

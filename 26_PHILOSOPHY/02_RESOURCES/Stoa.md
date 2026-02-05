@@ -1,3 +1,5 @@
+[[DASHBOARD_PHILOSOPHIE|⬅️ Dashboard]]
+
 # 🏛️ Stoizismus (Stoa)
 
 > "Nicht die Dinge selbst beunruhigen die Menschen, sondern ihre Vorstellungen von den Dingen." – Epiktet

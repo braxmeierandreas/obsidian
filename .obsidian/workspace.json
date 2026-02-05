@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/B5 - Backup.md",
+                "file": "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/Interview_B5_Villingen_Schwenningen_Beratungsstelle.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "B5 - Backup"
+              "title": "Interview_B5_Villingen_Schwenningen_Beratungsstelle"
             }
           }
         ],
@@ -212,6 +212,19 @@
   },
   "active": "773b12261c45429b",
   "lastOpenFiles": [
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/~$terview_B5_Villingen_Schwenningen_Beratungsstelle.docx",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/Interview_B5_Villingen_Schwenningen_Beratungsstelle.docx",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/Interview_Engesser_Braeunlingen_Familienpass.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/Interview_B5_Villingen_Schwenningen_Beratungsstelle.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/B5 - Backup.md",
+    "OpenClaw/SECURITY_AND_HOSTING.md",
+    "TRACK_FITNESS.bat",
+    "OpenClaw/02_UPDATE_AGENT.bat",
+    "OpenClaw/01_START_WIZARD.bat",
+    "OpenClaw/00_INSTALL_AGENT.bat",
+    "OpenClaw/OpenClaw_Dashboard.md",
+    "26_PHILOSOPHY/Weltbild.canvas",
+    "26_PHILOSOPHY/06_ZITATE.md",
     "01_Andreas/10_THERAPY/04_INITIAL_INTAKE.md",
     "01_Andreas/10_THERAPY/03_COPING_TOOLBOX.md",
     "25_GEMINI_CLI/00_CLI_CHEATSHEET.md",
@@ -233,21 +246,8 @@
     "26_TASK_MANAGER/MANAGE_TASKS.bat",
     "26_TASK_MANAGER/sync_and_manage.py",
     "26_TASK_MANAGER/KANBAN_BOARD.md",
-    "26_CALORIE_TRACKER/requirements.txt",
-    "26_TASK_MANAGER",
     "OpenClaw/README.md",
-    "OpenClaw",
     "26_PHILOSOPHY/00_TEMPLATES/TEMPLATE_PHILOSOPHIE.md",
-    "26_PHILOSOPHY/DASHBOARD_PHILOSOPHIE.md",
-    "26_PHILOSOPHY/00_TEMPLATES",
-    "26_PHILOSOPHY/02_RESOURCES",
-    "26_PHILOSOPHY/01_WEEKLY_REFLECTIONS",
-    "01_Andreas/10_THERAPY/01_TEMPLATE_SESSION.md",
-    "01_Andreas/10_THERAPY/00_THERAPY_INTRO.md",
-    "25_GEMINI_CLI/04_WRITING/WRITING_TOOLS.md",
-    "25_GEMINI_CLI/05_BUSINESS/BUSINESS_INTELLIGENCE.md",
-    "25_GEMINI_CLI/03_DESIGN_IMAGES/DESIGN_TOOLS.md",
-    "25_GEMINI_CLI/02_CODING/CODING_TOOLS.md",
     "25_GEMINI_CLI/03_DESIGN_IMAGES/fotorealistisches_portrt_eines_m.png",
     "25_GEMINI_CLI/03_DESIGN_IMAGES/eine_se_katze_fotorealistisch_8k.png",
     "nanobanana-output/eine_se_katze_fotorealistisch_8k.png",

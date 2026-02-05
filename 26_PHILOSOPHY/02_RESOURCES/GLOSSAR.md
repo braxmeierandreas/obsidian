@@ -1,3 +1,5 @@
+[[DASHBOARD_PHILOSOPHIE|⬅️ Dashboard]]
+
 # 📖 Philosophisches Glossar
 
 *Begriffe kurz und knapp definiert.*

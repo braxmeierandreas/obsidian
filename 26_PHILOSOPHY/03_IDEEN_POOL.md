@@ -1,3 +1,5 @@
+[[DASHBOARD_PHILOSOPHIE|⬅️ Dashboard]]
+
 # 💡 Philosophischer Ideen-Pool
 *52 Fragen für ein Jahr voller Reflexion*
 

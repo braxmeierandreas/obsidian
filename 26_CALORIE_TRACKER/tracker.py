@@ -2,20 +2,34 @@ import sqlite3
 import datetime
 import os
 import sys
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 
 # Konfiguration
 DB_FILE = 'tracker.db'
 OBSIDIAN_STATS_FILE = '../TRACKER_STATS.md' # Relativer Pfad zum Obsidian Root
+CHART_FILE = 'progress_chart.png'
 USER_PROFILE = {
     "name": "Andreas",
     "age": 26,
     "gender": "male",
-    "height_cm": 180, # Annahme, bitte korrigieren wenn nötig
-    "weight_kg": 93.0, # Startwert Q1
-    "activity_level": 1.55, # Moderat bis Aktiv (6x Training)
-    "goal_calories": 3200, # Massephase Ziel
-    "goal_protein": 200, # 2g/kg
+    "height_cm": 180, 
+    "weight_kg": 93.0, 
+    "activity_level": 1.55, 
+    "goal_calories": 3200, 
+    "goal_protein": 200, 
     "goal_water_ml": 3500
+}
+
+# Standard-Nahrungsmittel (Name: [Kcal, Protein])
+FOOD_PRESETS = {
+    "1": ("Magerquark (500g)", 340, 60),
+    "2": ("Reis (100g roh)", 350, 7),
+    "3": ("Hähnchenbrust (200g)", 220, 46),
+    "4": ("Protein Shake (30g)", 110, 24),
+    "5": ("Haferflocken (100g)", 370, 13),
+    "6": ("Eier (3 Stück)", 240, 21),
+    "7": ("Banane", 100, 1)
 }
 
 def init_db():
@@ -80,6 +94,60 @@ def log_data(date, **kwargs):
     conn.close()
     print(f"✅ Daten für {date} gespeichert.")
 
+def create_charts():
+    """Erstellt ein Verlaufsdiagramm."""
+    conn = get_connection()
+    # Letzte 30 Tage abrufen
+    start_date = datetime.date.today() - datetime.timedelta(days=30)
+    query = "SELECT date, weight_kg, calories FROM daily_logs WHERE date >= ? ORDER BY date ASC"
+    df = conn.execute(query, (start_date.isoformat(),)).fetchall()
+    conn.close()
+
+    if not df:
+        return
+
+    dates = [datetime.datetime.strptime(x[0], "%Y-%m-%d") for x in df]
+    weights = [x[1] for x in df]
+    calories = [x[2] for x in df]
+
+    # Nur plotten, wenn Daten vorhanden sind
+    if not any(weights) and not any(calories):
+        return
+
+    fig, ax1 = plt.subplots(figsize=(10, 5))
+    
+    # Style
+    plt.style.use('ggplot')
+    
+    # Achse 1: Gewicht
+    color = 'tab:red'
+    ax1.set_xlabel('Datum')
+    ax1.set_ylabel('Gewicht (kg)', color=color)
+    # Filtere None values für Plot
+    clean_dates_w = [d for d, w in zip(dates, weights) if w]
+    clean_weights = [w for w in weights if w]
+    if clean_weights:
+        ax1.plot(clean_dates_w, clean_weights, color=color, marker='o', label='Gewicht')
+        ax1.tick_params(axis='y', labelcolor=color)
+
+    # Achse 2: Kalorien
+    ax2 = ax1.twinx()  
+    color = 'tab:blue'
+    ax2.set_ylabel('Kalorien (kcal)', color=color)  
+    ax2.bar(dates, calories, color=color, alpha=0.3, label='Kalorien')
+    ax2.tick_params(axis='y', labelcolor=color)
+    
+    # Ziellinie Kalorien
+    ax2.axhline(y=USER_PROFILE["goal_calories"], color='green', linestyle='--', alpha=0.5, label='Ziel')
+
+    fig.tight_layout()  
+    plt.title('Gewichtsverlauf & Kalorienaufnahme')
+    
+    # Speichern im Tracker Ordner
+    plt.savefig(CHART_FILE)
+    plt.close()
+    print("📊 Diagramm aktualisiert.")
+
 def generate_obsidian_dashboard():
     """Erstellt eine Markdown-Datei mit Statistiken für Obsidian."""
     conn = get_connection()
@@ -100,6 +168,9 @@ def generate_obsidian_dashboard():
     bmr, tdee = calculate_tdee()
     goal_cal = USER_PROFILE["goal_calories"]
     
+    # Chart erstellen
+    create_charts()
+
     # Fortschrittsbalken Logik (ASCII style für Markdown)
     def progress_bar(current, total, length=20):
         percent = min(1.0, current / total) if total > 0 else 0
@@ -125,6 +196,10 @@ def generate_obsidian_dashboard():
 **{water}ml** / {USER_PROFILE['goal_water_ml']}ml
 
 ---
+## 📈 Verlauf
+![Verlauf](26_CALORIE_TRACKER/{CHART_FILE})
+
+---
 ## ℹ️ Info
 * **Startgewicht:** {USER_PROFILE['weight_kg']} kg
 * **Grundumsatz (BMR):** {bmr} kcal
@@ -133,13 +208,9 @@ def generate_obsidian_dashboard():
 
 """
     # Letzte 7 Tage Tabelle
-    md_content += "
-## 🗓️ Letzte 7 Tage
-"
-    md_content += "| Datum | Kcal | Protein | Wasser | Gewicht |
-"
-    md_content += "|---|---|---|---|---|
-"
+    md_content += "\n## 🗓️ Letzte 7 Tage\n"
+    md_content += "| Datum | Kcal | Protein | Wasser | Gewicht |\n"
+    md_content += "|---|---|---|---|---|\n"
     
     start_date = datetime.date.today() - datetime.timedelta(days=6)
     c.execute("SELECT date, calories, protein, water_ml, weight_kg FROM daily_logs WHERE date >= ? ORDER BY date DESC", (start_date.isoformat(),))
@@ -148,8 +219,7 @@ def generate_obsidian_dashboard():
     for r in rows:
         d, c_val, p_val, w_val, kg_val = r
         kg_display = f"{kg_val} kg" if kg_val else "-"
-        md_content += f"| {d} | {c_val} | {p_val}g | {w_val}ml | {kg_display} |
-"
+        md_content += f"| {d} | {c_val} | {p_val}g | {w_val}ml | {kg_display} |\n"
 
     with open(OBSIDIAN_STATS_FILE, 'w', encoding='utf-8') as f:
         f.write(md_content)
@@ -161,10 +231,11 @@ def main():
     init_db()
     
     print("--- 🏋️ FIT TRACKER CLI 🏋️ ---")
-    print("1. Essen tracken (Kcal/Protein)")
-    print("2. Wasser tracken")
-    print("3. Körperdaten (Gewicht/KFA)")
-    print("4. Dashboard aktualisieren")
+    print("1. Essen tracken (Manuell)")
+    print("2. Essen tracken (Presets)")
+    print("3. Wasser tracken")
+    print("4. Körperdaten (Gewicht/KFA)")
+    print("5. Dashboard aktualisieren")
     print("q. Beenden")
     
     choice = input("Wahl: ")
@@ -174,22 +245,34 @@ def main():
         kcal = int(input("Kalorien (kcal): ") or 0)
         prot = int(input("Protein (g): ") or 0)
         log_data(today, calories=kcal, protein=prot)
-        
+    
     elif choice == "2":
-        ml = int(input("Wasser (ml): ") or 0)
+        print("\n--- 🍎 Presets ---")
+        for k, v in FOOD_PRESETS.items():
+            print(f"{k}. {v[0]} ({v[1]} kcal, {v[2]}g Protein)")
+        
+        p_choice = input("Nummer wählen: ")
+        if p_choice in FOOD_PRESETS:
+            name, kcal, prot = FOOD_PRESETS[p_choice]
+            print(f"Adding: {name}")
+            log_data(today, calories=kcal, protein=prot)
+        else:
+            print("Ungültige Wahl.")
+
+    elif choice == "3":
+        ml = int(input("Wasser (ml): ") or 250)
         log_data(today, water_ml=ml)
         
-    elif choice == "3":
+    elif choice == "4":
         kg = float(input("Gewicht (kg): ") or 0)
         kfa = float(input("Körperfett (%): ") or 0)
         # Gewicht überschreiben wir meist als 'aktuellen Stand'
         log_data(today, weight_kg=kg, body_fat_percent=kfa)
-        # TODO: Hier könnte der Google Fit Sync Hook sein
         
-    elif choice == "4":
+    elif choice == "5":
         generate_obsidian_dashboard()
         
-    if choice in ["1", "2", "3"]:
+    if choice in ["1", "2", "3", "4"]:
         generate_obsidian_dashboard() # Auto-Update nach Eingabe
 
 if __name__ == "__main__":

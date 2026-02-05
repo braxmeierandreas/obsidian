@@ -87,9 +87,16 @@ def get_google_tasks(service):
         return None, []
 
 def sync_tasks():
-    print("🔄 Starte Synchronisierung...")
+    print("🔄 Starte Synchronisierung (Bi-Directional)...")
     
-    # 1. Lokale Aufgaben lesen
+    # 1. Lokale Aufgaben lesen (und Zeilen merken für Rewrite)
+    if not os.path.exists(KANBAN_FILE):
+        print("❌ Kanban Datei nicht gefunden.")
+        return
+
+    with open(KANBAN_FILE, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+
     local_tasks = parse_markdown_tasks()
     
     # 2. Google Service starten
@@ -105,44 +112,91 @@ def sync_tasks():
         print("❌ Keine Google Task Liste gefunden.")
         return
 
-    google_titles = [t['title'] for t in google_tasks]
+    # Mappen für schnelleren Zugriff: Title -> Google Task Object
+    google_map = {t['title']: t for t in google_tasks}
     
-    # 4. Sync: Lokal -> Google (Nur neue hinzufügen)
+    updates_to_file = False
+    new_lines = lines[:] # Kopie der Zeilen für Modifikationen
+
+    # 4. Sync Logik
+    
+    # A) Obsidian -> Google (Neue Tasks + Status Update zu Google)
     added_count = 0
+    closed_in_google_count = 0
+
     for task in local_tasks:
-        # Wir syncen nur 'TODO' und 'IN PROGRESS' die noch nicht erledigt sind
-        if not task['done'] and task['title'] not in google_titles:
-            print(f"➕ Füge hinzu: {task['title']}")
-            body = {
-                'title': task['title'],
-                'notes': f"Status: {task['section']} | Importiert aus Obsidian"
-            }
-            if task['due']:
-                # Google API erwartet RFC 3339 timestamp string
-                due_dt = datetime.strptime(task['due'], '%Y-%m-%d')
-                body['due'] = due_dt.isoformat() + 'Z'
+        g_task = google_map.get(task['title'])
+        
+        if not g_task:
+            # Task existiert lokal, aber nicht in Google -> Nur hochladen wenn er NICHT erledigt ist
+            if not task['done']:
+                print(f"➕ Upload zu Google: {task['title']}")
+                body = {
+                    'title': task['title'],
+                    'notes': f"Status: {task['section']} | Importiert aus Obsidian"
+                }
+                if task['due']:
+                    due_dt = datetime.strptime(task['due'], '%Y-%m-%d')
+                    body['due'] = due_dt.isoformat() + 'Z'
+                
+                try:
+                    service.tasks().insert(tasklist=list_id, body=body).execute()
+                    added_count += 1
+                except Exception as e:
+                    print(f"   Fehler: {e}")
+        
+        else:
+            # Task existiert in beiden -> Status Check
+            # Case 1: Lokal [x], Google Open -> Google schließen
+            if task['done'] and g_task['status'] != 'completed':
+                print(f"✅ Markiere in Google als erledigt: {task['title']}")
+                try:
+                    service.tasks().update(tasklist=list_id, task=g_task['id'], body={
+                        'id': g_task['id'],
+                        'title': g_task['title'],
+                        'status': 'completed'
+                    }).execute()
+                    closed_in_google_count += 1
+                except Exception as e:
+                    print(f"   Fehler: {e}")
 
-            try:
-                service.tasks().insert(tasklist=list_id, body=body).execute()
-                added_count += 1
-            except Exception as e:
-                print(f"   Fehler beim Hinzufügen: {e}")
+            # Case 2: Lokal [ ], Google Completed -> Lokal schließen
+            elif not task['done'] and g_task['status'] == 'completed':
+                print(f"📥 Markiere in Obsidian als erledigt: {task['title']}")
+                # Datei-Update Logik
+                updates_to_file = True
+                # Wir müssen die Zeile finden. Wir gehen einfach über alle Zeilen.
+                # Achtung: Das ist simpel und könnte bei doppelten Titeln Probleme machen.
+                for i, line in enumerate(new_lines):
+                    if f"- [ ] {task['title']}" in line:
+                        new_lines[i] = line.replace("- [ ]", "- [x]")
+                        break
 
-    if added_count == 0:
-        print("✅ Alle lokalen Aufgaben sind bereits in Google Tasks.")
-    else:
-        print(f"✅ {added_count} Aufgaben zu Google Tasks hinzugefügt.")
+    # B) Datei zurückschreiben, falls Änderungen
+    if updates_to_file:
+        try:
+            with open(KANBAN_FILE, 'w', encoding='utf-8') as f:
+                f.writelines(new_lines)
+            print("💾 Kanban Board lokal aktualisiert.")
+        except Exception as e:
+            print(f"❌ Fehler beim Schreiben der Datei: {e}")
+
+    if added_count == 0 and closed_in_google_count == 0 and not updates_to_file:
+        print("✨ Alles synchron.")
 
     # 5. Deadlines checken
-    print("
-⏰ DEADLINE CHECK:")
+    print("\n⏰ DEADLINE CHECK:")
     today = datetime.now()
     upcoming_found = False
     
+    # Reload local tasks falls wir die Datei geändert haben
+    if updates_to_file:
+        local_tasks = parse_markdown_tasks()
+
     for task in local_tasks:
         if task['due'] and not task['done']:
             due_dt = datetime.strptime(task['due'], '%Y-%m-%d')
-            delta = (due_dt - today).days + 1 # +1 weil heute = 0 diff, aber wir wollen "noch X Tage"
+            delta = (due_dt - today).days + 1 
             
             if delta < 0:
                 print(f"🔴 ÜBERFÄLLIG ({abs(delta)} Tage): {task['title']}")

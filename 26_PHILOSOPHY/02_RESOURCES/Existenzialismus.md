@@ -1,3 +1,5 @@
+[[DASHBOARD_PHILOSOPHIE|⬅️ Dashboard]]
+
 # 🌑 Existenzialismus
 
 > "Die Existenz geht der Essenz voraus." – Jean-Paul Sartre

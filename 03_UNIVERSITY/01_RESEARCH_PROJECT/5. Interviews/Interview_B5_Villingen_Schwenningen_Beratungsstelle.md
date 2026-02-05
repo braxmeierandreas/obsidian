@@ -1,147 +1,58 @@
-# Interview mit: B5 – Beratungsstelle für Eltern, Kinder und Jugendliche
+Interview mit: B5 – Beratungsstelle für Eltern, Kinder und Jugendliche (Landratsamt)
+Datum: 04.02.2026
+Interviewende: Sophie Schäffler, Nina Ludwig
+Interviewter: B5
 
-**Datum:** 04.02.2026
-**Interviewende:** I, I
-**Interviewter:** B5
+I: Also dann erstmal nochmal vielen Dank, dass Sie sich Zeit genommen haben, um mit uns das Interview zu führen. Und bevor wir anfangen, würde ich einfach nochmal die groben Rahmenbedingungen erklären. Und zwar, ich bin Sophie Schäffler. Ich bin Nina Ludwig. Und wir studieren Angewandte Gesundheitsförderung an der Hochschule Furtwangen und führen gemeinsam mit dem Gesundheitsamt vom Schwarzwald-Baar-Kreis ein Forschungsprojekt durch. Dafür führen wir eben Interviews. Wir sind heute zu zweit da, aber ich werde hauptsächlich das Interview führen. Generell ist das Ziel des Interviews, dass wir verstehen möchten, wie die psychische Gesundheit von Kindern und Jugendlichen im Landkreis besser gefördert werden kann. Und wir sehen eben in Ihrer Arbeit ein sehr großes Potenzial. Die groben Rahmenbedingungen und Ziele des Projekts haben wir auch schon in der Mail ein bisschen geschildert und möchten jetzt eben genauer Ihre Erfahrungen zu dem Thema mitbekommen. Haben Sie jetzt gerade zu Beginn noch eine Frage?
 
----
+B5: Nö, ich bin neugierig.
 
-**I:**
-Wie würden Sie Ihre Einrichtungen und Aufgaben beschreiben?
+I: Genau, also es gibt auch bei dem Interview kein richtig oder falsch und wir wollen einfach Ihre Sicht. Sie können auch jederzeit Fragen stellen. Das Gespräch wird aufgezeichnet, damit wir eben die Inhalte dann auswerten können. Alle Angaben, die gemacht werden von Ihnen, sind allerdings anonym. Die Daten werden nur für unsere Auswertung genutzt.
 
-**B5:**
-Von der Einrichtung her bin ich im Renten-, Gewerbe- und Sozialamt tätig. Was ich für Kinder und Jugendliche mache, ist eigentlich dieser städtische Familienpass. Das ist auch das Einzige, was uns hier direkt für Kinder und Jugendliche betrifft. Interessant wäre es sicher, auch mal Kontakt mit der Schulkindbetreuung aufzunehmen. Wir als Stadt übernehmen ja Aufgaben wie die Kindergärten – wir haben insgesamt drei. Wir übernehmen die Schulkindbetreuung, das Mittagessen und auch die Ferienbetreuung. Von dem her wäre es schon interessant, die Gespräche auch mit diesen Einrichtungen zu führen.
+B5: Ist das Teil einer Masterarbeit oder ist das einfach ein Projekt im Rahmen Ihres Studiums?
 
-Bei mir läuft halt dieser städtische Familienpass, mit dem wir einfach helfen möchten. Der wurde in den 90er Jahren vom Gemeinderat ins Leben gerufen, damit Familien mit geringerem Einkommen die Möglichkeit haben, an diesen Betreuungsmöglichkeiten teilzunehmen. Kindergarten ist klar, da sind die Kinder so oder so, aber gerade eben diese Schulkindbetreuung ist wichtig für berufstätige Eltern, dass die Kinder da gut betreut sind – und das sind sie bei uns, würde ich sagen.
+I: Genau, das ist ein Projekt im Rahmen unseres Studiums. Wir führen das zu fünft durch. Das geht über zwei Semester und wir zwei machen jetzt das Interview. Okay, dann würde ich direkt mit der Einstiegsfrage starten. Könnten Sie Ihre Einrichtungen und Ihre Aufgaben einfach kurz vorstellen?
 
-**I:**
-Das heißt, die Zielgruppe sind hauptsächlich Kinder, eher weniger Jugendliche? Oder betrifft das auch ältere?
+B5: Okay, ganz kurz geht es nicht, aber ich probiere es. Also wir sind ein eigenständiges Amt innerhalb des Landratsamtes. Das ist eine Besonderheit bei uns. Und sind die Beratungsstelle für Eltern, Kinder und Jugendliche, die zwei Säulen hat. Die erste Säule ist die Säule der Erziehungsberatung nach § 28. Sprich dort können sich niederschwellig und kostenfrei Familien an uns wenden, die sagen, bei uns läuft es gerade nicht so, wie es laufen sollte. Der zweite Teil ist auch noch eine Besonderheit. Wir haben eine integrierte interdisziplinäre Frühförderstelle (IFF), wo wir Kinder von der Geburt bis zur Einschulung fördern, die von Entwicklungsverzögerungen betroffen sind oder eine Behinderung haben. Die kriegen bei uns die sogenannte Komplexleistung, einen Mix aus pädagogisch-psychologischen Therapieformen. Also Logopädie, Ergotherapie, Physiotherapie und Heilpädagogik. Das Ganze tun wir einerseits am Standort Villingen und wir haben aber auch noch einen Standort in Donaueschingen und in Furtwangen. Wir sind ausgestattet mit etwa sechs Stellen für die Erziehungsberatung und vier Stellen für die Frühförderung und haben noch zweieinhalb Stellen für Teamassistenz.
 
-**B5:**
-Bei uns sind es eher Kinder, weil wir nur eine Grundschule haben. Es ist so, dass wir Leistungen bei weiterführenden Schulen dann nicht mehr übernehmen. Also wirklich nur das, was hier in Bräunlingen geschieht. Über den städtischen Familienpass haben wir aktuell sechs Familien drin. Das liegt auch daran, dass es vorrangige Leistungen gibt. In der Schulkindbetreuung haben wir täglich knapp 100 Kinder. Ich schätze, dass 40 bis 50 Prozent über vorrangige Leistungen bezahlt werden, also zum Beispiel über die Jugendhilfe. Bei Flüchtlingen übernimmt oft das Sozialamt die Kosten. Bei uns direkt im Familienpass sind es wie gesagt sechs Familien mit jeweils bis zu vier Kindern.
+I: Und Jugendlichen?
 
-**I:**
-Okay, und haben Sie persönlich dann Kontakt zu den Kindern?
+B5: Ja, also natürlich können sich Eltern an uns wenden. Da gucken wir dann immer in jedem Einzelfall, wie das Setting entsprechend aussieht, ob das jetzt allein die Eltern sind, ob das die Kinder und Jugendlichen sind, die allein zu uns kommen. Und es gibt seit 2021 auch noch einen eigenständigen Beratungsanspruch ohne Kenntnis der Personensorgeberechtigten im SGB VIII, den wir auch logischerweise anbieten, der aber relativ selten genutzt wird.
 
-**B5:**
-Zu den Kindern selber nicht, eigentlich nur zu den Eltern. Die reichen die Unterlagen bei mir ein, genau.
+I: Genau. Und in Ihrer Arbeit bekommen Sie da aktuell irgendwelche Entwicklungen oder Herausforderungen mit?
 
-**I:**
-Können Sie Entwicklungen oder Herausforderungen beobachten, die aktuell geschehen? Gibt es Beispiele für Herausforderungen?
+B5: Ja, das ist ein sehr breit gefächertes Spektrum an Herausforderungen. Ich sage immer nur, was uns einfach gerade so alles begegnet. Das können Themen sein wie ein sexueller Missbrauch, aber auch Ängste, Zwänge, schulische Herausforderungen in Form von sozialen Herausforderungen, also eher Mobbing, Konflikte, aber auch natürlich das ganze Thema Leistung, Leistungsängste, Schulverweigerung. Thema häusliche Gewalt taucht immer wieder auf.
 
-**B5:**
-Aus meiner Erfahrung, auch durch Gemeinderatssitzungen, habe ich mitbekommen, dass bei uns eine Schulsozialarbeit eingestellt wurde, was vorher nicht notwendig war. Es zeichnet sich ab, dass es mit den Kindern anspruchsvoller wird. Woran das liegt, weiß ich nicht genau. Aber auch in der Schulkindbetreuung wird immer wieder Personal gesucht, weil es Problemfälle gibt. Ich habe den Eindruck, dass diese Fälle zunehmen. Als Tipp kann ich Ihnen nachher die Kontaktdaten unserer Schulkindbetreuung geben. Die machen auch das Jugendreferat mit dem Jugendtreff am Abend. Das wäre auf jeden Fall auch sehr interessant für Sie.
+I: Gibt es auch spezielle Gruppen für uns?
 
-**I:**
-Haben diese Entwicklungen Auswirkungen auf Ihre Arbeit?
+B5: Also ich könnte jetzt nicht sagen, dass ich jetzt irgendwie Kriterien habe, wo ich sage, okay, Mädchen zwischen 15 und 17, die das und das mitbringen oder so. Ich glaube, es verteilt sich einfach quer durch die Bevölkerung, was eben an Schwierigkeiten da ist. Und das können eine Chefarztfamilie genau so sein wie eine Familie, die wirtschaftlich nicht so gut aufgestellt ist. Das können Familien aus Villingen sein, aber auch Familien aus Schura. Also da gibt es auch keine Schwerpunkte. Ich glaube, das verteilt sich relativ gleichmäßig über die Gemeinden. Wobei klar, von der Menge der Menschen ist natürlich Villingen-Schwenningen unser Hauptstandort, dann Donaueschingen und dann der Einzugsbereich. Ich könnte jetzt nicht sagen, dass wir so eine Zielgruppe haben, wo wir sagen können, wenn die und die Kriterien zusammenkommen, dann wird es schwieriger.
 
-**B5:**
-Hier im Amt jetzt nicht direkt.
+I: Haben Sie auch Veränderungen seit der Corona-Pandemie bemerkt?
 
-**I:**
-Welche Rolle spielt das Angebot vom Familienpass für das Wohlbefinden oder die psychische Gesundheit der Kinder und Jugendlichen?
+B5: Ja, schon. Es ist so, als ob sich Dinge nochmal verschärft haben. Die Problemlagen sind durch Corona nicht besser geworden. Die soziale Isolation hat es natürlich schwierig gemacht, mit Herausforderungen umzugehen. Man konnte sich nicht mit Freunden treffen und sprechen. Und wenn man die Untersuchungen anschaut, gibt es einfach eine klare, deutliche Zunahme von psychischen Auffälligkeiten bei jungen Menschen. Und so ist es bei uns auch. Was bei uns generell zunehmend ist, bei Eltern wie auch bei Kindern, ist die Schwierigkeit, die eigenen Emotionen zu regulieren. Und das erleben wir, dass es schwieriger ist, dass Kinder vielleicht einfach unruhig sind. Das hat vielleicht mit Corona zu tun, hat aber auch generell mit dem Medienkonsum zu tun. Andererseits haben die sich manchmal auch ganz schön vordiagnostiziert. Also dass junge Menschen reinkommen und sagen: "Ich habe die und die Störung", weil es das halt auf TikTok zur Verfügung gibt oder man Begriffe hört, die man sonst nicht von Jugendlichen gehört hat. Ja, toxische Beziehung, toxische Männlichkeit oder all das, was man halt auf TikTok so hört. Und da hat man das Gefühl, da ist es dann schwierig, manchmal, wenn das so vordiagnostiziert ist, einfach mal ins Gespräch zu gehen, weil wir mit Diagnosen eher nicht so umgehen. Und vielleicht, dass Schule für viele doch noch mal anstrengender ist, als es schon war. Also Schule war schon immer anstrengend, aber vom Gefühl her hat man schon den Eindruck, das ist mehr geworden und die Verunsicherung ist insgesamt größer.
 
-**B5:**
-Ich finde es wichtig, gerade wenn die Eltern viel arbeiten, dass die Kinder an der Schulkindbetreuung teilnehmen können...
+I: Genau, also das sind auch Herausforderungen, mit denen wir auch schon vertraut sind in unserer Recherche. Und jetzt vielleicht nochmal zurück auf Ihr Angebot. Welche Rolle, denken Sie, spielt Ihre Umgebung für das Wohlbefinden von Kindern?
 
-**I:**
-...und auch am Mittagessen.
+B5: Natürlich eine ganz, ganz große. Also was man schon sagen muss: Ich bin kurz vor Corona gekommen. Dann hatten wir von den Fallzahlen eine kleine Delle, hatten jetzt aber die letzten Jahre – also 2022, 2023 und 2024 – jeweils immer eine Steigerung auf ein neues Hoch an Fallzahlen. Also wir haben im letzten Jahr nur in der Erziehungsberatung 1.200 Familien bei uns gehabt im Schwarzwald-Baar-Kreis, plus in der IFF nochmal 400 Familien, also insgesamt 1.600 Familien. Das ist eine ganze Menge. Da merken wir schon einerseits, dass es gut ist, einen niederschwelligen Zugang zu bieten für Menschen, die Unterstützung brauchen. Da haben wir leider eine große Schwierigkeit, dass das Wort "Beratung" jetzt für Jugendliche erstmal nicht das ist, wonach die suchen. Die suchen nicht nach Beratung, obwohl es wichtig wäre. Also versuchen wir einfach für Familien da zu sein und Lösungen zu finden, einfach zu erreichen zu sein. Wir bieten, wenn es notwendig ist, auch videogestützte Beratung an. Andererseits versuchen wir auch präventiv zu sein, indem wir beispielsweise Kursangebote machen oder eine Vortragsreihe haben. Also wir haben so einen kleinen "Bildungs-Espresso", acht bis zehn Vorträge im Jahr zu verschiedenen Themen, wo wir Leute erreichen wollen. Da kriegen wir so etwa zwischen 200 und 400 Leute nochmal, die unsere Vorträge angucken. Dann sind wir natürlich eine Schnittstelle im Netzwerk, wo wir versuchen, in Arbeitskreisen unser Know-how mit einzubringen oder auch Arbeitskreise zu leiten, wie den Arbeitskreis ADHS oder "Kinder psychisch und suchterkrankter Eltern" oder Mitarbeit im AK Sexualisierte Gewalt.
 
-**B5:**
-Genau. Ich fände es traurig, wenn ein Kind nicht am Mittagessen teilnehmen könnte, während alle anderen essen, und es selbst nur ein Brot dabei hat – oder vielleicht gar nichts. Das Programm in der Schulkindbetreuung ist toll. Was wir auch fördern, was aber nicht ganz so oft in Anspruch genommen wird, sind die Jugendmusikschule und die Volkshochschule. Ich finde es klasse, wenn ein Kind aus einer finanziell schwächeren Familie trotzdem die Möglichkeit hat, ein Instrument zu erlernen. So sehe ich das: Es geht um die Beteiligung am gesamten Tagesablauf. Man soll nicht sagen müssen: "Da kann ich nicht mitmachen, weil wir es nicht zahlen können."
+I: Ja, Sie haben jetzt auch schon die Herausforderung angesprochen, dass viele das Angebot, weil es als "Beratung" benannt wird, nicht so annehmen können. Finden Sie, dass es noch weitere Herausforderungen gibt, warum Jugendliche diese Hürde haben, zu der Beratung zu gehen?
 
-**I:**
-Gibt es da feste Bezugspersonen in der Betreuung?
+B5: Ja, das eine ist natürlich die Hürde vielleicht und das andere ist die Kenntnis davon. Also die Frage ist, wie erfährt ein junger Mensch von der Erziehungsberatungsstelle und fühlt er sich dann angesprochen? Heißt es da "Beratungsstelle für Eltern, Kinder"? Könnten Kinder und Jugendliche schon auf die Idee kommen, dass man was mit ihnen machen kann? Aber vielleicht ist der Begriff Beratungsstelle nicht "catchy" genug. Ich weiß nicht, wie der sein müsste, damit ein junger Mensch auf die Idee kommt: "Da gehe ich hin, da kriege ich was, was mir gut tut." Die, die zu uns kommen, profitieren und finden es auch gut, weil sie merken, das ist keine Psychotherapie, da wird man nicht schräg angeschaut oder diagnostiziert. Aber die Frage ist: Wie erfährt man von uns? Ist es attraktiv für junge Menschen, über ihre Schwierigkeiten zu reden mit Erwachsenen? Das ist vielleicht ein grundsätzliches Thema, dass junge Menschen eher nicht über Probleme sprechen wollen, zumindest nicht mit Erwachsenen. Und da habe ich keine Idee, wie man das auflösen könnte, weil hilfreich wäre es natürlich schon. Wir vermitteln dann auch manchmal an die Online-Beratung der Bundeskonferenz, die man zeitlich und räumlich unabhängig nutzen kann. Vielleicht hat es auch was mit den Zeiten zu tun, wo wir es anbieten. Vielleicht müsste man Beratung für Jugendliche eher abends zwischen 18 und 20 Uhr anbieten, wenn die zu Hause sind. Wir sind halt schon in der Logik der Arbeitswelt von 8 bis 17/18 Uhr erreichbar. Aber vielleicht wäre das nochmal ein Modell.
 
-**B5:**
-Absolut, ja. Das sind alles Erzieher und pädagogische Fachkräfte.
+I: Sie hatten ja auch schon die Vernetzung angesprochen mit anderen Akteuren. Können Sie da vielleicht noch ein bisschen ausführen, was Sie sich da wünschen würden?
 
-**I:**
-Gibt es noch andere Angebote bei Ihnen, welche die mentale Gesundheit fördern könnten?
+B5: Also ich glaube, dass wir ganz gut Bescheid wissen, was es so an Unterstützungsmöglichkeiten im Schwarzwald-Baar-Kreis gibt. Wir sind natürlich erstmal intern vernetzt mit unserem Jugendamt. Also dem Allgemeinen Sozialen Dienst, dem Servicepoint Kita. Über die IFF sind wir im Kita-Bereich und mit den Kinderärzten ganz gut vernetzt. Dann versuchen wir uns natürlich mit den anderen Beratungsangeboten im Schwarzwald-Baar-Kreis zu vernetzen, also mit Pro Familia, mit der Ehe-, Familien- und Lebensberatung in der Kanzleigasse, mit der Fachstelle Sucht. Mit der Diakonie, mit der Caritas. Dann natürlich über die Arbeitskreise ADHS mit der Schulpsychologie, weil das Thema Schule oft ein Thema ist. Wo ich jetzt auch nochmal in der Vorbereitung gedacht habe: Es gibt schon noch blinde Flecken. Zum Thema "Mobile Jugendarbeit" und in Jugendhäusern sind wir noch nicht gut vernetzt. Da könnte noch was entstehen, weil da natürlich auch junge Menschen sind. Die wissen sicherlich von uns, aber wir kriegen wenig mit von denen. Mit "Impuls", mit den ganzen Schulsozialarbeitern gibt es immer wieder Kontakt.
 
-**B5:**
-Bräunlingen hat ein sehr starkes Vereinsleben. Sei es die Fasnacht, der Heimat- und Trachtenbund oder der TUS Bräunlingen – das ist unser Sportclub. Die machen sehr viel, zum Beispiel Turnen oder Trampolin. Ich glaube, jedes zweite Kind ist im TUS. Dann haben wir noch den FC Bräunlingen. Das Vereinsleben wird hier sehr großgeschrieben.
+I: Ja, das sind auf jeden Fall Akteure, mit denen wir teilweise auch schon Interviews geführt haben. Klingt auf jeden Fall schon mal nach einer ganz guten Vernetzung. Und gibt es jetzt spezielle Bereiche, wo Sie eben noch mehr Unterstützung benötigen, um die Kinder und Jugendlichen im Hinblick auf die psychische Gesundheit mehr zu unterstützen?
 
-**I:**
-Ja, auf jeden Fall. Also eher in die sportliche Richtung, aber auch musikalisch?
+B5: Also, was natürlich total hilfreich wäre: Wir haben ein Projekt zum Thema Elternbegleitung, das wir jetzt an den Start bringen wollen. Elternbegleitung ist etwas, wo es ganz viele ausgebildete Menschen gibt, die eine Ausbildung haben, wo sie Beratungsgrundzüge kennenlernen. Und mir wäre es ein riesiges Anliegen, gesellschaftlich unterwegs zu sein und zu sagen: Eltern sollten sehr darauf achten, wie sie selber mobile Endgeräte nutzen und wie sie es schaffen, dass ihre Kinder die möglichst spät nutzen. Ich glaube, das ist schon was, was einfach Kontakt und Bindungen verhindert. Bindung und Beziehung und damit auch das Zugewandtsein, das ist einfach was ganz Grundlegendes, was in den ersten Lebensjahren entsteht. Und wenn es was bräuchte, dann wäre es da eine Achtsamkeit zu sagen: Leg das Handy weg und beschäftige dich mit dem Kind. Auch wenn es im Kinderwagen ist. Das würde, glaube ich, maßgeblich auch für eine langfristige seelische Gesundheit beitragen. Das wäre so, bevor was passiert. Und wenn schon viel passiert ist, dann wäre es natürlich total gut, wenn es mehr an psychotherapeutischen Angeboten gäbe. Das ist hier nicht anders wie überall. Wenn eine Jugendliche nach einem Suizidversuch einen ambulanten Therapieplatz sucht, dann muss sie wahrscheinlich ein halbes bis ein Jahr warten. Das ist eigentlich nicht richtig. Eltern, die psychisch erkrankt sind, müssen noch länger warten. Also das wäre natürlich etwas, wenn es schon schwierig geworden ist, dass da noch mehr ist. Das wären so zwei Wünsche, die ich hätte.
 
-**B5:**
-Und kulturell, genau.
+I: Ja, das ist auch das, was wir jetzt erlebt haben oder gehört haben, dass das ein ganz zentraler Bereich ist. Nochmal auf die gesamte Landkreisebene zu schauen: Haben Sie da noch eine Idee, was das Gesamtbild betrifft?
 
-**I:**
-Gibt es da auch Kooperationen untereinander in Bräunlingen, von denen Sie wissen?
+B5: Ich habe tatsächlich mal gegoogelt und dann bin ich auf etwas gestoßen. Ich dachte gestern, es müsste eine zweitägige Konferenz sein. Einmal eine Konferenz für Kinder und für Jugendliche selber. Also die selber irgendwie zu hören, Kinderkonferenz. Die David-Würth-Schule macht jetzt so eine Konferenz. Aber das ist halt nur Schule. Ich fände es total spannend, mit den Kindern und Jugendlichen im Landkreis selber ins Gespräch zu kommen und zu gucken: Was beschäftigt euch denn? Was braucht ihr? Und ich fände es total gut, wenn das mal gelänge. Alle Institutionen, die irgendwie mit Jugendlichen zu tun haben: Was können wir denn für die Jugend tun? Das fände ich eine ganz coole Geschichte zur Gesundheitsförderung. Und vielleicht tatsächlich auch – ich weiß nicht, ob das die Aufgabe vom Gesundheitsamt ist – das Thema Medienpädagogik. Also nicht nur die körperliche Gesundheit in den Blick zu nehmen, wie jetzt das Zahnputzkrokodil, sondern eher zu sagen, da muss es von frühester Kindheit an eigentlich Informationen geben für Eltern, welche Gefahren eigentlich die Nutzung von Mobiltelefonen für die Beziehung und das Aufwachsen von Kindern mit sich bringt. Kinder brauchen zur Regulation keinen Bildschirm, sondern brauchen ein Gegenüber, das auch sich regulieren kann. Ich finde es schon mal gut, wenn das Gesundheitsamt sich das Thema mentale Gesundheit auch zu eigen macht. Das wäre, glaube ich, schon gut.
 
-**B5:**
-Dazu bin ich zu wenig im Vereinsleben drin, das kann ich gar nicht genau beantworten. Was ich aber weiß: Als 2015 die Flüchtlingswelle kam und wir hier auf einmal viele Menschen unterbringen mussten, hat sich ein Helferkreis gegründet. Da war auch der FC Bräunlingen sehr engagiert. Die haben geschaut, dass die Leute integriert werden. Als kurz darauf Fasnacht war, wurden sie direkt mitgenommen. Dieser Zusammenhalt ist hier in Bräunlingen schon extrem gut.
+I: Und jetzt nochmal an Sie die Frage, ob Sie generell noch welche Anmerkungen haben zu dem Thema oder ob Sie auch Fragen haben?
 
-**I:**
-Das klingt sehr gut. Würden Sie sagen, Bräunlingen hat als Gemeinde ein gutes Gemeinschaftsgefühl und eine starke Identifikation?
+B5: Nee, eigentlich keine Fragen. Ich finde es jetzt irgendwie spannend, mich so mit Ihren Fragen beschäftigen zu können. Weil wenn man Fragen gestellt kriegt, fängt man an mit Nachdenken. Von daher erstmal danke für den Fragenimpuls. Vielleicht noch eine Idee, um mehr Jugendliche zu erreichen: Vielleicht eine andere Zeit anbieten oder die Möglichkeit, sich digital einen Termin zu buchen.
 
-**B5:**
-Auf jeden Fall. Die Bräunlinger sind zwar ein spezielles Volk – ich bin selbst keine gebürtige Bräunlingerin, arbeite aber seit 27 Jahren hier im Rathaus. Man lebt sich ein. Ich wohne zwar nicht direkt in Bräunlingen, aber ich merke diesen starken Zusammenhalt.
-
-**I:**
-Sehen Sie Schwierigkeiten, denen Kinder und Jugendliche im Alltag begegnen? Themen, bei denen sie sich vielleicht nicht ausreichend unterstützt fühlen?
-
-**B5:**
-Direkt bekomme ich das natürlich nicht mit. Da wäre es wieder interessant, mit der Schulkindbetreuung zu sprechen. Ich habe eine Zeit lang die Unterbringung von Flüchtlingen koordiniert und helfe ihnen bei Anträgen für das Sozialamt. Ich glaube, eine generelle Herausforderung – nicht nur in Bräunlingen – ist der Anschluss in der Schule oder im Kindergarten, wenn die Kinder die Sprache noch nicht sprechen. Das stelle ich mir schwierig vor.
-
-**I:**
-Gibt es etwas, das Sie benötigen würden, um Kinder und Jugendliche im Hinblick auf die psychische Gesundheit noch besser unterstützen zu können? Materialien, Aufklärung, Vernetzung?
-
-**B5:**
-Ich denke, wir sind eigentlich gut aufgestellt. Ich weiß natürlich nicht genau, wie es direkt in der Schule abläuft, wenn ein ukrainisches oder afghanisches Kind neu dazu kommt. Aber allgemein sind wir hier auf dem Land, glaube ich, ganz gut ausgerüstet im Vergleich zu dem, was man manchmal aus Großstädten wie Berlin in den Nachrichten hört.
-
-**I:**
-Hier auf dem Land ist es oft nochmal anders. Das ist wahrscheinlich auch auf andere Städte im Schwarzwald-Baar-Kreis übertragbar.
-
-**B5:**
-Absolut, das ist alles ähnlich aufgebaut.
-
-**I:**
-Ich komme aus St. Georgen, das kennen Sie sicher. Das ist von der Größe her ähnlich, vielleicht ein bisschen mehr Einwohner, aber vom Ding her ist es vergleichbar.
-
-**I:**
-Ja, das stimmt.
-
-**I:**
-Welche Rolle spielt die Zusammenarbeit mit den Erziehungsberechtigten? Läuft das gut oder gibt es da Missverständnisse?
-
-**B5:**
-Vom Familienpass her läuft es sehr gut. Ich komme den Eltern auch entgegen. In den Richtlinien steht zwar, dass man zweimal im Jahr abrechnen kann, aber ich sage den Familien, bei denen es finanziell knapp ist: "Mir ist das egal mit dem halben Jahr. Kommen Sie von mir aus alle zwei Monate, wenn das Geld benötigt wird." Da bin ich flexibel.
-
-**I:**
-Wo sehen Sie in Ihrer eigenen Arbeit Möglichkeiten, sich weiterzuentwickeln, um die psychische Gesundheit besser fördern zu können? Oder macht das eher in der direkten Betreuung Sinn?
-
-**B5:**
-Das macht auf jeden Fall in der direkten Betreuung mehr Sinn. Aber ich sehe, dass wir hier schon ein gutes Feld haben.
-
-**I:**
-Wäre es sinnvoll, Netzwerke zu bilden, um sich unter den Gemeinden auszutauschen?
-
-**B5:**
-Auf jeden Fall. So etwas finde ich immer gut. Ich bin in einem anderen Bereich aktiv, dem Senioren-Netzwerk, das sich bei uns frisch gegründet hat. Solche Netzwerke sind immer wertvoll. Man kann voneinander lernen: "Wie machen die das? Wäre das bei uns auch möglich?" Das muss ja nicht immer viel kosten. Ein Austausch ist immer positiv. Ein Netzwerk, vielleicht federführend durch das Landratsamt, wäre sicher eine gute Idee.
-
-**I:**
-Gibt es hier auch weiterführende Schulen?
-
-**B5:**
-Die sind in Donaueschingen. Früher hatten wir hier eine Grund- und Hauptschule, aber es gab dann zu wenig Kinder. Bräunlingen hat knapp 6.000 Einwohner.
-
-**I:**
-Gibt es sonst noch Entwicklungen, die Sie beobachten und die Ihnen wichtig wären zu erwähnen?
-
-**B5:**
-Dadurch, dass ich keine eigenen Kinder habe, bin ich nicht ganz so tief in der Materie drin. Da bin ich ein Stück weit entfernt vom täglichen Geschehen der Jugendlichen.
-
-**I:**
-Wir danken Ihnen sehr, dass Sie sich Zeit für das Gespräch genommen haben. Was Bräunlingen alles anbietet, ist wirklich bewundernswert. Vielen Dank!
-
-**B5:**
-Gerne. Schauen Sie ruhig mal auf www.braeunlingen.de unter "Leben in Bräunlingen" und "Kinder und Jugend". Da finden Sie alle Angebote, vom Jugendreferat bis zur Schulkindbetreuung.
-
-**I:**
-Woher kommt eigentlich das Geld für den Familienpass?
-
-**B5:**
-Das zahlt die Stadt Bräunlingen. Der Pass wurde, wie gesagt, in den 90ern eingeführt und immer wieder angepasst. Früher wurden 50% übernommen, vor ein paar Jahren wurde das auf 60% erhöht. Ich berechne den Anspruch immer anhand der aktuellen Sozialhilfesätze. So bleibt es zeitgemäß.
+I: Wir danken auch, dass Sie sich Zeit genommen haben und uns die Fragen beantwortet haben. Und auch falls Sie im Nachhinein noch etwas haben sollten, können Sie sich jederzeit sehr gerne melden.

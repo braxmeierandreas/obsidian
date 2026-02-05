@@ -1,3 +1,5 @@
+[[DASHBOARD_PHILOSOPHIE|⬅️ Dashboard]]
+
 # 📚 Philosophische Lese-Liste
 
 ## 📖 Zu Lesen (To Read)
