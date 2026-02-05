@@ -1,21 +1,35 @@
-# 🧠 Tägliche Reflexion & Wachstum
-Datum: {{date}}
-Status: ⚪ Offen
+---
+date: {{date}}
+tags:
+  - reflection
+  - growth
+trigger_type: "" # z.B. Stress, Kritik, Ego, Müdigkeit
+severity: 1 # Skala 1-10 (Wie schlimm war der Fehler/Reaktion?)
+energy_level: 5 # Skala 1-10 (Wie viel Energie hatte ich davor?)
+resolved: false
+---
 
-## 1. Was ist heute passiert? (Der Fehler/Die Situation)
-> Beschreibe kurz und objektiv die Situation oder den Fehler.
+# 🧠 Tägliche Analyse: {{date}}
 
-## 2. Trigger & Analyse
-- **Was war der Auslöser (Trigger)?** (Person, Ort, Gedanke, Gefühl?)
-- **Was habe ich gefühlt?**
-- **Was war meine (automatische) Reaktion?**
+## 1. Die Situation (Objektiv)
+> Was ist faktisch passiert? (Wie durch eine Kamera gefiltert)
 
-## 3. Die Lektion (1% Better)
-- **Was hätte ich anders machen können?**
-- **Was lerne ich daraus für die Zukunft?**
+## 2. Deep Dive (Die Psychologie)
+- **Trigger:** `INPUT`
+- **Automatische Reaktion:**
+- **Welche Kognitive Verzerrung war aktiv?** (siehe [[02_TRIGGER_DATABASE/COGNITIVE_BIASES|Verzerrungs-Liste]])
+  - [ ] Alles-oder-Nichts-Denken
+  - [ ] Katastrophisieren
+  - [ ] Emotionales Beweisen
+  - [ ] Personalisieren
 
-## 4. Konkrete Maßnahme
-- **Was tue ich, wenn dieser Trigger das nächste Mal auftritt?** (Wenn-Dann-Plan)
+## 3. The 1% Fix (Korrektur)
+- **Sofortmaßnahme:** Was habe ich getan, um es zu beheben?
+- **System-Änderung:** Wie verhindere ich das *strukturell*? (Nicht nur "Ich muss mich mehr anstrengen")
+
+## 4. Action Item
+- [ ]  
 
 ---
-Tags: #reflection #growth #mistake-log
+**Review am Abend:**
+- Habe ich heute etwas gelernt?

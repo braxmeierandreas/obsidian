@@ -22,9 +22,9 @@ def clean_html(raw_html):
 def fetch_study():
     # Liste von RSS Quellen (Priorisiert)
     sources = [
-        {"url": "https://www.nature.com/nature.rss", "name": "Nature"},
         {"url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml", "name": "BBC Science"},
-        {"url": "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml", "name": "NYT Science"}
+        {"url": "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml", "name": "NYT Science"},
+        {"url": "https://www.nature.com/nature.rss", "name": "Nature"}
     ]
     
     for source in sources:
@@ -36,9 +36,7 @@ def fetch_study():
                 
             root = ET.fromstring(xml_data)
             
-            # Namespace Handling für RSS vs Atom
-            # Nature nutzt RDF/RSS 1.0, BBC RSS 2.0
-            # Wir suchen generisch nach 'item'
+            # Namespace Handling
             items = root.findall('.//{http://purl.org/rss/1.0/}item') # Nature
             if not items:
                 items = root.findall('.//item') # Standard RSS 2.0
@@ -46,14 +44,27 @@ def fetch_study():
             if not items:
                 continue
                 
-            # Wir nehmen das erste Item
-            item = items[0]
+            # Suche nach dem ersten "echten" Artikel (keine Korrekturen)
+            selected_item = None
+            for item in items[:5]: # Prüfe die ersten 5
+                # Titel extrahieren
+                title_elem = item.find('{http://purl.org/rss/1.0/}title')
+                if title_elem is None: title_elem = item.find('title')
+                title = title_elem.text if title_elem is not None else "Ohne Titel"
+                
+                if "Author Correction" in title or "Publisher Correction" in title:
+                    continue
+                
+                selected_item = item
+                break
             
-            # Titel extrahieren
-            title_elem = item.find('{http://purl.org/rss/1.0/}title')
-            if title_elem is None: title_elem = item.find('title')
-            title = title_elem.text if title_elem is not None else "Ohne Titel"
-
+            if not selected_item:
+                continue # Nächste Quelle probieren
+                
+            item = selected_item
+            
+            # Titel (schon extrahiert)
+            
             # Link extrahieren
             link_elem = item.find('{http://purl.org/rss/1.0/}link')
             if link_elem is None: link_elem = item.find('link')
@@ -105,7 +116,7 @@ def create_study_note():
     content = f"""---
 tags: [study, science, daily, knowledge]
 date: {date_str}
-source: ScienceDaily
+source: {study.get('source', 'Unknown')}
 link: {study['link']}
 ---
 
