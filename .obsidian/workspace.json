@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "90_JOURNAL/08_BRIEFING/BRIEFING_2026-02-05.md",
+                "file": "04_GOALS/01_HEALTH/08_HALBMARATHON_2026/RUNNING_LOG.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BRIEFING_2026-02-05"
+              "title": "RUNNING_LOG"
             }
           }
         ],
@@ -212,10 +212,10 @@
   },
   "active": "773b12261c45429b",
   "lastOpenFiles": [
-    "04_GOALS/01_HEALTH/08_HALBMARATHON_2026/RUNNING_LOG.md",
     "04_GOALS/01_HEALTH/08_HALBMARATHON_2026/TRAININGSPLAN.md",
-    "90_JOURNAL/08_BRIEFING/BRIEFING_2026-01-21.md",
     "90_JOURNAL/08_BRIEFING/BRIEFING_2026-02-05.md",
+    "04_GOALS/01_HEALTH/08_HALBMARATHON_2026/RUNNING_LOG.md",
+    "90_JOURNAL/08_BRIEFING/BRIEFING_2026-01-21.md",
     "90_JOURNAL/08_BRIEFING/BRIEFING_2026-01-22.md",
     "00_SYSTEM_REFLECTION/LOGS/2026-02-05_Reflexion.md",
     "REFLEKTIEREN.bat",
