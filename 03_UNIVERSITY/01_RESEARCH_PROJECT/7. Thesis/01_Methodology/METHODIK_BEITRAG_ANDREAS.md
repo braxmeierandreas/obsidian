@@ -15,13 +15,18 @@ Die Identifikation der Untersuchungseinheiten erfolgte in einem systematischen, 
 *   **Phase 1 (Initial-Sampling):** Zunächst wurde eine Primärliste von ca. 50 relevanten Akteuren im Landkreis Schwarzwald-Baar erstellt.
 *   **Phase 2 (Erweiterungs-Sampling):** Aufgrund der Notwendigkeit einer tieferen Feldausschöpfung wurde das Sample in einer zweiten Recherchephase auf **insgesamt über 150 Akteure** erweitert.
 
-Die Akteure wurden dabei nach zwei zentralen Kriterien stratifiziert: **Reichweite** (Groß vs. Klein) und **Angebotsfrequenz** (Regelmäßig vs. Gelegentlich). Meine Aufgabe umfasste die systematische Recherche dieser Daten über kommunale Webseiten, Vereinsregister und öffentliche Datenbanken sowie die Validierung der Kontaktdaten (E-Mail, Telefonnummern, Ansprechpartner), um die Rücklaufquote zu optimieren.
+Die Akteure wurden dabei in einer **Stratifizierungsmatrix** verortet, die auf zwei zentralen Kriterien basierte: **Reichweite** (Groß vs. Klein) und **Angebotsfrequenz** (Regelmäßig vs. Gelegentlich). Ziel dieses Verfahrens war es, die vier daraus resultierenden Quadranten für das finale Sample möglichst gleichmäßig zu besetzen, um eine strukturelle Vergleichbarkeit der Daten zu gewährleisten. Meine Aufgabe umfasste die systematische Recherche dieser Daten über kommunale Webseiten, Vereinsregister und öffentliche Datenbanken sowie die Validierung der Kontaktdaten (E-Mail, Telefonnummern, Ansprechpartner), um die Rücklaufquote zu optimieren.
 
 ## 3. Monitoring und operatives Controlling
 
 Zur Steuerung des Feldzugangs wurde ein dynamisches **Excel-Monitoringsystem** implementiert. Dieses Instrument diente als "Single Source of Truth" für den aktuellen Rekrutierungsstand. 
 
-Das System visualisierte den Status jedes Akteurs (z. B. *Kontaktiert, Zusage, Absage, Terminiert*) in einem Dashboard. Dies ermöglichte es dem Team, den Feldzugang quantitativ zu überwachen, Redundanzen bei der Kontaktaufnahme zu vermeiden und die Interviewtermine effizient zu koordinieren.
+Der Feldzugang wurde prozessual in mehreren Stufen gestaltet:
+1. **Erste Kontaktwelle:** Initial wurden alle identifizierten Akteure über ein standardisiertes E-Mail-Anschreiben kontaktiert.
+2. **Zweite Kontaktwelle:** Bei ausbleibender Rückmeldung erfolgte eine zweite, nun personalisierte Ansprache, um die Relevanz der Studie für den jeweiligen Akteur zu unterstreichen.
+3. **Telefonisches Nachfassen:** Zur finalen Klärung des Feldzugangs wurde bei strategisch wichtigen Akteuren zusätzlich telefonisch nachgefasst.
+
+Das Monitoring-System visualisierte den Status jedes Akteurs (z. B. *Kontaktiert, Zusage, Absage, Terminiert*) in einem Dashboard. Dies ermöglichte es dem Team, den Feldzugang quantitativ zu überwachen, Redundanzen bei der Kontaktaufnahme zu vermeiden und die Interviewtermine effizient zu koordinieren.
 
 ## 4. KI-gestützte Datenaufbereitung und Anonymisierung
 
