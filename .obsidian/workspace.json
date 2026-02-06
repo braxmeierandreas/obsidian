@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "90_JOURNAL/01_2026/02_FEBRUARY/05_022026.md",
+                "file": "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_221624.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05_022026"
+              "title": "STUDY_2026-02-06_221624"
             }
           }
         ],
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "STUDY_2026-02-06_221624.md",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -210,8 +210,13 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "773b12261c45429b",
+  "active": "b57fe770d20e8763",
   "lastOpenFiles": [
+    "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06.md",
+    "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_221624.md",
+    "90_JOURNAL/08_BRIEFING/BRIEFING_2026-02-06.md",
+    "DAILY_STUDY.bat",
+    "90_JOURNAL/01_2026/02_FEBRUARY/05_022026.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Interventionen_Psyche_Kinder_Jugendliche/03_ENTWURF_ERGEBNISSE_FAZIT.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Interventionen_Psyche_Kinder_Jugendliche/02_ENTWURF_HANDLUNGSEMPFEHLUNGEN.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Interventionen_Psyche_Kinder_Jugendliche/01_SCHREIBPLAN_ERGEBNISSE.md",
@@ -234,7 +239,6 @@
     "04_GOALS/01_HEALTH",
     "04_GOALS",
     "00_SYSTEM_REFLECTION/REFLEKTIEREN.bat",
-    "00_SYSTEM_REFLECTION/create_log.py",
     "00_SYSTEM_REFLECTION/TEMPLATES/Reflexion.md",
     "00_SCRIPTS/BACKUP_ZENTRALE/README_WAS_WIRD_GESICHERT.md",
     "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/SHAKSHUKA.md",
@@ -244,10 +248,6 @@
     "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/KICHERERBSEN_CURRY.md",
     "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/MAPO_TOFU.md",
     "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/GRUENES_CURRY.md",
-    "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/DAL.md",
-    "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/CHILI_SIN_CARNE.md",
-    "32_COOKBOOK/04_MAIN_DISHES/03_FLEISCH_UND_GEFLUEGEL/COQ_AU_VIN.md",
-    "32_COOKBOOK/04_MAIN_DISHES/02_REISGERICHTE/SUSHI_REIS_GRUNDREZEPT.md",
     "37_PHILOSOPHY/Weltbild.canvas",
     "36_INTEREST_ANTIGRAVITY/public/images/hero.png",
     "36_INTEREST_ANTIGRAVITY/public/images/detail.png",

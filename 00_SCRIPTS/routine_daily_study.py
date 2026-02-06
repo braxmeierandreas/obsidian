@@ -1,143 +1,189 @@
+import sys
+import time
+import random
+import requests
+import json
 import os
 import datetime
-import urllib.request
-import xml.etree.ElementTree as ET
-import re
-import html
 
-# Pfade
+# --- KONFIGURATION ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.dirname(BASE_DIR)
 STUDIES_DIR = os.path.join(ROOT_DIR, "01_Andreas", "05_KNOWLEDGE", "DAILY_STUDIES")
 
-# Sicherstellen, dass der Ordner existiert
-if not os.path.exists(STUDIES_DIR):
-    os.makedirs(STUDIES_DIR)
+# Themengebiete basierend auf deinem Profil
+TOPICS = [
+    "Public Health",
+    "Health Promotion",
+    "Artificial Intelligence",
+    "Large Language Models",
+    "Clinical Psychology",
+    "Exercise Physiology",
+    "Behavioral Economics",
+    "Sleep Science",
+    "Nutrition Science"
+]
 
-def clean_html(raw_html):
-    cleanr = re.compile('<.*?>')
-    cleantext = re.sub(cleanr, '', raw_html)
-    return html.unescape(cleantext).strip()
+# API Endpunkt
+API_URL = "https://api.semanticscholar.org/graph/v1/paper/search"
 
-def fetch_study():
-    # Liste von RSS Quellen (Priorisiert)
-    sources = [
-        {"url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml", "name": "BBC Science"},
-        {"url": "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml", "name": "NYT Science"},
-        {"url": "https://www.nature.com/nature.rss", "name": "Nature"}
-    ]
+def ensure_dir(directory):
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+def get_random_topic():
+    return random.choice(TOPICS)
+
+def fetch_paper(topic, retries=3):
+    # Wir suchen nach relevanten Papern der letzten 3 Jahre
+    current_year = datetime.datetime.now().year
+    year_range = f"{current_year-2}-{current_year}"
     
-    for source in sources:
+    params = {
+        "query": topic,
+        "limit": 20,
+        "fields": "title,authors,abstract,year,citationCount,url,venue,openAccessPdf",
+        "year": year_range,
+        "sort": "citationCount:desc"
+    }
+
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+        "Accept": "application/json"
+    }
+
+    for attempt in range(retries):
         try:
-            print(f"Versuche Quelle: {source['name']}...")
-            req = urllib.request.Request(source['url'], headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'})
-            with urllib.request.urlopen(req, timeout=10) as response:
-                xml_data = response.read()
+            print(f"Suche nach Studie zum Thema: {topic} (Versuch {attempt+1}/{retries})...")
+            response = requests.get(API_URL, params=params, headers=headers, timeout=15)
+            
+            if response.status_code == 200:
+                data = response.json()
+                if "data" in data and len(data["data"]) > 0:
+                    paper = random.choice(data["data"])
+                    return paper, topic
+                else:
+                    print(f"Keine Daten für '{topic}' gefunden.")
+                    return None, None
+            elif response.status_code == 429:
+                wait_time = (attempt + 1) * 10
+                print(f"API Rate Limit (429). Warte {wait_time} Sekunden...")
+                time.sleep(wait_time)
+            else:
+                print(f"API Fehler: {response.status_code}")
+                break # Bei anderen Fehlern nicht unbedingt sinnvoll zu retrien
                 
-            root = ET.fromstring(xml_data)
-            
-            # Namespace Handling
-            items = root.findall('.//{http://purl.org/rss/1.0/}item') # Nature
-            if not items:
-                items = root.findall('.//item') # Standard RSS 2.0
-            
-            if not items:
-                continue
-                
-            # Suche nach dem ersten "echten" Artikel (keine Korrekturen)
-            selected_item = None
-            for item in items[:5]: # Prüfe die ersten 5
-                # Titel extrahieren
-                title_elem = item.find('{http://purl.org/rss/1.0/}title')
-                if title_elem is None: title_elem = item.find('title')
-                title = title_elem.text if title_elem is not None else "Ohne Titel"
-                
-                if "Author Correction" in title or "Publisher Correction" in title:
-                    continue
-                
-                selected_item = item
-                break
-            
-            if not selected_item:
-                continue # Nächste Quelle probieren
-                
-            item = selected_item
-            
-            # Titel (schon extrahiert)
-            
-            # Link extrahieren
-            link_elem = item.find('{http://purl.org/rss/1.0/}link')
-            if link_elem is None: link_elem = item.find('link')
-            link = link_elem.text if link_elem is not None else ""
-
-            # Beschreibung extrahieren
-            desc_elem = item.find('{http://purl.org/rss/1.0/}description')
-            if desc_elem is None: desc_elem = item.find('description')
-            description = desc_elem.text if desc_elem is not None else "Keine Beschreibung verfügbar."
-            
-            # Datum (Optional)
-            date_elem = item.find('pubDate')
-            pub_date = date_elem.text if date_elem is not None else datetime.datetime.now().strftime("%Y-%m-%d")
-            
-            # DC Date für Nature
-            if date_elem is None:
-                date_elem = item.find('{http://purl.org/dc/elements/1.1/}date')
-                if date_elem is not None: pub_date = date_elem.text
-
-            return {
-                "title": title,
-                "link": link,
-                "description": clean_html(description),
-                "date": pub_date,
-                "source": source['name']
-            }
         except Exception as e:
-            print(f"Fehler bei {source['name']}: {e}")
-            continue
-            
-    return None
-
-def create_study_note():
-    study = fetch_study()
-    if not study:
-        print("Keine Studie gefunden.")
-        return
-
-    now = datetime.datetime.now()
-    date_str = now.strftime("%Y-%m-%d")
-    filename = f"STUDY_{date_str}.md"
-    filepath = os.path.join(STUDIES_DIR, filename)
+            print(f"Fehler bei der Verbindung: {e}")
+            time.sleep(2)
     
-    # Prüfen ob schon existiert
-    if os.path.exists(filepath):
-        print(f"Studie für heute ({filename}) existiert bereits.")
+    return None, None
+
+def format_authors(author_list):
+    if not author_list:
+        return "Unknown Authors"
+    # Ensure author_list is actually a list of dicts with 'name'
+    try:
+        names = [a.get('name', 'Unknown') for a in author_list]
+        return ", ".join(names[:3]) + (" et al." if len(names) > 3 else "")
+    except:
+        return "Format Error"
+
+def create_markdown(paper, topic):
+    if not paper:
         return
+
+    today = datetime.datetime.now().strftime("%Y-%m-%d")
+    timestamp = datetime.datetime.now().strftime("%H%M%S")
+    
+    # Dateiname mit Timestamp um Konflikte zu vermeiden
+    filename = f"STUDY_{today}_{timestamp}.md"
+    filepath = os.path.join(STUDIES_DIR, filename)
+
+    title = paper.get('title', 'No Title')
+    abstract = paper.get('abstract')
+    if not abstract:
+        abstract = "Kein Abstract verfügbar. Bitte nutze den Link zur Originalquelle."
+    
+    authors = format_authors(paper.get('authors', []))
+    year = paper.get('year', 'Unknown Year')
+    citations = paper.get('citationCount', 0)
+    url = paper.get('url', '')
+    venue = paper.get('venue', 'Unknown Venue')
+    
+    pdf_link = ""
+    if paper.get('openAccessPdf'):
+        pdf_url = paper['openAccessPdf'].get('url')
+        if pdf_url:
+            pdf_link = f"\n> [!PDF] [Direktes PDF öffnen]({pdf_url})"
 
     content = f"""---
-tags: [study, science, daily, knowledge]
-date: {date_str}
-source: {study.get('source', 'Unknown')}
-link: {study['link']}
+tags: [study, science, daily, {topic.replace(" ", "_").lower()}]
+date: {today}
+topic: "{topic}"
+type: academic_paper
+citations: {citations}
+year: {year}
 ---
 
-# 🔬 {study['title']}
+# 🎓 {title}
 
-### 📅 Veröffentlicht: {study['date']}
-
-## 📝 Zusammenfassung
-{study['description']}
-
-## 🔗 Quelle & Details
-[Hier klicken um die ganze Studie zu lesen]({study['link']})
+> **Thema:** {topic} | **Jahr:** {year} | **Zitationen:** {citations}
+> **Journal/Venue:** {venue}
+> **Autoren:** {authors}
 
 ---
-*Automatisch generiert von deinem Daily Study Script.*
+
+## 📝 Abstract
+{abstract}
+
+---
+
+## 🔗 Links
+- [Zur Studie (Semantic Scholar)]({url})
+{pdf_link}
+
 """
     
-    with open(filepath, 'w', encoding='utf-8') as f:
-        f.write(content)
+    try:
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write(content)
+        print(f"\n✅ Studie erfolgreich gespeichert:\n📂 {filepath}\nTopic: {topic}\nTitel: {title}")
+        return True
+    except Exception as e:
+        print(f"Fehler beim Speichern der Datei: {e}")
+        return False
+
+def main():
+    ensure_dir(STUDIES_DIR)
     
-    print(f"Neue Studie gespeichert: {filepath}")
+    # Prüfen ob ein Thema übergeben wurde
+    if len(sys.argv) > 1:
+        # Alles nach dem Skriptnamen als ein Suchterm zusammenfügen
+        user_topic = " ".join(sys.argv[1:])
+        paper, topic_used = fetch_paper(user_topic)
+        if paper:
+            create_markdown(paper, topic_used)
+            sys.exit(0)
+        else:
+            print(f"❌ Keine Studie zum Thema '{user_topic}' gefunden.")
+            sys.exit(1)
+
+    # Standard-Modus: Versuche bis zu 3 mal mit verschiedenen Themen aus der Liste
+    topics_to_try = random.sample(TOPICS, 3)
+    
+    for topic in topics_to_try:
+        paper, topic_used = fetch_paper(topic)
+        if paper:
+            success = create_markdown(paper, topic_used)
+            if success:
+                sys.exit(0) # Erfolgreich beenden
+        
+        # Kurze Pause vor dem nächsten Versuch
+        time.sleep(2)
+
+    print("❌ Konnte heute leider keine Studie abrufen (Alle Versuche fehlgeschlagen).")
+    sys.exit(1) # Fehlercode senden
 
 if __name__ == "__main__":
-    create_study_note()
+    main()
