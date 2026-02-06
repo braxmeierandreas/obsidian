@@ -27,10 +27,12 @@
             "id": "a4285a920f3ca8d6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.7"
             }
           }
         ],
@@ -208,7 +210,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b57fe770d20e8763",
+  "active": "a4285a920f3ca8d6",
   "lastOpenFiles": [
     "00_SCRIPTS/zotero_to_obsidian.py",
     "00_SCRIPTS/zotero_test.py",
