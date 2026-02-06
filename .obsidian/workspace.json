@@ -27,12 +27,14 @@
             "id": "a4285a920f3ca8d6",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.11.7"
+                "file": "03_UNIVERSITY/01_RESEARCH_PROJECT/Interventionen_Psyche_Kinder_Jugendliche/00_RESEARCH_LOG.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.7"
+              "icon": "lucide-file",
+              "title": "00_RESEARCH_LOG"
             }
           }
         ],
