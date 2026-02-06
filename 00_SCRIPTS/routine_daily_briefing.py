@@ -16,7 +16,7 @@ from GOOGLE.google_auth import get_service
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.dirname(BASE_DIR) # Ein Level höher (Obsidian Root)
 
-BRIEFING_DIR = os.path.join(ROOT_DIR, "02_JOURNAL", "08_BRIEFING")
+BRIEFING_DIR = os.path.join(ROOT_DIR, "90_JOURNAL", "08_BRIEFING")
 FINANCE_PATH = os.path.join(ROOT_DIR, "14_TRADING", "02_DATA", "banking_snapshot.json")
 PORTFOLIO_PATH = os.path.join(ROOT_DIR, "14_TRADING", "02_DATA", "portfolio_snapshot.json")
 GEMINI_MD_PATH = os.path.join(ROOT_DIR, "GEMINI.md")

@@ -27,46 +27,14 @@
             "id": "a4285a920f3ca8d6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03_UNIVERSITY/01_RESEARCH_PROJECT/09_Email/05_Anschreiben_Beratung_Praevention_Soziales.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "05_Anschreiben_Beratung_Praevention_Soziales"
-            }
-          },
-          {
-            "id": "cee3df96fc3f1003",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03_UNIVERSITY/01_RESEARCH_PROJECT/09_Email/01_Anschreiben_Schulen_Schulsozialarbeit.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01_Anschreiben_Schulen_Schulsozialarbeit"
-            }
-          },
-          {
-            "id": "e93cd8d5c68bf487",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02_JOURNAL/01_2026/02_FEBRUARY/02_022026.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "02_022026"
+              "title": "New tab"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -240,52 +208,54 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e93cd8d5c68bf487",
+  "active": "b57fe770d20e8763",
   "lastOpenFiles": [
+    "00_SCRIPTS/zotero_to_obsidian.py",
+    "00_SCRIPTS/zotero_test.py",
+    "00_SCRIPTS/routine_daily_study.py",
+    "00_SCRIPTS/create_reflection_entry.py",
+    "00_SCRIPTS/Tipp",
     "conflict-files-obsidian-git.md",
-    "02_JOURNAL/01_2026/02_FEBRUARY/02_022026.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/01_Audio/Interview_27.01.2026_Engesser.m4a",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/B5.md",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/Hausarbeit Abschluss.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/6. Results/01_Coding/CODING_B5_Beratungsstelle.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/Interview_B5_Villingen_Schwenningen_Beratungsstelle.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/Interview_B5_Villingen_Schwenningen_Beratungsstelle.docx",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/5. Interviews/B5 - Backup.md",
-    "MEDIA_CHAOS_CONVERTER.md",
-    "BATCH_CONVERTER_LEITFADEN.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/Gantt/Meilenstein",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/Gantt",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/ARCHIVE/neu/Unbenannt.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/ARCHIVE/neu",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/7. Thesis/01_Methodology/METHODIK_BEITRAG_ANDREAS.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/7. Thesis/HAUSARBEIT_VORLAGE.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/7. Thesis/01_Methodology",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/7. Thesis",
-    "25_GEMINI_CLI/02_CODING/skills/greeter/SKILL.md",
-    "25_GEMINI_CLI/06_SKILLS_LEARNING/skills/greeter/SKILL.md",
-    "25_GEMINI_CLI/01_RESEARCH/skills/greeter/SKILL.md",
-    "25_GEMINI_CLI/05_BUSINESS/skills/greeter/SKILL.md",
-    "25_GEMINI_CLI/04_WRITING/skills/greeter/SKILL.md",
-    "25_GEMINI_CLI/03_DESIGN_IMAGES/skills/greeter/SKILL.md",
-    "25_GEMINI_CLI/02_CODING/skills/greeter",
-    "25_GEMINI_CLI/06_SKILLS_LEARNING/skills/greeter",
-    "25_GEMINI_CLI/05_BUSINESS/skills/greeter",
-    "25_GEMINI_CLI/06_SKILLS_LEARNING_OLD/README_LEARNING.md",
-    "25_GEMINI_CLI/05_BUSINESS_OLD/README_BUSINESS.md",
-    "25_GEMINI_CLI/03_DESIGN_IMAGES_OLD/README_DESIGN.md",
-    "25_GEMINI_CLI/04_WRITING_OLD/README_WRITING.md",
-    "25_GEMINI_CLI/03_DESIGN_IMAGES/fotorealistisches_portrt_eines_m.png",
-    "25_GEMINI_CLI/03_DESIGN_IMAGES/eine_se_katze_fotorealistisch_8k.png",
-    "25_GEMINI_CLI/01_RESEARCH_OLD/README_RESEARCH.md",
-    "25_GEMINI_CLI/02_CODING_OLD/README_CODING.md",
-    "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/HAUSARBEIT_GESAMT_BRAXMEIER_LEKTORAT.md",
-    "03_UNIVERSITY/03_AGF2/02_BGM/FINAL_ABGABE/Folder.jpg",
-    "03_UNIVERSITY/03_AGF2/02_BGM/FINAL_ABGABE/AlbumArtSmall.jpg",
-    "Obsidian/22_GEDA/GEDA_Analysis_Results/05_Cost_Income.png",
-    "Obsidian/22_GEDA/GEDA_Analysis_Results/04_Activity_Chronic.png",
-    "Obsidian/22_GEDA/GEDA_Analysis_Results/03_Smoking_Depression.png",
-    "Obsidian/22_GEDA/GEDA_Analysis_Results/02_BMI_Education_Bar.png",
-    "Obsidian/22_GEDA/GEDA_Analysis_Results/01_Health_Age_Heatmap.png",
-    "Obsidian/21_BGM/BGM_Website_Deploy_v3/assets/favicon.png"
+    "37_PHILOSOPHY/02_RESOURCES/Stoa.md",
+    "37_PHILOSOPHY/02_RESOURCES/LESELISTE.md",
+    "37_PHILOSOPHY/02_RESOURCES/GLOSSAR.md",
+    "37_PHILOSOPHY/02_RESOURCES/Existenzialismus.md",
+    "37_PHILOSOPHY/00_TEMPLATES/TEMPLATE_PHILOSOPHIE.md",
+    "37_PHILOSOPHY/02_RESOURCES/Ethik.md",
+    "37_PHILOSOPHY/Weltbild.canvas",
+    "37_PHILOSOPHY/README.md",
+    "37_PHILOSOPHY/DASHBOARD_PHILOSOPHIE.md",
+    "37_PHILOSOPHY/06_ZITATE.md",
+    "37_PHILOSOPHY/04_GEDANKEN_INBOX.md",
+    "37_PHILOSOPHY/02_RESOURCES",
+    "37_PHILOSOPHY/03_IDEEN_POOL.md",
+    "37_PHILOSOPHY/00_TEMPLATES",
+    "37_PHILOSOPHY",
+    "35_ASSETS_EXCALIDRAW/DRAWING_2026_01_03_180634EXCALIDRAW.md",
+    "35_ASSETS_EXCALIDRAW/DRAWING_2026_01_03_194955EXCALIDRAW.md",
+    "35_ASSETS_EXCALIDRAW",
+    "REFLEKTIEREN.bat",
+    "LOG_RUN.bat",
+    "98_CLIPPINGS/Wikipedia – Die freie Enzyklopädie.md",
+    "98_CLIPPINGS/Wikipedia – Die freie Enzyklopädie 1.md",
+    "98_CLIPPINGS/PortalGesellschaft – Wikipedia.md",
+    "95_ARCHIVE_DOCS/BAFOEG/03_BAFÖG_WS25/IMMATRIKULATIONSBESCHEINIGUNG_BRAXMEIER_ANDREAS.md",
+    "95_ARCHIVE_DOCS/BAFOEG/BAFOEGBESCHEINIGUNGEN/BAFOEGBESCHEID_24_25.md",
+    "95_ARCHIVE_DOCS/BAFOEG/BAFOEGBESCHEINIGUNGEN/GEZ_2025.md",
+    "95_ARCHIVE_DOCS/BAFOEG/BAFOEGBESCHEINIGUNGEN/BAFOEGBESCHEID_23_24.md",
+    "95_ARCHIVE_DOCS/BAFOEG/03_BAFÖG_WS25/FB1_BRAXMEIER_ANDREAS.md",
+    "95_ARCHIVE_DOCS/BAFOEG/03_BAFÖG_WS25/BAFOEG_24_25.md",
+    "95_ARCHIVE_DOCS/BAFOEG/03_BAFÖG_WS25/GEZ.md",
+    "95_ARCHIVE_DOCS/BAFOEG/02_BAFÖG_SS25/BAFOEG_SS25.md",
+    "36_INTEREST_ANTIGRAVITY/public/images/hero.png",
+    "36_INTEREST_ANTIGRAVITY/public/images/detail.png",
+    "36_INTEREST_ANTIGRAVITY/public/vite.svg",
+    "36_INTEREST_ANTIGRAVITY/src/javascript.svg",
+    "30_TECH_GEMINI/03_DESIGN_IMAGES/fotorealistisches_portrt_eines_m.png",
+    "30_TECH_GEMINI/03_DESIGN_IMAGES/eine_se_katze_fotorealistisch_8k.png",
+    "21_HEALTH_BGM/BGM_Website_Deploy_v3/assets/bgm-schematic.png",
+    "21_HEALTH_BGM/BGM_Website_Deploy_v3/assets/favicon.png",
+    "21_HEALTH_BGM/BGM_Website/assets/favicon.png",
+    "21_HEALTH_BGM/BGM_Website/assets/bgm-schematic.png"
   ]
 }

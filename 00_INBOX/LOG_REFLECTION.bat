@@ -1,0 +1,3 @@
+@echo off
+echo Starte Reflexions-System...
+python "00_SCRIPTS\create_reflection_entry.py"
