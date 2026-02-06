@@ -11,30 +11,28 @@
             "id": "f8d8a07a782704c4",
             "type": "leaf",
             "state": {
-              "type": "terminal:documentation",
-              "state": {
-                "terminal:documentation": {
-                  "data": "# Terminal for Obsidian [![release](https://img.shields.io/github/v/release/polyipseity/obsidian-terminal)][latest release] [![Obsidian downloads](https://img.shields.io/badge/dynamic/json?logo=Obsidian&color=%238b6cef&label=downloads&query=$[\"terminal\"].downloads&url=https://raw.githubusercontent.com/obsidianmd/obsidian-releases/master/community-plugin-stats.json)][community plugin] [![Python](https://img.shields.io/badge/Python-≥3.10-gold?labelColor=blue&logo=Python&logoColor=white)][Python]\n\n[Buy Me a Coffee]: https://buymeacoffee.com/polyipseity\n[Buy Me a Coffee/embed]: https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=polyipseity&button_colour=40DCA5&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00\n[Obsidian]: https://obsidian.md/\n[Python]: https://python.org/downloads/\n[changelog]: https://github.com/polyipseity/obsidian-terminal/blob/main/CHANGELOG.md\n[community plugin]: https://obsidian.md/plugins?id=terminal\n[latest release]: https://github.com/polyipseity/obsidian-terminal/releases/latest\n[repository]: https://github.com/polyipseity/obsidian-terminal\n[trailer]: https://raw.githubusercontent.com/polyipseity/obsidian-terminal/main/assets/trailer.png\n[related]: https://github.com/polyipseity/obsidian-monorepo\n\nIntegrate consoles, shells, and terminals inside [Obsidian].\n\n[![Buy Me a Coffee/embed]][Buy Me a Coffee]\n\n__[Repository] · [Changelog] · [Community plugin] · [Related] · [Features](#features) · [Installation](#installation) · [Usage](#usage) · [Contributing](#contributing) · [Security](#security)__\n\n![Trailer]\n\nFor first time users, read the [installation](#installation) section first!\n\nThis file is automatically opened on first install. You can reopen it in settings or command palette.\n\n## Features\n\n- Start external terminals from Obsidian.\n- Integrate terminals into Obsidian.\n- Has an emulated developer console usable on all platforms.\n- Supports multiple terminal profiles.\n- Has built-in keyboard shortcuts.\n- Automatically save and restore integrated terminal history.\n- Find in terminal.\n- Save terminal history as file.\n- Customize terminal appearance.\n\n## Installation\n\n1. Install plugin.\n    - Community plugins\n        1. Install the [plugin][community plugin] from community plugins directly.\n    - Manual\n        1. Create directory `terminal` under `.obsidian/plugins` of your vault.\n        2. Place `manifest.json`, `main.js`, and `styles.css` from the [latest release] into the directory.\n    - Building (rolling)\n        1. Clone this repository, including its submodules.\n        2. Install [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).\n        3. Run `npm install` in the root directory.\n        4. Run `npm run obsidian:install <vault directory>` in the root directory.\n    - [Obsidian42 - BRAT](https://obsidian.md/plugins?id=obsidian42-brat) (rolling)\n        - See [their readme](https://github.com/TfTHacker/obsidian42-brat#readme).\n2. (optional for Windows, recommended) Install Python and dependencies.\n    1. Install [Python] 3.10/+.\n    2. (Windows only) Run `pip3 install psutil==5.9.5 pywinctl==0.0.50 typing_extensions==4.7.1`. <!-- Update `README.md`, `magic.ts`, and `requirements.txt` together. -->\n    3. Configure Python executable in profile settings. Press the \"Check\" button to validate the Python configuration. Each profile needs to be configured separately.\n3. Enable plugin.\n4. (optional) Configure plugin settings.\n\n## Usage\n\n- To start a new external or integrated terminal\n  - Ribbon\n      1. Click on the `Open terminal` ribbon.\n      2. Choose the desired profile.\n  - Context menu\n      1. Right-click on files, folders, or tab headers.\n      2. Choose the desired action \\(and profile\\).\n  - Command palette\n      1. Press `Ctrl`+`P` or click on the `Open command palette` ribbon next to the left window border.\n      2. Choose the desired action \\(and profile\\).\n  - Select profile modal\n      1. Choose the desired profile. Press `Ctrl` to edit the profile before use. The item `(Temporary profile)` starts a terminal with a temporary profile.\n- To save and restore integrated terminal history\n    1. Keep the terminal open when exiting Obsidian.\n    2. Terminal history will be restored next time Obsidian is opened.\n- Additional actions\n  - Includes\n    - Clear terminal: \\(1\\), \\(4\\)\n    - Copy terminal: \\(1\\)\n    - Edit terminal: \\(1\\)\n    - Export, import, or edit settings: \\(2\\), \\(3\\)\n    - Find in terminal: \\(1\\), \\(4\\)\n    - Open documentation: \\(2\\), \\(3\\)\n    - Restart terminal: \\(1\\)\n    - Save terminal history: \\(1\\)\n  - Available by\n    - \\(1\\) Right-click on tab header/`More options`\n    - \\(2\\) Open settings\n    - \\(3\\) Open command palette\n    - \\(4\\) Use keyboard shortcuts\n\n### Keyboard shortcuts\n\nThe keyboard shortcuts can be customized in hotkeys settings.\n\n<!-- markdownlint-disable-next-line MD036 -->\n__Global__\n\n- Toggle focus on last terminal: `Ctrl`+`Shift`+`` ` ``\n  - Focus on last terminal: \\(unbound; useful if you want separate keys for focus and unfocus\\)\n\n<!-- markdownlint-disable-next-line MD036 -->\n__Terminal is focused__\n\nWhen a terminal is focused, other keyboard shortcuts \\(including Obsidian and plugin hotkeys\\) are disabled. Only the following keyboard shortcuts work. Thus you can ignore Obsidian complaining about conflicting keys for the following keyboard shortcuts.\n\n- Clear terminal: `Ctrl`+`Shift`+`K`, `Command`+`Shift`+`K` \\(Apple\\)\n- Close terminal: `Ctrl`+`Shift`+`W`, `Command`+`Shift`+`W` \\(Apple\\)\n- Find in terminal: `Ctrl`+`Shift`+`F`, `Command`+`Shift`+`F` \\(Apple\\)\n- Toggle focus on last terminal: `Ctrl`+`Shift`+`` ` `` \\(same as above\\)\n  - Unfocus terminal: \\(unbound; useful if you want separate keys for focus and unfocus\\)\n\n### Theming\n\nTheming is possible. However, there is no user-friendly interface for now.\n\n1. Open the profile editing modal.\n2. Click on the `Edit` button labeled `Data`. It should open up a new modal in which there is a large textbox.\n3. Notice `terminalOptions` in the text area labeled `Data`. Refer to the [`xterm.js` documentation](https://github.com/xtermjs/xterm.js/blob/master/typings/xterm.d.ts#L26) (`ITerminalOptions`) to set the options. Nested objects may need to be used.\n4. Save the profile. Changes should apply immediately.\n\n### Profiles\n\nThis plugin comes with several profile presets that you can reference.\n\nWhen setting up a terminal profile, you need to distinguish between shells and terminal emulators. (Search online if needed.) Generally, integrated profiles only work with shells while external ones only work with terminal emulators.\n\n#### Examples\n\n<!-- markdownlint-disable-next-line MD036 -->\n__Shells__\n\n- Bash: `bash --login`\n- Bourne shell: `sh`\n- Command Prompt: `cmd`\n- Dash: `dash`\n- Git Bash: `<Git installation>\\bin\\bash.exe --login` (e.g. `C:\\Program Files\\Git\\bin\\bash.exe`)\n- PowerShell Core: `pwsh`\n- Windows PowerShell: `powershell`\n- Windows Subsystem for Linux: `wsl` or `wsl -d <distribution name>`\n- Z shell: `zsh --login`\n\n<!-- markdownlint-disable-next-line MD036 -->\n__Terminal emulators__\n\n- Command Prompt: `cmd`\n- GNOME Terminal: `gnome-terminal`\n- Konsole: `konsole`\n- Terminal (macOS): `/System/Applications/Utilities/Terminal.app/Contents/macOS/Terminal \"$PWD\"`\n- Windows Terminal: `wt`\n- iTerm2: `/Applications/iTerm.app/Contents/MacOS/iTerm2 \"$PWD\"`\n- xterm: `xterm`\n\n### Miscellaneous\n\nThis plugin patches `require` so that `require(\"obsidian\")` and other Obsidian modules work in the developer console. It is toggleable as `Expose internal modules` in settings.\n\nIn the developer console, a context variable `$$` is passed into the code, which can be used to dynamically change terminal options.\n\nThe full API is available from [`src/@types/obsidian-terminal.ts`](src/%40types/obsidian-terminal.ts).\n\n### Troubleshooting\n\n- Is the plugin useful on mobile?\n  - Compared to on desktop, it is much less useful. The only use for it for now is opening a developer console on mobile.\n- Why do hotkeys not work?\n  - If the terminal is in focus, all Obsidian hotkeys are disabled so that you can type special characters into the terminal. You can unfocus the terminal by pressing `Ctrl`+`Shift`+`` ` ``, then you can use Obsidian hotkeys again.\n\n## Contributing\n\nContributions are welcome!\n\nThis project uses [`changesets`](https://github.com/changesets/changesets) to manage the changelog. When creating a pull request, please [add a changeset](https://github.com/changesets/changesets/blob/main/docs/intro-to-using-changesets.md#adding-changesets) describing the changes. Add multiple changesets if your pull request changes several things. End each changeset with `([PR number](PR link) by [author username](author link))`. For example, the newly created file under the directory `.changeset` should look like:\n\n```Markdown\n---\n\"example\": patch\n---\n\nThis is an example change. ([GH#1](https://github.com/ghost/example/pull/1) by [@ghost](https://github.com/ghost))\n```\n\n### Todos\n\nThe todos here, ordered alphabetically, are things planned for the plugin. There are no guarantees that they will be completed. However, we are likely to accept contributions for them.\n\n- Connect to remote shells.\n- Detect sandboxed environment and notify users.\n- External link confirmation.\n- Filter console log by severity in the developer console.\n- Indicate that the terminal resizer has crashed or is disabled.\n- Shared terminal tabs.\n- Vim mode switch.\n\n### Translating\n\nSee [`assets/locales/README.md`](assets/locales/README.md).\n\n## Security\n\nWe hope that there will never be any security vulnerabilities, but unfortunately it does happen. Please [report](#reporting-a-vulnerability) them!\n\n### Supported versions\n\n| Version  | Supported |\n| -------- | --------- |\n| rolling  | ✅        |\n| latest   | ✅        |\n| outdated | ❌        |\n\n### Reporting a vulnerability\n\nPlease report a vulnerability by opening an new issue. We will get back to you as soon as possible.\n",
-                  "displayTextI18nKey": "translation:generic.documentations.readme",
-                  "iconI18nKey": "asset:generic.documentations.readme-icon"
-                }
-              },
-              "icon": "lucide-ghost",
-              "title": "terminal:documentation"
-            }
-          },
-          {
-            "id": "a4285a920f3ca8d6",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "03_UNIVERSITY/01_RESEARCH_PROJECT/Interventionen_Psyche_Kinder_Jugendliche/00_RESEARCH_LOG.md",
+                "file": "03_UNIVERSITY/03_AGF2/05_GLOBAL_HEALTH/HAUSARBEIT/HAUSARBEIT_GESAMT_BRAXMEIER_LEKTORAT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_RESEARCH_LOG"
+              "title": "HAUSARBEIT_GESAMT_BRAXMEIER_LEKTORAT"
+            }
+          },
+          {
+            "id": "773b12261c45429b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "90_JOURNAL/01_2026/02_FEBRUARY/05_022026.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "05_022026"
             }
           }
         ],
@@ -61,7 +59,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Dateiexplorer"
             }
           },
           {
@@ -78,7 +76,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Suchen"
             }
           },
           {
@@ -95,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 443.5
   },
   "right": {
     "id": "a5a1951f00145a2f",
@@ -185,8 +183,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ]
@@ -198,68 +196,69 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "switcher:Schnellauswahl öffnen": false,
+      "graph:Graph-Ansicht öffnen": false,
+      "canvas:Neuen Canvas erstellen": false,
+      "daily-notes:Heutige Notiz öffnen": false,
+      "templates:Vorlage einfügen": false,
+      "command-palette:Befehlspalette öffnen": false,
+      "bases:Neue Base erstellen": false,
+      "obsidian-git:Open Git source control": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-shellcommands:Shell commands: Custom variables": false,
-      "terminal:Open terminal": false,
-      "obsidian-git:Open Git source control": false
+      "terminal:Open terminal": false
     }
   },
-  "active": "a4285a920f3ca8d6",
+  "active": "773b12261c45429b",
   "lastOpenFiles": [
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/Interventionen_Psyche_Kinder_Jugendliche/01_SCHREIBPLAN_ERGEBNISSE.md",
-    "03_UNIVERSITY/01_RESEARCH_PROJECT/Interventionen_Psyche_Kinder_Jugendliche/00_RESEARCH_LOG.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Interventionen_Psyche_Kinder_Jugendliche/03_ENTWURF_ERGEBNISSE_FAZIT.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Interventionen_Psyche_Kinder_Jugendliche/02_ENTWURF_HANDLUNGSEMPFEHLUNGEN.md",
-    "00_SCRIPTS/zotero_to_obsidian.py",
-    "00_SCRIPTS/zotero_test.py",
-    "00_SCRIPTS/routine_daily_study.py",
-    "00_SCRIPTS/create_reflection_entry.py",
-    "00_SCRIPTS/Tipp",
-    "conflict-files-obsidian-git.md",
-    "37_PHILOSOPHY/02_RESOURCES/Stoa.md",
-    "37_PHILOSOPHY/02_RESOURCES/LESELISTE.md",
-    "37_PHILOSOPHY/02_RESOURCES/GLOSSAR.md",
-    "37_PHILOSOPHY/02_RESOURCES/Existenzialismus.md",
-    "37_PHILOSOPHY/00_TEMPLATES/TEMPLATE_PHILOSOPHIE.md",
-    "37_PHILOSOPHY/02_RESOURCES/Ethik.md",
-    "37_PHILOSOPHY/Weltbild.canvas",
-    "37_PHILOSOPHY/README.md",
-    "37_PHILOSOPHY/DASHBOARD_PHILOSOPHIE.md",
-    "37_PHILOSOPHY/06_ZITATE.md",
-    "37_PHILOSOPHY/04_GEDANKEN_INBOX.md",
-    "37_PHILOSOPHY/02_RESOURCES",
-    "37_PHILOSOPHY/03_IDEEN_POOL.md",
-    "37_PHILOSOPHY/00_TEMPLATES",
-    "37_PHILOSOPHY",
-    "35_ASSETS_EXCALIDRAW/DRAWING_2026_01_03_180634EXCALIDRAW.md",
-    "35_ASSETS_EXCALIDRAW/DRAWING_2026_01_03_194955EXCALIDRAW.md",
-    "35_ASSETS_EXCALIDRAW",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Interventionen_Psyche_Kinder_Jugendliche/01_SCHREIBPLAN_ERGEBNISSE.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Interventionen_Psyche_Kinder_Jugendliche/00_RESEARCH_LOG.md",
+    "03_UNIVERSITY/01_RESEARCH_PROJECT/Interventionen_Psyche_Kinder_Jugendliche",
+    "04_GOALS/01_HEALTH/08_HALBMARATHON_2026/RUNNING_LOG.md",
+    "04_GOALS/01_HEALTH/08_HALBMARATHON_2026/TRAININGSPLAN.md",
+    "90_JOURNAL/08_BRIEFING/BRIEFING_2026-02-05.md",
+    "90_JOURNAL/08_BRIEFING/BRIEFING_2026-01-21.md",
+    "90_JOURNAL/08_BRIEFING/BRIEFING_2026-01-22.md",
+    "00_SYSTEM_REFLECTION/LOGS/2026-02-05_Reflexion.md",
     "REFLEKTIEREN.bat",
-    "98_CLIPPINGS/Wikipedia – Die freie Enzyklopädie.md",
-    "98_CLIPPINGS/Wikipedia – Die freie Enzyklopädie 1.md",
-    "98_CLIPPINGS/PortalGesellschaft – Wikipedia.md",
-    "95_ARCHIVE_DOCS/BAFOEG/03_BAFÖG_WS25/IMMATRIKULATIONSBESCHEINIGUNG_BRAXMEIER_ANDREAS.md",
-    "95_ARCHIVE_DOCS/BAFOEG/BAFOEGBESCHEINIGUNGEN/BAFOEGBESCHEID_24_25.md",
-    "95_ARCHIVE_DOCS/BAFOEG/BAFOEGBESCHEINIGUNGEN/GEZ_2025.md",
-    "95_ARCHIVE_DOCS/BAFOEG/BAFOEGBESCHEINIGUNGEN/BAFOEGBESCHEID_23_24.md",
-    "95_ARCHIVE_DOCS/BAFOEG/03_BAFÖG_WS25/FB1_BRAXMEIER_ANDREAS.md",
+    "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-05.md",
+    "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES",
+    "01_Andreas/05_KNOWLEDGE",
+    "01_Andreas",
+    "04_GOALS/01_HEALTH/08_HALBMARATHON_2026/PROJEKT_INFO.md",
+    "00_INBOX/LOCAL_LLAMA.md",
+    "04_GOALS/01_HEALTH/08_HALBMARATHON_2026",
+    "04_GOALS/01_HEALTH",
+    "04_GOALS",
+    "00_SYSTEM_REFLECTION/REFLEKTIEREN.bat",
+    "00_SYSTEM_REFLECTION/create_log.py",
+    "00_SYSTEM_REFLECTION/TEMPLATES/Reflexion.md",
+    "00_SCRIPTS/BACKUP_ZENTRALE/README_WAS_WIRD_GESICHERT.md",
+    "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/SHAKSHUKA.md",
+    "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/RATATOUILLE.md",
+    "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/PIROGGEN.md",
+    "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/OMELETTE_AUX_FINES_HERBES.md",
+    "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/KICHERERBSEN_CURRY.md",
+    "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/MAPO_TOFU.md",
+    "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/GRUENES_CURRY.md",
+    "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/DAL.md",
+    "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/CHILI_SIN_CARNE.md",
+    "32_COOKBOOK/04_MAIN_DISHES/03_FLEISCH_UND_GEFLUEGEL/COQ_AU_VIN.md",
+    "32_COOKBOOK/04_MAIN_DISHES/02_REISGERICHTE/SUSHI_REIS_GRUNDREZEPT.md",
+    "37_PHILOSOPHY/Weltbild.canvas",
     "36_INTEREST_ANTIGRAVITY/public/images/hero.png",
     "36_INTEREST_ANTIGRAVITY/public/images/detail.png",
-    "36_INTEREST_ANTIGRAVITY/public/vite.svg",
+    "36_INTEREST_ANTIGRAVITY/dist/images/hero.png",
+    "36_INTEREST_ANTIGRAVITY/dist/assets/detail-0IYYFnus.png",
+    "36_INTEREST_ANTIGRAVITY/dist/images/detail.png",
+    "36_INTEREST_ANTIGRAVITY/dist/assets/hero-DWxbbBAT.png",
     "36_INTEREST_ANTIGRAVITY/src/javascript.svg",
-    "30_TECH_GEMINI/03_DESIGN_IMAGES/fotorealistisches_portrt_eines_m.png",
-    "30_TECH_GEMINI/03_DESIGN_IMAGES/eine_se_katze_fotorealistisch_8k.png",
-    "21_HEALTH_BGM/BGM_Website_Deploy_v3/assets/bgm-schematic.png",
-    "21_HEALTH_BGM/BGM_Website_Deploy_v3/assets/favicon.png",
-    "21_HEALTH_BGM/BGM_Website/assets/favicon.png",
-    "21_HEALTH_BGM/BGM_Website/assets/bgm-schematic.png"
+    "36_INTEREST_ANTIGRAVITY/public/vite.svg",
+    "36_INTEREST_ANTIGRAVITY/dist/vite.svg",
+    "14_PROJECT_GEDA/GEDA_Analysis_Results/05_Cost_Income.png",
+    "26_PHILOSOPHY/Weltbild.canvas"
   ]
 }

@@ -1,9 +1,9 @@
 # 📊 PERFORMANCE DASHBOARD - FEBRUARY 2026
 
 ## 📈 KEY PERFORMANCE INDICATORS
-- **Monthly Performance:** 46.5% (Month-to-Month: +39.5%)
-- **Daily Trend:** 📉 DECLINING (-52.6% vs Yesterday)
-- **Daily Score:** 17/40 Daily Missions completed
+- **Monthly Performance:** 57.5% (Month-to-Month: +50.4%)
+- **Daily Trend:** 📉 DECLINING (-8.8% vs Yesterday)
+- **Daily Score:** 42/40 Daily Missions completed
 
 ## 🌞 DAILY MISSIONS
 
@@ -18,8 +18,8 @@
 | **TAKE VITAMINS** | 05:25 | 05:28 | 3m | **3 Days** | **3 Days** | 🟢 ACTIVE |
 | **DAILY PHOTO** | 05:28 | 05:30 | 2m | **2 Days** | **2 Days** | 🟢 ACTIVE |
 | **JOGGING** | 05:30 | 06:15 | 45m | **0 Days** | **1 Days** | 💀 FAIL |
-| **MORNING HYGIENE** | 06:15 | 06:40 | 25m | **0 Days** | **2 Days** | 💀 FAIL |
-| **COLD SHOWER** | 06:40 | 06:45 | 5m | **0 Days** | **2 Days** | 💀 FAIL |
+| **MORNING HYGIENE** | 06:15 | 06:40 | 25m | **3 Days** | **3 Days** | 🟢 ACTIVE |
+| **COLD SHOWER** | 06:40 | 06:45 | 5m | **3 Days** | **3 Days** | 🟢 ACTIVE |
 | **CAT FEEDING (AM)** | 06:45 | 06:50 | 5m | **3 Days** | **3 Days** | 🟢 ACTIVE |
 | **CAT LITTER** | 06:50 | 06:55 | 5m | **3 Days** | **3 Days** | 🟢 ACTIVE |
 | **READ BIBLE** | 07:00 | 07:15 | 15m | **3 Days** | **3 Days** | 🟢 ACTIVE |
@@ -30,25 +30,25 @@
 | **DEEP WORK 1** | 09:00 | 11:00 | 120m | **0 Days** | **2 Days** | 💀 FAIL |
 | **DEEP WORK 2** | 11:00 | 13:00 | 120m | **3 Days** | **3 Days** | 🟢 ACTIVE |
 | **FASTING 19-13** | 13:00 | - | - | **3 Days** | **3 Days** | 🟢 ACTIVE |
-| **GROCERY** | 13:00 | 13:15 | 15m | **0 Days** | **2 Days** | 💀 FAIL |
+| **GROCERY** | 13:00 | 13:15 | 15m | **3 Days** | **3 Days** | 🟢 ACTIVE |
 | **COOKING** | 13:15 | 14:00 | 45m | **0 Days** | **1 Days** | 💀 FAIL |
-| **DEEP WORK 3** | 14:00 | 15:30 | 90m | **0 Days** | **0 Days** | 💀 FAIL |
+| **DEEP WORK 3** | 14:00 | 15:30 | 90m | **1 Days** | **1 Days** | 🟢 ACTIVE |
 | **DEEP WORK 4** | 15:30 | 17:00 | 90m | **0 Days** | **0 Days** | 💀 FAIL |
-| **WORKOUT** | 17:00 | 17:45 | 45m | **0 Days** | **2 Days** | 💀 FAIL |
-| **STRETCHING** | 17:45 | 18:00 | 15m | **0 Days** | **2 Days** | 💀 FAIL |
-| **CAT FEEDING (PM)** | 18:00 | 18:05 | 5m | **0 Days** | **2 Days** | 💀 FAIL |
-| **DINNER** | 18:15 | 18:45 | 30m | **0 Days** | **2 Days** | 💀 FAIL |
-| **DAILY WALK** | 18:45 | 19:45 | 60m | **0 Days** | **2 Days** | 💀 FAIL |
+| **WORKOUT** | 17:00 | 17:45 | 45m | **3 Days** | **3 Days** | 🟢 ACTIVE |
+| **STRETCHING** | 17:45 | 18:00 | 15m | **3 Days** | **3 Days** | 🟢 ACTIVE |
+| **CAT FEEDING (PM)** | 18:00 | 18:05 | 5m | **3 Days** | **3 Days** | 🟢 ACTIVE |
+| **DINNER** | 18:15 | 18:45 | 30m | **3 Days** | **3 Days** | 🟢 ACTIVE |
+| **DAILY WALK** | 18:45 | 19:45 | 60m | **3 Days** | **3 Days** | 🟢 ACTIVE |
 | **VACUUMING** | 19:45 | 19:50 | 5m | **0 Days** | **2 Days** | 💀 FAIL |
 | **DO DISHES** | 19:50 | 19:55 | 5m | **0 Days** | **2 Days** | 💀 FAIL |
 | **DAILY CHORES** | 19:55 | 20:00 | 5m | **0 Days** | **2 Days** | 💀 FAIL |
-| **READING** | 20:00 | 21:00 | 60m | **0 Days** | **2 Days** | 💀 FAIL |
-| **CALL GF** | 21:00 | 21:15 | 15m | **0 Days** | **2 Days** | 💀 FAIL |
-| **MEDITATION (PM)** | 21:15 | 21:30 | 15m | **0 Days** | **1 Days** | 💀 FAIL |
-| **EVENING JOURNAL** | 21:30 | 21:45 | 15m | **0 Days** | **1 Days** | 💀 FAIL |
-| **EVENING HYGIENE** | 21:45 | 21:55 | 10m | **0 Days** | **1 Days** | 💀 FAIL |
-| **CLOTHES PREP** | 21:55 | 22:00 | 5m | **0 Days** | **1 Days** | 💀 FAIL |
-| **10K STEPS** | 22:00 | - | - | **0 Days** | **2 Days** | 💀 FAIL |
+| **READING** | 20:00 | 21:00 | 60m | **3 Days** | **3 Days** | 🟢 ACTIVE |
+| **CALL GF** | 21:00 | 21:15 | 15m | **3 Days** | **3 Days** | 🟢 ACTIVE |
+| **MEDITATION (PM)** | 21:15 | 21:30 | 15m | **2 Days** | **2 Days** | 🟢 ACTIVE |
+| **EVENING JOURNAL** | 21:30 | 21:45 | 15m | **2 Days** | **2 Days** | 🟢 ACTIVE |
+| **EVENING HYGIENE** | 21:45 | 21:55 | 10m | **2 Days** | **2 Days** | 🟢 ACTIVE |
+| **CLOTHES PREP** | 21:55 | 22:00 | 5m | **2 Days** | **2 Days** | 🟢 ACTIVE |
+| **10K STEPS** | 22:00 | - | - | **3 Days** | **3 Days** | 🟢 ACTIVE |
 
 ## 📅 WEEKLY & FITNESS MISSIONS
 
@@ -70,17 +70,17 @@
 
 | MISSION | START | END | DUR | STREAK | BEST | STATUS |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **NO SUGAR** | 24H | - | - | **0 Days** | **2 Days** | 💀 FAIL |
+| **NO SUGAR** | 24H | - | - | **3 Days** | **3 Days** | 🟢 ACTIVE |
 | **NO PORN/MASTURBATION** | 24H | - | - | **0 Days** | **1 Days** | 💀 FAIL |
-| **NO COFFEE** | 24H | - | - | **10 Days** | **12 Days** | 🔥 ON FIRE |
-| **NO WEED** | 24H | - | - | **30 Days** | **32 Days** | 🔥 ON FIRE |
-| **NO ALCOHOL** | 24H | - | - | **280 Days** | **282 Days** | 🔥 ON FIRE |
-| **NO SMOKING** | 24H | - | - | **90 Days** | **92 Days** | 🔥 ON FIRE |
-| **NO VIDEO GAMES** | 24H | - | - | **30 Days** | **32 Days** | 🔥 ON FIRE |
-| **NO TV/SERIES** | 24H | - | - | **30 Days** | **32 Days** | 🔥 ON FIRE |
-| **NO MELATONIN** | 24H | - | - | **10 Days** | **12 Days** | 🔥 ON FIRE |
+| **NO COFFEE** | 24H | - | - | **13 Days** | **13 Days** | 🔥 ON FIRE |
+| **NO WEED** | 24H | - | - | **33 Days** | **33 Days** | 🔥 ON FIRE |
+| **NO ALCOHOL** | 24H | - | - | **283 Days** | **283 Days** | 🔥 ON FIRE |
+| **NO SMOKING** | 24H | - | - | **93 Days** | **93 Days** | 🔥 ON FIRE |
+| **NO VIDEO GAMES** | 24H | - | - | **33 Days** | **33 Days** | 🔥 ON FIRE |
+| **NO TV/SERIES** | 24H | - | - | **33 Days** | **33 Days** | 🔥 ON FIRE |
+| **NO MELATONIN** | 24H | - | - | **13 Days** | **13 Days** | 🔥 ON FIRE |
 | **NO YOUTUBE** | 24H | - | - | **0 Days** | **0 Days** | 💀 FAIL |
-| **NO LIES** | 24H | - | - | **0 Days** | **2 Days** | 💀 FAIL |
+| **NO LIES** | 24H | - | - | **3 Days** | **3 Days** | 🟢 ACTIVE |
 
 
 ## 📅 CALENDAR: FEBRUARY
@@ -91,7 +91,7 @@
 | **02.02.** | ❌ | ✅ | ➖ | ➖ | ✅ | ✅ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | 
 | **03.02.** | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ➖ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ➖ | ➖ | ✅ | ➖ | ✅ | ✅ | ❌ | ➖ | ❌ | ➖ | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ➖ | ➖ | ➖ | ➖ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | 
 | **04.02.** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ➖ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | 
-| **05.02.** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ➖ | ➖ | ➖ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | 
+| **05.02.** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ | ✅ | ➖ | ❌ | ✅ | ❌ | ➖ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | 
 | **06.02.** | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | 
 | **07.02.** | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | 
 | **08.02.** | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | ➖ | 
