@@ -10,13 +10,13 @@ Herausfinden, welche Interventionen in Deutschland als "Best Practice" oder evid
 
 ### Schlüsselbegriffe (Keywords)
 
-| Kategorie | Englisch (für internationale DBs) | Deutsch (für lokale DBs/Berichte) |
-| :--- | :--- | :--- |
-| **Zielgruppe** | Children, Adolescents, Youth, Students | Kinder, Jugendliche, Schüler, Heranwachsende |
-| **Thema** | Mental Health, Resilience, Well-being, Mental Hygiene | Psychische Gesundheit, Resilienz, Seelisches Wohlbefinden |
-| **Maßnahme** | Intervention, Prevention, Promotion, Program | Intervention, Prävention, Förderung, Programm |
-| **Kontext** | Germany, German | Deutschland, Deutsch |
-| **Qualität** | Evidence-based, Effectiveness, Evaluation, Best Practice | Evidenzbasiert, Wirksamkeit, Evaluation, Gelingensbedingungen |
+| Kategorie      | Englisch (für internationale DBs)                        | Deutsch (für lokale DBs/Berichte)                             |
+| :------------- | :------------------------------------------------------- | :------------------------------------------------------------ |
+| **Zielgruppe** | Children, Adolescents, Youth, Students                   | Kinder, Jugendliche, Schüler, Heranwachsende                  |
+| **Thema**      | Mental Health, Resilience, Well-being, Mental Hygiene    | Psychische Gesundheit, Resilienz, Seelisches Wohlbefinden     |
+| **Maßnahme**   | Intervention, Prevention, Promotion, Program             | Intervention, Prävention, Förderung, Programm                 |
+| **Kontext**    | Germany, German                                          | Deutschland, Deutsch                                          |
+| **Qualität**   | Evidence-based, Effectiveness, Evaluation, Best Practice | Evidenzbasiert, Wirksamkeit, Evaluation, Gelingensbedingungen |
 
 ### Suchstrings (Final)
 
