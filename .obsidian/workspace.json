@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_221624.md",
+                "file": "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_223448.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "STUDY_2026-02-06_221624"
+              "title": "STUDY_2026-02-06_223448"
             }
           }
         ],
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "STUDY_2026-02-06_221624.md",
+                "query": "STUDY_2026-02-06_223448.md",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +89,8 @@
               "title": "Lesezeichen"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -210,10 +211,20 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "b57fe770d20e8763",
+  "active": "773b12261c45429b",
   "lastOpenFiles": [
-    "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06.md",
+    "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_223307.md",
+    "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_223448.md",
+    "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_223429.md",
+    "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_223421.md",
+    "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_223344.md",
+    "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_223223.md",
+    "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_223133.md",
+    "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_222857.md",
+    "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_222606.md",
+    "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_222108.md",
     "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_221624.md",
+    "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06.md",
     "90_JOURNAL/08_BRIEFING/BRIEFING_2026-02-06.md",
     "DAILY_STUDY.bat",
     "90_JOURNAL/01_2026/02_FEBRUARY/05_022026.md",
@@ -234,20 +245,10 @@
     "01_Andreas/05_KNOWLEDGE",
     "01_Andreas",
     "04_GOALS/01_HEALTH/08_HALBMARATHON_2026/PROJEKT_INFO.md",
-    "00_INBOX/LOCAL_LLAMA.md",
     "04_GOALS/01_HEALTH/08_HALBMARATHON_2026",
     "04_GOALS/01_HEALTH",
     "04_GOALS",
     "00_SYSTEM_REFLECTION/REFLEKTIEREN.bat",
-    "00_SYSTEM_REFLECTION/TEMPLATES/Reflexion.md",
-    "00_SCRIPTS/BACKUP_ZENTRALE/README_WAS_WIRD_GESICHERT.md",
-    "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/SHAKSHUKA.md",
-    "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/RATATOUILLE.md",
-    "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/PIROGGEN.md",
-    "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/OMELETTE_AUX_FINES_HERBES.md",
-    "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/KICHERERBSEN_CURRY.md",
-    "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/MAPO_TOFU.md",
-    "32_COOKBOOK/04_MAIN_DISHES/04_VEGETARISCH_UND_VEGAN/GRUENES_CURRY.md",
     "37_PHILOSOPHY/Weltbild.canvas",
     "36_INTEREST_ANTIGRAVITY/public/images/hero.png",
     "36_INTEREST_ANTIGRAVITY/public/images/detail.png",
