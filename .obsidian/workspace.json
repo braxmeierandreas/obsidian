@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "STUDY_2026-02-06_223932.md",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,8 +89,7 @@
               "title": "Lesezeichen"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -211,7 +210,7 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "773b12261c45429b",
+  "active": "b57fe770d20e8763",
   "lastOpenFiles": [
     "90_JOURNAL/01_2026/02_FEBRUARY/06_022026.md",
     "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_223932.md",
