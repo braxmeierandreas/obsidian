@@ -14,8 +14,9 @@ set "MAGENTA=%ESC%[35m"
 set "RED=%ESC%[31m"
 set "WHITE=%ESC%[97m"
 
-set "SCRIPTS_DIR=%~dp000_SCRIPTS"
+REM Paths
 set "PYTHON_EXE=%~dp030_TECH_GOOGLE\.venv\Scripts\python.exe"
+set "STUDY_SCRIPT=%~dp000_SCRIPTS\routine_daily_study.py"
 
 :MENU
 cls
@@ -90,13 +91,13 @@ goto RUN_TOPIC
 :RUN_RANDOM
 echo.
 echo %BLUE%   [INFO] Starting random discovery...%RESET%
-"%PYTHON_EXE%" "%SCRIPTS_DIR%\routine_daily_study.py"
+"%PYTHON_EXE%" "%STUDY_SCRIPT%"
 goto END
 
 :RUN_TOPIC
 echo.
 echo %BLUE%   [INFO] Researching topic: %BOLD%"%TOPIC%"%RESET%
-"%PYTHON_EXE%" "%SCRIPTS_DIR%\routine_daily_study.py" "%TOPIC%"
+"%PYTHON_EXE%" "%STUDY_SCRIPT%" "%TOPIC%"
 goto END
 
 :END
