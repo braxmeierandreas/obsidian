@@ -1,49 +1,46 @@
 import pygame
 import sys
 
-# Konfiguration
-WIDTH, HEIGHT = 800, 800
-ROWS, COLS = 8, 8
-SQUARE_SIZE = WIDTH // COLS
-
 # Farben
-RED = (255, 0, 0)
-WHITE = (255, 255, 255)
-BLACK = (0, 0, 0)
-GREY = (128, 128, 128)
-BLUE = (0, 0, 255)
-DARK_RED = (150, 0, 0)
+RED_COLOR = (255, 0, 0)
+WHITE_COLOR = (255, 255, 255)
+BLACK_COLOR = (0, 0, 0)
+GREY_COLOR = (128, 128, 128)
+BLUE_COLOR = (0, 0, 255)
+DARK_RED_COLOR = (150, 0, 0)
+GOLD_COLOR = (255, 215, 0)
 
-# Assets (Kings)
-CROWN = pygame.font.SysFont("arial", 40).render("*", True, WHITE)
+# Spielfeld
+ROWS, COLS = 8, 8
 
 class Piece:
     PADDING = 15
     OUTLINE = 2
 
-    def __init__(self, row, col, color):
+    def __init__(self, row, col, color, square_size):
         self.row = row
         self.col = col
         self.color = color
+        self.square_size = square_size
         self.king = False
         self.x = 0
         self.y = 0
         self.calc_pos()
 
     def calc_pos(self):
-        self.x = SQUARE_SIZE * self.col + SQUARE_SIZE // 2
-        self.y = SQUARE_SIZE * self.row + SQUARE_SIZE // 2
+        self.x = self.square_size * self.col + self.square_size // 2
+        self.y = self.square_size * self.row + self.square_size // 2
 
     def make_king(self):
         self.king = True
 
     def draw(self, win):
-        radius = SQUARE_SIZE // 2 - self.PADDING
-        pygame.draw.circle(win, GREY, (self.x, self.y), radius + self.OUTLINE)
+        radius = self.square_size // 2 - self.PADDING
+        pygame.draw.circle(win, GREY_COLOR, (self.x, self.y), radius + self.OUTLINE)
         pygame.draw.circle(win, self.color, (self.x, self.y), radius)
         if self.king:
-            font = pygame.font.SysFont("arial", 30, bold=True)
-            text = font.render("K", True, WHITE if self.color == BLACK else BLACK)
+            font = pygame.font.SysFont("arial", int(self.square_size * 0.4), bold=True)
+            text = font.render("K", True, GOLD_COLOR)
             win.blit(text, (self.x - text.get_width()//2, self.y - text.get_height()//2))
 
     def move(self, row, col):
@@ -52,31 +49,22 @@ class Piece:
         self.calc_pos()
 
 class Board:
-    def __init__(self):
+    def __init__(self, square_size, offset_x, offset_y):
         self.board = []
+        self.square_size = square_size
+        self.offset_x = offset_x
+        self.offset_y = offset_y
         self.red_left = self.white_left = 12
         self.red_kings = self.white_kings = 0
         self.create_board()
 
-    def draw_squares(self, win):
-        win.fill(BLACK)
+    def draw_squares(self, win, screen_width, screen_height):
+        win.fill(BLACK_COLOR)
         for row in range(ROWS):
             for col in range(row % 2, COLS, 2):
-                pygame.draw.rect(win, RED, (row * SQUARE_SIZE, col * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE))
-
-    def move(self, piece, row, col):
-        self.board[piece.row][piece.col], self.board[row][col] = self.board[row][col], self.board[piece.row][piece.col]
-        piece.move(row, col)
-
-        if row == ROWS - 1 and piece.color == WHITE:
-            piece.make_king()
-            self.white_kings += 1
-        if row == 0 and piece.color == DARK_RED:
-            piece.make_king()
-            self.red_kings += 1
-
-    def get_piece(self, row, col):
-        return self.board[row][col]
+                pygame.draw.rect(win, (40, 40, 40), (self.offset_x + row * self.square_size, self.offset_y + col * self.square_size, self.square_size, self.square_size))
+            for col in range((row + 1) % 2, COLS, 2):
+                pygame.draw.rect(win, (80, 80, 80), (self.offset_x + row * self.square_size, self.offset_y + col * self.square_size, self.square_size, self.square_size))
 
     def create_board(self):
         for row in range(ROWS):
@@ -84,35 +72,52 @@ class Board:
             for col in range(COLS):
                 if col % 2 == ((row + 1) % 2):
                     if row < 3:
-                        self.board[row].append(Piece(row, col, WHITE))
+                        self.board[row].append(Piece(row, col, WHITE_COLOR, self.square_size))
                     elif row > 4:
-                        self.board[row].append(Piece(row, col, DARK_RED))
+                        self.board[row].append(Piece(row, col, DARK_RED_COLOR, self.square_size))
                     else:
                         self.board[row].append(0)
                 else:
                     self.board[row].append(0)
 
-    def draw(self, win):
-        self.draw_squares(win)
+    def draw(self, win, screen_width, screen_height):
+        self.draw_squares(win, screen_width, screen_height)
         for row in range(ROWS):
             for col in range(COLS):
                 piece = self.board[row][col]
                 if piece != 0:
+                    # Adjust piece position for drawing
+                    original_x, original_y = piece.x, piece.y
+                    piece.x += self.offset_x
+                    piece.y += self.offset_y
                     piece.draw(win)
+                    piece.x, piece.y = original_x, original_y
+
+    def move(self, piece, row, col):
+        self.board[piece.row][piece.col], self.board[row][col] = self.board[row][col], self.board[piece.row][piece.col]
+        piece.move(row, col)
+
+        if row == ROWS - 1 and piece.color == WHITE_COLOR:
+            piece.make_king()
+            self.white_kings += 1
+        if row == 0 and piece.color == DARK_RED_COLOR:
+            piece.make_king()
+            self.red_kings += 1
+
+    def get_piece(self, row, col):
+        return self.board[row][col]
 
     def remove(self, pieces):
         for piece in pieces:
             self.board[piece.row][piece.col] = 0
-            if piece.color == DARK_RED:
+            if piece.color == DARK_RED_COLOR:
                 self.red_left -= 1
             else:
                 self.white_left -= 1
 
     def winner(self):
-        if self.red_left <= 0:
-            return "White"
-        elif self.white_left <= 0:
-            return "Red"
+        if self.red_left <= 0: return "Weiß gewinnt!"
+        if self.white_left <= 0: return "Rot gewinnt!"
         return None
 
     def get_valid_moves(self, piece):
@@ -121,10 +126,10 @@ class Board:
         right = piece.col + 1
         row = piece.row
 
-        if piece.color == DARK_RED or piece.king:
+        if piece.color == DARK_RED_COLOR or piece.king:
             moves.update(self._traverse_left(row - 1, max(row - 3, -1), -1, piece.color, left))
             moves.update(self._traverse_right(row - 1, max(row - 3, -1), -1, piece.color, right))
-        if piece.color == WHITE or piece.king:
+        if piece.color == WHITE_COLOR or piece.king:
             moves.update(self._traverse_left(row + 1, min(row + 3, ROWS), 1, piece.color, left))
             moves.update(self._traverse_right(row + 1, min(row + 3, ROWS), 1, piece.color, right))
         return moves
@@ -172,23 +177,34 @@ class Board:
         return moves
 
 class Game:
-    def __init__(self, win):
-        self.selected = None
-        self.board = Board()
-        self.turn = DARK_RED
-        self.valid_moves = {}
+    def __init__(self, win, square_size, offset_x, offset_y):
         self.win = win
-
-    def update(self):
-        self.board.draw(self.win)
-        self.draw_valid_moves(self.valid_moves)
-        pygame.display.update()
-
-    def reset(self):
+        self.square_size = square_size
+        self.offset_x = offset_x
+        self.offset_y = offset_y
         self.selected = None
-        self.board = Board()
-        self.turn = DARK_RED
+        self.board = Board(square_size, offset_x, offset_y)
+        self.turn = DARK_RED_COLOR
         self.valid_moves = {}
+
+    def update(self, screen_width, screen_height):
+        self.board.draw(self.win, screen_width, screen_height)
+        self.draw_valid_moves(self.valid_moves)
+        
+        # Turn indicator
+        font = pygame.font.SysFont("arial", 30)
+        txt = "Roter Spieler ist dran" if self.turn == DARK_RED_COLOR else "Weißer Spieler ist dran"
+        color = DARK_RED_COLOR if self.turn == DARK_RED_COLOR else WHITE_COLOR
+        label = font.render(txt, True, color)
+        self.win.blit(label, (screen_width // 2 - label.get_width() // 2, 20))
+        
+        winner = self.board.winner()
+        if winner:
+            over_font = pygame.font.SysFont("arial", 60, bold=True)
+            over_label = over_font.render(winner, True, GOLD_COLOR)
+            self.win.blit(over_label, (screen_width // 2 - over_label.get_width() // 2, screen_height // 2))
+
+        pygame.display.update()
 
     def select(self, row, col):
         if self.selected:
@@ -219,36 +235,45 @@ class Game:
     def draw_valid_moves(self, moves):
         for move in moves:
             row, col = move
-            pygame.draw.circle(self.win, BLUE, (col * SQUARE_SIZE + SQUARE_SIZE // 2, row * SQUARE_SIZE + SQUARE_SIZE // 2), 15)
+            pygame.draw.circle(self.win, BLUE_COLOR, (self.offset_x + col * self.square_size + self.square_size // 2, self.offset_y + row * self.square_size + self.square_size // 2), 15)
 
     def change_turn(self):
         self.valid_moves = {}
-        if self.turn == DARK_RED:
-            self.turn = WHITE
-        else:
-            self.turn = DARK_RED
+        self.turn = WHITE_COLOR if self.turn == DARK_RED_COLOR else DARK_RED_COLOR
 
 def main():
     pygame.init()
-    win = pygame.display.set_mode((WIDTH, HEIGHT))
-    pygame.display.set_caption('Dame')
+    info = pygame.display.Info()
+    SW, SH = info.current_w, info.current_h
+    win = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+    pygame.display.set_caption('Dame - Vollbild')
+    
+    square_size = min(SW, SH) // 10
+    offset_x = (SW - square_size * COLS) // 2
+    offset_y = (SH - square_size * ROWS) // 2
+    
     clock = pygame.time.Clock()
-    game = Game(win)
+    game = Game(win, square_size, offset_x, offset_y)
 
     while True:
         clock.tick(60)
-        if game.board.winner() != None:
-            print(game.board.winner())
-
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_ESCAPE:
+                    pygame.quit()
+                    sys.exit()
+                if event.key == pygame.K_r:
+                    game = Game(win, square_size, offset_x, offset_y)
             if event.type == pygame.MOUSEBUTTONDOWN:
                 pos = pygame.mouse.get_pos()
-                row, col = pos[1] // SQUARE_SIZE, pos[0] // SQUARE_SIZE
-                game.select(row, col)
-        game.update()
+                row = (pos[1] - offset_y) // square_size
+                col = (pos[0] - offset_x) // square_size
+                if 0 <= row < ROWS and 0 <= col < COLS:
+                    game.select(row, col)
+        game.update(SW, SH)
 
 if __name__ == "__main__":
     main()
