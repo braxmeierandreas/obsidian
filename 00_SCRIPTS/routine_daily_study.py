@@ -14,6 +14,14 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.dirname(BASE_DIR)
 STUDIES_DIR = os.path.join(ROOT_DIR, "01_Andreas", "05_KNOWLEDGE", "DAILY_STUDIES")
 
+# ANSI Colors
+C_GREEN = "\033[92m"
+C_CYAN = "\033[96m"
+C_YELLOW = "\033[93m"
+C_RED = "\033[91m"
+C_BOLD = "\033[1m"
+C_END = "\033[0m"
+
 # API Key für Gemini (Google AI)
 GEMINI_API_KEY = "AIzaSyAh_5x6xR5qj1ih7ZGqksYd97tx8SFvzts"
 
@@ -28,29 +36,29 @@ def ensure_dir(directory):
         os.makedirs(directory)
 
 # --- GEMINI AI SUMMARY ---
-def get_gemini_summary(abstract, title, topic):
+def get_gemini_summary(abstract, title, topic, full_text=None):
     if not abstract or len(abstract) < 50:
-        return "⚠️ Abstract zu kurz für Zusammenfassung."
+        return "⚠️ Abstract zu kurz für eine fundierte Analyse."
+
+    # Falls Volltext vorhanden ist, nutzen wir einen Teil davon für eine tiefere Analyse
+    context_text = full_text[:10000] if full_text else abstract
 
     prompt = f"""
-    Du bist ein persönlicher wissenschaftlicher Coach für Andreas.
-    Analysiere diesen wissenschaftlichen Text zum Thema '{topic}'.
+    Du bist ein hochkarätiger wissenschaftlicher Analyst und persönlicher Coach für Andreas.
+    Deine Aufgabe ist es, die vorliegende Studie zum Thema '{topic}' tiefgehend zu analysieren.
     
     Titel: {title}
-    Text: {abstract}
+    Textbasis: {context_text}
 
-    Deine Aufgabe:
-    1. Fasse die Kernaussagen in EINFACHEM Deutsch zusammen (Max 3-4 Sätze).
-    2. Erstelle eine Liste mit 3 konkreten "Action Items" oder "Takeaways" für mein persönliches Leben. Wie kann ich das anwenden?
+    Bitte erstelle eine strukturierte Zusammenfassung in professionellem, aber verständlichem Deutsch:
 
-    Format:
-    **🧠 Was wurde gefunden?**
-    [Deine Zusammenfassung]
+    1. **🎯 Problemstellung & Ziel:** Was genau wurde untersucht und warum ist das wichtig?
+    2. **🧪 Methodik:** Wie sind die Forscher vorgegangen? (Studiendesign, Stichprobe, Methoden)
+    3. **📊 Zentrale Ergebnisse:** Was sind die wichtigsten Zahlen, Daten oder Erkenntnisse?
+    4. **💡 Diskussion & Einordnung:** Was bedeuten diese Ergebnisse für das Fachgebiet?
+    5. **🚀 Action Plan für Andreas:** Erstelle 3-4 konkrete, praxisnahe "Takeaways". Wie kann Andreas dieses Wissen in seinem Alltag, Studium oder Beruf (Gesundheitsförderung/KI) anwenden?
 
-    **🚀 Action Plan (Wie nutze ich das?)**
-    - [Punkt 1]
-    - [Punkt 2]
-    - [Punkt 3]
+    Formatierung: Nutze klare Überschriften, Fettungen und Listen.
     """
 
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
@@ -58,16 +66,18 @@ def get_gemini_summary(abstract, title, topic):
     data = {"contents": [{"parts": [{"text": prompt}]}]}
 
     try:
-        print(f"🤖 Generiere Zusammenfassung mit Google Gemini (2.0 Flash)...")
+        print(f"   {C_CYAN}🤖 KI-Analyse wird generiert (Gemini 2.0 Flash)...{C_END}")
         response = requests.post(url, headers=headers, json=data, timeout=30)
         
         if response.status_code == 200:
             result = response.json()
             if 'candidates' in result and result['candidates']:
                 return result['candidates'][0]['content']['parts'][0]['text']
-    except:
-        pass
-    return "⚠️ KI hat keine Antwort generiert."
+        else:
+            print(f"   {C_RED}⚠️ API-Fehler: {response.status_code} - {response.text}{C_END}")
+    except Exception as e:
+        print(f"   {C_RED}⚠️ Verbindungsfehler: {e}{C_END}")
+    return "⚠️ KI konnte keine detaillierte Zusammenfassung generieren. Bitte API-Key oder Verbindung prüfen."
 
 # --- FULL TEXT EXTRACTOR (via pypdf) ---
 def extract_text_from_pdf_url(pdf_url):
@@ -77,33 +87,32 @@ def extract_text_from_pdf_url(pdf_url):
     if not pdf_url: return None
     
     try:
-        print(f"📄 Lade PDF herunter: {pdf_url} ...")
+        print(f"   {C_YELLOW}📄 Lade PDF-Daten: {pdf_url[:60]}...{C_END}")
         headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
         response = requests.get(pdf_url, headers=headers, timeout=15)
         
         if response.status_code == 200:
-            print("📄 Extrahiere Text aus PDF...")
             pdf_file = BytesIO(response.content)
             reader = pypdf.PdfReader(pdf_file)
             text = ""
-            for page in reader.pages:
-                text += page.extract_text() + "\n\n"
+            # Wir nehmen max 20 Seiten um Zeit/Memory zu sparen
+            num_pages = min(len(reader.pages), 20)
+            for i in range(num_pages):
+                text += reader.pages[i].extract_text() + "\n\n"
             
-            # Bereinigung (einfach)
             text = text.strip()
-            if len(text) < 100: return None # Zu wenig Text (vllt. Bild-PDF)
+            if len(text) < 100: return None
             
+            print(f"   {C_GREEN}✅ {len(text)} Zeichen Text extrahiert.{C_END}")
             return text
-        else:
-            print(f"⚠️ PDF Download Fehler: {response.status_code}")
     except Exception as e:
-        print(f"⚠️ Fehler beim PDF-Parsing: {e}")
+        print(f"   {C_RED}⚠️ PDF-Fehler: {e}{C_END}")
     
     return None
 
 # --- SOURCE 1: SEMANTIC SCHOLAR ---
 def fetch_semantic_scholar(topic):
-    print(f"🌍 Suche Semantic Scholar (Open Access): '{topic}'...")
+    print(f"{C_BOLD}{C_CYAN}🌍 Suche Semantic Scholar (Open Access): '{topic}'...{C_END}")
     url = "https://api.semanticscholar.org/graph/v1/paper/search"
     current_year = datetime.datetime.now().year
     params = {
@@ -150,12 +159,12 @@ def fetch_semantic_scholar(topic):
                     "source": "Semantic Scholar"
                 }
     except Exception as e:
-        print(f"⚠️ Fehler: {e}")
+        print(f"{C_RED}⚠️ Fehler: {e}{C_END}")
     return None
 
 # --- SOURCE 2: PUBMED ---
 def fetch_pubmed(topic):
-    print(f"🧬 Suche PubMed (Free Full Text): '{topic}'...")
+    print(f"{C_BOLD}{C_CYAN}🧬 Suche PubMed (Free Full Text): '{topic}'...{C_END}")
     search_url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
     s_params = {
         "db": "pubmed",
@@ -225,7 +234,8 @@ def create_markdown(paper, topic):
     filename = f"STUDY_{today}_{timestamp}.md"
     filepath = os.path.join(STUDIES_DIR, filename)
 
-    llm_summary = get_gemini_summary(paper['abstract'], paper['title'], topic)
+    # Jetzt mit Volltext-Support für die KI
+    llm_summary = get_gemini_summary(paper['abstract'], paper['title'], topic, paper.get('full_text'))
     
     pdf_section = ""
     if paper.get('pdf'):
@@ -238,13 +248,15 @@ def create_markdown(paper, topic):
     full_text_section = ""
     if paper.get('full_text'):
         # Text kürzen falls extrem lang
-        preview_text = paper['full_text'][:15000] # Max 15k Zeichen für Markdown Performance
+        preview_text = paper['full_text'][:20000] # Max 20k Zeichen
         full_text_section = f"""
 ## 📖 Extrahierter Volltext (Preview)
 <details>
-<summary>Klicken zum Lesen des Volltextes</summary>
+<summary><b>Klicken zum Ausklappen des extrahierten Textes</b></summary>
 
+```text
 {preview_text}
+```
 
 *(Text automatisch extrahiert, Formatierung kann abweichen)*
 </details>
@@ -288,10 +300,17 @@ has_full_text: {str(paper.get('full_text') is not None).lower()}
     try:
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(content)
-        print(f"\n✅ Studie erfolgreich gespeichert!\n📂 {filepath}\nTopic: {topic}\nTitel: {paper['title']}")
+        
+        print("\n" + C_YELLOW + "="*60 + C_END)
+        print(f"{C_BOLD}{C_GREEN}✅ STUDIE GESPEICHERT{C_END}")
+        print(C_YELLOW + "="*60 + C_END)
+        print(f"{C_BOLD}📂 Pfad:{C_END}  {filepath}")
+        print(f"{C_BOLD}🎯 Thema:{C_END} {topic}")
+        print(f"{C_BOLD}📚 Titel:{C_END} {paper['title'][:70]}...")
+        print(C_YELLOW + "="*60 + C_END + "\n")
         return True
     except Exception as e:
-        print(f"Fehler: {e}")
+        print(f"{C_RED}❌ Fehler beim Speichern: {e}{C_END}")
         return False
 
 def main():
