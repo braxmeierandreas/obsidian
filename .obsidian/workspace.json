@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "33_STUDIES/Public Health/STUDY_2026-02-07_104508.md",
+                "file": "34_GAMES/08_WOP/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "STUDY_2026-02-07_104508"
+              "title": "README"
             }
           }
         ],
@@ -212,17 +212,17 @@
   },
   "active": "773b12261c45429b",
   "lastOpenFiles": [
-    "34_GAMES/08_WOP/venv/Lib/site-packages/pygame/tests/run_tests__tests/timeout/__pycache__/__init__.cpython-310.pyc",
-    "34_GAMES/08_WOP/venv/Lib/site-packages/pygame/tests/run_tests__tests/timeout/__pycache__/sleep_test.cpython-310.pyc",
-    "34_GAMES/08_WOP/venv/Lib/site-packages/pygame/tests/run_tests__tests/timeout/__pycache__/fake_2_test.cpython-310.pyc",
-    "34_GAMES/08_WOP/venv/Lib/site-packages/pygame/tests/run_tests__tests/print_stdout/__pycache__/__init__.cpython-310.pyc",
-    "34_GAMES/08_WOP/venv/Lib/site-packages/pygame/tests/run_tests__tests/print_stdout/__pycache__/fake_4_test.cpython-310.pyc",
-    "34_GAMES/08_WOP/venv/Lib/site-packages/pygame/tests/run_tests__tests/print_stdout/__pycache__/fake_3_test.cpython-310.pyc",
-    "34_GAMES/08_WOP/venv/Lib/site-packages/pygame/tests/run_tests__tests/print_stdout/__pycache__/fake_2_test.cpython-310.pyc",
-    "34_GAMES/08_WOP/venv/Lib/site-packages/pygame/tests/run_tests__tests/print_stderr/__pycache__/__init__.cpython-310.pyc",
-    "34_GAMES/08_WOP/venv/Lib/site-packages/pygame/tests/run_tests__tests/print_stderr/__pycache__/fake_4_test.cpython-310.pyc",
-    "34_GAMES/08_WOP/venv/Lib/site-packages/pygame/tests/run_tests__tests/print_stderr/__pycache__/fake_3_test.cpython-310.pyc",
-    "34_GAMES/08_WOP/venv/Lib/site-packages/pygame/tests/run_tests__tests/print_stderr/__pycache__/fake_2_test.cpython-310.pyc",
+    "33_STUDIES/Public Health/STUDY_2026-02-07_104508.md",
+    "34_GAMES/08_WOP/punishments.txt",
+    "34_GAMES/04_CHECKERS/venv/Lib/site-packages/pygame-2.6.1.dist-info/top_level.txt",
+    "34_GAMES/04_CHECKERS/venv/Lib/site-packages/pygame-2.6.1.dist-info/WHEEL",
+    "34_GAMES/04_CHECKERS/venv/Lib/site-packages/pygame-2.6.1.dist-info/REQUESTED",
+    "34_GAMES/04_CHECKERS/venv/Lib/site-packages/pygame-2.6.1.dist-info/METADATA",
+    "34_GAMES/04_CHECKERS/venv/Lib/site-packages/pygame-2.6.1.dist-info/RECORD",
+    "34_GAMES/04_CHECKERS/venv/Lib/site-packages/pygame-2.6.1.dist-info/INSTALLER",
+    "34_GAMES/04_CHECKERS/venv/Lib/site-packages/pygame-2.6.1.dist-info/entry_points.txt",
+    "34_GAMES/04_CHECKERS/venv/Lib/site-packages/pygame-2.6.1.dist-info",
+    "34_GAMES/04_CHECKERS/venv/Lib/site-packages/pip-23.0.1.dist-info/METADATA",
     "34_GAMES/08_WOP/venv/Lib/site-packages/pygame/tests/fixtures/fonts/u13079_PyGameMono-8.png",
     "34_GAMES/08_WOP/venv/Lib/site-packages/pygame/tests/fixtures/fonts/A_PyGameMono-8.png",
     "34_GAMES/08_WOP/venv/Lib/site-packages/pygame/docs/generated/_static/pygame_tiny.png",
@@ -243,7 +243,6 @@
     "34_GAMES/01_CHESS/README.md",
     "33_STUDIES/Public Health/STUDY_2026-02-07_104342.md",
     "33_STUDIES/Katzen/STUDY_2026-02-07_104219.md",
-    "33_STUDIES/Public Health/STUDY_2026-02-07_104508.md",
     "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-07_100526.md",
     "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-07_102951.md",
     "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-07_102526.md",
