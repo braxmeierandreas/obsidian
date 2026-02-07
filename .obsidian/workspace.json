@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_223932.md",
+                "file": "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-07_100526.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "STUDY_2026-02-06_223932"
+              "title": "STUDY_2026-02-07_100526"
             }
           }
         ],
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "STUDY_2026-02-07_100526.md",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -212,8 +212,11 @@
   },
   "active": "b57fe770d20e8763",
   "lastOpenFiles": [
-    "90_JOURNAL/01_2026/02_FEBRUARY/06_022026.md",
+    "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-07_100351.md",
+    "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-07_100526.md",
+    "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-07_095841.md",
     "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_223932.md",
+    "90_JOURNAL/01_2026/02_FEBRUARY/06_022026.md",
     "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_223448.md",
     "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_223307.md",
     "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_223429.md",
@@ -237,9 +240,6 @@
     "04_GOALS/01_HEALTH/08_HALBMARATHON_2026/RUNNING_LOG.md",
     "04_GOALS/01_HEALTH/08_HALBMARATHON_2026/TRAININGSPLAN.md",
     "90_JOURNAL/08_BRIEFING/BRIEFING_2026-02-05.md",
-    "90_JOURNAL/08_BRIEFING/BRIEFING_2026-01-21.md",
-    "90_JOURNAL/08_BRIEFING/BRIEFING_2026-01-22.md",
-    "00_SYSTEM_REFLECTION/LOGS/2026-02-05_Reflexion.md",
     "REFLEKTIEREN.bat",
     "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES",
     "01_Andreas/05_KNOWLEDGE",
