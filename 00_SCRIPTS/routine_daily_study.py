@@ -12,7 +12,8 @@ import pypdf
 # --- KONFIGURATION ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.dirname(BASE_DIR)
-STUDIES_DIR = os.path.join(ROOT_DIR, "01_Andreas", "05_KNOWLEDGE", "DAILY_STUDIES")
+# Geändert auf 33_STUDIES im Hauptverzeichnis
+STUDIES_DIR = os.path.join(ROOT_DIR, "33_STUDIES")
 
 # ANSI Colors
 C_GREEN = "\033[92m"
@@ -23,17 +24,47 @@ C_BOLD = "\033[1m"
 C_END = "\033[0m"
 
 # API Key für Gemini (Google AI)
-GEMINI_API_KEY = "AIzaSyAh_5x6xR5qj1ih7ZGqksYd97tx8SFvzts"
+GEMINI_API_KEY = "AIzaSyD8Zi98OcIOi8cjRCKtkINW7zyhhaGgcoU"
 
 TOPICS = [
     "Public Health", "Health Promotion", "Artificial Intelligence", 
     "Large Language Models", "Clinical Psychology", "Exercise Physiology", 
-    "Behavioral Economics", "Sleep Science", "Nutrition Science"
+    "Behavioral Economics", "Sleep Science", "Nutrition Science",
+    "Mental Health", "Sports Medicine", "Digital Health", "Longevity",
+    "Biohacking", "Neuroscience", "Microbiome", "Intermittent Fasting",
+    "Cybersecurity", "Software Engineering", "Blockchain in Healthcare",
+    "Robotics", "Quantum Computing", "Psychology of Motivation",
+    "Stress Management", "Yoga & Meditation Science"
 ]
 
 def ensure_dir(directory):
     if not os.path.exists(directory):
         os.makedirs(directory)
+
+# --- GEMINI QUERY OPTIMIZER ---
+def optimize_query(query):
+    """
+    Übersetzt deutsche Suchanfragen ins Englische für bessere Ergebnisse in Datenbanken.
+    """
+    prompt = f"Du bist ein wissenschaftlicher Such-Assistent. Übersetze den folgenden Suchbegriff ins Englische, falls er auf Deutsch ist, und optimiere ihn für wissenschaftliche Datenbanken (Semantic Scholar/PubMed). Gib NUR den optimierten englischen Begriff zurück.\n\nBegriff: {query}"
+    
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
+    headers = {"Content-Type": "application/json"}
+    data = {"contents": [{"parts": [{"text": prompt}]}]}
+
+    try:
+        response = requests.post(url, headers=headers, json=data, timeout=10)
+        if response.status_code == 200:
+            result = response.json()
+            if 'candidates' in result and result['candidates']:
+                optimized = result['candidates'][0]['content']['parts'][0]['text'].strip()
+                # Manchmal liefert Gemini Markdown-Backticks zurück
+                optimized = optimized.replace("`", "").strip()
+                print(f"   {C_CYAN}🔍 Suchoptimierung:{C_END} {query} -> {C_BOLD}{optimized}{C_END}")
+                return optimized
+    except:
+        pass
+    return query
 
 # --- GEMINI AI SUMMARY ---
 def get_gemini_summary(abstract, title, topic, full_text=None):
@@ -229,10 +260,17 @@ def fetch_pubmed(topic):
 def create_markdown(paper, topic):
     if not paper: return False
 
+    # Thema-spezifischer Ordner (sanitized)
+    # Umlaute ersetzen für Dateisystem-Kompatibilität
+    topic_clean = topic.replace("ä", "ae").replace("ö", "oe").replace("ü", "ue").replace("Ä", "Ae").replace("Ö", "Oe").replace("Ü", "Ue").replace("ß", "ss")
+    topic_folder = "".join([c if c.isalnum() or c in " _-" else "_" for c in topic_clean]).strip()
+    target_dir = os.path.join(STUDIES_DIR, topic_folder)
+    ensure_dir(target_dir)
+
     today = datetime.datetime.now().strftime("%Y-%m-%d")
     timestamp = datetime.datetime.now().strftime("%H%M%S")
     filename = f"STUDY_{today}_{timestamp}.md"
-    filepath = os.path.join(STUDIES_DIR, filename)
+    filepath = os.path.join(target_dir, filename)
 
     # Jetzt mit Volltext-Support für die KI
     llm_summary = get_gemini_summary(paper['abstract'], paper['title'], topic, paper.get('full_text'))
@@ -270,6 +308,8 @@ type: academic_paper
 year: {paper['year']}
 source: {paper['source']}
 has_full_text: {str(paper.get('full_text') is not None).lower()}
+status: unread
+rating: 0
 ---
 
 # 🎓 {paper['title']}
@@ -308,6 +348,13 @@ has_full_text: {str(paper.get('full_text') is not None).lower()}
         print(f"{C_BOLD}🎯 Thema:{C_END} {topic}")
         print(f"{C_BOLD}📚 Titel:{C_END} {paper['title'][:70]}...")
         print(C_YELLOW + "="*60 + C_END + "\n")
+
+        # Datei direkt öffnen
+        try:
+            os.startfile(filepath)
+        except:
+            pass
+
         return True
     except Exception as e:
         print(f"{C_RED}❌ Fehler beim Speichern: {e}{C_END}")
@@ -317,29 +364,33 @@ def main():
     ensure_dir(STUDIES_DIR)
     
     if len(sys.argv) > 1:
-        topic = " ".join(sys.argv[1:])
+        topic_raw = " ".join(sys.argv[1:])
         random_mode = False
     else:
-        topic = random.choice(TOPICS)
+        topic_raw = random.choice(TOPICS)
         random_mode = True
 
+    # Suche optimieren (Übersetzung/Keywords via Gemini)
+    topic_search = optimize_query(topic_raw)
+
     # 1. Semantic Scholar (Mit PDF Parsing)
-    paper = fetch_semantic_scholar(topic)
+    paper = fetch_semantic_scholar(topic_search)
     
     # 2. PubMed (Full Text Filter)
     if not paper:
-        paper = fetch_pubmed(topic)
+        paper = fetch_pubmed(topic_search)
     
     if not paper and random_mode:
         print("Erstes Thema leer, versuche ein anderes...")
-        topic = random.choice(TOPICS)
-        paper = fetch_semantic_scholar(topic) or fetch_pubmed(topic)
+        topic_raw = random.choice(TOPICS)
+        topic_search = optimize_query(topic_raw)
+        paper = fetch_semantic_scholar(topic_search) or fetch_pubmed(topic_search)
 
     if paper:
-        create_markdown(paper, topic)
+        create_markdown(paper, topic_raw)
         sys.exit(0)
     else:
-        print(f"❌ Nichts gefunden für '{topic}'.")
+        print(f"❌ Nichts gefunden für '{topic_raw}' (Suche: '{topic_search}').")
         sys.exit(1)
 
 if __name__ == "__main__":
