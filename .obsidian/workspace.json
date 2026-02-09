@@ -29,12 +29,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "17_HABITS/2026_02_FEBRUARY/DASHBOARD_FEBRUARY_2026.md",
+                "file": "90_JOURNAL/01_2026/02_FEBRUARY/09_022026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DASHBOARD_FEBRUARY_2026"
+              "title": "09_022026"
+            }
+          },
+          {
+            "id": "cfbac64de7246bec",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ],
@@ -215,6 +225,7 @@
   "active": "a4285a920f3ca8d6",
   "lastOpenFiles": [
     "90_JOURNAL/01_2026/02_FEBRUARY/09_022026.md",
+    "17_HABITS/2026_02_FEBRUARY/DASHBOARD_FEBRUARY_2026.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Interventionen_Psyche_Kinder_Jugendliche/00_RESEARCH_LOG.md",
     "34_GAMES/04_CHECKERS/venv/Lib/site-packages/setuptools/_vendor/jaraco/desktop.ini",
     "34_GAMES/04_CHECKERS/venv/Lib/site-packages/pip/_vendor/cachecontrol/__pycache__/desktop.ini",
@@ -259,7 +270,6 @@
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Interventionen_Psyche_Kinder_Jugendliche/01_SCHREIBPLAN_ERGEBNISSE.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Interventionen_Psyche_Kinder_Jugendliche/03_ENTWURF_ERGEBNISSE_FAZIT.md",
     "03_UNIVERSITY/01_RESEARCH_PROJECT/Interventionen_Psyche_Kinder_Jugendliche/02_ENTWURF_HANDLUNGSEMPFEHLUNGEN.md",
-    "conflict-files-obsidian-git.md",
     "37_PHILOSOPHY/Weltbild.canvas"
   ]
 }
