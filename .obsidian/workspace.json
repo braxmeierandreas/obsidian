@@ -57,12 +57,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "90_JOURNAL/01_2026/02_FEBRUARY/14_022026.md",
+                "file": "90_JOURNAL/01_2026/02_FEBRUARY/11_022026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "14_022026"
+              "title": "11_022026"
             }
           }
         ],
@@ -240,8 +240,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b57fe770d20e8763",
+  "active": "5e035b326e9c90fc",
   "lastOpenFiles": [
+    "90_JOURNAL/01_2026/02_FEBRUARY/14_022026.md",
     "90_JOURNAL/01_2026/02_FEBRUARY/11_022026.md",
     "90_JOURNAL/01_2026/02_FEBRUARY/10_022026.md",
     "90_JOURNAL/01_2026/02_FEBRUARY/09_022026.md",
@@ -287,7 +288,6 @@
     "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_222857.md",
     "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_222606.md",
     "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_222108.md",
-    "01_Andreas/05_KNOWLEDGE/DAILY_STUDIES/STUDY_2026-02-06_221624.md",
     "37_PHILOSOPHY/Weltbild.canvas"
   ]
 }
